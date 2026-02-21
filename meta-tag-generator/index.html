@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Meta Tag Generator - Free Online Tool</title>
+    <meta name="description" content="Generate SEO-optimized meta tags, Open Graph tags, and Twitter Cards for any webpage.">
+    <meta name="keywords" content="free meta tag generator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/meta-tag-generator/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #f97316;
+            --primary-dark: #ea580c;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>SEO</span> Meta Tag Generator</h1>
+            <p>Generate SEO-optimized meta tags, Open Graph tags, and Twitter Cards for any webpage.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card">
+                <h2>📝 Page Information</h2>
+                <div class="form-group">
+                    <label>Page Title (<span id="titleCount">0</span>/60)</label>
+                    <input type="text" id="title" placeholder="Your Page Title" oninput="updateAll()">
+                </div>
+                <div class="form-group">
+                    <label>Description (<span id="descCount">0</span>/160)</label>
+                    <textarea id="description" placeholder="A compelling description of your page..." rows="3" oninput="updateAll()"></textarea>
+                </div>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>URL</label>
+                        <input type="url" id="url" placeholder="https://yoursite.com/page" oninput="updateAll()">
+                    </div>
+                    <div class="form-group">
+                        <label>Image URL</label>
+                        <input type="url" id="image" placeholder="https://yoursite.com/image.jpg" oninput="updateAll()">
+                    </div>
+                    <div class="form-group">
+                        <label>Site Name</label>
+                        <input type="text" id="siteName" placeholder="Your Site" oninput="updateAll()">
+                    </div>
+                    <div class="form-group">
+                        <label>Twitter Handle</label>
+                        <input type="text" id="twitter" placeholder="@yourhandle" oninput="updateAll()">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Keywords (comma separated)</label>
+                    <input type="text" id="keywords" placeholder="seo, meta tags, html" oninput="updateAll()">
+                </div>
+            </div>
+            <div class="card">
+                <h2>🔍 Google Preview</h2>
+                <div style="background:#fff;padding:16px;border-radius:8px;">
+                    <div id="previewTitle" style="color:#1a0dab;font-size:18px;font-family:arial;cursor:pointer;margin-bottom:4px;">Page Title</div>
+                    <div id="previewUrl" style="color:#006621;font-size:14px;font-family:arial;margin-bottom:4px;">https://yoursite.com</div>
+                    <div id="previewDesc" style="color:#545454;font-size:13px;font-family:arial;">Your page description will appear here...</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>📋 Generated Meta Tags</h2>
+                <div id="output" class="output-area" style="font-size:13px;"></div>
+                <div class="btn-group">
+                    <button onclick="copyMeta()">📋 Copy All Tags</button>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        function updateAll() {
+            const title = document.getElementById('title').value;
+            const desc = document.getElementById('description').value;
+            const url = document.getElementById('url').value;
+            const image = document.getElementById('image').value;
+            const siteName = document.getElementById('siteName').value;
+            const twitter = document.getElementById('twitter').value;
+            const keywords = document.getElementById('keywords').value;
+
+            document.getElementById('titleCount').textContent = title.length;
+            document.getElementById('titleCount').style.color = title.length > 60 ? '#ef4444' : 'var(--primary)';
+            document.getElementById('descCount').textContent = desc.length;
+            document.getElementById('descCount').style.color = desc.length > 160 ? '#ef4444' : 'var(--primary)';
+
+            document.getElementById('previewTitle').textContent = title || 'Page Title';
+            document.getElementById('previewUrl').textContent = url || 'https://yoursite.com';
+            document.getElementById('previewDesc').textContent = desc || 'Your page description...';
+
+            let meta = [];
+            meta.push(`<!-- Primary Meta Tags -->`);
+            if (title) meta.push(`<title>${esc(title)}</title>`);
+            if (title) meta.push(`<meta name="title" content="${esc(title)}">`);
+            if (desc) meta.push(`<meta name="description" content="${esc(desc)}">`);
+            if (keywords) meta.push(`<meta name="keywords" content="${esc(keywords)}">`);
+            meta.push(`<meta name="robots" content="index, follow">`);
+            meta.push('');
+            meta.push(`<!-- Open Graph / Facebook -->`);
+            meta.push(`<meta property="og:type" content="website">`);
+            if (url) meta.push(`<meta property="og:url" content="${esc(url)}">`);
+            if (title) meta.push(`<meta property="og:title" content="${esc(title)}">`);
+            if (desc) meta.push(`<meta property="og:description" content="${esc(desc)}">`);
+            if (image) meta.push(`<meta property="og:image" content="${esc(image)}">`);
+            if (siteName) meta.push(`<meta property="og:site_name" content="${esc(siteName)}">`);
+            meta.push('');
+            meta.push(`<!-- Twitter -->`);
+            meta.push(`<meta property="twitter:card" content="summary_large_image">`);
+            if (url) meta.push(`<meta property="twitter:url" content="${esc(url)}">`);
+            if (title) meta.push(`<meta property="twitter:title" content="${esc(title)}">`);
+            if (desc) meta.push(`<meta property="twitter:description" content="${esc(desc)}">`);
+            if (image) meta.push(`<meta property="twitter:image" content="${esc(image)}">`);
+            if (twitter) meta.push(`<meta property="twitter:creator" content="${esc(twitter)}">`);
+
+            if (url) { meta.push(''); meta.push(`<!-- Canonical -->`); meta.push(`<link rel="canonical" href="${esc(url)}">`); }
+
+            document.getElementById('output').textContent = meta.join('\n');
+        }
+        function esc(s) { return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+        function copyMeta() {
+            navigator.clipboard.writeText(document.getElementById('output').textContent);
+            const t = document.createElement('div'); t.className = 'toast'; t.textContent = 'Meta tags copied!';
+            document.body.appendChild(t); setTimeout(() => t.remove(), 2000);
+        }
+        updateAll();
+        
+    </script>
+</body>
+</html>
