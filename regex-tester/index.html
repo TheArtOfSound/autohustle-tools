@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester & Debugger - Free Online Tool</title>
+    <meta name="description" content="Test regular expressions in real-time with match highlighting, group extraction, and common pattern library.">
+    <meta name="keywords" content="free regex tester online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/regex-tester/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #ef4444;
+            --primary-dark: #dc2626;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Regex</span> Tester & Debugger</h1>
+            <p>Test regular expressions in real-time with match highlighting, group extraction, and common pattern library.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card">
+                <h2>🔍 Regular Expression</h2>
+                <div style="display:flex;gap:10px;align-items:center;">
+                    <span style="font-size:20px;color:var(--text-muted);">/</span>
+                    <input type="text" id="regex" placeholder="\w+" value="\w+" oninput="testRegex()" style="flex:1;font-family:monospace;">
+                    <span style="font-size:20px;color:var(--text-muted);">/</span>
+                    <input type="text" id="flags" value="g" size="4" oninput="testRegex()" style="width:60px;font-family:monospace;">
+                </div>
+                <div id="regexError" style="color:#ef4444;margin-top:8px;font-size:0.9em;"></div>
+            </div>
+            <div class="card">
+                <h2>📝 Test String</h2>
+                <textarea id="testStr" rows="6" oninput="testRegex()">Hello World! This is a test string with numbers 123 and special chars @#$. Email: test@example.com, phone: 555-123-4567.</textarea>
+            </div>
+            <div class="card">
+                <h2>✨ Highlighted Matches</h2>
+                <div id="highlighted" style="background:var(--surface2);padding:16px;border-radius:8px;line-height:1.8;min-height:60px;white-space:pre-wrap;word-break:break-word;"></div>
+            </div>
+            <div class="card">
+                <h2>📊 Match Details (<span id="matchCount">0</span> matches)</h2>
+                <div id="matches" class="output-area" style="min-height:60px;"></div>
+            </div>
+            <div class="card">
+                <h2>📚 Common Patterns</h2>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;">
+                    <button class="btn-secondary" onclick="usePattern('[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}','g')">📧 Email</button>
+                    <button class="btn-secondary" onclick="usePattern('https?://[^\\s]+','g')">🔗 URL</button>
+                    <button class="btn-secondary" onclick="usePattern('\\d{3}[-.]?\\d{3}[-.]?\\d{4}','g')">📞 Phone</button>
+                    <button class="btn-secondary" onclick="usePattern('\\b\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\b','g')">🌐 IP Address</button>
+                    <button class="btn-secondary" onclick="usePattern('#([0-9a-fA-F]{3}){1,2}\\b','g')">🎨 HEX Color</button>
+                    <button class="btn-secondary" onclick="usePattern('\\b[A-Z][a-z]+ [A-Z][a-z]+\\b','g')">👤 Name</button>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        function testRegex() {
+            const pattern = document.getElementById('regex').value;
+            const flags = document.getElementById('flags').value;
+            const text = document.getElementById('testStr').value;
+            const errEl = document.getElementById('regexError');
+            const hlEl = document.getElementById('highlighted');
+            const matchEl = document.getElementById('matches');
+            const countEl = document.getElementById('matchCount');
+
+            if (!pattern) { errEl.textContent = ''; hlEl.textContent = text; matchEl.textContent = ''; countEl.textContent = '0'; return; }
+
+            let re;
+            try {
+                re = new RegExp(pattern, flags);
+                errEl.textContent = '';
+            } catch(e) {
+                errEl.textContent = e.message;
+                hlEl.textContent = text;
+                matchEl.textContent = '';
+                countEl.textContent = '0';
+                return;
+            }
+
+            // Find all matches
+            const matches = [];
+            let m;
+            if (flags.includes('g')) {
+                while ((m = re.exec(text)) !== null) {
+                    matches.push({full: m[0], index: m.index, groups: m.slice(1)});
+                    if (m.index === re.lastIndex) re.lastIndex++;
+                }
+            } else {
+                m = re.exec(text);
+                if (m) matches.push({full: m[0], index: m.index, groups: m.slice(1)});
+            }
+
+            countEl.textContent = matches.length;
+
+            // Highlight
+            let highlighted = '';
+            let lastIdx = 0;
+            matches.forEach((match, i) => {
+                highlighted += escapeHtml(text.substring(lastIdx, match.index));
+                highlighted += `<mark style="background:rgba(239,68,68,0.3);color:#fff;padding:1px 2px;border-radius:3px;border-bottom:2px solid #ef4444;">${escapeHtml(match.full)}</mark>`;
+                lastIdx = match.index + match.full.length;
+            });
+            highlighted += escapeHtml(text.substring(lastIdx));
+            hlEl.innerHTML = highlighted;
+
+            // Match details
+            matchEl.innerHTML = matches.map((m, i) =>
+                `<div style="margin-bottom:8px;padding:8px;background:var(--surface);border-radius:6px;">` +
+                `<strong style="color:var(--primary);">Match ${i+1}</strong> at index ${m.index}: <code>"${escapeHtml(m.full)}"</code>` +
+                (m.groups.length ? '<br>Groups: ' + m.groups.map((g,j) => `<code style="margin:0 4px;">$${j+1}="${escapeHtml(g||'')}"</code>`).join('') : '') +
+                `</div>`
+            ).join('') || '<span style="color:var(--text-muted);">No matches found</span>';
+        }
+        function usePattern(p, f) {
+            document.getElementById('regex').value = p;
+            document.getElementById('flags').value = f;
+            testRegex();
+        }
+        function escapeHtml(t) { return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+        testRegex();
+        
+    </script>
+</body>
+</html>
