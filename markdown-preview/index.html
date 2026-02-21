@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer & Editor - Free Online Tool</title>
+    <meta name="description" content="Write Markdown and see live preview side by side. Export to HTML. Supports full GFM syntax.">
+    <meta name="keywords" content="free markdown editor online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/markdown-preview/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #2563eb;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+            #preview h1,#preview h2,#preview h3{margin:16px 0 8px;color:var(--primary);}
+            #preview h1{font-size:1.6em;border-bottom:1px solid var(--border);padding-bottom:8px;}
+            #preview h2{font-size:1.3em;}
+            #preview h3{font-size:1.1em;}
+            #preview p{margin:8px 0;}
+            #preview ul,#preview ol{margin:8px 0 8px 24px;}
+            #preview li{margin:4px 0;}
+            #preview code{background:var(--bg);padding:2px 6px;border-radius:4px;font-size:0.9em;}
+            #preview pre{background:var(--bg);padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;}
+            #preview pre code{background:none;padding:0;}
+            #preview blockquote{border-left:3px solid var(--primary);padding:8px 16px;margin:12px 0;background:rgba(59,130,246,0.1);border-radius:0 8px 8px 0;}
+            #preview table{width:100%;margin:12px 0;border-collapse:collapse;}
+            #preview th,#preview td{padding:8px 12px;border:1px solid var(--border);text-align:left;}
+            #preview th{background:var(--bg);}
+            #preview a{color:var(--primary);text-decoration:underline;}
+            #preview hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
+            #preview img{max-width:100%;border-radius:8px;}
+            #preview strong{color:#fff;}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Markdown</span> Previewer & Editor</h1>
+            <p>Write Markdown and see live preview side by side. Export to HTML. Supports full GFM syntax.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h2>✏️ Markdown</h2>
+                    <textarea id="input" rows="20" style="font-family:monospace;font-size:13px;min-height:400px;"
+                        oninput="renderMD()">## Hello World
+
+This is a **Markdown** previewer. Try editing this text!
+
+### Features
+- **Bold** and *italic* text
+- [Links](https://example.com)
+- Images, tables, code blocks
+
+### Code Example
+```javascript
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+```
+
+### Table
+| Feature | Status |
+|---------|--------|
+| Bold    | ✅     |
+| Links   | ✅     |
+| Tables  | ✅     |
+
+> Blockquotes work too!
+
+---
+Made with ❤️ using AutoHustle Tools</textarea>
+                </div>
+                <div class="card">
+                    <h2>👁️ Preview</h2>
+                    <div id="preview" style="min-height:400px;padding:16px;background:var(--surface2);border-radius:8px;line-height:1.7;overflow:auto;"></div>
+                </div>
+            </div>
+            <div class="btn-group" style="justify-content:center;">
+                <button onclick="copyHTML()">📋 Copy HTML</button>
+                <button onclick="downloadHTML()" class="btn-secondary">💾 Download HTML</button>
+                <button onclick="downloadMD()" class="btn-secondary">💾 Download .md</button>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        function escapeHtml(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+        function parseMD(md) {
+            let html = md;
+            // Code blocks
+            html = html.replace(/```(\w*)\n([\s\S]*?)```/g, (m,lang,code) => '<pre><code>'+escapeHtml(code.trim())+'</code></pre>');
+            // Inline code
+            html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+            // Headers
+            html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
+            // HR
+            html = html.replace(/^---$/gm, '<hr>');
+            // Bold & italic
+            html = html.replace(/\*\*\*(.*?)\*\*\*/g, '<strong><em>$1</em></strong>');
+            html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            // Links & images
+            html = html.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1">');
+            html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+            // Blockquotes
+            html = html.replace(/^> (.*$)/gm, '<blockquote>$1</blockquote>');
+            // Lists
+            html = html.replace(/^- (.*$)/gm, '<li>$1</li>');
+            html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+            // Tables
+            html = html.replace(/^\|(.+)\|$/gm, function(m, content) {
+                const cells = content.split('|').map(c => c.trim());
+                if (cells.every(c => /^[-:]+$/.test(c))) return '';
+                const tag = cells.some(c => /^\*\*/.test(c)) ? 'th' : 'td';
+                return '<tr>' + cells.map(c => `<${tag}>${c}</${tag}>`).join('') + '</tr>';
+            });
+            html = html.replace(/(<tr>.*<\/tr>\s*)+/g, '<table>$&</table>');
+            // Paragraphs
+            html = html.split('\n\n').map(block => {
+                if (/^<[hupoltbd]/.test(block.trim())) return block;
+                if (block.trim()) return '<p>' + block.trim() + '</p>';
+                return '';
+            }).join('\n');
+            return html;
+        }
+        function renderMD() {
+            document.getElementById('preview').innerHTML = parseMD(document.getElementById('input').value);
+        }
+        function copyHTML() {
+            navigator.clipboard.writeText(document.getElementById('preview').innerHTML);
+            toast('HTML copied!');
+        }
+        function downloadHTML() {
+            const html = '<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><style>body{font-family:sans-serif;max-width:800px;margin:40px auto;padding:20px;line-height:1.7;}</style></head><body>' + document.getElementById('preview').innerHTML + '</body></html>';
+            const blob = new Blob([html], {type:'text/html'});
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'document.html'; a.click();
+        }
+        function downloadMD() {
+            const blob = new Blob([document.getElementById('input').value], {type:'text/markdown'});
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'document.md'; a.click();
+        }
+        function toast(msg) {
+            const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+            document.body.appendChild(t); setTimeout(() => t.remove(), 2000);
+        }
+        renderMD();
+        
+    </script>
+</body>
+</html>
