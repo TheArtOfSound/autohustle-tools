@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator - Free Online Tool</title>
+    <meta name="description" content="Generate beautiful color palettes, convert between HEX/RGB/HSL, and explore color harmonies.">
+    <meta name="keywords" content="free color palette generator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/color-palette/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #ec4899;
+            --primary-dark: #db2777;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Color</span> Palette Generator</h1>
+            <p>Generate beautiful color palettes, convert between HEX/RGB/HSL, and explore color harmonies.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card">
+                <h2>🎨 Color Palette</h2>
+                <div id="palette" style="display:flex;gap:0;border-radius:12px;overflow:hidden;height:120px;margin-bottom:16px;"></div>
+                <div class="btn-group">
+                    <button onclick="randomPalette()">🎲 Random Palette</button>
+                    <button onclick="analogous()" class="btn-secondary">Analogous</button>
+                    <button onclick="complementary()" class="btn-secondary">Complementary</button>
+                    <button onclick="triadic()" class="btn-secondary">Triadic</button>
+                    <button onclick="monochromatic()" class="btn-secondary">Monochromatic</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2>🔄 Color Converter</h2>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>HEX</label>
+                        <div style="display:flex;gap:8px;">
+                            <input type="text" id="hexInput" placeholder="#ff5733" oninput="convertFromHex()">
+                            <input type="color" id="colorPicker" oninput="document.getElementById('hexInput').value=this.value;convertFromHex();" style="width:50px;padding:2px;cursor:pointer;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>RGB</label>
+                        <input type="text" id="rgbInput" placeholder="rgb(255, 87, 51)" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>HSL</label>
+                        <input type="text" id="hslInput" placeholder="hsl(14, 100%, 60%)" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Preview</label>
+                        <div id="colorPreview" class="color-preview" style="width:100%;height:48px;border-radius:8px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>📊 Saved Colors</h2>
+                <div id="saved" style="display:flex;flex-wrap:wrap;gap:8px;min-height:40px;">
+                    <span style="color:var(--text-muted)">Click colors in the palette to save them</span>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        let savedColors = [];
+        function hslToHex(h,s,l) {
+            s/=100; l/=100;
+            const a=s*Math.min(l,1-l);
+            const f=n=>{const k=(n+h/30)%12;const c=l-a*Math.max(Math.min(k-3,9-k,1),-1);return Math.round(255*c).toString(16).padStart(2,'0');};
+            return '#'+f(0)+f(8)+f(4);
+        }
+        function hexToRgb(hex) {
+            hex = hex.replace('#','');
+            if (hex.length===3) hex = hex.split('').map(c=>c+c).join('');
+            return {r:parseInt(hex.substr(0,2),16),g:parseInt(hex.substr(2,2),16),b:parseInt(hex.substr(4,2),16)};
+        }
+        function rgbToHsl(r,g,b) {
+            r/=255;g/=255;b/=255;
+            const max=Math.max(r,g,b),min=Math.min(r,g,b);
+            let h,s,l=(max+min)/2;
+            if(max===min){h=s=0;}else{const d=max-min;s=l>0.5?d/(2-max-min):d/(max+min);
+            switch(max){case r:h=((g-b)/d+(g<b?6:0))/6;break;case g:h=((b-r)/d+2)/6;break;case b:h=((r-g)/d+4)/6;break;}}
+            return {h:Math.round(h*360),s:Math.round(s*100),l:Math.round(l*100)};
+        }
+        function randomPalette() {
+            const baseH = Math.random()*360;
+            const colors = [];
+            for(let i=0;i<5;i++){
+                const h = (baseH + Math.random()*120 - 60 + 360) % 360;
+                const s = 50 + Math.random()*40;
+                const l = 30 + Math.random()*40;
+                colors.push(hslToHex(h,s,l));
+            }
+            renderPalette(colors);
+        }
+        function analogous() {
+            const h = Math.random()*360;
+            const colors = [-30,-15,0,15,30].map(off => hslToHex((h+off+360)%360, 70, 50));
+            renderPalette(colors);
+        }
+        function complementary() {
+            const h = Math.random()*360;
+            const colors = [0,30,180,180+30,180-30].map(off => hslToHex((h+off+360)%360, 70, 50));
+            renderPalette(colors);
+        }
+        function triadic() {
+            const h = Math.random()*360;
+            const colors = [0,15,120,120+15,240].map(off => hslToHex((h+off+360)%360, 70, 50));
+            renderPalette(colors);
+        }
+        function monochromatic() {
+            const h = Math.random()*360;
+            const colors = [25,35,45,55,65].map(l => hslToHex(h, 65, l));
+            renderPalette(colors);
+        }
+        function renderPalette(colors) {
+            const el = document.getElementById('palette');
+            el.innerHTML = colors.map(c =>
+                `<div style="flex:1;background:${c};cursor:pointer;display:flex;align-items:end;justify-content:center;padding:8px;" onclick="saveColor('${c}')" title="Click to save">
+                    <span style="background:rgba(0,0,0,0.5);padding:2px 8px;border-radius:4px;font-size:12px;font-family:monospace;">${c}</span>
+                </div>`
+            ).join('');
+        }
+        function saveColor(hex) {
+            if (!savedColors.includes(hex)) { savedColors.push(hex); }
+            const el = document.getElementById('saved');
+            el.innerHTML = savedColors.map(c =>
+                `<div style="display:flex;align-items:center;gap:6px;background:var(--surface2);padding:6px 12px;border-radius:6px;cursor:pointer;" onclick="navigator.clipboard.writeText('${c}');toast('Copied ${c}!')">
+                    <div style="width:24px;height:24px;border-radius:4px;background:${c};"></div>
+                    <code style="font-size:13px;">${c}</code>
+                </div>`
+            ).join('');
+            document.getElementById('hexInput').value = hex;
+            convertFromHex();
+        }
+        function convertFromHex() {
+            let hex = document.getElementById('hexInput').value.trim();
+            if (!hex.startsWith('#')) hex = '#' + hex;
+            if (!/^#[0-9a-fA-F]{3,6}$/.test(hex)) return;
+            const {r,g,b} = hexToRgb(hex);
+            const {h,s,l} = rgbToHsl(r,g,b);
+            document.getElementById('rgbInput').value = `rgb(${r}, ${g}, ${b})`;
+            document.getElementById('hslInput').value = `hsl(${h}, ${s}%, ${l}%)`;
+            document.getElementById('colorPreview').style.background = hex;
+            document.getElementById('colorPicker').value = hex.length===4 ? '#'+hex[1]+hex[1]+hex[2]+hex[2]+hex[3]+hex[3] : hex;
+        }
+        function toast(msg) {
+            const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+            document.body.appendChild(t); setTimeout(() => t.remove(), 2000);
+        }
+        randomPalette();
+        
+    </script>
+</body>
+</html>
