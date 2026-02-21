@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter & Text Analyzer - Free Online Tool</title>
+    <meta name="description" content="Count words, characters, sentences, paragraphs, and estimate reading time from any text.">
+    <meta name="keywords" content="free word counter online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/word-counter/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Word</span> Counter & Text Analyzer</h1>
+            <p>Count words, characters, sentences, paragraphs, and estimate reading time from any text.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card">
+                <h2>📝 Paste Your Text</h2>
+                <textarea id="input" placeholder="Type or paste your text here..." rows="10" oninput="analyze()"></textarea>
+            </div>
+            <div class="card fade-in">
+                <h2>📊 Text Statistics</h2>
+                <div class="stats">
+                    <div class="stat"><div class="value" id="words">0</div><div class="label">Words</div></div>
+                    <div class="stat"><div class="value" id="chars">0</div><div class="label">Characters</div></div>
+                    <div class="stat"><div class="value" id="charsNoSpace">0</div><div class="label">No Spaces</div></div>
+                    <div class="stat"><div class="value" id="sentences">0</div><div class="label">Sentences</div></div>
+                    <div class="stat"><div class="value" id="paragraphs">0</div><div class="label">Paragraphs</div></div>
+                    <div class="stat"><div class="value" id="readTime">0m</div><div class="label">Read Time</div></div>
+                    <div class="stat"><div class="value" id="speakTime">0m</div><div class="label">Speak Time</div></div>
+                    <div class="stat"><div class="value" id="avgWordLen">0</div><div class="label">Avg Word Len</div></div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>🔑 Top Keywords</h2>
+                <div id="keywords" class="output-area" style="min-height:60px;">Enter text above to see top keywords...</div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        function analyze() {
+            const text = document.getElementById('input').value;
+            const words = text.trim() ? text.trim().split(/\s+/) : [];
+            const chars = text.length;
+            const charsNoSpace = text.replace(/\s/g, '').length;
+            const sentences = text.split(/[.!?]+/).filter(s => s.trim()).length;
+            const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim()).length || (text.trim() ? 1 : 0);
+            const readMin = Math.ceil(words.length / 238);
+            const speakMin = Math.ceil(words.length / 150);
+            const avgLen = words.length ? (words.reduce((a,w) => a + w.length, 0) / words.length).toFixed(1) : 0;
+
+            document.getElementById('words').textContent = words.length;
+            document.getElementById('chars').textContent = chars;
+            document.getElementById('charsNoSpace').textContent = charsNoSpace;
+            document.getElementById('sentences').textContent = sentences;
+            document.getElementById('paragraphs').textContent = paragraphs;
+            document.getElementById('readTime').textContent = readMin + 'm';
+            document.getElementById('speakTime').textContent = speakMin + 'm';
+            document.getElementById('avgWordLen').textContent = avgLen;
+
+            // Top keywords
+            const stopWords = new Set(['the','a','an','is','are','was','were','be','been','being','have','has','had','do','does','did','will','would','could','should','may','might','shall','can','need','to','of','in','for','on','with','at','by','from','as','into','through','during','before','after','above','below','between','out','off','over','under','again','further','then','once','here','there','when','where','why','how','all','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','just','because','and','but','or','if','while','although','this','that','these','those','i','me','my','we','our','you','your','he','him','his','she','her','it','its','they','them','their','what','which','who','whom','whose']);
+            const freq = {};
+            words.forEach(w => {
+                const clean = w.toLowerCase().replace(/[^a-z0-9]/g, '');
+                if (clean.length > 2 && !stopWords.has(clean)) freq[clean] = (freq[clean] || 0) + 1;
+            });
+            const sorted = Object.entries(freq).sort((a,b) => b[1] - a[1]).slice(0, 15);
+            const kwEl = document.getElementById('keywords');
+            kwEl.innerHTML = sorted.length ? sorted.map(([w,c]) =>
+                `<span style="display:inline-block;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:4px 10px;margin:3px;font-size:14px;">${w} <strong style="color:var(--primary)">${c}</strong></span>`
+            ).join('') : '<span style="color:var(--text-muted)">Enter text above...</span>';
+        }
+        
+    </script>
+</body>
+</html>
