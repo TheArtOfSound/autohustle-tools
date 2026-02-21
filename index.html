@@ -3,163 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoHustle — Free Online Tools & Resources</title>
-    <meta name="description" content="Free online developer tools, SEO resources, and premium APIs. Word counter, JSON formatter, password generator, unit converter, and more — all running in your browser.">
-    <meta property="og:title" content="AutoHustle — Free Online Tools & Resources">
-    <meta property="og:description" content="10+ free browser-based tools for developers, writers, and creators. No sign-up required.">
-    <meta property="og:url" content="https://autohustle.online">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://autohustle.online">
+    <title>Free Online Tools - AutoHustle</title>
+    <meta name="description" content="Collection of free online tools: JSON formatter, word counter, password generator, unit converter, and more.">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --primary: #6366f1; --primary-light: #818cf8; --accent: #22d3ee;
-            --success: #34d399; --bg: #0f1117; --surface: #1a1d27;
-            --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040;
+        :root { --primary: #6366f1; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 20px; }
+        header h1 { font-size: 2.5em; margin-bottom: 8px; }
+        header h1 span { color: var(--primary); }
+        header p { color: var(--text-muted); font-size: 1.1em; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 0; }
+        .tool-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, border-color 0.2s;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .hero { text-align: center; padding: 60px 20px 40px; background: linear-gradient(180deg, rgba(99,102,241,0.08) 0%, transparent 100%); }
-        .hero h1 { font-size: 3em; font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
-        .hero h1 .brand { color: var(--primary); }
-        .hero .tagline { color: var(--text-muted); font-size: 1.25em; max-width: 600px; margin: 0 auto 24px; }
-        .hero-stats { display: flex; justify-content: center; gap: 40px; margin-top: 24px; }
-        .hero-stat { text-align: center; }
-        .hero-stat .num { display: block; font-size: 2em; font-weight: 700; color: var(--accent); }
-        .hero-stat .label { font-size: 0.85em; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
-        .section-header { display: flex; align-items: center; gap: 12px; margin: 48px 0 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-        .section-header h2 { font-size: 1.5em; font-weight: 700; }
-        .section-header .badge { background: var(--primary); color: white; font-size: 0.7em; padding: 3px 10px; border-radius: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; padding: 8px 0 32px; }
-        .tool-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; text-decoration: none; color: var(--text); transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
-        .tool-card:hover { transform: translateY(-3px); border-color: var(--primary); box-shadow: 0 8px 24px rgba(99,102,241,0.15); }
-        .tool-card h3 { color: var(--primary-light); margin-bottom: 6px; font-size: 1.05em; }
-        .tool-card p { color: var(--text-muted); font-size: 0.9em; line-height: 1.5; flex: 1; }
-        .tool-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
-        .tag { display: inline-block; background: var(--surface2); padding: 2px 8px; border-radius: 4px; font-size: 0.75em; color: var(--text-muted); }
-        .premium-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; padding: 8px 0 32px; }
-        .premium-card { background: linear-gradient(135deg, var(--surface) 0%, rgba(99,102,241,0.05) 100%); border: 1px solid rgba(99,102,241,0.3); border-radius: 12px; padding: 24px; text-decoration: none; color: var(--text); transition: transform 0.2s, box-shadow 0.2s; }
-        .premium-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(99,102,241,0.2); }
-        .premium-card h3 { color: var(--accent); margin-bottom: 6px; }
-        .premium-card p { color: var(--text-muted); font-size: 0.9em; margin-bottom: 12px; }
-        .price-tag { display: inline-block; background: var(--primary); color: white; padding: 4px 12px; border-radius: 6px; font-weight: 700; font-size: 0.9em; }
-        .content-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; padding: 8px 0 32px; }
-        .content-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; text-decoration: none; color: var(--text); transition: border-color 0.2s; }
-        .content-card:hover { border-color: var(--success); }
-        .content-card h3 { font-size: 1em; margin-bottom: 6px; color: var(--success); }
-        .content-card p { color: var(--text-muted); font-size: 0.85em; }
-        footer { border-top: 1px solid var(--border); text-align: center; padding: 32px 20px; margin-top: 40px; color: var(--text-muted); font-size: 0.85em; }
-        footer a { color: var(--primary-light); text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
-        @media (max-width: 640px) {
-            .hero h1 { font-size: 2em; }
-            .hero-stats { gap: 20px; }
-            .hero-stat .num { font-size: 1.5em; }
-            .tools-grid, .premium-grid, .content-grid { grid-template-columns: 1fr; }
-        }
+        .tool-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+        .tool-card h3 { color: var(--primary); margin-bottom: 8px; }
+        .tool-card p { color: var(--text-muted); font-size: 0.95em; margin-bottom: 12px; line-height: 1.5; }
+        footer { text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.85em; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1><span class="brand">AutoHustle</span>.online</h1>
-        <p class="tagline">Free developer tools, premium APIs, and expert guides — everything runs in your browser, your data stays private.</p>
-        <div class="hero-stats">
-            <div class="hero-stat"><span class="num">10+</span><span class="label">Free Tools</span></div>
-            <div class="hero-stat"><span class="num">2</span><span class="label">APIs</span></div>
-            <div class="hero-stat"><span class="num">30+</span><span class="label">Guides</span></div>
-        </div>
-    </div>
+    <header>
+        <h1><span>AutoHustle</span> Tools</h1>
+        <p>Free online tools — no sign-up, no ads, 100% client-side</p>
+    </header>
     <main>
         <div class="container">
-            <div class="section-header"><h2>Free Online Tools</h2><span class="badge">100% Free</span></div>
             <div class="tools-grid">
+                
                 <a href="/word-counter/" class="tool-card">
                     <h3>Word Counter & Text Analyzer</h3>
-                    <p>Count words, characters, sentences, paragraphs, and estimate reading time.</p>
-                    <div class="tool-tags"><span class="tag">Word count</span><span class="tag">Characters</span><span class="tag">Reading time</span></div>
+                    <p>Count words, characters, sentences, paragraphs, and estimate reading time from any text.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Word count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Character count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Sentence count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Paragraph count</span></div>
                 </a>
+                
                 <a href="/json-formatter/" class="tool-card">
                     <h3>JSON Formatter & Validator</h3>
-                    <p>Format, validate, minify, and beautify JSON with syntax highlighting.</p>
-                    <div class="tool-tags"><span class="tag">Format</span><span class="tag">Validate</span><span class="tag">Minify</span><span class="tag">Highlighting</span></div>
+                    <p>Format, validate, minify, and beautify JSON data with syntax highlighting and error detection.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Format/beautify</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Minify</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Validate</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Syntax highlighting</span></div>
                 </a>
+                
                 <a href="/password-generator/" class="tool-card">
                     <h3>Secure Password Generator</h3>
-                    <p>Generate strong passwords with customizable length and character types.</p>
-                    <div class="tool-tags"><span class="tag">Custom length</span><span class="tag">Strength meter</span><span class="tag">Bulk generate</span></div>
+                    <p>Generate strong, secure passwords with customizable length, character types, and strength meter.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Custom length</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Character types</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Strength meter</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Bulk generate</span></div>
                 </a>
+                
                 <a href="/color-palette/" class="tool-card">
                     <h3>Color Palette Generator</h3>
-                    <p>Generate color palettes, convert between HEX/RGB/HSL, and explore harmonies.</p>
-                    <div class="tool-tags"><span class="tag">Palettes</span><span class="tag">Harmonies</span><span class="tag">HEX/RGB/HSL</span></div>
+                    <p>Generate beautiful color palettes, convert between HEX/RGB/HSL, and explore color harmonies.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Random palettes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Color harmonies</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HEX/RGB/HSL conversion</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy colors</span></div>
                 </a>
+                
                 <a href="/markdown-preview/" class="tool-card">
                     <h3>Markdown Previewer & Editor</h3>
-                    <p>Write Markdown with live preview. Export to HTML. Full GFM support.</p>
-                    <div class="tool-tags"><span class="tag">Live preview</span><span class="tag">GFM</span><span class="tag">HTML export</span></div>
+                    <p>Write Markdown and see live preview side by side. Export to HTML. Supports full GFM syntax.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Live preview</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">GFM support</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HTML export</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy output</span></div>
                 </a>
+                
                 <a href="/unit-converter/" class="tool-card">
                     <h3>Universal Unit Converter</h3>
-                    <p>Convert between units of length, weight, temperature, speed, data, and time.</p>
-                    <div class="tool-tags"><span class="tag">Length</span><span class="tag">Weight</span><span class="tag">Temperature</span><span class="tag">Speed</span></div>
+                    <p>Convert between units of length, weight, temperature, speed, data, time, and more.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Length</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Weight</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Temperature</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Speed</span></div>
                 </a>
+                
                 <a href="/regex-tester/" class="tool-card">
                     <h3>Regex Tester & Debugger</h3>
-                    <p>Test regular expressions with live matching, group extraction, and pattern library.</p>
-                    <div class="tool-tags"><span class="tag">Live matching</span><span class="tag">Groups</span><span class="tag">Pattern library</span></div>
+                    <p>Test regular expressions in real-time with match highlighting, group extraction, and common pattern library.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Live matching</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Group extraction</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Flags support</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Common patterns</span></div>
                 </a>
+                
                 <a href="/lorem-ipsum/" class="tool-card">
                     <h3>Lorem Ipsum Generator</h3>
-                    <p>Generate placeholder text as paragraphs, sentences, or words. Plain and HTML output.</p>
-                    <div class="tool-tags"><span class="tag">Paragraphs</span><span class="tag">Sentences</span><span class="tag">HTML output</span></div>
+                    <p>Generate placeholder text in paragraphs, sentences, or words. Includes plain and HTML output.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Paragraphs/sentences/words</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HTML output</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy to clipboard</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Custom count</span></div>
                 </a>
+                
                 <a href="/meta-tag-generator/" class="tool-card">
                     <h3>SEO Meta Tag Generator</h3>
-                    <p>Generate SEO meta tags, Open Graph tags, and Twitter Cards for any page.</p>
-                    <div class="tool-tags"><span class="tag">Meta tags</span><span class="tag">Open Graph</span><span class="tag">Twitter Cards</span></div>
+                    <p>Generate SEO-optimized meta tags, Open Graph tags, and Twitter Cards for any webpage.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Title/description tags</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Open Graph</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Twitter Cards</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy HTML</span></div>
                 </a>
+                
                 <a href="/qr-code-generator/" class="tool-card">
                     <h3>QR Code Generator</h3>
-                    <p>Generate QR codes for URLs, text, Wi-Fi, and email. Download as PNG.</p>
-                    <div class="tool-tags"><span class="tag">URLs</span><span class="tag">Text</span><span class="tag">Wi-Fi</span><span class="tag">Download PNG</span></div>
+                    <p>Generate QR codes for URLs, text, Wi-Fi, email, and more. Download as PNG.</p>
+                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">URL QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Text QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">WiFi QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Download PNG</span></div>
                 </a>
-            </div>
-
-            <div class="section-header"><h2>Premium APIs</h2><span class="badge">Pro</span></div>
-            <div class="premium-grid">
-                <a href="https://buy.stripe.com/8x200j4SJ3gW7AO3Ni6c000" class="premium-card" target="_blank" rel="noopener">
-                    <h3>Inspirational Quotes API</h3>
-                    <p>Access thousands of curated quotes by category, author, and mood. Perfect for apps, bots, and content feeds.</p>
-                    <span class="price-tag">Get Access &rarr;</span>
-                </a>
-                <a href="https://buy.stripe.com/5kQ00jad3g3If3g1Fa6c007" class="premium-card" target="_blank" rel="noopener">
-                    <h3>Text Analysis API</h3>
-                    <p>Sentiment analysis, keyword extraction, readability scoring, and text summarization via simple REST endpoints.</p>
-                    <span class="price-tag">Get Access &rarr;</span>
-                </a>
-            </div>
-
-            <div class="section-header"><h2>Latest Guides</h2><span class="badge">Blog</span></div>
-            <div class="content-grid">
-                <a href="/choosing-between-baby-gear-and-strollers-expert-comparison-guide/" class="content-card">
-                    <h3>Baby Gear vs Strollers: Expert Comparison</h3>
-                    <p>Comprehensive guide to choosing the right baby gear for your family's needs.</p>
-                </a>
-                <a href="/choosing-between-breast-pumps-and-manual-pumps-for-nursing-a-comprehensive-guide/" class="content-card">
-                    <h3>Breast Pumps vs Manual Pumps Guide</h3>
-                    <p>Everything nursing parents need to know about pump options and features.</p>
-                </a>
-                <a href="/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/" class="content-card">
-                    <h3>High Chair vs Booster Seat Comparison</h3>
-                    <p>Find the perfect feeding solution for your child's age and your space.</p>
-                </a>
+                
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2026 <a href="https://autohustle.online">AutoHustle.online</a> &mdash; Free tools for developers, writers, and creators.</p>
-        <p style="margin-top:8px;">All free tools run 100% client-side. Your data never leaves your device.</p>
+        <p>10 free tools available | All tools run in your browser — your data never leaves your device</p>
     </footer>
 </body>
 </html>
