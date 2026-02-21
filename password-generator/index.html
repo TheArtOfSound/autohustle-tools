@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator - Free Online Tool</title>
+    <meta name="description" content="Generate strong, secure passwords with customizable length, character types, and strength meter.">
+    <meta name="keywords" content="free password generator online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/password-generator/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #22c55e;
+            --primary-dark: #16a34a;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>Secure</span> Password Generator</h1>
+            <p>Generate strong, secure passwords with customizable length, character types, and strength meter.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card">
+                <h2>🔐 Generated Password</h2>
+                <div style="display:flex;gap:10px;align-items:center;">
+                    <input type="text" id="password" readonly style="font-family:monospace;font-size:18px;letter-spacing:1px;" value="Click Generate!">
+                    <button onclick="copyPw()" title="Copy">📋</button>
+                    <button onclick="generate()" title="Regenerate">🔄</button>
+                </div>
+                <div id="strength" style="margin-top:12px;height:6px;border-radius:3px;background:var(--surface2);overflow:hidden;">
+                    <div id="strengthBar" style="height:100%;width:0%;transition:all 0.3s;border-radius:3px;"></div>
+                </div>
+                <div id="strengthText" style="text-align:center;margin-top:6px;font-size:0.9em;color:var(--text-muted);"></div>
+            </div>
+            <div class="card">
+                <h2>⚙️ Options</h2>
+                <div class="form-group">
+                    <label>Password Length: <strong id="lenVal">16</strong></label>
+                    <div class="range-container">
+                        <span>4</span>
+                        <input type="range" id="length" min="4" max="128" value="16" oninput="document.getElementById('lenVal').textContent=this.value;generate()">
+                        <span>128</span>
+                    </div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
+                    <label><input type="checkbox" id="upper" checked onchange="generate()"> Uppercase (A-Z)</label>
+                    <label><input type="checkbox" id="lower" checked onchange="generate()"> Lowercase (a-z)</label>
+                    <label><input type="checkbox" id="numbers" checked onchange="generate()"> Numbers (0-9)</label>
+                    <label><input type="checkbox" id="symbols" checked onchange="generate()"> Symbols (!@#$...)</label>
+                    <label><input type="checkbox" id="noAmbiguous" onchange="generate()"> Exclude ambiguous (0O1lI)</label>
+                </div>
+            </div>
+            <div class="card">
+                <h2>📋 Bulk Generate</h2>
+                <div style="display:flex;gap:10px;align-items:center;">
+                    <label>Count:</label>
+                    <input type="number" id="bulkCount" value="5" min="1" max="50" style="width:80px;">
+                    <button onclick="bulkGenerate()">Generate Batch</button>
+                    <button onclick="copyBulk()" class="btn-secondary">Copy All</button>
+                </div>
+                <div id="bulkOutput" class="output-area" style="margin-top:12px;min-height:60px;"></div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        const NUMS = '0123456789';
+        const SYMS = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+        const AMBIGUOUS = '0O1lI';
+
+        function getCharset() {
+            let chars = '';
+            if (document.getElementById('upper').checked) chars += UPPER;
+            if (document.getElementById('lower').checked) chars += LOWER;
+            if (document.getElementById('numbers').checked) chars += NUMS;
+            if (document.getElementById('symbols').checked) chars += SYMS;
+            if (document.getElementById('noAmbiguous').checked) {
+                chars = chars.split('').filter(c => !AMBIGUOUS.includes(c)).join('');
+            }
+            return chars || LOWER + NUMS;
+        }
+
+        function generateOne(len) {
+            const charset = getCharset();
+            const arr = new Uint32Array(len);
+            crypto.getRandomValues(arr);
+            return Array.from(arr, v => charset[v % charset.length]).join('');
+        }
+
+        function generate() {
+            const len = parseInt(document.getElementById('length').value);
+            const pw = generateOne(len);
+            document.getElementById('password').value = pw;
+            updateStrength(pw);
+        }
+
+        function updateStrength(pw) {
+            let score = 0;
+            if (pw.length >= 8) score++;
+            if (pw.length >= 12) score++;
+            if (pw.length >= 20) score++;
+            if (/[a-z]/.test(pw) && /[A-Z]/.test(pw)) score++;
+            if (/\d/.test(pw)) score++;
+            if (/[^a-zA-Z0-9]/.test(pw)) score++;
+            const pct = Math.min(100, (score / 6) * 100);
+            const bar = document.getElementById('strengthBar');
+            bar.style.width = pct + '%';
+            bar.style.background = pct < 40 ? '#ef4444' : pct < 70 ? '#f59e0b' : '#22c55e';
+            const labels = ['Very Weak', 'Weak', 'Fair', 'Good', 'Strong', 'Very Strong', 'Excellent'];
+            document.getElementById('strengthText').textContent = labels[score] + ' (' + Math.round(pct) + '%)';
+        }
+
+        function copyPw() {
+            navigator.clipboard.writeText(document.getElementById('password').value);
+            toast('Password copied!');
+        }
+
+        function bulkGenerate() {
+            const count = parseInt(document.getElementById('bulkCount').value) || 5;
+            const len = parseInt(document.getElementById('length').value);
+            const passwords = Array.from({length: Math.min(count, 50)}, () => generateOne(len));
+            document.getElementById('bulkOutput').textContent = passwords.join('\n');
+        }
+
+        function copyBulk() {
+            navigator.clipboard.writeText(document.getElementById('bulkOutput').textContent);
+            toast('All passwords copied!');
+        }
+
+        function toast(msg) {
+            const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+            document.body.appendChild(t); setTimeout(() => t.remove(), 2000);
+        }
+
+        generate();
+        
+    </script>
+</body>
+</html>
