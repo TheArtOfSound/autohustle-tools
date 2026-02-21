@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator - Free Online Tool</title>
+    <meta name="description" content="Format, validate, minify, and beautify JSON data with syntax highlighting and error detection.">
+    <meta name="keywords" content="free json formatter online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="/json-formatter/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #f59e0b;
+            --primary-dark: #d97706;
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --radius: 12px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.3);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
+        header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
+        header h1 { font-size: 1.8em; text-align: center; }
+        header h1 span { color: var(--primary); }
+        header p { text-align: center; color: var(--text-muted); margin-top: 8px; font-size: 1.05em; }
+        main { flex: 1; padding: 30px 0; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+        .card h2 { color: var(--primary); margin-bottom: 16px; font-size: 1.2em; }
+        textarea, input[type="text"], input[type="number"], input[type="url"], select {
+            width: 100%;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text);
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        textarea:focus, input:focus, select:focus { border-color: var(--primary); }
+        textarea { resize: vertical; min-height: 120px; font-family: 'Consolas', 'Monaco', monospace; }
+        button, .btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button:hover { background: var(--primary-dark); }
+        button:active { transform: scale(0.97); }
+        .btn-secondary {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover { background: var(--border); }
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+        .output-area {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            min-height: 100px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+        .stat {
+            background: var(--surface2);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat .value { font-size: 1.8em; font-weight: bold; color: var(--primary); }
+        .stat .label { font-size: 0.85em; color: var(--text-muted); margin-top: 4px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+        .hidden { display: none; }
+        .fade-in { animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+        label { display: block; margin-bottom: 6px; font-weight: 500; font-size: 0.95em; }
+        .form-group { margin-bottom: 16px; }
+        .range-container { display: flex; align-items: center; gap: 12px; }
+        .range-container input[type="range"] { flex: 1; }
+        .range-value { min-width: 50px; text-align: center; font-weight: bold; color: var(--primary); }
+        .color-preview { width: 40px; height: 40px; border-radius: 8px; border: 2px solid var(--border); }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>JSON</span> Formatter & Validator</h1>
+            <p>Format, validate, minify, and beautify JSON data with syntax highlighting and error detection.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h2>📥 Input JSON</h2>
+                    <textarea id="input" placeholder='{"key": "value"}' rows="16" style="font-family:monospace;font-size:13px;"></textarea>
+                    <div class="btn-group">
+                        <button onclick="formatJSON()">✨ Format</button>
+                        <button onclick="minifyJSON()" class="btn-secondary">📦 Minify</button>
+                        <button onclick="validateJSON()" class="btn-secondary">✅ Validate</button>
+                        <button onclick="clearAll()" class="btn-secondary">🗑️ Clear</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>📤 Output</h2>
+                    <div id="output" class="output-area" style="min-height:300px;overflow:auto;"></div>
+                    <div class="btn-group">
+                        <button onclick="copyOutput()">📋 Copy</button>
+                        <button onclick="downloadJSON()" class="btn-secondary">💾 Download</button>
+                    </div>
+                </div>
+            </div>
+            <div id="status" class="card hidden">
+                <div id="statusMsg"></div>
+            </div>
+            <div class="card">
+                <h2>📊 JSON Stats</h2>
+                <div class="stats">
+                    <div class="stat"><div class="value" id="keys">-</div><div class="label">Total Keys</div></div>
+                    <div class="stat"><div class="value" id="depth">-</div><div class="label">Max Depth</div></div>
+                    <div class="stat"><div class="value" id="size">-</div><div class="label">Size (bytes)</div></div>
+                    <div class="stat"><div class="value" id="arrays">-</div><div class="label">Arrays</div></div>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Free tool by <a href="/">AutoHustle Tools</a> | No sign-up required | 100% client-side</p>
+        </div>
+    </footer>
+    <script>
+    
+        function formatJSON() {
+            try {
+                const parsed = JSON.parse(document.getElementById('input').value);
+                const formatted = JSON.stringify(parsed, null, 2);
+                document.getElementById('output').textContent = formatted;
+                showStatus('✅ JSON formatted successfully!', 'success');
+                updateStats(parsed, formatted);
+            } catch(e) { showStatus('❌ Invalid JSON: ' + e.message, 'error'); }
+        }
+        function minifyJSON() {
+            try {
+                const parsed = JSON.parse(document.getElementById('input').value);
+                const minified = JSON.stringify(parsed);
+                document.getElementById('output').textContent = minified;
+                showStatus('📦 JSON minified! Saved ' + (document.getElementById('input').value.length - minified.length) + ' bytes', 'success');
+            } catch(e) { showStatus('❌ Invalid JSON: ' + e.message, 'error'); }
+        }
+        function validateJSON() {
+            try {
+                JSON.parse(document.getElementById('input').value);
+                showStatus('✅ Valid JSON!', 'success');
+            } catch(e) { showStatus('❌ Invalid JSON: ' + e.message, 'error'); }
+        }
+        function copyOutput() {
+            const text = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(text).then(() => toast('Copied!'));
+        }
+        function downloadJSON() {
+            const text = document.getElementById('output').textContent;
+            const blob = new Blob([text], {type: 'application/json'});
+            const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+            a.download = 'formatted.json'; a.click();
+        }
+        function clearAll() {
+            document.getElementById('input').value = '';
+            document.getElementById('output').textContent = '';
+            document.getElementById('status').classList.add('hidden');
+        }
+        function showStatus(msg, type) {
+            const el = document.getElementById('status');
+            el.classList.remove('hidden');
+            document.getElementById('statusMsg').innerHTML = `<span style="color:${type==='success'?'#22c55e':'#ef4444'}">${msg}</span>`;
+        }
+        function toast(msg) {
+            const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
+            document.body.appendChild(t); setTimeout(() => t.remove(), 2000);
+        }
+        function updateStats(obj, str) {
+            let keys = 0, arrays = 0;
+            function count(o, d) {
+                if (Array.isArray(o)) { arrays++; o.forEach(i => count(i, d+1)); return d; }
+                if (o && typeof o === 'object') { const ks = Object.keys(o); keys += ks.length; return Math.max(d, ...ks.map(k => count(o[k], d+1))); }
+                return d;
+            }
+            const depth = count(obj, 0);
+            document.getElementById('keys').textContent = keys;
+            document.getElementById('depth').textContent = depth;
+            document.getElementById('size').textContent = new Blob([str]).size;
+            document.getElementById('arrays').textContent = arrays;
+        }
+        
+    </script>
+</body>
+</html>
