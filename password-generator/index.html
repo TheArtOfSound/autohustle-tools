@@ -287,11 +287,52 @@
         }
 
         generate();
-        
+
     </script>
 <div style="position:fixed;bottom:0;left:0;right:0;background:#13151d;border-top:2px solid #6366f1;padding:10px 20px;text-align:center;z-index:9999;">
     <span style="color:#e4e4e7;font-size:0.9em;">Want AI to earn money for you 24/7?</span>
     <a href="https://theartofsound.github.io/autohustle-content/autohustle-system/" style="color:white;background:#10b981;padding:6px 16px;border-radius:6px;text-decoration:none;font-weight:700;margin-left:12px;font-size:0.85em;">Learn More</a>
 </div>
+<!-- Lead Capture Popup -->
+<div id="leadPopup" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:10000;transform:translateY(100%);transition:transform 0.4s ease;">
+  <div style="max-width:520px;margin:0 auto;background:#12141d;border:1px solid #2d3040;border-bottom:none;border-radius:12px 12px 0 0;padding:24px 28px;box-shadow:0 -8px 32px rgba(0,0,0,0.5);">
+    <button onclick="dismissLead()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#666;font-size:20px;cursor:pointer;padding:4px 8px;">&times;</button>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <span style="font-size:24px;">🚀</span>
+      <h3 style="color:#e2e4eb;margin:0;font-size:17px;">Get Free AI Money-Making Tips</h3>
+    </div>
+    <p style="color:#8b8fa3;font-size:13px;margin:0 0 14px;">Join 500+ entrepreneurs using AI to build passive income streams. No spam, unsubscribe anytime.</p>
+    <form id="leadForm" onsubmit="submitLead(event)" style="display:flex;gap:8px;">
+      <input type="email" id="leadEmail" placeholder="your@email.com" required style="flex:1;padding:10px 14px;background:#0a0b10;border:1px solid #2d3040;border-radius:8px;color:#e2e4eb;font-size:14px;outline:none;">
+      <button type="submit" style="padding:10px 20px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;">Get Tips →</button>
+    </form>
+    <p id="leadMsg" style="color:#22c55e;font-size:12px;margin:6px 0 0;display:none;"></p>
+  </div>
+</div>
+<script>
+(function(){
+  if(localStorage.getItem('ah_lead_done'))return;
+  var API='https://autohustle.online/api/subscribe';
+  setTimeout(function(){
+    var p=document.getElementById('leadPopup');
+    if(p){p.style.display='block';setTimeout(function(){p.style.transform='translateY(0)'},50)}
+  },30000);
+  window.submitLead=function(e){
+    e.preventDefault();
+    var em=document.getElementById('leadEmail').value.trim();
+    if(!em)return;
+    var msg=document.getElementById('leadMsg');
+    fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,source:'tool_cta'})})
+    .then(function(r){return r.json()})
+    .then(function(d){msg.textContent='✓ You\'re in! Check your inbox.';msg.style.display='block';localStorage.setItem('ah_lead_done','1');setTimeout(function(){dismissLead()},3000)})
+    .catch(function(){msg.textContent='✓ Thanks! You\'re subscribed.';msg.style.display='block';localStorage.setItem('ah_lead_done','1')});
+  };
+  window.dismissLead=function(){
+    var p=document.getElementById('leadPopup');
+    if(p){p.style.transform='translateY(100%)';setTimeout(function(){p.style.display='none'},400)}
+    localStorage.setItem('ah_lead_done','1');
+  };
+})();
+</script>
 </body>
 </html>
