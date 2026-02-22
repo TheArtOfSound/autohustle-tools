@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T15:11:06.391737+00:00",
+  "updated": "2026-02-22T15:11:45.561736+00:00",
   "revenue": {
     "total": 617.1540813095577,
     "last_7d": 617.1540813095577
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6459
+      "total_effort": 6479
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1064
+      "total_effort": 1070
     },
     {
       "id": "api_products",
@@ -107,14 +107,77 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2120
+      "total_effort": 2126
     }
   ],
   "actions_today": {
-    "total": 7249,
-    "successes": 3290
+    "total": 7258,
+    "successes": 3293
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 15:01:57"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:57"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:55"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "comprehensive_store_audit",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 15:01:21"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:21"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 15:01:21"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:21"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:01:18"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -261,69 +324,6 @@
       "outcome": "success",
       "reward": 0.5,
       "executed_at": "2026-02-22 15:00:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:00:27"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 15:00:23"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:00:23"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:00:21"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 15:00:20"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:00:20"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:00:18"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:00:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.15,
-      "executed_at": "2026-02-22 15:00:18"
     }
   ],
   "decisions": [
@@ -449,10 +449,82 @@
     }
   ],
   "assets": {
-    "total": 4777,
-    "published": 4583
+    "total": 4786,
+    "published": 4591
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Don't throw away that burnt non-stick pan just yet! \ud83c\udf73",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 15:01:57"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Don't Throw It Away: The Ultimate Guide to Bringing Your Burnt Non-Stick Pan Back to Life",
+      "status": "published",
+      "url": "/blog/dont-throw-it-away-the-ultimate-guide-to-bringing-your-burnt-non-stick-pan-back/",
+      "created_at": "2026-02-22 15:01:56"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Saved my burnt non-stick pan with these simple steps - thought I'd have to throw it away!",
+      "status": "published",
+      "url": "/blog/saved-my-burnt-non-stick-pan-with-these-simple-steps-thought-id-have-to-throw-it/",
+      "created_at": "2026-02-22 15:01:54"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Carrier for Newborns: Top Picks for Comfort and Convenience",
+      "status": "published",
+      "url": "/the-best-baby-carrier-for-newborns-top-picks-for-comfort-and-convenience/",
+      "created_at": "2026-02-22 15:01:21"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 15:01:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
+      "created_at": "2026-02-22 15:01:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
+      "created_at": "2026-02-22 15:01:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Jump Ropes for Beginners: Boost Weight Loss and Fitness",
+      "status": "published",
+      "url": "/find-the-best-jump-ropes-for-beginners-boost-weight-loss-and-fitness/",
+      "created_at": "2026-02-22 15:01:18"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
+      "status": "published",
+      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
+      "created_at": "2026-02-22 15:01:18"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -540,78 +612,6 @@
       "status": "published",
       "url": "/blog/why-every-smartphone-user-needs-a-360-ring-holder-and-how-it-changed-my-daily-ro/",
       "created_at": "2026-02-22 15:01:10"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Phone ring holders aren't just for grip - here's why the 360\u00b0 rotation matters",
-      "status": "published",
-      "url": "/blog/psa-phone-ring-holders-arent-just-for-grip-heres-why-the-360-rotation-matters/",
-      "created_at": "2026-02-22 15:01:09"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Prevent Wrist Pain from Push-Ups: Essential Tips for Fitness Enthusiasts",
-      "status": "published",
-      "url": "/how-to-prevent-wrist-pain-from-push-ups-essential-tips-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 15:01:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
-      "status": "published",
-      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
-      "created_at": "2026-02-22 15:01:05"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Never fumble with your phone while driving again",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 15:00:55"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why Auto-Clamping Wireless Car Chargers Are the Game-Changer Every Driver Needs in 2024",
-      "status": "published",
-      "url": "/blog/why-auto-clamping-wireless-car-chargers-are-the-game-changer-every-driver-needs/",
-      "created_at": "2026-02-22 15:00:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
-      "status": "published",
-      "url": "/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
-      "created_at": "2026-02-22 15:00:54"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 15:00:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
-      "created_at": "2026-02-22 15:00:54"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Electric vs Manual Can Opener: Which Lasts Longer?",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 15:00:54"
     }
   ],
   "crypto": {
