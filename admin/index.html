@@ -204,12 +204,17 @@
         const actionsToday = d.actions?.today_total || d.actions_today?.total || 0;
         const successesToday = d.actions?.today_successes || d.actions_today?.successes || 0;
 
-        // Calculate crypto totals
+        // Calculate crypto totals — prefer live Coinbase balances
         let cryptoValue = 0, cryptoInvested = 0;
-        (crypto.portfolio || []).forEach(p => {
-            cryptoValue += (p.current_value || 0);
-            cryptoInvested += (p.total_invested || 0);
-        });
+        const liveBalances = crypto.live_balances || [];
+        if (liveBalances.length > 0) {
+            liveBalances.forEach(b => { cryptoValue += (b.value || 0); });
+        } else {
+            (crypto.portfolio || []).forEach(p => {
+                cryptoValue += (p.current_value || 0);
+                cryptoInvested += (p.total_invested || 0);
+            });
+        }
         const cryptoPnl = cryptoValue - cryptoInvested;
 
         document.getElementById('lastUpdate').textContent = 'Updated: ' + timeAgo(d.updated || d.timestamp);
@@ -328,22 +333,36 @@
         html += '<div class="tab-content" id="tab-crypto">';
         html += '<div class="two-col">';
 
-        // Portfolio
+        // Portfolio — show LIVE Coinbase balances if available, else DB
         html += '<div class="section">';
-        html += '<div class="section-header"><h2>Portfolio</h2></div>';
-        if ((crypto.portfolio || []).length === 0) {
+        html += '<div class="section-header"><h2>Live Portfolio (Coinbase)</h2><span class="badge">' + (liveBalances.length > 0 ? 'LIVE' : 'CACHED') + '</span></div>';
+        const portfolioData = liveBalances.length > 0 ? liveBalances : (crypto.portfolio || []);
+        if (portfolioData.length === 0) {
             html += '<div class="empty">No crypto positions. Connect exchange keys in Settings.</div>';
         } else {
-            html += '<table><thead><tr><th>Coin</th><th>Qty</th><th>Avg Buy</th><th>Value</th><th>P&L</th></tr></thead><tbody>';
-            crypto.portfolio.forEach(p => {
-                const pnl = (p.current_value || 0) - (p.total_invested || 0);
-                html += `<tr>
-                    <td><strong>${esc(p.coin)}</strong><br><span style="color:var(--muted);font-size:0.78em">${esc(p.exchange || '')}</span></td>
-                    <td>${(p.quantity || 0).toFixed(6)}</td>
-                    <td>${fmt$(p.avg_buy_price)}</td>
-                    <td>${fmt$(p.current_value)}</td>
-                    <td class="${pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${fmt$(pnl)}</td>
-                </tr>`;
+            html += '<table><thead><tr><th>Coin</th><th>Qty</th><th>Price</th><th>Value</th><th>24h Change</th></tr></thead><tbody>';
+            portfolioData.forEach(p => {
+                if (liveBalances.length > 0) {
+                    const chg = p.change_24h || 0;
+                    const val = p.value || 0;
+                    if (val < 0.01) return; // skip dust
+                    html += `<tr>
+                        <td><strong>${esc(p.coin)}</strong><br><span style="color:var(--muted);font-size:0.78em">${esc(p.exchange || 'coinbase')}</span></td>
+                        <td>${p.quantity < 1 ? p.quantity.toFixed(8) : p.quantity.toFixed(2)}</td>
+                        <td>${fmt$(p.price)}</td>
+                        <td>${fmt$(val)}</td>
+                        <td class="${chg >= 0 ? 'pnl-pos' : 'pnl-neg'}">${chg >= 0 ? '+' : ''}${chg.toFixed(1)}%</td>
+                    </tr>`;
+                } else {
+                    const pnl = (p.current_value || 0) - (p.total_invested || 0);
+                    html += `<tr>
+                        <td><strong>${esc(p.coin)}</strong><br><span style="color:var(--muted);font-size:0.78em">${esc(p.exchange || '')}</span></td>
+                        <td>${(p.quantity || 0).toFixed(6)}</td>
+                        <td>${fmt$(p.avg_buy_price)}</td>
+                        <td>${fmt$(p.current_value)}</td>
+                        <td class="${pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${fmt$(pnl)}</td>
+                    </tr>`;
+                }
             });
             html += '</tbody></table>';
         }
