@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T08:53:10.835193+00:00",
+  "updated": "2026-02-22T08:53:14.826600+00:00",
   "revenue": {
     "total": 8.548690455863206,
     "last_7d": 8.548690455863206
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 268
+      "total_effort": 270
     },
     {
       "id": "stripe_premium",
@@ -111,10 +111,38 @@
     }
   ],
   "actions_today": {
-    "total": 2268,
-    "successes": 1047
+    "total": 2272,
+    "successes": 1049
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:11"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:11"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:11"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:11"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -296,37 +324,27 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": "publish_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": "publish_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": "publish_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:53"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  course_creator: score=0.806 (mean=0.161, pulls=36) \u2192 699 tokens\n  crypto_trading: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 625 tokens\n  digital_products: score=0.547 (mean=0.160, pulls=100) \u2192 635 tokens\n  micro_saas: score=0.538 (mean=0.150, pulls=100) \u2192 633 tokens\n  seo_content: score=0.609 (mean=0.221, pulls=100) \u2192 650 tokens\n  shopify_store: score=15.000 (mean=0.000, pulls=0) \u2192 4219 tokens\n  social_growth: score=0.546 (mean=0.159, pulls=100) \u2192 635 tokens\n  stripe_premium: score=0.540 (mean=0.153, pulls=100) \u2192 633 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 08:53:12"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  course_creator: score=0.806 (mean=0.161, pulls=36) \u2192 699 tokens\n  crypto_trading: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 625 tokens\n  digital_products: score=0.547 (mean=0.160, pulls=100) \u2192 635 tokens\n  micro_saas: score=0.538 (mean=0.150, pulls=100) \u2192 633 tokens\n  seo_content: score=0.609 (mean=0.221, pulls=100) \u2192 650 tokens\n  shopify_store: score=15.000 (mean=0.000, pulls=0) \u2192 4219 tokens\n  social_growth: score=0.546 (mean=0.159, pulls=100) \u2192 635 tokens\n  stripe_premium: score=0.540 (mean=0.153, pulls=100) \u2192 633 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 08:53:12"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  course_creator: score=0.806 (mean=0.161, pulls=36) \u2192 699 tokens\n  crypto_trading: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 625 tokens\n  digital_products: score=0.547 (mean=0.160, pulls=100) \u2192 635 tokens\n  micro_saas: score=0.538 (mean=0.150, pulls=100) \u2192 633 tokens\n  seo_content: score=0.609 (mean=0.221, pulls=100) \u2192 650 tokens\n  shopify_store: score=15.000 (mean=0.000, pulls=0) \u2192 4219 tokens\n  social_growth: score=0.546 (mean=0.159, pulls=100) \u2192 635 tokens\n  stripe_premium: score=0.540 (mean=0.153, pulls=100) \u2192 633 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 08:53:12"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  course_creator: score=0.806 (mean=0.161, pulls=36) \u2192 699 tokens\n  crypto_trading: score=0.537 (mean=0.150, pulls=100) \u2192 633 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 625 tokens\n  digital_products: score=0.547 (mean=0.160, pulls=100) \u2192 635 tokens\n  micro_saas: score=0.538 (mean=0.151, pulls=100) \u2192 633 tokens\n  seo_content: score=0.616 (mean=0.229, pulls=100) \u2192 652 tokens\n  shopify_store: score=15.000 (mean=0.000, pulls=0) \u2192 4217 tokens\n  social_growth: score=0.547 (mean=0.160, pulls=100) \u2192 635 tokens\n  stripe_premium: score=0.540 (mean=0.153, pulls=100) \u2192 633 tokens",
@@ -428,31 +446,37 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=96) \u2192 975 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1204 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 968 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 941 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 977 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.152, pulls=100) \u2192 971 tokens\n  seo_content: score=0.618 (mean=0.228, pulls=100) \u2192 1036 tokens\n  social_growth: score=0.549 (mean=0.159, pulls=100) \u2192 976 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 971 tokens",
       "outcome": null,
       "created_at": "2026-02-22 08:18:53"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=96) \u2192 975 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1203 tokens\n  crypto_trading: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 940 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 977 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.152, pulls=100) \u2192 970 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1032 tokens\n  social_growth: score=0.557 (mean=0.166, pulls=100) \u2192 982 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 08:16:26"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=96) \u2192 975 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1203 tokens\n  crypto_trading: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 940 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 976 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.152, pulls=100) \u2192 970 tokens\n  seo_content: score=0.615 (mean=0.225, pulls=100) \u2192 1033 tokens\n  social_growth: score=0.557 (mean=0.166, pulls=100) \u2192 982 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 08:16:13"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=96) \u2192 975 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1203 tokens\n  crypto_trading: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 940 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 976 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.152, pulls=100) \u2192 970 tokens\n  seo_content: score=0.615 (mean=0.225, pulls=100) \u2192 1033 tokens\n  social_growth: score=0.557 (mean=0.166, pulls=100) \u2192 982 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 970 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 08:15:21"
     }
   ],
   "assets": {
-    "total": 1616,
-    "published": 1496
+    "total": 1619,
+    "published": 1499
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 08:53:14"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
+      "status": "published",
+      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
+      "created_at": "2026-02-22 08:53:12"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Ultimate Guide to Baby Monitors That Actually Work in Tiny Spaces: 2024's Top Picks for Small Apartment Living",
+      "status": "published",
+      "url": "/blog/the-ultimate-guide-to-baby-monitors-that-actually-work-in-tiny-spaces-2024s-top/",
+      "created_at": "2026-02-22 08:53:11"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -588,30 +612,6 @@
       "status": "published",
       "url": "/blog/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little/",
       "created_at": "2026-02-22 08:47:31"
-    },
-    {
-      "strategy_id": "digital_products",
-      "asset_type": "product",
-      "title": "SkillSwap Architect: Complete Course Creation Templates for Freelancers Monetizing Their Expertise",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:47:24"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Floating Cloud Humidifier with LED Rain Effect",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 08:47:05"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Ergohuman High-Back Executive Chair",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:46:44"
     }
   ],
   "crypto": {
