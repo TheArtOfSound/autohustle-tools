@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T09:21:54.718742+00:00",
+  "updated": "2026-02-22T09:25:11.856555+00:00",
   "revenue": {
     "total": 57.42717073908383,
     "last_7d": 57.42717073908383
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 57.42717073908383,
-      "total_effort": 294
+      "total_effort": 290
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2413
+      "total_effort": 2399
     },
     {
       "id": "social_growth",
@@ -107,84 +107,14 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 37
+      "total_effort": 33
     }
   ],
   "actions_today": {
-    "total": 2395,
-    "successes": 1110
+    "total": 2385,
+    "successes": 1105
   },
   "recent_actions": [
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 09:10:00"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 09:10:00"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 09:09:26"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 09:09:26"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 09:09:23"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 09:09:23"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 09:09:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 09:09:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 09:09:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 09:09:05"
-    },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
@@ -324,15 +254,79 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 09:05:54"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:05:47"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "list_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:05:37"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 09:05:36"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 09:05:30"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:05:30"
     }
   ],
   "decisions": [
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.538 (mean=0.150, pulls=100) \u2192 930 tokens\n  course_creator: score=0.807 (mean=0.161, pulls=36) \u2192 1146 tokens\n  crypto_trading: score=0.538 (mean=0.150, pulls=100) \u2192 930 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 904 tokens\n  digital_products: score=0.548 (mean=0.161, pulls=100) \u2192 938 tokens\n  micro_saas: score=0.541 (mean=0.153, pulls=100) \u2192 933 tokens\n  seo_content: score=0.616 (mean=0.229, pulls=100) \u2192 993 tokens\n  shopify_store: score=1.064 (mean=0.150, pulls=18) \u2192 1351 tokens\n  social_growth: score=0.547 (mean=0.160, pulls=100) \u2192 937 tokens\n  stripe_premium: score=0.544 (mean=0.156, pulls=100) \u2192 935 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 09:09:01"
-    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.538 (mean=0.150, pulls=100) \u2192 926 tokens\n  course_creator: score=0.807 (mean=0.161, pulls=36) \u2192 1140 tokens\n  crypto_trading: score=0.538 (mean=0.150, pulls=100) \u2192 926 tokens\n  data_scraper: score=0.505 (mean=0.117, pulls=100) \u2192 900 tokens\n  digital_products: score=0.548 (mean=0.161, pulls=100) \u2192 934 tokens\n  micro_saas: score=0.541 (mean=0.153, pulls=100) \u2192 929 tokens\n  seo_content: score=0.616 (mean=0.229, pulls=100) \u2192 988 tokens\n  shopify_store: score=1.119 (mean=0.150, pulls=16) \u2192 1387 tokens\n  social_growth: score=0.547 (mean=0.160, pulls=100) \u2192 934 tokens\n  stripe_premium: score=0.544 (mean=0.156, pulls=100) \u2192 931 tokens",
@@ -446,77 +440,19 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.544 (mean=0.150, pulls=98) \u2192 973 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1205 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 969 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 942 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 978 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 977 tokens\n  micro_saas: score=0.542 (mean=0.152, pulls=100) \u2192 971 tokens\n  seo_content: score=0.615 (mean=0.225, pulls=100) \u2192 1034 tokens\n  social_growth: score=0.547 (mean=0.157, pulls=100) \u2192 976 tokens\n  stripe_premium: score=0.540 (mean=0.150, pulls=100) \u2192 969 tokens",
       "outcome": null,
       "created_at": "2026-02-22 08:32:20"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.544 (mean=0.150, pulls=98) \u2192 973 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1205 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 969 tokens\n  data_scraper: score=0.508 (mean=0.118, pulls=100) \u2192 941 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 978 tokens\n  dropshipping: score=0.549 (mean=0.159, pulls=100) \u2192 977 tokens\n  micro_saas: score=0.542 (mean=0.152, pulls=100) \u2192 971 tokens\n  seo_content: score=0.618 (mean=0.228, pulls=100) \u2192 1037 tokens\n  social_growth: score=0.547 (mean=0.157, pulls=100) \u2192 975 tokens\n  stripe_premium: score=0.540 (mean=0.150, pulls=100) \u2192 969 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 08:31:32"
     }
   ],
   "assets": {
-    "total": 1773,
-    "published": 1615
+    "total": 1765,
+    "published": 1608
   },
   "recent_assets": [
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Beaded Phone Chain Strap - Boho Pearl Mobile Lanyard Charm",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 09:10:00"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Maximize Natural Light in Your Home Office: A Step-by-Step Guide",
-      "status": "published",
-      "url": "/maximize-natural-light-in-your-home-office-a-step-by-step-guide/",
-      "created_at": "2026-02-22 09:09:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
-      "status": "published",
-      "url": "/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-22 09:09:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Scanners for Small Business Use in Home Offices",
-      "status": "published",
-      "url": "/the-best-scanners-for-small-business-use-in-home-offices/",
-      "created_at": "2026-02-22 09:09:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Printer for Home Office Printing Needs: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-printer-for-home-office-printing-needs-top-picks-and-reviews/",
-      "created_at": "2026-02-22 09:09:04"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Cat Scratching Post Height for a Happy Feline",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-cat-scratching-post-height-for-a-happy-feline/",
-      "created_at": "2026-02-22 09:09:04"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Automatic Feeders for Multiple Cats | Top Pet Care Products",
-      "status": "published",
-      "url": "/the-best-automatic-feeders-for-multiple-cats-top-pet-care-products/",
-      "created_at": "2026-02-22 09:09:03"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Dell vs HP Laptop for Home Office: Complete 2024 Comparison Guide",
-      "status": "published",
-      "url": "/dell-vs-hp-laptop-for-home-office-complete-2024-comparison-guide/",
-      "created_at": "2026-02-22 09:09:02"
-    },
     {
       "strategy_id": "shopify_store",
       "asset_type": "product",
@@ -612,6 +548,70 @@
       "status": "published",
       "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
       "created_at": "2026-02-22 09:08:20"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "USB-C to Lightning Fast Charging Cable - Braided 6ft (2-Pack)",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 09:07:51"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Butterfly Hair Claw Clips - Holographic Iridescent Set (4-Pack)",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 09:07:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
+      "status": "published",
+      "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
+      "created_at": "2026-02-22 09:07:33"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
+      "status": "published",
+      "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
+      "created_at": "2026-02-22 09:07:33"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
+      "status": "published",
+      "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
+      "created_at": "2026-02-22 09:07:32"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
+      "status": "published",
+      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
+      "created_at": "2026-02-22 09:07:31"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 09:07:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Blackhead Remover Vacuum - 4-in-1 Pore Cleaner with LED Display",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 09:07:09"
     }
   ],
   "crypto": {
