@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T18:35:54.894347+00:00",
+  "updated": "2026-02-22T18:36:02.254563+00:00",
   "revenue": {
-    "total": 23.55328149378194,
-    "last_7d": 23.55328149378194
+    "total": 23.707099228570787,
+    "last_7d": 23.707099228570787
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 818.3117209022936,
-      "total_effort": 1432
+      "total_revenue": 818.4655386370824,
+      "total_effort": 1434
     },
     {
       "id": "digital_products",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1052
+      "total_effort": 1053
     },
     {
       "id": "course_creator",
@@ -107,14 +107,98 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 4826
+      "total_effort": 4841
     }
   ],
   "actions_today": {
-    "total": 13006,
-    "successes": 5876
+    "total": 13018,
+    "successes": 5882
   },
   "recent_actions": [
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "setup_brand",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "check_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "optimize_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:02"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:02"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:00"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "check_conversions",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:00"
+    },
     {
       "strategy_id": "content_optimizer",
       "action_type": null,
@@ -240,90 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 18:34:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:49"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:34:47"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:34:47"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:44"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:44"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 18:34:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:34:43"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:34:30"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:30"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:34:23"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:34:23"
     }
   ],
   "decisions": [
@@ -449,10 +449,26 @@
     }
   ],
   "assets": {
-    "total": 8778,
-    "published": 8536
+    "total": 8780,
+    "published": 8539
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
+      "status": "published",
+      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
+      "created_at": "2026-02-22 18:35:07"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
+      "status": "published",
+      "url": "/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
+      "created_at": "2026-02-22 18:35:03"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -553,8 +569,8 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Stop wasting money on the wrong yoga mat! \ud83e\uddd8\u200d\u2640\ufe0f",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "/blog/stop-wasting-money-on-the-wrong-yoga-mat/",
       "created_at": "2026-02-22 18:34:42"
     },
     {
@@ -596,22 +612,6 @@
       "status": "published",
       "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
       "created_at": "2026-02-22 18:34:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Struggling to find the right yoga mat thickness? Here's what actually matters",
-      "status": "published",
-      "url": "/blog/struggling-to-find-the-right-yoga-mat-thickness-heres-what-actually-matters/",
-      "created_at": "2026-02-22 18:34:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
-      "status": "published",
-      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
-      "created_at": "2026-02-22 18:34:32"
     }
   ],
   "crypto": {
@@ -631,12 +631,12 @@
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 7606.875636573067,
+        "quantity": 7566.2441365730665,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 183.394619977898,
+        "total_invested": 182.41503271268684,
         "exchange": "coinbase",
-        "current_value": 203.8642670601582,
-        "updated_at": "2026-02-22 18:34:41"
+        "current_value": 200.50546961918624,
+        "updated_at": "2026-02-22 18:35:07"
       },
       {
         "id": 60,
@@ -653,12 +653,12 @@
         "id": 59,
         "strategy_id": "crypto_trading",
         "coin": "rave",
-        "quantity": 139.34310046629423,
+        "quantity": 136.01810046629424,
         "avg_buy_price": 0.6970827246711545,
-        "total_invested": 97.13366813717082,
+        "total_invested": 94.81586807763922,
         "exchange": "coinbase",
-        "current_value": 94.37708194582109,
-        "updated_at": "2026-02-22 18:34:43"
+        "current_value": 92.1250594458211,
+        "updated_at": "2026-02-22 18:35:11"
       },
       {
         "id": 35,
@@ -872,6 +872,33 @@
     ],
     "trades": [
       {
+        "coin": "rave",
+        "side": "sell",
+        "quantity": 3.3249999999999997,
+        "price": 0.6773,
+        "total": 2.37055,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 18:35:11"
+      },
+      {
+        "coin": "lrds",
+        "side": "sell",
+        "quantity": 40.6315,
+        "price": 0.0265,
+        "total": 1.133405,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 18:35:07"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.922,
+        "total": 4.178043,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 18:35:01"
+      },
+      {
         "coin": "plu",
         "side": "buy",
         "quantity": 12.042401264139997,
@@ -933,33 +960,6 @@
         "total": 1.0,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 18:34:22"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.9928129367139147,
-        "price": 0.25045,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 18:34:21"
-      },
-      {
-        "coin": "rave",
-        "side": "sell",
-        "quantity": 3.3249999999999997,
-        "price": 0.6773,
-        "total": 2.37055,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 18:34:20"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.922,
-        "total": 4.39794,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 18:34:18"
       }
     ],
     "prices": [
