@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T21:20:38.765620+00:00",
+  "updated": "2026-02-22T21:21:43.622939+00:00",
   "revenue": {
     "total": 38.37991852661909,
     "last_7d": 38.37991852661909
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 3120
+      "total_effort": 3108
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1346
+      "total_effort": 1340
     },
     {
       "id": "stripe_premium",
@@ -107,154 +107,14 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6221
+      "total_effort": 6194
     }
   ],
   "actions_today": {
-    "total": 15612,
-    "successes": 6991
+    "total": 15592,
+    "successes": 6984
   },
   "recent_actions": [
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:20:36"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "list_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:20:36"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:20:26"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:20:26"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 21:18:13"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:18:13"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:16:27"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_and_publish",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:16:27"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:16:22"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "organize_store",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:16:22"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:16:20"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:16:20"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:16:17"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "add_product_images",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:16:17"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:15:42"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "deep_product_development",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:15:42"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:15:01"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:15:01"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "daily_theme_refresh",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:15:01"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "comprehensive_store_audit",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:15:01"
-    },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
@@ -324,6 +184,146 @@
       "outcome": "success",
       "reward": 0.5,
       "executed_at": "2026-02-22 21:12:51"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:12:51"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 21:12:51"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:12:51"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:12:51"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:32"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:32"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "check_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "setup_brand",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:31"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:29"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": "update_index",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:29"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "check_conversions",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 21:11:27"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": "analyze_performance",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:11:27"
     }
   ],
   "decisions": [
@@ -449,18 +449,10 @@
     }
   ],
   "assets": {
-    "total": 10546,
+    "total": 10545,
     "published": 10315
   },
   "recent_assets": [
-    {
-      "strategy_id": "data_scraper",
-      "asset_type": "product",
-      "title": "Market Intelligence Report: Crypto Trends Analysis",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 21:18:13"
-    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -611,6 +603,14 @@
       "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
       "status": "published",
       "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 21:11:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
       "created_at": "2026-02-22 21:11:20"
     }
   ],
