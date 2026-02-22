@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T12:22:49.460478+00:00",
+  "updated": "2026-02-22T12:23:18.035201+00:00",
   "revenue": {
     "total": 246.89581729980938,
     "last_7d": 246.89581729980938
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1190
+      "total_effort": 1200
     },
     {
       "id": "freelance",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 103
+      "total_effort": 104
     },
     {
       "id": "seo_content",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 166
+      "total_effort": 168
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 470
+      "total_effort": 473
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 443
+      "total_effort": 450
     },
     {
       "id": "course_creator",
@@ -111,10 +111,108 @@
     }
   ],
   "actions_today": {
-    "total": 4956,
-    "successes": 2273
+    "total": 4970,
+    "successes": 2280
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 12:23:15"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:15"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "check_conversions",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": "update_index",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": "analyze_performance",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:14"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 12:23:13"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 12:23:13"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 12:23:05"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:23:05"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -226,104 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 12:22:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 12:22:25"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:22:25"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 12:22:23"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:22:23"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:22:19"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:22:19"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:20:44"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_and_publish",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:20:44"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:20:42"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_and_publish",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:20:42"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:20:41"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "optimize_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 12:20:41"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:20:38"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:20:38"
     }
   ],
   "decisions": [
@@ -449,10 +449,26 @@
     }
   ],
   "assets": {
-    "total": 3298,
+    "total": 3300,
     "published": 3120
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 12:23:15"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "EchoPulse: AI-Driven Micro-Moment Writing Prompts for Indie Authors and Content Creators",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 12:23:05"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -596,22 +612,6 @@
       "status": "published",
       "url": "/choosing-the-perfect-rice-cooker-size-for-your-family-a-step-by-step-guide/",
       "created_at": "2026-02-22 12:19:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Discover the Best Solution for Back Pain: Ergonomic Chair vs Standing Desk Comparison",
-      "status": "published",
-      "url": "/discover-the-best-solution-for-back-pain-ergonomic-chair-vs-standing-desk-comparison/",
-      "created_at": "2026-02-22 12:19:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
-      "status": "published",
-      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
-      "created_at": "2026-02-22 12:19:52"
     }
   ],
   "crypto": {
