@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T21:35:13.408439+00:00",
+  "updated": "2026-02-22T21:37:23.315677+00:00",
   "revenue": {
     "total": 38.37991852661909,
     "last_7d": 38.37991852661909
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 3130
+      "total_effort": 3140
     },
     {
       "id": "freelance",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 15730,
+    "total": 15732,
     "successes": 7041
   },
   "recent_actions": [
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:37:21"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 21:37:21"
+    },
     {
       "strategy_id": "digital_products",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 21:30:46"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 21:30:44"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 21:30:43"
     }
   ],
   "decisions": [
