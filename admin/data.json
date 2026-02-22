@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T15:44:50.126198+00:00",
+  "updated": "2026-02-22T15:45:28.857563+00:00",
   "revenue": {
     "total": 628.2682004650536,
     "last_7d": 628.2682004650536
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 786.664463266,
-      "total_effort": 810
+      "total_effort": 814
     },
     {
       "id": "digital_products",
@@ -111,10 +111,38 @@
     }
   ],
   "actions_today": {
-    "total": 7945,
-    "successes": 3613
+    "total": 7949,
+    "successes": 3615
   },
   "recent_actions": [
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:36:41"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:36:41"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:36:35"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:36:35"
+    },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
@@ -296,34 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 15:35:10"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 15:35:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:35:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:35:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:35:05"
     }
   ],
   "decisions": [
@@ -449,16 +449,40 @@
     }
   ],
   "assets": {
-    "total": 5295,
-    "published": 5095
+    "total": 5298,
+    "published": 5099
   },
   "recent_assets": [
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
+      "title": "Find Your Perfect Rice Cooker Size",
+      "status": "published",
+      "url": "/blog/find-your-perfect-rice-cooker-size/",
+      "created_at": "2026-02-22 15:36:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 15:36:46"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
+      "status": "published",
+      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
+      "created_at": "2026-02-22 15:36:42"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
       "title": "Space-saving hydration game changer",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "/blog/space-saving-hydration-game-changer/",
       "created_at": "2026-02-22 15:36:27"
     },
     {
@@ -588,30 +612,6 @@
       "status": "published",
       "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
       "created_at": "2026-02-22 15:35:23"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 15:35:21"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
-      "status": "published",
-      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
-      "created_at": "2026-02-22 15:35:18"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
-      "status": "published",
-      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
-      "created_at": "2026-02-22 15:35:16"
     }
   ],
   "crypto": {
@@ -719,12 +719,12 @@
         "id": 35,
         "strategy_id": "crypto_trading",
         "coin": "up",
-        "quantity": 721.9563974588405,
-        "avg_buy_price": 0.03813030965242176,
-        "total_invested": 27.528420990652464,
+        "quantity": 747.2344561039365,
+        "avg_buy_price": 0.03817867438741918,
+        "total_invested": 28.528420990652464,
         "exchange": "coinbase",
-        "current_value": 28.394545112056193,
-        "updated_at": "2026-02-22 15:35:08"
+        "current_value": 29.56059508347173,
+        "updated_at": "2026-02-22 15:36:33"
       },
       {
         "id": 15,
@@ -752,12 +752,12 @@
         "id": 69,
         "strategy_id": "crypto_trading",
         "coin": "flock",
-        "quantity": 77.81338385152617,
-        "avg_buy_price": 0.06425629824221986,
-        "total_invested": 5.0,
+        "quantity": 93.36548338496318,
+        "avg_buy_price": 0.06426357774276055,
+        "total_invested": 6.0,
         "exchange": "coinbase",
-        "current_value": 5.057869950349201,
-        "updated_at": "2026-02-22 15:35:10"
+        "current_value": 6.003400581653132,
+        "updated_at": "2026-02-22 15:36:35"
       },
       {
         "id": 38,
@@ -827,6 +827,24 @@
       }
     ],
     "trades": [
+      {
+        "coin": "flock",
+        "side": "buy",
+        "quantity": 15.552099533437016,
+        "price": 0.0643,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 15:36:35"
+      },
+      {
+        "coin": "up",
+        "side": "buy",
+        "quantity": 25.278058645096056,
+        "price": 0.03956,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 15:36:33"
+      },
       {
         "coin": "rave",
         "side": "buy",
@@ -898,24 +916,6 @@
         "total": 1.0,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 15:35:08"
-      },
-      {
-        "coin": "rave",
-        "side": "buy",
-        "quantity": 1.5073516372505662,
-        "price": 0.6978,
-        "total": 1.051829972473445,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:35:06"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 62.09149778473703,
-        "price": 0.0242,
-        "total": 1.502614246390636,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:35:04"
       }
     ],
     "prices": [
