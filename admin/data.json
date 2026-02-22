@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T16:10:50.225643+00:00",
+  "updated": "2026-02-22T16:10:54.966441+00:00",
   "revenue": {
     "total": 2.4231681999031722,
     "last_7d": 2.4231681999031722
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 779
+      "total_effort": 782
     },
     {
       "id": "stripe_premium",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 8837,
-    "successes": 4020
+    "total": 8839,
+    "successes": 4021
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 16:10:53"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:10:53"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-02-22 16:09:51"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:09:51"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 16:09:51"
     }
   ],
   "decisions": [
@@ -449,10 +449,18 @@
     }
   ],
   "assets": {
-    "total": 5844,
+    "total": 5845,
     "published": 5630
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 16:10:53"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -604,14 +612,6 @@
       "status": "published",
       "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
       "created_at": "2026-02-22 16:08:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
-      "status": "published",
-      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
-      "created_at": "2026-02-22 16:08:39"
     }
   ],
   "crypto": {
