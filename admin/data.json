@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T19:13:12.384081+00:00",
+  "updated": "2026-02-22T19:13:31.693467+00:00",
   "revenue": {
-    "total": 33.60270621774262,
-    "last_7d": 33.60270621774262
+    "total": 33.803570952531466,
+    "last_7d": 33.803570952531466
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 828.3611456262548,
-      "total_effort": 1626
+      "total_revenue": 828.5620103610437,
+      "total_effort": 1630
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 13362
+      "total_effort": 13382
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1933
+      "total_effort": 1940
     },
     {
       "id": "api_products",
@@ -111,10 +111,108 @@
     }
   ],
   "actions_today": {
-    "total": 14097,
-    "successes": 6357
+    "total": 14111,
+    "successes": 6364
   },
   "recent_actions": [
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 19:12:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 19:12:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:50"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:48"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:47"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 19:12:47"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "publish_drafts_as_blog",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:12:43"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:12:32"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:32"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:12:24"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:12:24"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -226,104 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:11:14"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:11:14"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 19:10:48"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:45"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:10:42"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:42"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:42"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:10:38"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:38"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:10:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:10:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:10:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:10:34"
     }
   ],
   "decisions": [
@@ -449,10 +449,138 @@
     }
   ],
   "assets": {
-    "total": 9661,
-    "published": 9431
+    "total": 9677,
+    "published": 9448
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Picks for Best Baby Monitors for Small Apartments: Expert Reviews",
+      "status": "published",
+      "url": "/top-picks-for-best-baby-monitors-for-small-apartments-expert-reviews/",
+      "created_at": "2026-02-22 19:12:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Swings for Twins: Top Picks for Safe and Soothing Sleep",
+      "status": "published",
+      "url": "/the-best-baby-swings-for-twins-top-picks-for-safe-and-soothing-sleep/",
+      "created_at": "2026-02-22 19:12:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:12:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:12:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:12:47"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Why Resistance Bands Are the Game-Changer Your Home Gym Has Been Missing",
+      "status": "published",
+      "url": "/blog/why-resistance-bands-are-the-game-changer-your-home-gym-has-been-missing/",
+      "created_at": "2026-02-22 19:12:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Swing for Soothing Your Little One: Top Picks for Calming and Relaxation",
+      "status": "published",
+      "url": "/the-best-baby-swing-for-soothing-your-little-one-top-picks-for-calming-and-relaxation/",
+      "created_at": "2026-02-22 19:12:47"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Home gym on a budget? Resistance bands might be your best investment",
+      "status": "published",
+      "url": "/blog/home-gym-on-a-budget-resistance-bands-might-be-your-best-investment/",
+      "created_at": "2026-02-22 19:12:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Sleep Peacefully: Expert-Approved Baby Monitors with Night Vision",
+      "status": "published",
+      "url": "/blog/sleep-peacefully-expert-approved-baby-monitors-with-night-vision/",
+      "created_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
+      "created_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Carrier for Newborns: Top Picks for Comfort and Convenience",
+      "status": "published",
+      "url": "/the-best-baby-carrier-for-newborns-top-picks-for-comfort-and-convenience/",
+      "created_at": "2026-02-22 19:12:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 19:12:42"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
+      "status": "published",
+      "url": "/blog/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
+      "created_at": "2026-02-22 19:12:41"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 19:12:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:12:34"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -481,137 +609,9 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Simplify Your Workspace",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 19:12:21"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Tame the Noise Monster in Your Home Office",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-tame-the-noise-monster-in-your-home-office/",
-      "created_at": "2026-02-22 19:12:19"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Simplify Your Workspace",
       "status": "published",
       "url": "/blog/simplify-your-workspace/",
-      "created_at": "2026-02-22 19:12:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 19:12:18"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
-      "status": "published",
-      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
-      "created_at": "2026-02-22 19:12:15"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
-      "status": "published",
-      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
-      "created_at": "2026-02-22 19:12:15"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Find Your Perfect Rice Cooker Size",
-      "status": "published",
-      "url": "/blog/find-your-perfect-rice-cooker-size/",
-      "created_at": "2026-02-22 19:11:58"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
-      "status": "published",
-      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
-      "created_at": "2026-02-22 19:11:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
-      "status": "published",
-      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
-      "created_at": "2026-02-22 19:11:53"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "7 Best Vegetable Spiralizers for Zucchini Noodles in 2024 (Tested & Reviewed)",
-      "status": "published",
-      "url": "/7-best-vegetable-spiralizers-for-zucchini-noodles-in-2024-tested-reviewed/",
-      "created_at": "2026-02-22 19:11:14"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get the Best Headset for Seamless Online Gaming and Video Calls from Your Home Office",
-      "status": "published",
-      "url": "/get-the-best-headset-for-seamless-online-gaming-and-video-calls-from-your-home-office/",
-      "created_at": "2026-02-22 19:11:13"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top-Rated Flea Shampoos for Puppies Under 12 Weeks: Expert Reviews",
-      "status": "published",
-      "url": "/top-rated-flea-shampoos-for-puppies-under-12-weeks-expert-reviews/",
-      "created_at": "2026-02-22 19:11:13"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Perfect Rice Cooker Size for Your Family: A Step-by-Step Guide",
-      "status": "published",
-      "url": "/choosing-the-perfect-rice-cooker-size-for-your-family-a-step-by-step-guide/",
-      "created_at": "2026-02-22 19:11:12"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Discover the Best Laptops Stands for Ergonomic Comfort in Home Office",
-      "status": "published",
-      "url": "/discover-the-best-laptops-stands-for-ergonomic-comfort-in-home-office/",
-      "created_at": "2026-02-22 19:11:11"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Unlock Your Dog's Health: Grain Free vs Regular Dog Food Benefits for a Happier Pet",
-      "status": "published",
-      "url": "/unlock-your-dog-s-health-grain-free-vs-regular-dog-food-benefits-for-a-happier-pet/",
-      "created_at": "2026-02-22 19:11:11"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Food Processor for Making Baby Food: Top Picks for Safe and Healthy Meal Prep",
-      "status": "published",
-      "url": "/the-best-food-processor-for-making-baby-food-top-picks-for-safe-and-healthy-meal-prep/",
-      "created_at": "2026-02-22 19:11:07"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Headsets for Seamless Online Meetings: Expert Picks",
-      "status": "published",
-      "url": "/top-headsets-for-seamless-online-meetings-expert-picks/",
-      "created_at": "2026-02-22 19:11:06"
+      "created_at": "2026-02-22 19:12:21"
     }
   ],
   "crypto": {
@@ -631,34 +631,34 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 946.557820585378,
-        "avg_buy_price": 0.25179387006315723,
-        "total_invested": 238.33745688373995,
+        "quantity": 954.5786810501322,
+        "avg_buy_price": 0.25177333378045347,
+        "total_invested": 240.33745688373995,
         "exchange": "coinbase",
-        "current_value": 235.89167446808202,
-        "updated_at": "2026-02-22 19:12:05"
+        "current_value": 238.2342014296815,
+        "updated_at": "2026-02-22 19:12:30"
       },
       {
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 5900.3526365730495,
+        "quantity": 5859.721136573049,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 142.25195483902905,
+        "total_invested": 141.2723675738179,
         "exchange": "coinbase",
-        "current_value": 161.66966224210157,
-        "updated_at": "2026-02-22 19:12:14"
+        "current_value": 161.72830336941615,
+        "updated_at": "2026-02-22 19:12:52"
       },
       {
         "id": 70,
         "strategy_id": "crypto_trading",
         "coin": "arpa",
-        "quantity": 10364.585392975061,
-        "avg_buy_price": 0.010774411552157899,
-        "total_invested": 111.67230859139751,
+        "quantity": 10507.620316997132,
+        "avg_buy_price": 0.01077339862531165,
+        "total_invested": 113.20278227843367,
         "exchange": "coinbase",
-        "current_value": 110.90106370483315,
-        "updated_at": "2026-02-22 19:12:13"
+        "current_value": 112.43153739186931,
+        "updated_at": "2026-02-22 19:12:32"
       },
       {
         "id": 74,
@@ -861,6 +861,60 @@
     ],
     "trades": [
       {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.912,
+        "total": 4.350239999999999,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:53"
+      },
+      {
+        "coin": "lrds",
+        "side": "sell",
+        "quantity": 40.6315,
+        "price": 0.0276,
+        "total": 1.180452,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:52"
+      },
+      {
+        "coin": "arpa",
+        "side": "buy",
+        "quantity": 143.03492402207095,
+        "price": 0.0107,
+        "total": 1.530473687036159,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:32"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.006891853988861,
+        "price": 0.24957,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:30"
+      },
+      {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 6.8495,
+        "price": 0.3823,
+        "total": 2.7563829999999996,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:27"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.013968610765464,
+        "price": 0.24913,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:12:21"
+      },
+      {
         "coin": "plu",
         "side": "buy",
         "quantity": 6.6943365912438075,
@@ -895,60 +949,6 @@
         "total": 1.5292407770361591,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 19:12:13"
-      },
-      {
-        "coin": "agld",
-        "side": "sell",
-        "quantity": 6.8495,
-        "price": 0.3817,
-        "total": 2.7520569999999998,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:12:09"
-      },
-      {
-        "coin": "arpa",
-        "side": "buy",
-        "quantity": 133.3080871061831,
-        "price": 0.0107,
-        "total": 1.4263965320361591,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:12:07"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 4.0126800690180975,
-        "price": 0.24921,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:12:05"
-      },
-      {
-        "coin": "plu",
-        "side": "buy",
-        "quantity": 6.6943365912438075,
-        "price": 0.14938,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:12:04"
-      },
-      {
-        "coin": "rave",
-        "side": "sell",
-        "quantity": 3.3249999999999997,
-        "price": 0.6832,
-        "total": 2.3912,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:12:01"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.912,
-        "total": 4.350239999999999,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:11:59"
       }
     ],
     "prices": [
