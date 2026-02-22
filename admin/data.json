@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T15:31:10.164219+00:00",
+  "updated": "2026-02-22T15:32:15.453732+00:00",
   "revenue": {
     "total": 626.5901991508509,
     "last_7d": 626.5901991508509
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1804
+      "total_effort": 1814
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 694
+      "total_effort": 702
     },
     {
       "id": "stripe_premium",
@@ -107,14 +107,126 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2429
+      "total_effort": 2444
     }
   ],
   "actions_today": {
-    "total": 7865,
-    "successes": 3576
+    "total": 7881,
+    "successes": 3583
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 15:32:12"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:12"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:10"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:10"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "deep_product_development",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:06"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:32:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:32:04"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:32:04"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:04"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:32:04"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 15:31:57"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:31:57"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:31:53"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:31:53"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:31:24"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "organize_store",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:31:24"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -212,118 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 15:30:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 15:30:53"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 15:30:53"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:53"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:30:27"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "organize_store",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:27"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:30:25"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:25"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:30:23"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:30:23"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "list_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:23"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "list_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:23"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "comprehensive_store_audit",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 15:30:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:29:46"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 15:29:46"
     }
   ],
   "decisions": [
@@ -449,10 +449,50 @@
     }
   ],
   "assets": {
-    "total": 5233,
-    "published": 5037
+    "total": 5238,
+    "published": 5040
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 15:32:12"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "ShadowOps: Stealth Productivity Templates for Undercover Side-Hustlers",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 15:31:57"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Multi-Tool Survival Card with 18 Functions Credit Card Size",
+      "status": "published",
+      "url": "https://bnvbu0-nk.myshopify.com/products/multi-tool-survival-card-with-18-functions-credit-card-size",
+      "created_at": "2026-02-22 15:31:53"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Collapsible Silicone Water Bottle 600ml with Carabiner Clip",
+      "status": "published",
+      "url": "https://bnvbu0-nk.myshopify.com/products/collapsible-silicone-water-bottle-600ml-with-carabiner-clip",
+      "created_at": "2026-02-22 15:31:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Solar Power Bank 20000mAh with Wireless Charging and LED Flashlight",
+      "status": "published",
+      "url": "https://bnvbu0-nk.myshopify.com/products/solar-power-bank-20000mah-with-wireless-charging-and-led-flashlight",
+      "created_at": "2026-02-22 15:31:11"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -572,46 +612,6 @@
       "status": "published",
       "url": "/how-to-stop-your-dog-from-chewing-furniture-essential-pet-care-products/",
       "created_at": "2026-02-22 15:30:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Air Fryer for Small Kitchens: Top Picks and Buying Guides",
-      "status": "published",
-      "url": "/the-best-air-fryer-for-small-kitchens-top-picks-and-buying-guides/",
-      "created_at": "2026-02-22 15:30:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
-      "status": "published",
-      "url": "/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-22 15:30:38"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Portable Travel Neck Pillow with Memory Foam and Eye Mask Set",
-      "status": "published",
-      "url": "https://bnvbu0-nk.myshopify.com/products/portable-travel-neck-pillow-with-memory-foam-and-eye-mask-set",
-      "created_at": "2026-02-22 15:30:31"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Ditch the bulky wallet",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 15:29:31"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why I Ditched My Bulky Wallet for This Ultra-Slim RFID-Blocking Money Clip (And You Should Too)",
-      "status": "published",
-      "url": "/blog/why-i-ditched-my-bulky-wallet-for-this-ultra-slim-rfid-blocking-money-clip-and-y/",
-      "created_at": "2026-02-22 15:29:30"
     }
   ],
   "crypto": {
