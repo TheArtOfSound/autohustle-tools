@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T08:48:42.791751+00:00",
+  "updated": "2026-02-22T08:53:10.835193+00:00",
   "revenue": {
     "total": 8.548690455863206,
     "last_7d": 8.548690455863206
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 72
+      "total_effort": 73
     },
     {
       "id": "seo_content",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 108
+      "total_effort": 110
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 257
+      "total_effort": 268
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 254
+      "total_effort": 255
     },
     {
       "id": "course_creator",
@@ -111,10 +111,115 @@
     }
   ],
   "actions_today": {
-    "total": 2253,
-    "successes": 1041
+    "total": 2268,
+    "successes": 1047
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 08:51:47"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:47"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:44"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:44"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:51:37"
+    },
+    {
+      "strategy_id": "content_optimizer",
+      "action_type": "analyze_performance",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:37"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": "update_index",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "check_conversions",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:48:37"
+    },
     {
       "strategy_id": "stripe_premium",
       "action_type": null,
@@ -219,111 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:52"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:52"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": "research_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:35"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 08:47:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:30"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.15,
-      "executed_at": "2026-02-22 08:47:25"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 08:47:24"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:24"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:02"
     }
   ],
   "decisions": [
@@ -449,10 +449,66 @@
     }
   ],
   "assets": {
-    "total": 1609,
-    "published": 1495
+    "total": 1616,
+    "published": 1496
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Small apartment parents: Here's what actually matters when choosing a baby monitor",
+      "status": "published",
+      "url": "/blog/small-apartment-parents-heres-what-actually-matters-when-choosing-a-baby-monitor/",
+      "created_at": "2026-02-22 08:53:05"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 08:51:47"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "MagSafe Wireless Car Mount Charger - 15W Fast Charging Dashboard Holder",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Vintage Y2K Butterfly Hair Clips - Holographic 8 Piece Set",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:51:36"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Boho Macrame Plant Hanger Swing Set - 3 Tier Design",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:51:35"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "product",
+      "title": "Claw Hair Clips Set - Tortoiseshell Acetate Hair Accessories",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:51:35"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 08:51:35"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -556,62 +612,6 @@
       "status": "draft",
       "url": null,
       "created_at": "2026-02-22 08:46:44"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Anker USB-C Hub",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:46:44"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Bosch Quiet Series Cordless Vacuum Cleaner",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:46:44"
-    },
-    {
-      "strategy_id": "digital_products",
-      "asset_type": "product",
-      "title": "MicroSaaS Launch Kit: Zero-Code Business Templates for Solo Developers",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:46:35"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Make Healthy Baby Food with Ease!",
-      "status": "published",
-      "url": "/blog/make-healthy-baby-food-with-ease/",
-      "created_at": "2026-02-22 08:46:35"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Best Food Processor for Making Baby Food: Top Picks",
-      "status": "published",
-      "url": "/blog/the-best-food-processor-for-making-baby-food-top-picks/",
-      "created_at": "2026-02-22 08:46:34"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Essential Tools to Make Healthy Homemade Baby Food",
-      "status": "published",
-      "url": "/blog/5-essential-tools-to-make-healthy-homemade-baby-food/",
-      "created_at": "2026-02-22 08:46:34"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 08:46:33"
     }
   ],
   "crypto": {
