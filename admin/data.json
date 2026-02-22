@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T17:03:30.993286+00:00",
+  "updated": "2026-02-22T17:03:35.879135+00:00",
   "revenue": {
-    "total": 9.848491406706765,
-    "last_7d": 9.848491406706765
+    "total": 10.134799341222445,
+    "last_7d": 10.134799341222445
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 804.6069308152182,
-      "total_effort": 1048
+      "total_revenue": 804.8932387497339,
+      "total_effort": 1050
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 9062
+      "total_effort": 9064
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1424
+      "total_effort": 1425
     },
     {
       "id": "api_products",
@@ -111,11 +111,53 @@
     }
   ],
   "actions_today": {
-    "total": 10014,
-    "successes": 4562
+    "total": 10020,
+    "successes": 4564
   },
   "recent_actions": [
     {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "publish_drafts_as_blog",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 16:59:57"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 16:59:57"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:59:57"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:59:57"
+    },
+    {
       "strategy_id": "crypto_trading",
       "action_type": null,
       "outcome": "success",
@@ -282,48 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 16:58:16"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 16:57:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 16:57:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:57:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 16:57:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:57:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:57:52"
     }
   ],
   "decisions": [
@@ -449,10 +449,122 @@
     }
   ],
   "assets": {
-    "total": 6685,
-    "published": 6449
+    "total": 6699,
+    "published": 6463
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Coffee Grinder for Espresso Beans to Elevate Your Home Brew",
+      "status": "published",
+      "url": "/the-best-coffee-grinder-for-espresso-beans-to-elevate-your-home-brew/",
+      "created_at": "2026-02-22 17:00:03"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Great Opener Showdown: Electric vs Manual Can Opener",
+      "status": "published",
+      "url": "/blog/the-great-opener-showdown-electric-vs-manual-can-opener/",
+      "created_at": "2026-02-22 17:00:03"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
+      "status": "published",
+      "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
+      "created_at": "2026-02-22 17:00:02"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
+      "status": "published",
+      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
+      "created_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
+      "status": "published",
+      "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
+      "created_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
+      "status": "published",
+      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
+      "created_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme?",
+      "status": "published",
+      "url": "/blog/electric-vs-manual-can-opener-which-durability-reigns-supreme/",
+      "created_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 17:00:01"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
+      "created_at": "2026-02-22 16:59:59"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Choose a Crib with Storage: A Guide for New Parents",
+      "status": "published",
+      "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
+      "created_at": "2026-02-22 16:59:59"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Air Fryer for Small Kitchens: Top Picks and Buying Guides",
+      "status": "published",
+      "url": "/the-best-air-fryer-for-small-kitchens-top-picks-and-buying-guides/",
+      "created_at": "2026-02-22 16:59:57"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
+      "status": "published",
+      "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
+      "created_at": "2026-02-22 16:59:57"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 16:59:56"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Simplify Your Workspace: A Step-by-Step Guide on How to Reduce Noise from a Home Office Printer",
+      "status": "published",
+      "url": "/simplify-your-workspace-a-step-by-step-guide-on-how-to-reduce-noise-from-a-home-office-printer/",
+      "created_at": "2026-02-22 16:59:55"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -500,118 +612,6 @@
       "status": "published",
       "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
       "created_at": "2026-02-22 16:59:50"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
-      "created_at": "2026-02-22 16:59:48"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
-      "status": "published",
-      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
-      "created_at": "2026-02-22 16:59:46"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Monitor for Video Editing Software: Top Picks for Home Office",
-      "status": "published",
-      "url": "/find-the-best-monitor-for-video-editing-software-top-picks-for-home-office/",
-      "created_at": "2026-02-22 16:59:45"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get the Best Headset for Seamless Online Gaming and Video Calls from Your Home Office",
-      "status": "published",
-      "url": "/get-the-best-headset-for-seamless-online-gaming-and-video-calls-from-your-home-office/",
-      "created_at": "2026-02-22 16:59:44"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Remove Pet Odor from Carpet Permanently: 7 Proven Methods That Actually Work",
-      "status": "published",
-      "url": "/how-to-remove-pet-odor-from-carpet-permanently-7-proven-methods-that-actually-work/",
-      "created_at": "2026-02-22 16:59:44"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Discover the Best Laptops Stands for Ergonomic Comfort in Home Office",
-      "status": "published",
-      "url": "/discover-the-best-laptops-stands-for-ergonomic-comfort-in-home-office/",
-      "created_at": "2026-02-22 16:59:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Stop Your Dog from Chewing Furniture: Essential Pet Care Products",
-      "status": "published",
-      "url": "/how-to-stop-your-dog-from-chewing-furniture-essential-pet-care-products/",
-      "created_at": "2026-02-22 16:59:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Headsets for Seamless Online Meetings: Expert Picks",
-      "status": "published",
-      "url": "/top-headsets-for-seamless-online-meetings-expert-picks/",
-      "created_at": "2026-02-22 16:59:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Dog Food for Sensitive Stomachs: Top Picks for a Healthy Pet",
-      "status": "published",
-      "url": "/the-best-dog-food-for-sensitive-stomachs-top-picks-for-a-healthy-pet/",
-      "created_at": "2026-02-22 16:59:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme in Kitchen Gadgets?",
-      "status": "published",
-      "url": "/electric-vs-manual-can-opener-which-durability-reigns-supreme-in-kitchen-gadgets/",
-      "created_at": "2026-02-22 16:59:26"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
-      "status": "published",
-      "url": "/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-22 16:59:23"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Maximize Natural Light in Your Home Office: A Step-by-Step Guide",
-      "status": "published",
-      "url": "/maximize-natural-light-in-your-home-office-a-step-by-step-guide/",
-      "created_at": "2026-02-22 16:59:22"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Immersion Blenders for Hot Soup: Top Picks for Soups and More",
-      "status": "published",
-      "url": "/the-best-immersion-blenders-for-hot-soup-top-picks-for-soups-and-more/",
-      "created_at": "2026-02-22 16:59:22"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Scanners for Small Business Use in Home Offices",
-      "status": "published",
-      "url": "/the-best-scanners-for-small-business-use-in-home-offices/",
-      "created_at": "2026-02-22 16:59:21"
     }
   ],
   "crypto": {
@@ -705,17 +705,6 @@
         "updated_at": "2026-02-22 16:59:41"
       },
       {
-        "id": 23,
-        "strategy_id": "crypto_trading",
-        "coin": "agld",
-        "quantity": 99.1734368920562,
-        "avg_buy_price": 0.3473580648929587,
-        "total_invested": 34.448693127608635,
-        "exchange": "coinbase",
-        "current_value": 36.66441961899317,
-        "updated_at": "2026-02-22 16:59:28"
-      },
-      {
         "id": 65,
         "strategy_id": "crypto_trading",
         "coin": "fun1",
@@ -725,6 +714,17 @@
         "exchange": "coinbase",
         "current_value": 35.58126271817986,
         "updated_at": "2026-02-22 15:15:07"
+      },
+      {
+        "id": 23,
+        "strategy_id": "crypto_trading",
+        "coin": "agld",
+        "quantity": 92.3239368920562,
+        "avg_buy_price": 0.3473580648929587,
+        "total_invested": 32.06946406212432,
+        "exchange": "coinbase",
+        "current_value": 34.13215946899317,
+        "updated_at": "2026-02-22 16:59:57"
       },
       {
         "id": 18,
@@ -872,6 +872,15 @@
     ],
     "trades": [
       {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 6.8495,
+        "price": 0.3697,
+        "total": 2.6655369999999996,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 16:59:57"
+      },
+      {
         "coin": "kite",
         "side": "buy",
         "quantity": 4.610188669713275,
@@ -951,15 +960,6 @@
         "total": 2.390632252335359,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 16:59:41"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 4.627883231843892,
-        "price": 0.25312,
-        "total": 1.1714098036443261,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 16:59:40"
       }
     ],
     "prices": [
