@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T13:37:50.691678+00:00",
+  "updated": "2026-02-22T13:39:53.938227+00:00",
   "revenue": {
     "total": 398.80669273480936,
     "last_7d": 398.80669273480936
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1386
+      "total_effort": 1396
     },
     {
       "id": "freelance",
@@ -107,14 +107,42 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1512
+      "total_effort": 1515
     }
   ],
   "actions_today": {
-    "total": 5713,
-    "successes": 2626
+    "total": 5717,
+    "successes": 2628
   },
   "recent_actions": [
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 13:21:27"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 13:21:27"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "add_product_images",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 13:21:06"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 13:21:05"
+    },
     {
       "strategy_id": "digital_products",
       "action_type": null,
@@ -296,37 +324,15 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 13:19:04"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 13:18:55"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 13:18:55"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 13:18:31"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "manage_collections",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 13:18:31"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1208 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.505 (mean=0.114, pulls=100) \u2192 940 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 980 tokens\n  micro_saas: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens\n  seo_content: score=0.613 (mean=0.223, pulls=100) \u2192 1034 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 958 tokens\n  social_growth: score=0.560 (mean=0.169, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 13:21:20"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1208 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.504 (mean=0.114, pulls=100) \u2192 940 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 979 tokens\n  micro_saas: score=0.543 (mean=0.153, pulls=100) \u2192 974 tokens\n  seo_content: score=0.610 (mean=0.220, pulls=100) \u2192 1032 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 958 tokens\n  social_growth: score=0.560 (mean=0.169, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 974 tokens",
@@ -440,19 +446,117 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1207 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.517 (mean=0.127, pulls=100) \u2192 951 tokens\n  digital_products: score=0.549 (mean=0.159, pulls=100) \u2192 978 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  seo_content: score=0.609 (mean=0.219, pulls=100) \u2192 1031 tokens\n  shopify_store: score=0.528 (mean=0.138, pulls=100) \u2192 960 tokens\n  social_growth: score=0.555 (mean=0.164, pulls=100) \u2192 983 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
       "outcome": null,
       "created_at": "2026-02-22 12:17:25"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1206 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.517 (mean=0.127, pulls=100) \u2192 950 tokens\n  digital_products: score=0.550 (mean=0.160, pulls=100) \u2192 978 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1034 tokens\n  shopify_store: score=0.531 (mean=0.141, pulls=100) \u2192 962 tokens\n  social_growth: score=0.555 (mean=0.165, pulls=100) \u2192 983 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 972 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 12:10:40"
     }
   ],
   "assets": {
-    "total": 3695,
-    "published": 3516
+    "total": 3708,
+    "published": 3528
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
+      "status": "published",
+      "url": "/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
+      "created_at": "2026-02-22 13:21:32"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Creative Ways to Set Up a Home Office in Small Spaces Without Sacrificing Productivity",
+      "status": "published",
+      "url": "/5-creative-ways-to-set-up-a-home-office-in-small-spaces-without-sacrificing-productivity/",
+      "created_at": "2026-02-22 13:21:31"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
+      "status": "published",
+      "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
+      "created_at": "2026-02-22 13:21:31"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "FlexiHours: Dynamic Workload Balancing Templates for Multi-Client Freelancers",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 13:21:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
+      "status": "published",
+      "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
+      "created_at": "2026-02-22 13:21:26"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Kitchen Scales for Baking Accuracy: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-kitchen-scales-for-baking-accuracy-top-picks-and-reviews/",
+      "created_at": "2026-02-22 13:21:26"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Guide to Choosing the Perfect Stand Mixer for Your Kitchen Needs",
+      "status": "published",
+      "url": "/the-ultimate-guide-to-choosing-the-perfect-stand-mixer-for-your-kitchen-needs/",
+      "created_at": "2026-02-22 13:21:25"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Finding the Perfect Fit: How to Choose the Best Wireless Mouse for Your Home Office Needs",
+      "status": "published",
+      "url": "/finding-the-perfect-fit-how-to-choose-the-best-wireless-mouse-for-your-home-office-needs/",
+      "created_at": "2026-02-22 13:21:25"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Solution for Back Pain: Ergonomic Chair vs Standing Desk Comparison",
+      "status": "published",
+      "url": "/discover-the-best-solution-for-back-pain-ergonomic-chair-vs-standing-desk-comparison/",
+      "created_at": "2026-02-22 13:21:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
+      "status": "published",
+      "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
+      "created_at": "2026-02-22 13:21:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 13:21:23"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Coffee Grinder for Espresso Beans to Elevate Your Home Brew",
+      "status": "published",
+      "url": "/the-best-coffee-grinder-for-espresso-beans-to-elevate-your-home-brew/",
+      "created_at": "2026-02-22 13:21:23"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
+      "status": "published",
+      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
+      "created_at": "2026-02-22 13:21:21"
+    },
     {
       "strategy_id": "digital_products",
       "asset_type": "product",
@@ -508,110 +612,6 @@
       "status": "published",
       "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
       "created_at": "2026-02-22 13:20:51"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Air Fryer for Small Kitchens: Top Picks and Buying Guides",
-      "status": "published",
-      "url": "/the-best-air-fryer-for-small-kitchens-top-picks-and-buying-guides/",
-      "created_at": "2026-02-22 13:20:50"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Remove Pet Odor from Carpet Permanently: 7 Proven Methods That Actually Work",
-      "status": "published",
-      "url": "/how-to-remove-pet-odor-from-carpet-permanently-7-proven-methods-that-actually-work/",
-      "created_at": "2026-02-22 13:20:50"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Stop Your Dog from Chewing Furniture: Essential Pet Care Products",
-      "status": "published",
-      "url": "/how-to-stop-your-dog-from-chewing-furniture-essential-pet-care-products/",
-      "created_at": "2026-02-22 13:20:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Dog Food for Sensitive Stomachs: Top Picks for a Healthy Pet",
-      "status": "published",
-      "url": "/the-best-dog-food-for-sensitive-stomachs-top-picks-for-a-healthy-pet/",
-      "created_at": "2026-02-22 13:20:48"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Revive a Burnt Non-Stick Pan: A Step-by-Step Guide for Kitchen Gadgets",
-      "status": "published",
-      "url": "/how-to-revive-a-burnt-non-stick-pan-a-step-by-step-guide-for-kitchen-gadgets/",
-      "created_at": "2026-02-22 13:20:48"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Cozy vibes unlocked \u2728",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 13:20:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why This Adorable Mushroom Lamp Is Revolutionizing Bedtime Routines for Kids and Adults Alike",
-      "status": "published",
-      "url": "/blog/why-this-adorable-mushroom-lamp-is-revolutionizing-bedtime-routines-for-kids-and/",
-      "created_at": "2026-02-22 13:20:36"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Cozy Up with a Mushroom Touch Lamp",
-      "status": "published",
-      "url": "/blog/cozy-up-with-a-mushroom-touch-lamp/",
-      "created_at": "2026-02-22 13:20:34"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "LightStrip Under Hood LED Kit - Engine Bay Illuminator",
-      "status": "published",
-      "url": "https://bnvbu0-nk.myshopify.com/products/lightstrip-under-hood-led-kit-engine-bay-illuminator",
-      "created_at": "2026-02-22 13:20:01"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Swings for Twins: Top Picks for Safe and Soothing Sleep",
-      "status": "published",
-      "url": "/the-best-baby-swings-for-twins-top-picks-for-safe-and-soothing-sleep/",
-      "created_at": "2026-02-22 13:19:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Jump Ropes for Beginners: Boost Weight Loss and Fitness",
-      "status": "published",
-      "url": "/find-the-best-jump-ropes-for-beginners-boost-weight-loss-and-fitness/",
-      "created_at": "2026-02-22 13:19:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Swing for Soothing Your Little One: Top Picks for Calming and Relaxation",
-      "status": "published",
-      "url": "/the-best-baby-swing-for-soothing-your-little-one-top-picks-for-calming-and-relaxation/",
-      "created_at": "2026-02-22 13:19:39"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
-      "status": "published",
-      "url": "/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
-      "created_at": "2026-02-22 13:19:38"
     }
   ],
   "crypto": {
