@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T14:25:09.412454+00:00",
+  "updated": "2026-02-22T14:25:29.739749+00:00",
   "revenue": {
     "total": 526.5286642516911,
     "last_7d": 526.5286642516911
@@ -107,14 +107,28 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1789
+      "total_effort": 1794
     }
   ],
   "actions_today": {
-    "total": 6471,
-    "successes": 2952
+    "total": 6473,
+    "successes": 2953
   },
   "recent_actions": [
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 14:25:26"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "organize_store",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:25:26"
+    },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
@@ -309,20 +323,6 @@
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 14:17:08"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:17:08"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
       "executed_at": "2026-02-22 14:17:08"
     }
   ],
