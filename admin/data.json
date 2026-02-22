@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T16:54:25.570349+00:00",
+  "updated": "2026-02-22T16:54:34.690433+00:00",
   "revenue": {
     "total": 9.562183472191085,
     "last_7d": 9.562183472191085
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 867
+      "total_effort": 870
     },
     {
       "id": "stripe_premium",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 9936,
-    "successes": 4527
+    "total": 9938,
+    "successes": 4528
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 16:54:32"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:54:32"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 16:53:44"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 16:53:43"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "daily_theme_refresh",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:53:43"
     }
   ],
   "decisions": [
@@ -449,10 +449,18 @@
     }
   ],
   "assets": {
-    "total": 6613,
+    "total": 6614,
     "published": 6379
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 16:54:32"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -604,14 +612,6 @@
       "status": "published",
       "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
       "created_at": "2026-02-22 16:52:09"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
-      "status": "published",
-      "url": "/blog/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
-      "created_at": "2026-02-22 16:52:08"
     }
   ],
   "crypto": {
