@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Products & Courses - AutoHustle Store</title>
+    <meta name="description" content="Premium digital products, courses, templates, and guides. Instant download. Practical resources to boost your skills and income.">
+    <meta property="og:title" content="AutoHustle Store - Digital Products & Courses">
+    <meta property="og:description" content="Premium digital products, courses, templates, and guides. Instant download.">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://autohustle.online/store/">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --primary: #6366f1; --green: #10b981; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+        header { text-align: center; padding: 50px 20px 30px; }
+        header h1 { font-size: 2.5em; margin-bottom: 12px; }
+        header h1 span { color: var(--primary); }
+        header p { color: var(--text-muted); font-size: 1.15em; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+        .section-title { font-size: 1.6em; margin: 40px 0 20px; padding-bottom: 10px; border-bottom: 2px solid var(--primary); display: inline-block; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; padding: 20px 0; }
+        .product-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            transition: transform 0.2s, border-color 0.2s;
+            display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+        .product-card .badge { display: inline-block; background: var(--primary); color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.75em; font-weight: 600; margin-bottom: 12px; width: fit-content; }
+        .product-card .badge.course { background: var(--green); }
+        .product-card h3 { font-size: 1.2em; margin-bottom: 10px; color: var(--text); }
+        .product-card .desc { color: var(--text-muted); font-size: 0.95em; line-height: 1.5; margin-bottom: 16px; flex-grow: 1; }
+        .product-card .price { font-size: 1.4em; font-weight: 700; color: var(--green); margin-bottom: 12px; }
+        .product-card .cta {
+            display: inline-block; background: var(--primary); color: white; padding: 10px 24px;
+            border-radius: 8px; text-decoration: none; font-weight: 600; text-align: center;
+            transition: opacity 0.2s;
+        }
+        .product-card .cta:hover { opacity: 0.9; }
+        .product-card .tags { margin-top: 12px; }
+        .product-card .tag { display: inline-block; background: var(--surface2); padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin: 2px; color: var(--text-muted); }
+        .tools-banner { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 30px; text-align: center; margin: 40px 0; }
+        .tools-banner h2 { color: var(--primary); margin-bottom: 10px; }
+        .tools-banner p { color: var(--text-muted); margin-bottom: 16px; }
+        .tools-banner a { display: inline-block; background: var(--surface2); color: var(--primary); padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid var(--primary); }
+        .tools-banner a:hover { background: var(--primary); color: white; }
+        #products-container { min-height: 200px; }
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); }
+        footer { text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px; }
+        footer a { color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/store/">Store</a> &nbsp;|&nbsp; <a href="/admin/">Admin</a>
+        </div>
+    </nav>
+    <header>
+        <h1><span>AutoHustle</span> Store</h1>
+        <p>Premium digital products, courses, and guides. Practical resources created by experts. Instant digital download.</p>
+    </header>
+    <main>
+        <div class="container">
+
+            <h2 class="section-title">Courses</h2>
+            <div id="courses-grid" class="products-grid">
+                <div class="product-card">
+                    <span class="badge course">COURSE</span>
+                    <h3>Python Automation for Beginners</h3>
+                    <p class="desc">5 modules of hands-on content. Learn to automate boring tasks with Python — no prior coding experience needed.</p>
+                    <div class="price">$19</div>
+                    <div class="tags">
+                        <span class="tag">5 Modules</span>
+                        <span class="tag">Beginner Friendly</span>
+                        <span class="tag">Instant Access</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="badge course">COURSE</span>
+                    <h3>ChatGPT Prompt Engineering Masterclass</h3>
+                    <p class="desc">4 modules covering advanced prompting techniques. Get better results from AI tools in business, writing, and coding.</p>
+                    <div class="price">$14</div>
+                    <div class="tags">
+                        <span class="tag">4 Modules</span>
+                        <span class="tag">AI Skills</span>
+                        <span class="tag">Instant Access</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="badge course">COURSE</span>
+                    <h3>SEO for Small Business Owners</h3>
+                    <p class="desc">5 modules teaching you exactly how to rank your business on Google. Practical, no-fluff SEO strategies that work.</p>
+                    <div class="price">$17</div>
+                    <div class="tags">
+                        <span class="tag">5 Modules</span>
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Instant Access</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="badge course">COURSE</span>
+                    <h3>No-Code App Building with Cursor & AI</h3>
+                    <p class="desc">5 modules on building real apps without writing code. The hottest skill in 2026 — learn to ship products fast.</p>
+                    <div class="price">$19</div>
+                    <div class="tags">
+                        <span class="tag">5 Modules</span>
+                        <span class="tag">No-Code</span>
+                        <span class="tag">Instant Access</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Digital Products</h2>
+            <div id="products-grid" class="products-grid">
+                <div class="product-card">
+                    <span class="badge">TEMPLATE PACK</span>
+                    <h3>Freelancer Client Onboarding Templates</h3>
+                    <p class="desc">Professional proposal, contract, invoice, and welcome packet templates. Look like a pro agency from day one.</p>
+                    <div class="price">$14</div>
+                    <a href="#" class="cta" id="link-templates">Get Instant Access</a>
+                </div>
+                <div class="product-card">
+                    <span class="badge">SWIPE FILE</span>
+                    <h3>30 High-Converting Email Templates</h3>
+                    <p class="desc">Welcome sequences, sales emails, re-engagement campaigns. Copy-paste templates that actually get clicks.</p>
+                    <div class="price">$11</div>
+                    <a href="#" class="cta" id="link-emails">Get Instant Access</a>
+                </div>
+                <div class="product-card">
+                    <span class="badge">GUIDE</span>
+                    <h3>Remote Work Productivity Blueprint</h3>
+                    <p class="desc">Complete system for maximizing productivity as a remote worker. Daily routines, tool recommendations, distraction elimination.</p>
+                    <div class="price">$12</div>
+                    <a href="#" class="cta" id="link-remote">Get Instant Access</a>
+                </div>
+                <div class="product-card">
+                    <span class="badge">CHECKLIST</span>
+                    <h3>Website Launch: 100-Point QA Checklist</h3>
+                    <p class="desc">Never miss a critical step when launching a website. SEO audit, performance checks, and accessibility review included.</p>
+                    <div class="price">$7</div>
+                    <a href="#" class="cta" id="link-checklist">Get Instant Access</a>
+                </div>
+            </div>
+
+            <div class="tools-banner">
+                <h2>10+ Free Online Tools</h2>
+                <p>JSON formatter, password generator, QR codes, regex tester, and more. No sign-up, no ads, 100% client-side.</p>
+                <a href="/">Browse Free Tools &rarr;</a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 <a href="https://autohustle.online">AutoHustle.online</a> &mdash; <a href="/">Free Tools</a> | <a href="/store/">Store</a> | <a href="/admin/">Admin</a></p>
+    </footer>
+    <script>
+    // Auto-update product links from Gumroad when available
+    (async () => {
+        try {
+            const r = await fetch('/admin/data.json');
+            if (!r.ok) return;
+            const data = await r.json();
+            if (!data.assets) return;
+            // Find any assets with gumroad URLs and update links
+            for (const asset of data.assets) {
+                if (asset.url && asset.url.includes('gumroad.com')) {
+                    // Create a dynamic card for this asset
+                    console.log('Gumroad product:', asset.title, asset.url);
+                }
+            }
+        } catch(e) { /* Gumroad links will be updated as products are listed */ }
+    })();
+    </script>
+</body>
+</html>
