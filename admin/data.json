@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T18:40:12.804180+00:00",
+  "updated": "2026-02-22T18:40:19.252181+00:00",
   "revenue": {
     "total": 24.40536119481096,
     "last_7d": 24.40536119481096
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 12094
+      "total_effort": 12114
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1820
+      "total_effort": 1827
     },
     {
       "id": "api_products",
@@ -111,10 +111,80 @@
     }
   ],
   "actions_today": {
-    "total": 13148,
-    "successes": 5936
+    "total": 13158,
+    "successes": 5941
   },
   "recent_actions": [
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:39:37"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 18:39:36"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:39:31"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 18:39:30"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "publish_drafts_as_blog",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:39:29"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:39:28"
+    },
     {
       "strategy_id": "crypto_trading",
       "action_type": null,
@@ -254,79 +324,15 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 18:38:52"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:38:48"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:38:48"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:37:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:37:18"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 18:37:18"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1223 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  data_scraper: score=0.468 (mean=0.078, pulls=100) \u2192 917 tokens\n  digital_products: score=0.475 (mean=0.084, pulls=100) \u2192 923 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  seo_content: score=0.617 (mean=0.226, pulls=100) \u2192 1049 tokens\n  shopify_store: score=0.522 (mean=0.132, pulls=100) \u2192 965 tokens\n  social_growth: score=0.551 (mean=0.161, pulls=100) \u2192 991 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 984 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 18:39:31"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1223 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  data_scraper: score=0.468 (mean=0.078, pulls=100) \u2192 917 tokens\n  digital_products: score=0.475 (mean=0.084, pulls=100) \u2192 923 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  seo_content: score=0.617 (mean=0.226, pulls=100) \u2192 1049 tokens\n  shopify_store: score=0.522 (mean=0.132, pulls=100) \u2192 965 tokens\n  social_growth: score=0.550 (mean=0.160, pulls=100) \u2192 990 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 984 tokens",
@@ -440,34 +446,116 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1222 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  data_scraper: score=0.468 (mean=0.078, pulls=100) \u2192 917 tokens\n  digital_products: score=0.493 (mean=0.103, pulls=100) \u2192 939 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1046 tokens\n  shopify_store: score=0.513 (mean=0.123, pulls=100) \u2192 957 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 992 tokens\n  stripe_premium: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens",
       "outcome": null,
       "created_at": "2026-02-22 18:26:25"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1222 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  data_scraper: score=0.468 (mean=0.078, pulls=100) \u2192 917 tokens\n  digital_products: score=0.493 (mean=0.103, pulls=100) \u2192 939 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1046 tokens\n  shopify_store: score=0.513 (mean=0.123, pulls=100) \u2192 957 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 992 tokens\n  stripe_premium: score=0.540 (mean=0.150, pulls=100) \u2192 981 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 18:26:20"
     }
   ],
   "assets": {
-    "total": 8875,
-    "published": 8636
+    "total": 8901,
+    "published": 8660
   },
   "recent_assets": [
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
+      "title": "Dell vs HP Laptop for Home Office: Complete 2024 Comparison Guide",
       "status": "published",
-      "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
-      "created_at": "2026-02-22 18:39:20"
+      "url": "/dell-vs-hp-laptop-for-home-office-complete-2024-comparison-guide/",
+      "created_at": "2026-02-22 18:39:42"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
       "status": "published",
-      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
-      "created_at": "2026-02-22 18:39:18"
+      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
+      "created_at": "2026-02-22 18:39:40"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Boost Productivity in Your Home Office: A Step-by-Step Guide on How to Declutter for Success",
+      "status": "published",
+      "url": "/boost-productivity-in-your-home-office-a-step-by-step-guide-on-how-to-declutter-for-success/",
+      "created_at": "2026-02-22 18:39:39"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
+      "status": "published",
+      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
+      "created_at": "2026-02-22 18:39:39"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
+      "status": "published",
+      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
+      "created_at": "2026-02-22 18:39:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Creative Ways to Set Up a Home Office in Small Spaces Without Sacrificing Productivity",
+      "status": "published",
+      "url": "/5-creative-ways-to-set-up-a-home-office-in-small-spaces-without-sacrificing-productivity/",
+      "created_at": "2026-02-22 18:39:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Resistance Bands vs Cable Machine for Home Workouts: Which is Best for Your Fitness Goals?",
+      "status": "published",
+      "url": "/resistance-bands-vs-cable-machine-for-home-workouts-which-is-best-for-your-fitness-goals/",
+      "created_at": "2026-02-22 18:39:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
+      "status": "published",
+      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
+      "created_at": "2026-02-22 18:39:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Remove Pet Odor from Carpet Permanently: 7 Proven Methods That Actually Work",
+      "status": "published",
+      "url": "/how-to-remove-pet-odor-from-carpet-permanently-7-proven-methods-that-actually-work/",
+      "created_at": "2026-02-22 18:39:36"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Stuck Garbage Disposal: A Step-by-Step Guide for Kitchen Gadget Lovers",
+      "status": "published",
+      "url": "/how-to-fix-a-stuck-garbage-disposal-a-step-by-step-guide-for-kitchen-gadget-lovers/",
+      "created_at": "2026-02-22 18:39:36"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Stop buying the wrong rice cooker size! \ud83c\udf5a",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 18:39:36"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 18:39:36"
     },
     {
       "strategy_id": "seo_content",
@@ -475,47 +563,23 @@
       "title": "Finding the Perfect Fit: How to Choose the Best Wireless Mouse for Your Home Office Needs",
       "status": "published",
       "url": "/finding-the-perfect-fit-how-to-choose-the-best-wireless-mouse-for-your-home-office-needs/",
-      "created_at": "2026-02-22 18:39:17"
+      "created_at": "2026-02-22 18:39:35"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "title": "Resistance Bands vs Cable Machine for Home Workouts: Which is Best for Your Fitness Goals?",
       "status": "published",
-      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
-      "created_at": "2026-02-22 18:39:17"
+      "url": "/resistance-bands-vs-cable-machine-for-home-workouts-which-is-best-for-your-fitness-goals/",
+      "created_at": "2026-02-22 18:39:34"
     },
     {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Ultimate Guide to Finding Your Dream Rice Cooker Size",
       "status": "published",
-      "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
-      "created_at": "2026-02-22 18:39:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Stop Your Dog from Chewing Furniture: Essential Pet Care Products",
-      "status": "published",
-      "url": "/how-to-stop-your-dog-from-chewing-furniture-essential-pet-care-products/",
-      "created_at": "2026-02-22 18:39:16"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Air Fryer for Small Kitchens: Top Picks and Buying Guides",
-      "status": "published",
-      "url": "/the-best-air-fryer-for-small-kitchens-top-picks-and-buying-guides/",
-      "created_at": "2026-02-22 18:39:16"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Discover the Best Solution for Back Pain: Ergonomic Chair vs Standing Desk Comparison",
-      "status": "published",
-      "url": "/discover-the-best-solution-for-back-pain-ergonomic-chair-vs-standing-desk-comparison/",
-      "created_at": "2026-02-22 18:39:15"
+      "url": "/blog/the-ultimate-guide-to-finding-your-dream-rice-cooker-size/",
+      "created_at": "2026-02-22 18:39:33"
     },
     {
       "strategy_id": "seo_content",
@@ -523,7 +587,7 @@
       "title": "How to Choose the Perfect Pull Up Bar for Your Doorway: A Fitness Guide",
       "status": "published",
       "url": "/how-to-choose-the-perfect-pull-up-bar-for-your-doorway-a-fitness-guide/",
-      "created_at": "2026-02-22 18:39:08"
+      "created_at": "2026-02-22 18:39:31"
     },
     {
       "strategy_id": "seo_content",
@@ -531,63 +595,15 @@
       "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
       "status": "published",
       "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
-      "created_at": "2026-02-22 18:39:08"
+      "created_at": "2026-02-22 18:39:31"
     },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
-      "title": "Find the Best Jump Ropes for Beginners: Boost Weight Loss and Fitness",
+      "title": "Find Your Perfect Rice Cooker Size",
       "status": "published",
-      "url": "/blog/find-the-best-jump-ropes-for-beginners-boost-weight-loss-and-fitness/",
-      "created_at": "2026-02-22 18:39:08"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
-      "status": "published",
-      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
-      "created_at": "2026-02-22 18:39:07"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Dog Food for Sensitive Stomachs: Top Picks for a Healthy Pet",
-      "status": "published",
-      "url": "/the-best-dog-food-for-sensitive-stomachs-top-picks-for-a-healthy-pet/",
-      "created_at": "2026-02-22 18:39:07"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Revive a Burnt Non-Stick Pan: A Step-by-Step Guide for Kitchen Gadgets",
-      "status": "published",
-      "url": "/how-to-revive-a-burnt-non-stick-pan-a-step-by-step-guide-for-kitchen-gadgets/",
-      "created_at": "2026-02-22 18:39:07"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Electric vs Manual Breast Pumps: Which One's Right for You?",
-      "status": "published",
-      "url": "/blog/electric-vs-manual-breast-pumps-which-ones-right-for-you/",
-      "created_at": "2026-02-22 18:39:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Pull Up Bar for Your Doorway: A Fitness Guide",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-pull-up-bar-for-your-doorway-a-fitness-guide/",
-      "created_at": "2026-02-22 18:39:04"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Electric vs Manual Breast Pumps: The Ultimate Guide Every New Mom Needs to Read",
-      "status": "published",
-      "url": "/blog/electric-vs-manual-breast-pumps-the-ultimate-guide-every-new-mom-needs-to-read/",
-      "created_at": "2026-02-22 18:39:04"
+      "url": "/blog/find-your-perfect-rice-cooker-size/",
+      "created_at": "2026-02-22 18:39:31"
     },
     {
       "strategy_id": "seo_content",
@@ -595,23 +611,7 @@
       "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
       "status": "published",
       "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
-      "created_at": "2026-02-22 18:39:04"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 18:39:04"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 18:39:02"
+      "created_at": "2026-02-22 18:39:29"
     }
   ],
   "crypto": {
