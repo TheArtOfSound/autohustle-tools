@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T08:23:49.105301+00:00",
+  "updated": "2026-02-22T08:24:25.810817+00:00",
   "revenue": {
     "total": 11.9972213,
     "last_7d": 11.9972213
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 235
+      "total_effort": 238
     },
     {
       "id": "stripe_premium",
@@ -103,10 +103,24 @@
     }
   ],
   "actions_today": {
-    "total": 1876,
-    "successes": 863
+    "total": 1878,
+    "successes": 864
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 08:24:21"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:24:21"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -302,20 +316,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 08:21:25"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:21:18"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:21:18"
     }
   ],
   "decisions": [
@@ -441,10 +441,18 @@
     }
   ],
   "assets": {
-    "total": 1344,
+    "total": 1345,
     "published": 1264
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 08:24:21"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -595,14 +603,6 @@
       "title": "Top-Rated Flea Shampoos for Puppies Under 12 Weeks: Expert Reviews",
       "status": "published",
       "url": "/top-rated-flea-shampoos-for-puppies-under-12-weeks-expert-reviews/",
-      "created_at": "2026-02-22 08:21:46"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Kitchen Scales for Baking Accuracy: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-kitchen-scales-for-baking-accuracy-top-picks-and-reviews/",
       "created_at": "2026-02-22 08:21:46"
     }
   ],
