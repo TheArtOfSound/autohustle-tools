@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T19:07:48.845604+00:00",
+  "updated": "2026-02-22T19:08:17.244561+00:00",
   "revenue": {
-    "total": 31.830807743511546,
-    "last_7d": 31.830807743511546
+    "total": 32.1091184187688,
+    "last_7d": 32.1091184187688
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 826.5892471520237,
-      "total_effort": 1602
+      "total_revenue": 826.867557827281,
+      "total_effort": 1606
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2882
+      "total_effort": 2892
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1202
+      "total_effort": 1206
     },
     {
       "id": "stripe_premium",
@@ -111,10 +111,80 @@
     }
   ],
   "actions_today": {
-    "total": 13960,
-    "successes": 6298
+    "total": 13970,
+    "successes": 6301
   },
   "recent_actions": [
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:07:28"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:07:28"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:07:23"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:07:23"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
     {
       "strategy_id": "crypto_trading",
       "action_type": null,
@@ -254,76 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:06:35"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "add_product_images",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:35"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:06:33"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "optimize_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "setup_brand",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:06:29"
     }
   ],
   "decisions": [
@@ -450,7 +450,7 @@
   ],
   "assets": {
     "total": 9522,
-    "published": 9290
+    "published": 9291
   },
   "recent_assets": [
     {
@@ -631,45 +631,45 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 914.5384546074382,
-        "avg_buy_price": 0.25186197007168093,
-        "total_invested": 230.33745688373995,
+        "quantity": 922.5319160738455,
+        "avg_buy_price": 0.25184760856028976,
+        "total_invested": 232.33745688373995,
         "exchange": "coinbase",
-        "current_value": 228.4059790382077,
-        "updated_at": "2026-02-22 19:06:51"
+        "current_value": 231.14959689146275,
+        "updated_at": "2026-02-22 19:07:27"
       },
       {
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 6144.141636573052,
+        "quantity": 6103.510136573052,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 148.12947843029605,
+        "total_invested": 147.14989116508488,
         "exchange": "coinbase",
-        "current_value": 166.5062383511297,
-        "updated_at": "2026-02-22 19:06:41"
-      },
-      {
-        "id": 74,
-        "strategy_id": "crypto_trading",
-        "coin": "plu",
-        "quantity": 651.349986509797,
-        "avg_buy_price": 0.14927584159181545,
-        "total_invested": 97.23081740706758,
-        "exchange": "coinbase",
-        "current_value": 96.94693199211818,
-        "updated_at": "2026-02-22 19:06:50"
+        "current_value": 167.23617774210163,
+        "updated_at": "2026-02-22 19:07:11"
       },
       {
         "id": 70,
         "strategy_id": "crypto_trading",
         "coin": "arpa",
-        "quantity": 9020.464136894223,
-        "avg_buy_price": 0.010784031625176296,
-        "total_invested": 97.2769705260359,
+        "quantity": 9287.86339521874,
+        "avg_buy_price": 0.010781612339567561,
+        "total_invested": 100.13814259010822,
         "exchange": "coinbase",
-        "current_value": 96.51896626476818,
-        "updated_at": "2026-02-22 19:06:54"
+        "current_value": 99.3801383288405,
+        "updated_at": "2026-02-22 19:07:28"
+      },
+      {
+        "id": 74,
+        "strategy_id": "crypto_trading",
+        "coin": "plu",
+        "quantity": 658.0686105355965,
+        "avg_buy_price": 0.14927139181903593,
+        "total_invested": 98.23081740706758,
+        "exchange": "coinbase",
+        "current_value": 97.94693199211818,
+        "updated_at": "2026-02-22 19:07:18"
       },
       {
         "id": 35,
@@ -771,17 +771,6 @@
         "updated_at": "2026-02-22 16:06:19"
       },
       {
-        "id": 59,
-        "strategy_id": "crypto_trading",
-        "coin": "rave",
-        "quantity": 16.318100466294187,
-        "avg_buy_price": 0.6970827246711545,
-        "total_invested": 11.375065934501936,
-        "exchange": "coinbase",
-        "current_value": 11.187689679691294,
-        "updated_at": "2026-02-22 19:06:46"
-      },
-      {
         "id": 73,
         "strategy_id": "crypto_trading",
         "coin": "swell",
@@ -791,6 +780,17 @@
         "exchange": "coinbase",
         "current_value": 9.957550214635457,
         "updated_at": "2026-02-22 16:52:01"
+      },
+      {
+        "id": 59,
+        "strategy_id": "crypto_trading",
+        "coin": "rave",
+        "quantity": 12.993100466294187,
+        "avg_buy_price": 0.6970827246711545,
+        "total_invested": 9.057265874970348,
+        "exchange": "coinbase",
+        "current_value": 8.923661400250847,
+        "updated_at": "2026-02-22 19:07:14"
       },
       {
         "id": 19,
@@ -872,22 +872,40 @@
     ],
     "trades": [
       {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.912,
+        "total": 4.132727999999999,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:07:28"
+      },
+      {
         "coin": "arpa",
         "side": "buy",
-        "quantity": 133.53182542394012,
+        "quantity": 133.75556374169713,
         "price": 0.0107,
-        "total": 1.4287905320361591,
+        "total": 1.4311845320361591,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:54"
+        "executed_at": "2026-02-22 19:07:28"
       },
       {
         "coin": "kite",
         "side": "buy",
-        "quantity": 4.004004004004004,
-        "price": 0.24975,
+        "quantity": 3.991060025542784,
+        "price": 0.25056,
         "total": 1.0,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:51"
+        "executed_at": "2026-02-22 19:07:27"
+      },
+      {
+        "coin": "arpa",
+        "side": "buy",
+        "quantity": 133.6436945828186,
+        "price": 0.0107,
+        "total": 1.429987532036159,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:07:23"
       },
       {
         "coin": "plu",
@@ -896,16 +914,25 @@
         "price": 0.14884,
         "total": 1.0,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:49"
+        "executed_at": "2026-02-22 19:07:18"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.002401440864519,
+        "price": 0.24985,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:07:18"
       },
       {
         "coin": "rave",
         "side": "sell",
         "quantity": 3.3249999999999997,
-        "price": 0.6856,
-        "total": 2.3996,
+        "price": 0.6868,
+        "total": 2.4038,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:46"
+        "executed_at": "2026-02-22 19:07:14"
       },
       {
         "coin": "omni",
@@ -914,52 +941,25 @@
         "price": 0.912,
         "total": 4.350239999999999,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:42"
+        "executed_at": "2026-02-22 19:07:12"
       },
       {
         "coin": "lrds",
         "side": "sell",
         "quantity": 40.6315,
-        "price": 0.0271,
-        "total": 1.159067,
+        "price": 0.0274,
+        "total": 1.171898,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:41"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.912,
-        "total": 4.132727999999999,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:01"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.99536537616365,
-        "price": 0.25029,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:06:00"
+        "executed_at": "2026-02-22 19:07:11"
       },
       {
         "coin": "arpa",
         "side": "buy",
-        "quantity": 133.42927869496816,
+        "quantity": 133.53182542394012,
         "price": 0.0107,
-        "total": 1.4276932820361592,
+        "total": 1.4287905320361591,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:55"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.988194942968812,
-        "price": 0.25074,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:52"
+        "executed_at": "2026-02-22 19:06:54"
       }
     ],
     "prices": [
