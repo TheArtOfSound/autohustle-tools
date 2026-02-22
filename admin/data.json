@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T19:29:19.618910+00:00",
+  "updated": "2026-02-22T19:29:29.976552+00:00",
   "revenue": {
-    "total": 36.12382223957528,
-    "last_7d": 36.12382223957528
+    "total": 36.26053197436413,
+    "last_7d": 36.26053197436413
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 830.8822616480876,
-      "total_effort": 1706
+      "total_revenue": 831.0189713828764,
+      "total_effort": 1710
     },
     {
       "id": "digital_products",
@@ -111,13 +111,55 @@
     }
   ],
   "actions_today": {
-    "total": 14841,
-    "successes": 6662
+    "total": 14847,
+    "successes": 6664
   },
   "recent_actions": [
     {
       "strategy_id": "social_growth",
       "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:28:47"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:28:44"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:28:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.15,
+      "executed_at": "2026-02-22 19:28:44"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:28:35"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:28:35"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:28:35"
@@ -282,48 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:26:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:26:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:26:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:26:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:26:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:26:49"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:26:49"
     }
   ],
   "decisions": [
@@ -449,10 +449,34 @@
     }
   ],
   "assets": {
-    "total": 10113,
-    "published": 9886
+    "total": 10116,
+    "published": 9889
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
+      "status": "published",
+      "url": "/blog/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
+      "created_at": "2026-02-22 19:28:47"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
+      "status": "published",
+      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
+      "created_at": "2026-02-22 19:28:46"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 19:28:46"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -588,30 +612,6 @@
       "status": "published",
       "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
       "created_at": "2026-02-22 19:28:23"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
-      "status": "published",
-      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
-      "created_at": "2026-02-22 19:28:22"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
-      "status": "published",
-      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
-      "created_at": "2026-02-22 19:28:04"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
-      "status": "published",
-      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
-      "created_at": "2026-02-22 19:28:02"
     }
   ],
   "crypto": {
@@ -631,12 +631,12 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 1034.3849701201977,
-        "avg_buy_price": 0.2516833329988236,
-        "total_invested": 260.33745688373995,
+        "quantity": 1038.3620620705638,
+        "avg_buy_price": 0.2516824009947123,
+        "total_invested": 261.33745688373995,
         "exchange": "coinbase",
-        "current_value": 260.3340092798514,
-        "updated_at": "2026-02-22 19:28:31"
+        "current_value": 261.08575688702257,
+        "updated_at": "2026-02-22 19:28:42"
       },
       {
         "id": 70,
@@ -653,12 +653,12 @@
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 5290.880136573043,
+        "quantity": 5250.248636573043,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 127.55814586086159,
+        "total_invested": 126.57855859565043,
         "exchange": "coinbase",
-        "current_value": 140.20832361918565,
-        "updated_at": "2026-02-22 19:28:19"
+        "current_value": 137.03148941455643,
+        "updated_at": "2026-02-22 19:28:42"
       },
       {
         "id": 74,
@@ -861,6 +861,51 @@
     ],
     "trades": [
       {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 6.8495,
+        "price": 0.386,
+        "total": 2.78306,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:28:45"
+      },
+      {
+        "coin": "rave",
+        "side": "sell",
+        "quantity": 3.3249999999999997,
+        "price": 0.674,
+        "total": 2.359,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:28:43"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.913,
+        "total": 4.1372595,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:28:43"
+      },
+      {
+        "coin": "lrds",
+        "side": "sell",
+        "quantity": 40.6315,
+        "price": 0.0261,
+        "total": 1.116297,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:28:42"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 3.9770919503658924,
+        "price": 0.25144,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:28:42"
+      },
+      {
         "coin": "arpa",
         "side": "buy",
         "quantity": 168.75560385652835,
@@ -904,51 +949,6 @@
         "total": 1.8408744770361594,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 19:28:25"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.9691990156386443,
-        "price": 0.25194,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:28:23"
-      },
-      {
-        "coin": "agld",
-        "side": "sell",
-        "quantity": 6.8495,
-        "price": 0.3867,
-        "total": 2.788107,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:28:21"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.913,
-        "total": 4.35501,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:28:20"
-      },
-      {
-        "coin": "lrds",
-        "side": "sell",
-        "quantity": 40.6315,
-        "price": 0.0265,
-        "total": 1.133405,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:28:19"
-      },
-      {
-        "coin": "rave",
-        "side": "sell",
-        "quantity": 3.3249999999999997,
-        "price": 0.6754,
-        "total": 2.3639,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:28:19"
       }
     ],
     "prices": [
