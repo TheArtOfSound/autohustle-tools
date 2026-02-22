@@ -200,6 +200,7 @@
         const assets = d.assets || {};
         const recentAssets = d.assets?.recent || d.recent_assets || [];
         const crypto = d.crypto || {};
+        const shopify = d.shopify || {};
         const needs = d.needs || [];
         const actionsToday = d.actions?.today_total || d.actions_today?.total || 0;
         const successesToday = d.actions?.today_successes || d.actions_today?.successes || 0;
@@ -228,6 +229,9 @@
         html += `<div class="metric assets"><div class="label">Assets Created</div><div class="value">${fmtN(assets.total || 0)}</div><div class="sub">${fmtN(assets.published || 0)} published</div></div>`;
         html += `<div class="metric strategies"><div class="label">Active Strategies</div><div class="value">${strats.filter(s => s.status === 'active').length}</div><div class="sub">${strats.length} total</div></div>`;
         html += `<div class="metric crypto"><div class="label">Crypto Portfolio</div><div class="value">${fmt$(cryptoValue)}</div><div class="sub ${cryptoPnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">P&L: ${fmt$(cryptoPnl)}</div></div>`;
+        if (shopify.connected) {
+            html += `<div class="metric" style="border-color:var(--purple)"><div class="label">Shopify Store</div><div class="value" style="color:var(--purple)">${fmtN(shopify.product_count || 0)} products</div><div class="sub">${fmtN(shopify.total_orders || 0)} orders &bull; ${fmt$(shopify.total_revenue || 0)}</div></div>`;
+        }
         const successRate = actionsToday > 0 ? (successesToday / actionsToday * 100) : 0;
         html += `<div class="metric"><div class="label">Success Rate</div><div class="value" style="color:${successRate >= 70 ? 'var(--green)' : successRate >= 40 ? 'var(--yellow)' : 'var(--red)'}">${fmtPct(successRate)}</div><div class="sub">today's actions</div></div>`;
         html += '</div>';
@@ -239,6 +243,7 @@
         html += '<div class="tab" data-tab="thoughts">System Thoughts</div>';
         html += '<div class="tab" data-tab="assets">Assets & Content</div>';
         html += '<div class="tab" data-tab="crypto">Crypto</div>';
+        html += '<div class="tab" data-tab="shopify">Shopify Store</div>';
         html += '<div class="tab" data-tab="needs">Needs & Goals</div>';
         html += '</div>';
 
@@ -417,6 +422,47 @@
         }
         html += '</div>';
         html += '</div>'; // close tab-crypto
+
+        // ── Tab: Shopify Store ──
+        html += '<div class="tab-content" id="tab-shopify">';
+        html += '<div class="section">';
+        if (shopify.connected) {
+            html += `<div class="section-header"><h2>Shopify — ${esc(shopify.store_name || 'Store')}</h2><span class="badge" style="background:var(--purple-dim);color:var(--purple)">LIVE</span></div>`;
+            html += '<div class="metrics" style="margin-bottom:16px">';
+            html += `<div class="metric" style="border-color:var(--purple)"><div class="label">Products</div><div class="value" style="color:var(--purple)">${fmtN(shopify.product_count || 0)}</div></div>`;
+            html += `<div class="metric" style="border-color:var(--green)"><div class="label">Total Orders</div><div class="value" style="color:var(--green)">${fmtN(shopify.total_orders || 0)}</div></div>`;
+            html += `<div class="metric" style="border-color:var(--yellow)"><div class="label">Open Orders</div><div class="value" style="color:var(--yellow)">${fmtN(shopify.open_orders || 0)}</div></div>`;
+            html += `<div class="metric" style="border-color:var(--green)"><div class="label">Store Revenue</div><div class="value" style="color:var(--green)">${fmt$(shopify.total_revenue || 0)}</div></div>`;
+            html += `<div class="metric"><div class="label">Plan</div><div class="value" style="font-size:0.9em">${esc(shopify.plan || '?')}</div></div>`;
+            html += `<div class="metric"><div class="label">Domain</div><div class="value" style="font-size:0.8em;word-break:break-all">${esc(shopify.domain || '?')}</div></div>`;
+            html += '</div>';
+
+            // Show recent Shopify assets
+            const shopifyAssets = recentAssets.filter(a => a.strategy_id === 'shopify_store');
+            if (shopifyAssets.length > 0) {
+                html += '<div class="section-header"><h2>Recent Products Added by AI</h2></div>';
+                html += '<table><thead><tr><th>Time</th><th>Product</th><th>Status</th><th>Price</th></tr></thead><tbody>';
+                shopifyAssets.forEach(a => {
+                    const meta = typeof a.metadata === 'string' ? JSON.parse(a.metadata || '{}') : (a.metadata || {});
+                    html += `<tr>
+                        <td>${timeAgo(a.created_at)}</td>
+                        <td>${a.url ? `<a href="${esc(a.url)}" target="_blank" style="color:var(--purple)">${esc(a.title)}</a>` : esc(a.title)}</td>
+                        <td><span class="badge" style="background:${a.status === 'published' ? 'var(--green-dim);color:var(--green)' : 'var(--yellow-dim);color:var(--yellow)'}">${esc(a.status)}</span></td>
+                        <td>${meta.selling_price ? '$' + meta.selling_price : (meta.product_payload?.variants?.[0]?.price ? '$' + meta.product_payload.variants[0].price : '—')}</td>
+                    </tr>`;
+                });
+                html += '</tbody></table>';
+            }
+        } else {
+            html += '<div class="section-header"><h2>Shopify Store</h2></div>';
+            html += '<div class="thought-card" style="border-left:3px solid var(--purple);margin-bottom:16px">';
+            html += '<div class="type" style="color:var(--purple)">Not Connected</div>';
+            html += '<div class="reasoning">';
+            html += '<p>Connect your Shopify store in <a href="/settings" style="color:var(--purple)">Settings</a> to enable autonomous store management.</p>';
+            html += '<p style="margin-top:8px;color:var(--muted)">The AI will automatically add products, write descriptions, set pricing, manage SEO metadata, create collections, and promote your store.</p>';
+            html += '</div></div>';
+        }
+        html += '</div></div>'; // close tab-shopify
 
         // ── Tab: Needs & Goals ──
         html += '<div class="tab-content" id="tab-needs">';
