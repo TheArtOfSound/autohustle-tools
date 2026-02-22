@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T19:05:21.790927+00:00",
+  "updated": "2026-02-22T19:05:22.803008+00:00",
   "revenue": {
     "total": 30.808089042482525,
     "last_7d": 30.808089042482525
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 13062
+      "total_effort": 13075
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1884
+      "total_effort": 1891
     },
     {
       "id": "api_products",
@@ -111,10 +111,66 @@
     }
   ],
   "actions_today": {
-    "total": 13850,
-    "successes": 6247
+    "total": 13858,
+    "successes": 6251
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.45,
+      "executed_at": "2026-02-22 19:04:31"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:04:31"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 19:04:28"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:04:28"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:04:28"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "research_keywords",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:04:28"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 19:04:24"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:04:24"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -268,62 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:03:53"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:03:47"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:03:47"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:03:43"
     }
   ],
   "decisions": [
@@ -449,16 +449,80 @@
     }
   ],
   "assets": {
-    "total": 9438,
-    "published": 9207
+    "total": 9446,
+    "published": 9214
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Simplify Your Workspace",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 19:04:31"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Tame the Noise Monster in Your Home Office",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-tame-the-noise-monster-in-your-home-office/",
+      "created_at": "2026-02-22 19:04:30"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Simplify Your Workspace",
+      "status": "published",
+      "url": "/blog/simplify-your-workspace/",
+      "created_at": "2026-02-22 19:04:29"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 19:04:28"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 19:04:26"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
+      "status": "published",
+      "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
+      "created_at": "2026-02-22 19:04:25"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between Breast Pumps and Manual Pumps for Nursing: A Comprehensive Guide",
+      "status": "published",
+      "url": "/choosing-between-breast-pumps-and-manual-pumps-for-nursing-a-comprehensive-guide/",
+      "created_at": "2026-02-22 19:04:24"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "5 Simple Ways to Optimize Your Home Office Lighting",
       "status": "published",
       "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 19:04:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
       "created_at": "2026-02-22 19:04:23"
     },
     {
@@ -548,70 +612,6 @@
       "status": "published",
       "url": "/how-to-stop-your-dog-from-chewing-furniture-essential-pet-care-products/",
       "created_at": "2026-02-22 19:04:11"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Upgrade Your Home Office Setup",
-      "status": "published",
-      "url": "/blog/upgrade-your-home-office-setup/",
-      "created_at": "2026-02-22 19:04:07"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
-      "status": "published",
-      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
-      "created_at": "2026-02-22 19:04:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Simplify Your Workspace: A Step-by-Step Guide on How to Reduce Noise from a Home Office Printer",
-      "status": "published",
-      "url": "/simplify-your-workspace-a-step-by-step-guide-on-how-to-reduce-noise-from-a-home-office-printer/",
-      "created_at": "2026-02-22 19:03:58"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "New Parent? Choose a Crib with Storage for Peace of Mind",
-      "status": "published",
-      "url": "/blog/new-parent-choose-a-crib-with-storage-for-peace-of-mind/",
-      "created_at": "2026-02-22 19:03:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
-      "status": "published",
-      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
-      "created_at": "2026-02-22 19:03:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme in Kitchen Gadgets?",
-      "status": "published",
-      "url": "/electric-vs-manual-can-opener-which-durability-reigns-supreme-in-kitchen-gadgets/",
-      "created_at": "2026-02-22 19:03:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Jammed Printer Head: A Step-by-Step Guide for Home Office Users",
-      "status": "published",
-      "url": "/how-to-fix-a-jammed-printer-head-a-step-by-step-guide-for-home-office-users/",
-      "created_at": "2026-02-22 19:03:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Cat Scratching Post Height for a Happy Feline",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-cat-scratching-post-height-for-a-happy-feline/",
-      "created_at": "2026-02-22 19:03:42"
     }
   ],
   "crypto": {
