@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T09:56:43.298827+00:00",
+  "updated": "2026-02-22T09:56:58.751640+00:00",
   "revenue": {
     "total": 154.8947320958141,
     "last_7d": 154.8947320958141
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 315
+      "total_effort": 318
     },
     {
       "id": "stripe_premium",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 2993,
-    "successes": 1360
+    "total": 2995,
+    "successes": 1361
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 09:56:56"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 09:56:56"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-02-22 09:54:05"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 09:54:03"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 09:54:03"
     }
   ],
   "decisions": [
@@ -449,10 +449,18 @@
     }
   ],
   "assets": {
-    "total": 2231,
+    "total": 2232,
     "published": 2013
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 09:56:56"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -603,14 +611,6 @@
       "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
       "status": "published",
       "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 09:53:42"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Newborn Parenting Hacks!",
-      "status": "draft",
-      "url": "",
       "created_at": "2026-02-22 09:53:42"
     }
   ],
