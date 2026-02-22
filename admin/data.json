@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T10:42:59.171973+00:00",
+  "updated": "2026-02-22T10:44:11.749594+00:00",
   "revenue": {
     "total": 54.36756426000001,
     "last_7d": 54.36756426000001
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 928
+      "total_effort": 938
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 378
+      "total_effort": 382
     },
     {
       "id": "stripe_premium",
@@ -107,14 +107,70 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 505
+      "total_effort": 508
     }
   ],
   "actions_today": {
-    "total": 3691,
-    "successes": 1687
+    "total": 3699,
+    "successes": 1691
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 10:44:00"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 10:44:00"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 10:43:55"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 10:43:55"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 10:43:29"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "add_product_images",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 10:43:29"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 10:43:20"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 10:43:20"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -268,62 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "publish_draft",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "publish_draft",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "publish_draft",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 10:41:07"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "publish_draft",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 10:41:07"
     }
   ],
   "decisions": [
@@ -449,10 +449,26 @@
     }
   ],
   "assets": {
-    "total": 2605,
+    "total": 2607,
     "published": 2406
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 10:43:55"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "MindSprint: AI-Driven Micro-Moment Writing Prompts for Indie Authors and Content Creators",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 10:43:20"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -596,22 +612,6 @@
       "status": "published",
       "url": "/blog/stay-warm-stay-focused-the-ultimate-smart-mug-warmer-pad-for-coffee-lovers/",
       "created_at": "2026-02-22 10:40:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Smart mug warmers are game-changers for remote workers",
-      "status": "published",
-      "url": "/blog/psa-smart-mug-warmers-are-game-changers-for-remote-workers/",
-      "created_at": "2026-02-22 10:40:45"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Swings for Twins: Top Picks for Safe and Soothing Sleep",
-      "status": "published",
-      "url": "/the-best-baby-swings-for-twins-top-picks-for-safe-and-soothing-sleep/",
-      "created_at": "2026-02-22 10:39:50"
     }
   ],
   "crypto": {
