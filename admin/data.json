@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T07:38:17.282048+00:00",
+  "updated": "2026-02-22T07:39:27.858384+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -67,7 +67,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 126
+      "total_effort": 130
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 183
+      "total_effort": 190
     },
     {
       "id": "stripe_premium",
@@ -99,14 +99,112 @@
       "type": "dropshipping",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 224
+      "total_effort": 228
     }
   ],
   "actions_today": {
-    "total": 1333,
-    "successes": 609
+    "total": 1347,
+    "successes": 615
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 07:39:25"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:25"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:21"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:21"
+    },
+    {
+      "strategy_id": "dropshipping",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "dropshipping",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "dropshipping",
+      "action_type": "publish_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "dropshipping",
+      "action_type": "publish_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:15"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 07:39:11"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:11"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 07:39:05"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 07:39:05"
+    },
     {
       "strategy_id": "content_optimizer",
       "action_type": "analyze_performance",
@@ -218,104 +316,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 07:37:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 07:37:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 07:37:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:34"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 07:37:30"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:30"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 07:37:26"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:26"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 07:37:21"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "publish_report",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:21"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 07:37:20"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:20"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 07:37:20"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 07:37:20"
     }
   ],
   "decisions": [
@@ -441,10 +441,18 @@
     }
   ],
   "assets": {
-    "total": 900,
+    "total": 901,
     "published": 836
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Market Intelligence Report: Crypto Trends and Insights",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 07:39:25"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -596,14 +604,6 @@
       "status": "draft",
       "url": null,
       "created_at": "2026-02-22 07:37:20"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Ergohuman High-Back Executive Chair",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 07:37:15"
     }
   ],
   "crypto": {
