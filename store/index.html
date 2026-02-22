@@ -8,12 +8,12 @@
     <meta property="og:title" content="AutoHustle Store - Digital Products & Courses">
     <meta property="og:description" content="Premium digital products, courses, templates, and guides. Instant download.">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://autohustle.online/store/">
+    <link rel="canonical" href="https://theartofsound.github.io/autohustle-tools/store/">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --primary: #6366f1; --green: #10b981; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; }
+        :root { --primary: #6366f1; --green: #10b981; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; --orange: #f59e0b; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
         nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
         nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
         nav a:hover { text-decoration: underline; }
@@ -34,24 +34,27 @@
         .product-card:hover { transform: translateY(-4px); border-color: var(--primary); }
         .product-card .badge { display: inline-block; background: var(--primary); color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.75em; font-weight: 600; margin-bottom: 12px; width: fit-content; }
         .product-card .badge.course { background: var(--green); }
+        .product-card .badge.api { background: var(--orange); }
+        .product-card .badge.system { background: #ef4444; }
         .product-card h3 { font-size: 1.2em; margin-bottom: 10px; color: var(--text); }
         .product-card .desc { color: var(--text-muted); font-size: 0.95em; line-height: 1.5; margin-bottom: 16px; flex-grow: 1; }
         .product-card .price { font-size: 1.4em; font-weight: 700; color: var(--green); margin-bottom: 12px; }
+        .product-card .price .original { text-decoration: line-through; color: var(--text-muted); font-size: 0.7em; margin-left: 8px; }
         .product-card .cta {
             display: inline-block; background: var(--primary); color: white; padding: 10px 24px;
             border-radius: 8px; text-decoration: none; font-weight: 600; text-align: center;
             transition: opacity 0.2s;
         }
         .product-card .cta:hover { opacity: 0.9; }
+        .product-card .cta.green { background: var(--green); }
         .product-card .tags { margin-top: 12px; }
         .product-card .tag { display: inline-block; background: var(--surface2); padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin: 2px; color: var(--text-muted); }
+        .featured { border: 2px solid var(--green); background: linear-gradient(135deg, var(--surface) 0%, rgba(16,185,129,0.05) 100%); }
         .tools-banner { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 30px; text-align: center; margin: 40px 0; }
         .tools-banner h2 { color: var(--primary); margin-bottom: 10px; }
         .tools-banner p { color: var(--text-muted); margin-bottom: 16px; }
         .tools-banner a { display: inline-block; background: var(--surface2); color: var(--primary); padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid var(--primary); }
         .tools-banner a:hover { background: var(--primary); color: white; }
-        #products-container { min-height: 200px; }
-        .loading { text-align: center; padding: 40px; color: var(--text-muted); }
         footer { text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px; }
         footer a { color: var(--primary); text-decoration: none; }
     </style>
@@ -59,23 +62,54 @@
 <body>
     <nav>
         <div class="container">
-            <a href="/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/store/">Store</a> &nbsp;|&nbsp; <a href="/admin/">Admin</a>
+            <a href="/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/store/">Store</a>
         </div>
     </nav>
     <header>
         <h1><span>AutoHustle</span> Store</h1>
-        <p>Premium digital products, courses, and guides. Practical resources created by experts. Instant digital download.</p>
+        <p>Premium digital products, courses, and tools. Practical resources created by experts. Instant digital access.</p>
     </header>
     <main>
         <div class="container">
 
+            <!-- FLAGSHIP: AutoHustle System -->
+            <h2 class="section-title">The AutoHustle System</h2>
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <span class="badge system">AI SYSTEM</span>
+                    <h3>AutoHustle Starter</h3>
+                    <p class="desc">The AI-powered income automation system. 5 revenue strategies, SEO content engine, digital product factory, and monitoring dashboard. Everything runs on autopilot.</p>
+                    <div class="price">$97</div>
+                    <a href="https://buy.stripe.com/eVq7sL5WNaJo5sG1Fa6c00y" class="cta green">Get AutoHustle Starter</a>
+                    <div class="tags">
+                        <span class="tag">5 Strategies</span>
+                        <span class="tag">Self-Hosted</span>
+                        <span class="tag">Runs 24/7</span>
+                    </div>
+                </div>
+                <div class="product-card featured">
+                    <span class="badge system">AI SYSTEM</span>
+                    <h3>AutoHustle Complete</h3>
+                    <p class="desc">Everything in Starter PLUS crypto trading bot, web scraping engine, API products, content optimizer, and premium tool monetization. 10 autonomous strategies.</p>
+                    <div class="price">$197 <span class="original">$297</span></div>
+                    <a href="https://buy.stripe.com/5kQ00j4SJ04KaN057C6c00z" class="cta green">Get Complete System</a>
+                    <div class="tags">
+                        <span class="tag">10 Strategies</span>
+                        <span class="tag">Crypto Trading</span>
+                        <span class="tag">Priority Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courses -->
             <h2 class="section-title">Courses</h2>
-            <div id="courses-grid" class="products-grid">
+            <div class="products-grid">
                 <div class="product-card">
                     <span class="badge course">COURSE</span>
                     <h3>Python Automation for Beginners</h3>
                     <p class="desc">5 modules of hands-on content. Learn to automate boring tasks with Python — no prior coding experience needed.</p>
                     <div class="price">$19</div>
+                    <a href="https://buy.stripe.com/dRm9AT3OFcRw7AO6Zu6c00t" class="cta">Get Instant Access</a>
                     <div class="tags">
                         <span class="tag">5 Modules</span>
                         <span class="tag">Beginner Friendly</span>
@@ -87,6 +121,7 @@
                     <h3>ChatGPT Prompt Engineering Masterclass</h3>
                     <p class="desc">4 modules covering advanced prompting techniques. Get better results from AI tools in business, writing, and coding.</p>
                     <div class="price">$14</div>
+                    <a href="https://buy.stripe.com/eVq28r84V04Kg7kgA46c00u" class="cta">Get Instant Access</a>
                     <div class="tags">
                         <span class="tag">4 Modules</span>
                         <span class="tag">AI Skills</span>
@@ -95,57 +130,44 @@
                 </div>
                 <div class="product-card">
                     <span class="badge course">COURSE</span>
-                    <h3>SEO for Small Business Owners</h3>
-                    <p class="desc">5 modules teaching you exactly how to rank your business on Google. Practical, no-fluff SEO strategies that work.</p>
-                    <div class="price">$17</div>
+                    <h3>Build a Side Income with Print-on-Demand</h3>
+                    <p class="desc">Step-by-step guide to launching a profitable print-on-demand business. Design tips, platform selection, and marketing strategies.</p>
+                    <div class="price">$12</div>
+                    <a href="https://buy.stripe.com/28E6oHclb18O2gu3Ni6c00x" class="cta">Get Instant Access</a>
                     <div class="tags">
-                        <span class="tag">5 Modules</span>
-                        <span class="tag">Marketing</span>
-                        <span class="tag">Instant Access</span>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <span class="badge course">COURSE</span>
-                    <h3>No-Code App Building with Cursor & AI</h3>
-                    <p class="desc">5 modules on building real apps without writing code. The hottest skill in 2026 — learn to ship products fast.</p>
-                    <div class="price">$19</div>
-                    <div class="tags">
-                        <span class="tag">5 Modules</span>
-                        <span class="tag">No-Code</span>
+                        <span class="tag">Side Hustle</span>
+                        <span class="tag">E-Commerce</span>
                         <span class="tag">Instant Access</span>
                     </div>
                 </div>
             </div>
 
-            <h2 class="section-title">Digital Products</h2>
-            <div id="products-grid" class="products-grid">
+            <!-- API Products -->
+            <h2 class="section-title">API Products</h2>
+            <div class="products-grid">
                 <div class="product-card">
-                    <span class="badge">TEMPLATE PACK</span>
-                    <h3>Freelancer Client Onboarding Templates</h3>
-                    <p class="desc">Professional proposal, contract, invoice, and welcome packet templates. Look like a pro agency from day one.</p>
-                    <div class="price">$14</div>
-                    <a href="#" class="cta" id="link-templates">Get Instant Access</a>
+                    <span class="badge api">API</span>
+                    <h3>Inspirational Quotes API</h3>
+                    <p class="desc">RESTful API delivering curated inspirational quotes. Perfect for apps, websites, and bots. JSON responses, simple integration.</p>
+                    <div class="price">$9.99</div>
+                    <a href="https://buy.stripe.com/8x200j4SJ3gW7AO3Ni6c000" class="cta">Get API Access</a>
+                    <div class="tags">
+                        <span class="tag">REST API</span>
+                        <span class="tag">JSON</span>
+                        <span class="tag">Instant Key</span>
+                    </div>
                 </div>
                 <div class="product-card">
-                    <span class="badge">SWIPE FILE</span>
-                    <h3>30 High-Converting Email Templates</h3>
-                    <p class="desc">Welcome sequences, sales emails, re-engagement campaigns. Copy-paste templates that actually get clicks.</p>
-                    <div class="price">$11</div>
-                    <a href="#" class="cta" id="link-emails">Get Instant Access</a>
-                </div>
-                <div class="product-card">
-                    <span class="badge">GUIDE</span>
-                    <h3>Remote Work Productivity Blueprint</h3>
-                    <p class="desc">Complete system for maximizing productivity as a remote worker. Daily routines, tool recommendations, distraction elimination.</p>
-                    <div class="price">$12</div>
-                    <a href="#" class="cta" id="link-remote">Get Instant Access</a>
-                </div>
-                <div class="product-card">
-                    <span class="badge">CHECKLIST</span>
-                    <h3>Website Launch: 100-Point QA Checklist</h3>
-                    <p class="desc">Never miss a critical step when launching a website. SEO audit, performance checks, and accessibility review included.</p>
-                    <div class="price">$7</div>
-                    <a href="#" class="cta" id="link-checklist">Get Instant Access</a>
+                    <span class="badge api">API</span>
+                    <h3>Text Analysis API</h3>
+                    <p class="desc">Analyze text for readability, sentiment, word count, and more. Great for content tools, writing apps, and SEO analysis.</p>
+                    <div class="price">$9.99</div>
+                    <a href="https://buy.stripe.com/5kQ00jad3g3If3g1Fa6c007" class="cta">Get API Access</a>
+                    <div class="tags">
+                        <span class="tag">REST API</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Instant Key</span>
+                    </div>
                 </div>
             </div>
 
@@ -158,25 +180,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2026 <a href="https://autohustle.online">AutoHustle.online</a> &mdash; <a href="/">Free Tools</a> | <a href="/store/">Store</a> | <a href="/admin/">Admin</a></p>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/">Free Tools</a> | <a href="/store/">Store</a></p>
     </footer>
-    <script>
-    // Auto-update product links from Gumroad when available
-    (async () => {
-        try {
-            const r = await fetch('/admin/data.json');
-            if (!r.ok) return;
-            const data = await r.json();
-            if (!data.assets) return;
-            // Find any assets with gumroad URLs and update links
-            for (const asset of data.assets) {
-                if (asset.url && asset.url.includes('gumroad.com')) {
-                    // Create a dynamic card for this asset
-                    console.log('Gumroad product:', asset.title, asset.url);
-                }
-            }
-        } catch(e) { /* Gumroad links will be updated as products are listed */ }
-    })();
-    </script>
 </body>
 </html>
