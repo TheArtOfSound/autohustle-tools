@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T19:06:39.040581+00:00",
+  "updated": "2026-02-22T19:07:00.445199+00:00",
   "revenue": {
-    "total": 31.56952806825429,
-    "last_7d": 31.56952806825429
+    "total": 31.830807743511546,
+    "last_7d": 31.830807743511546
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 826.3279674767665,
-      "total_effort": 1596
+      "total_revenue": 826.5892471520237,
+      "total_effort": 1602
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2882
+      "total_effort": 2892
     },
     {
       "id": "freelance",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 205
+      "total_effort": 206
     },
     {
       "id": "seo_content",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 13160
+      "total_effort": 13174
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1905
+      "total_effort": 1913
     },
     {
       "id": "api_products",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 358
+      "total_effort": 360
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1198
+      "total_effort": 1206
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1109
+      "total_effort": 1116
     },
     {
       "id": "course_creator",
@@ -107,223 +107,223 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 5186
+      "total_effort": 5231
     }
   ],
   "actions_today": {
-    "total": 13906,
-    "successes": 6275
+    "total": 13966,
+    "successes": 6299
   },
   "recent_actions": [
     {
-      "strategy_id": "crypto_trading",
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
+    },
+    {
+      "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:55"
+      "executed_at": "2026-02-22 19:06:58"
     },
     {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:55"
+      "executed_at": "2026-02-22 19:06:58"
     },
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "digital_products",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:05:52"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:58"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:52"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:05:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:48"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 19:05:47"
+      "executed_at": "2026-02-22 19:06:58"
     },
     {
       "strategy_id": "crypto_trading",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:40"
+      "executed_at": "2026-02-22 19:06:57"
     },
     {
       "strategy_id": "crypto_trading",
       "action_type": "fetch_and_analyze",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:36"
+      "executed_at": "2026-02-22 19:06:57"
     },
     {
       "strategy_id": "crypto_trading",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 19:05:34"
+      "executed_at": "2026-02-22 19:06:54"
     },
     {
       "strategy_id": "crypto_trading",
       "action_type": "fetch_and_analyze",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:34"
+      "executed_at": "2026-02-22 19:06:54"
     },
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.45,
-      "executed_at": "2026-02-22 19:05:30"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:53"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.45,
-      "executed_at": "2026-02-22 19:05:30"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:30"
+      "executed_at": "2026-02-22 19:06:53"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:30"
-    },
-    {
-      "strategy_id": "seo_content",
+      "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:05:30"
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:49"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "shopify_store",
+      "action_type": "organize_store",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:30"
+      "executed_at": "2026-02-22 19:06:49"
     },
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 19:05:25"
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:48"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "shopify_store",
+      "action_type": "auto_fulfill_orders",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 19:05:25"
+      "executed_at": "2026-02-22 19:06:48"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:47"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:47"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:43"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "daily_theme_refresh",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:43"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:42"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "comprehensive_store_audit",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:42"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "manage_collections",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:39"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:38"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:35"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "deep_product_development",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:35"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "add_product_images",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:35"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:33"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:06:29"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "optimize_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:06:29"
     }
   ],
   "decisions": [
@@ -449,10 +449,130 @@
     }
   ],
   "assets": {
-    "total": 9507,
-    "published": 9275
+    "total": 9522,
+    "published": 9291
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Lasts Longer?",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 19:06:15"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 19:06:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Great Opener Showdown: Electric vs Manual Can Opener",
+      "status": "published",
+      "url": "/blog/the-great-opener-showdown-electric-vs-manual-can-opener/",
+      "created_at": "2026-02-22 19:06:14"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Exercise Ball for Pregnancy: Top 7 Prenatal Fitness Balls for Safe Workouts",
+      "status": "published",
+      "url": "/best-exercise-ball-for-pregnancy-top-7-prenatal-fitness-balls-for-safe-workouts/",
+      "created_at": "2026-02-22 19:06:13"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 19:06:13"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme?",
+      "status": "published",
+      "url": "/blog/electric-vs-manual-can-opener-which-durability-reigns-supreme/",
+      "created_at": "2026-02-22 19:06:13"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Squeaky Baby Gate: Easy DIY Solutions for Parents",
+      "status": "published",
+      "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
+      "created_at": "2026-02-22 19:06:12"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
+      "created_at": "2026-02-22 19:06:12"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Baby Gear vs Strollers: Which is Right for You?",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 19:06:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Home Gym: Adjustable Dumbbells vs Fixed Weights for a More Effective Workout",
+      "status": "published",
+      "url": "/unlock-your-home-gym-adjustable-dumbbells-vs-fixed-weights-for-a-more-effective-workout/",
+      "created_at": "2026-02-22 19:06:11"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Ultimate Parent's Dilemma: Baby Gear vs. Strollers \u2014 Which Investment Actually Matters?",
+      "status": "published",
+      "url": "/blog/the-ultimate-parents-dilemma-baby-gear-vs-strollers-which-investment-actually-ma/",
+      "created_at": "2026-02-22 19:06:11"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 19:06:09"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
+      "status": "published",
+      "url": "/blog/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
+      "created_at": "2026-02-22 19:06:08"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between Breast Pumps and Manual Pumps for Nursing: A Comprehensive Guide",
+      "status": "published",
+      "url": "/choosing-between-breast-pumps-and-manual-pumps-for-nursing-a-comprehensive-guide/",
+      "created_at": "2026-02-22 19:06:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Get Fit at Home: Top Resistance Bands for Effective Workouts",
+      "status": "published",
+      "url": "/get-fit-at-home-top-resistance-bands-for-effective-workouts/",
+      "created_at": "2026-02-22 19:06:03"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -473,8 +593,8 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Make Healthy Baby Food with Ease!",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "/blog/make-healthy-baby-food-with-ease/",
       "created_at": "2026-02-22 19:05:49"
     },
     {
@@ -492,126 +612,6 @@
       "status": "published",
       "url": "/how-to-fix-a-squeaky-baby-gate-easy-diy-solutions-for-parents/",
       "created_at": "2026-02-22 19:05:48"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Essential Tools to Make Healthy Homemade Baby Food",
-      "status": "published",
-      "url": "/blog/5-essential-tools-to-make-healthy-homemade-baby-food/",
-      "created_at": "2026-02-22 19:05:48"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Purrfectly Clean: The Ultimate Guide to Cat Litter vs Clumping Litter",
-      "status": "published",
-      "url": "/blog/purrfectly-clean-the-ultimate-guide-to-cat-litter-vs-clumping-litter/",
-      "created_at": "2026-02-22 19:05:47"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Breast Pumps and Manual Pumps for Nursing: A Comprehensive Guide",
-      "status": "published",
-      "url": "/choosing-between-breast-pumps-and-manual-pumps-for-nursing-a-comprehensive-guide/",
-      "created_at": "2026-02-22 19:05:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 19:05:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Ultimate Cat Litter Showdown",
-      "status": "published",
-      "url": "/blog/ultimate-cat-litter-showdown/",
-      "created_at": "2026-02-22 19:05:45"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 19:05:45"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
-      "status": "published",
-      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
-      "created_at": "2026-02-22 19:05:41"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Simplify Your Workspace: A Step-by-Step Guide on How to Reduce Noise from a Home Office Printer",
-      "status": "published",
-      "url": "/simplify-your-workspace-a-step-by-step-guide-on-how-to-reduce-noise-from-a-home-office-printer/",
-      "created_at": "2026-02-22 19:05:30"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme in Kitchen Gadgets?",
-      "status": "published",
-      "url": "/electric-vs-manual-can-opener-which-durability-reigns-supreme-in-kitchen-gadgets/",
-      "created_at": "2026-02-22 19:05:28"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
-      "status": "published",
-      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
-      "created_at": "2026-02-22 19:05:25"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Cat Scratching Post Height for a Happy Feline",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-cat-scratching-post-height-for-a-happy-feline/",
-      "created_at": "2026-02-22 19:05:25"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
-      "status": "published",
-      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
-      "created_at": "2026-02-22 19:05:24"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Jammed Printer Head: A Step-by-Step Guide for Home Office Users",
-      "status": "published",
-      "url": "/how-to-fix-a-jammed-printer-head-a-step-by-step-guide-for-home-office-users/",
-      "created_at": "2026-02-22 19:05:24"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Automatic Feeders for Multiple Cats | Top Pet Care Products",
-      "status": "published",
-      "url": "/the-best-automatic-feeders-for-multiple-cats-top-pet-care-products/",
-      "created_at": "2026-02-22 19:05:23"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Instant Pot vs Slow Cooker: Which Reigns Supreme?",
-      "status": "published",
-      "url": "/blog/instant-pot-vs-slow-cooker-which-reigns-supreme/",
-      "created_at": "2026-02-22 19:05:23"
     }
   ],
   "crypto": {
@@ -631,45 +631,45 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 906.5390852272704,
-        "avg_buy_price": 0.2518782263276552,
-        "total_invested": 228.33745688373995,
+        "quantity": 914.5384546074382,
+        "avg_buy_price": 0.25186197007168093,
+        "total_invested": 230.33745688373995,
         "exchange": "coinbase",
-        "current_value": 227.30561022988581,
-        "updated_at": "2026-02-22 19:05:52"
+        "current_value": 228.4059790382077,
+        "updated_at": "2026-02-22 19:06:51"
       },
       {
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 6184.773136573052,
+        "quantity": 6144.141636573052,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 149.1090656955072,
+        "total_invested": 148.12947843029605,
         "exchange": "coinbase",
-        "current_value": 167.60735200112973,
-        "updated_at": "2026-02-22 19:05:45"
+        "current_value": 166.5062383511297,
+        "updated_at": "2026-02-22 19:06:41"
       },
       {
         "id": 74,
         "strategy_id": "crypto_trading",
         "coin": "plu",
-        "quantity": 644.6313624839975,
-        "avg_buy_price": 0.14928038411946865,
-        "total_invested": 96.23081740706758,
+        "quantity": 651.349986509797,
+        "avg_buy_price": 0.14927584159181545,
+        "total_invested": 97.23081740706758,
         "exchange": "coinbase",
-        "current_value": 95.94693199211818,
-        "updated_at": "2026-02-22 19:05:51"
+        "current_value": 96.94693199211818,
+        "updated_at": "2026-02-22 19:06:50"
       },
       {
         "id": 70,
         "strategy_id": "crypto_trading",
         "coin": "arpa",
-        "quantity": 8886.932311470282,
-        "avg_buy_price": 0.010785294253933876,
-        "total_invested": 95.84817999399974,
+        "quantity": 9020.464136894223,
+        "avg_buy_price": 0.010784031625176296,
+        "total_invested": 97.2769705260359,
         "exchange": "coinbase",
-        "current_value": 95.090175732732,
-        "updated_at": "2026-02-22 19:05:55"
+        "current_value": 96.51896626476818,
+        "updated_at": "2026-02-22 19:06:54"
       },
       {
         "id": 35,
@@ -760,17 +760,6 @@
         "updated_at": "2026-02-22 09:11:06"
       },
       {
-        "id": 59,
-        "strategy_id": "crypto_trading",
-        "coin": "rave",
-        "quantity": 19.643100466294186,
-        "avg_buy_price": 0.6970827246711545,
-        "total_invested": 13.692865994033525,
-        "exchange": "coinbase",
-        "current_value": 13.445702269178371,
-        "updated_at": "2026-02-22 19:05:48"
-      },
-      {
         "id": 69,
         "strategy_id": "crypto_trading",
         "coin": "flock",
@@ -780,6 +769,17 @@
         "exchange": "coinbase",
         "current_value": 12.95048779979865,
         "updated_at": "2026-02-22 16:06:19"
+      },
+      {
+        "id": 59,
+        "strategy_id": "crypto_trading",
+        "coin": "rave",
+        "quantity": 16.318100466294187,
+        "avg_buy_price": 0.6970827246711545,
+        "total_invested": 11.375065934501936,
+        "exchange": "coinbase",
+        "current_value": 11.187689679691294,
+        "updated_at": "2026-02-22 19:06:46"
       },
       {
         "id": 73,
@@ -874,6 +874,78 @@
       {
         "coin": "arpa",
         "side": "buy",
+        "quantity": 133.53182542394012,
+        "price": 0.0107,
+        "total": 1.4287905320361591,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:54"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.004004004004004,
+        "price": 0.24975,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:51"
+      },
+      {
+        "coin": "plu",
+        "side": "buy",
+        "quantity": 6.7186240257995165,
+        "price": 0.14884,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:49"
+      },
+      {
+        "coin": "rave",
+        "side": "sell",
+        "quantity": 3.3249999999999997,
+        "price": 0.6856,
+        "total": 2.3996,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:46"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.912,
+        "total": 4.350239999999999,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:42"
+      },
+      {
+        "coin": "lrds",
+        "side": "sell",
+        "quantity": 40.6315,
+        "price": 0.0271,
+        "total": 1.159067,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:41"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.912,
+        "total": 4.132727999999999,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:01"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 3.99536537616365,
+        "price": 0.25029,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:06:00"
+      },
+      {
+        "coin": "arpa",
+        "side": "buy",
         "quantity": 133.42927869496816,
         "price": 0.0107,
         "total": 1.4276932820361592,
@@ -888,78 +960,6 @@
         "total": 1.0,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 19:05:52"
-      },
-      {
-        "coin": "plu",
-        "side": "buy",
-        "quantity": 6.7186240257995165,
-        "price": 0.14884,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:51"
-      },
-      {
-        "coin": "rave",
-        "side": "sell",
-        "quantity": 3.3249999999999997,
-        "price": 0.6845,
-        "total": 2.39575,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:48"
-      },
-      {
-        "coin": "lrds",
-        "side": "sell",
-        "quantity": 40.6315,
-        "price": 0.0271,
-        "total": 1.159067,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:45"
-      },
-      {
-        "coin": "arpa",
-        "side": "buy",
-        "quantity": 133.40131140524855,
-        "price": 0.0107,
-        "total": 1.4273940320361593,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:40"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.912,
-        "total": 4.132727999999999,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:39"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.976933784052495,
-        "price": 0.25145,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:38"
-      },
-      {
-        "coin": "arpa",
-        "side": "buy",
-        "quantity": 133.32673196599617,
-        "price": 0.0107,
-        "total": 1.426596032036159,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:34"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.9854928061854844,
-        "price": 0.25091,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:05:31"
       }
     ],
     "prices": [
