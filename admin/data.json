@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T19:25:59.126646+00:00",
+  "updated": "2026-02-22T19:26:16.667444+00:00",
   "revenue": {
-    "total": 35.66236903520875,
-    "last_7d": 35.66236903520875
+    "total": 35.81618676999759,
+    "last_7d": 35.81618676999759
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 830.4208084437211,
-      "total_effort": 1694
+      "total_revenue": 830.5746261785099,
+      "total_effort": 1698
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2982
+      "total_effort": 2992
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1264
+      "total_effort": 1267
     },
     {
       "id": "stripe_premium",
@@ -107,14 +107,140 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 5659
+      "total_effort": 5681
     }
   ],
   "actions_today": {
-    "total": 14731,
-    "successes": 6619
+    "total": 14749,
+    "successes": 6625
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:30"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:30"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:30"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:30"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:24"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "organize_store",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:24"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "auto_fulfill_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:23"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:21"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "daily_theme_refresh",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:21"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:20"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "comprehensive_store_audit",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:20"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 19:25:18"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "manage_collections",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 19:25:18"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": "send_promo_email",
@@ -198,132 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 19:25:11"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:11"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "setup_brand",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:11"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:11"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:11"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:08"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "check_conversions",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:08"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": "update_index",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": "analyze_performance",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 19:25:07"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.15,
-      "executed_at": "2026-02-22 19:25:06"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 19:25:06"
     }
   ],
   "decisions": [
@@ -449,10 +449,34 @@
     }
   ],
   "assets": {
-    "total": 10035,
-    "published": 9807
+    "total": 10038,
+    "published": 9811
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Resistance Bands vs Cable Machine for Home Workouts",
+      "status": "published",
+      "url": "/blog/resistance-bands-vs-cable-machine-for-home-workouts/",
+      "created_at": "2026-02-22 19:25:35"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
+      "status": "published",
+      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
+      "created_at": "2026-02-22 19:25:32"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
+      "created_at": "2026-02-22 19:25:31"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -553,8 +577,8 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Transform any doorway into your personal gym \ud83d\udcaa",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "/blog/transform-any-doorway-into-your-personal-gym/",
       "created_at": "2026-02-22 19:24:54"
     },
     {
@@ -588,30 +612,6 @@
       "status": "published",
       "url": "/the-best-baby-swing-for-soothing-your-little-one-top-picks-for-calming-and-relaxation/",
       "created_at": "2026-02-22 19:24:48"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Pull Up Bar for Your Doorway: A Fitness Guide",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-pull-up-bar-for-your-doorway-a-fitness-guide/",
-      "created_at": "2026-02-22 19:24:47"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Resistance Bands vs Cable Machine for Home Workouts: Which is Best for Your Fitness Goals?",
-      "status": "published",
-      "url": "/resistance-bands-vs-cable-machine-for-home-workouts-which-is-best-for-your-fitness-goals/",
-      "created_at": "2026-02-22 19:24:13"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Electric vs Manual Can Opener: Which Lasts Longer?",
-      "status": "published",
-      "url": "/blog/electric-vs-manual-can-opener-which-lasts-longer/",
-      "created_at": "2026-02-22 19:24:13"
     }
   ],
   "crypto": {
@@ -631,45 +631,45 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 1018.4621003301,
-        "avg_buy_price": 0.2516907176031949,
-        "total_invested": 256.33745688373995,
+        "quantity": 1022.4498181591864,
+        "avg_buy_price": 0.251687126657276,
+        "total_invested": 257.33745688373995,
         "exchange": "coinbase",
-        "current_value": 255.39974089977918,
-        "updated_at": "2026-02-22 19:25:03"
+        "current_value": 256.39974089977915,
+        "updated_at": "2026-02-22 19:25:20"
       },
       {
         "id": 70,
         "strategy_id": "crypto_trading",
         "coin": "arpa",
-        "quantity": 13879.89772645291,
-        "avg_buy_price": 0.010767861574819746,
-        "total_invested": 149.45681739110023,
+        "quantity": 13999.306894084883,
+        "avg_buy_price": 0.010768135704291212,
+        "total_invested": 150.74643640152553,
         "exchange": "coinbase",
-        "current_value": 149.90289544569143,
-        "updated_at": "2026-02-22 19:25:13"
+        "current_value": 151.19251445611673,
+        "updated_at": "2026-02-22 19:25:30"
       },
       {
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 5412.7746365730445,
+        "quantity": 5372.143136573044,
         "avg_buy_price": 0.024109059847929708,
-        "total_invested": 130.49690765649507,
+        "total_invested": 129.5173203912839,
         "exchange": "coinbase",
-        "current_value": 143.43852786918566,
-        "updated_at": "2026-02-22 19:24:59"
+        "current_value": 142.36179311918568,
+        "updated_at": "2026-02-22 19:25:16"
       },
       {
         "id": 74,
         "strategy_id": "crypto_trading",
         "coin": "plu",
-        "quantity": 817.786446976308,
-        "avg_buy_price": 0.1482881634963043,
-        "total_invested": 121.26805035428454,
+        "quantity": 830.9599390895447,
+        "avg_buy_price": 0.1481543904044383,
+        "total_invested": 123.1103632263207,
         "exchange": "coinbase",
-        "current_value": 114.35107888069714,
-        "updated_at": "2026-02-22 19:25:05"
+        "current_value": 116.20974748167284,
+        "updated_at": "2026-02-22 19:25:29"
       },
       {
         "id": 35,
@@ -863,6 +863,69 @@
       {
         "coin": "arpa",
         "side": "buy",
+        "quantity": 119.40916763197329,
+        "price": 0.0108,
+        "total": 1.2896190104253116,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:30"
+      },
+      {
+        "coin": "plu",
+        "side": "buy",
+        "quantity": 13.173492113236748,
+        "price": 0.13985,
+        "total": 1.8423128720361592,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:29"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 3.987717829086414,
+        "price": 0.25077,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:20"
+      },
+      {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 6.8495,
+        "price": 0.3874,
+        "total": 2.7931540000000004,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:18"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.913,
+        "total": 4.35501,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:17"
+      },
+      {
+        "coin": "lrds",
+        "side": "sell",
+        "quantity": 40.6315,
+        "price": 0.0265,
+        "total": 1.133405,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:16"
+      },
+      {
+        "coin": "rave",
+        "side": "sell",
+        "quantity": 3.3249999999999997,
+        "price": 0.6737,
+        "total": 2.3579499999999998,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 19:25:16"
+      },
+      {
+        "coin": "arpa",
+        "side": "buy",
         "quantity": 170.58452518853326,
         "price": 0.0108,
         "total": 1.8423128720361592,
@@ -886,69 +949,6 @@
         "total": 1.8416964170361594,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 19:25:05"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 3.987717829086414,
-        "price": 0.25077,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:25:03"
-      },
-      {
-        "coin": "agld",
-        "side": "sell",
-        "quantity": 6.8495,
-        "price": 0.3871,
-        "total": 2.790991,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:25:02"
-      },
-      {
-        "coin": "rave",
-        "side": "sell",
-        "quantity": 3.3249999999999997,
-        "price": 0.6728,
-        "total": 2.3548,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:25:00"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.913,
-        "total": 4.35501,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:25:00"
-      },
-      {
-        "coin": "lrds",
-        "side": "sell",
-        "quantity": 40.6315,
-        "price": 0.0265,
-        "total": 1.133405,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:24:59"
-      },
-      {
-        "coin": "arpa",
-        "side": "buy",
-        "quantity": 120.55202704909452,
-        "price": 0.0107,
-        "total": 1.2899066894253113,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:24:47"
-      },
-      {
-        "coin": "plu",
-        "side": "buy",
-        "quantity": 13.178315397526704,
-        "price": 0.13983,
-        "total": 1.8427238420361591,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 19:24:46"
       }
     ],
     "prices": [
