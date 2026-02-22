@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T18:36:19.727814+00:00",
+  "updated": "2026-02-22T18:36:59.797042+00:00",
   "revenue": {
     "total": 23.979247844296452,
     "last_7d": 23.979247844296452
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1150
+      "total_effort": 1145
     },
     {
       "id": "stripe_premium",
@@ -111,52 +111,10 @@
     }
   ],
   "actions_today": {
-    "total": 13108,
-    "successes": 5916
+    "total": 13102,
+    "successes": 5914
   },
   "recent_actions": [
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:36:17"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:36:17"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "publish_report",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:36:17"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "publish_report",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:36:17"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:36:16"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:36:16"
-    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -324,6 +282,48 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-02-22 18:35:54"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:53"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "add_product_images",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:53"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:49"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "optimize_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:49"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:35:49"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "setup_brand",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:35:49"
     }
   ],
   "decisions": [
