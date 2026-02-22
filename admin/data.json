@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T15:09:22.626597+00:00",
+  "updated": "2026-02-22T15:09:35.726796+00:00",
   "revenue": {
-    "total": 616.8303395381569,
-    "last_7d": 616.8303395381569
+    "total": 617.1540813095577,
+    "last_7d": 617.1540813095577
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 775.2266023391032,
-      "total_effort": 734
+      "total_revenue": 775.5503441105042,
+      "total_effort": 738
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6439
+      "total_effort": 6459
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1052
+      "total_effort": 1057
     },
     {
       "id": "api_products",
@@ -111,10 +111,108 @@
     }
   ],
   "actions_today": {
-    "total": 7224,
-    "successes": 3279
+    "total": 7238,
+    "successes": 3285
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 15:00:54"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:49"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:00:47"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:47"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.15,
+      "executed_at": "2026-02-22 15:00:47"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 15:00:39"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:39"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 15:00:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 15:00:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:27"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 15:00:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 15:00:21"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -226,104 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 14:59:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.15,
-      "executed_at": "2026-02-22 14:59:37"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:59:29"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:29"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:59:28"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "organize_store",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:28"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 14:59:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 14:59:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:20"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 14:59:16"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:16"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:15"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:59:13"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:59:13"
     }
   ],
   "decisions": [
@@ -449,121 +449,17 @@
     }
   ],
   "assets": {
-    "total": 4739,
-    "published": 4549
+    "total": 4762,
+    "published": 4571
   },
   "recent_assets": [
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
-      "title": "Stop fumbling with your phone while driving",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 15:00:20"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why Every Driver Needs a 360\u00b0 Magnetic Phone Mount (And How It Changed My Daily Commute)",
+      "title": "Why Auto-Clamping Wireless Car Chargers Are the Game-Changer Every Driver Needs in 2024",
       "status": "published",
-      "url": "/blog/why-every-driver-needs-a-360-magnetic-phone-mount-and-how-it-changed-my-daily-co/",
-      "created_at": "2026-02-22 15:00:19"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Stop fumbling with your phone while driving - here's what actually works",
-      "status": "published",
-      "url": "/blog/psa-stop-fumbling-with-your-phone-while-driving-heres-what-actually-works/",
-      "created_at": "2026-02-22 15:00:17"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why Every Driver Needs a Digital Tire Pressure Gauge: The Small Tool That Could Save Your Life and Money",
-      "status": "published",
-      "url": "/blog/why-every-driver-needs-a-digital-tire-pressure-gauge-the-small-tool-that-could-s/",
-      "created_at": "2026-02-22 15:00:10"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Never get stranded with underinflated tires again \ud83d\ude97",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 15:00:10"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Digital tire pressure gauges are game-changers for car maintenance",
-      "status": "published",
-      "url": "/blog/psa-digital-tire-pressure-gauges-are-game-changers-for-car-maintenance/",
-      "created_at": "2026-02-22 15:00:07"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why Every Driver Needs a Magnetic Phone Mount: The Game-Changing Dashboard Accessory That's Revolutionizing Road Safety",
-      "status": "published",
-      "url": "/blog/why-every-driver-needs-a-magnetic-phone-mount-the-game-changing-dashboard-access/",
-      "created_at": "2026-02-22 14:59:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Stop fumbling with your phone while driving",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 14:59:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Stop fumbling with your phone while driving - magnetic mounts are a game changer",
-      "status": "published",
-      "url": "/blog/psa-stop-fumbling-with-your-phone-while-driving-magnetic-mounts-are-a-game-chang/",
-      "created_at": "2026-02-22 14:59:45"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Carrier for Newborns: Top Picks for Comfort and Convenience",
-      "status": "published",
-      "url": "/the-best-baby-carrier-for-newborns-top-picks-for-comfort-and-convenience/",
-      "created_at": "2026-02-22 14:59:44"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
-      "status": "published",
-      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
-      "created_at": "2026-02-22 14:59:43"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
-      "created_at": "2026-02-22 14:59:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
-      "status": "published",
-      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
-      "created_at": "2026-02-22 14:59:41"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
-      "status": "published",
-      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
-      "created_at": "2026-02-22 14:59:41"
+      "url": "/blog/why-auto-clamping-wireless-car-chargers-are-the-game-changer-every-driver-needs/",
+      "created_at": "2026-02-22 15:00:54"
     },
     {
       "strategy_id": "seo_content",
@@ -571,23 +467,7 @@
       "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
       "status": "published",
       "url": "/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
-      "created_at": "2026-02-22 14:59:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
-      "created_at": "2026-02-22 14:59:40"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Jump Ropes for Beginners: Boost Weight Loss and Fitness",
-      "status": "published",
-      "url": "/find-the-best-jump-ropes-for-beginners-boost-weight-loss-and-fitness/",
-      "created_at": "2026-02-22 14:59:40"
+      "created_at": "2026-02-22 15:00:54"
     },
     {
       "strategy_id": "social_growth",
@@ -595,7 +475,55 @@
       "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
       "status": "published",
       "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 14:59:39"
+      "created_at": "2026-02-22 15:00:54"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 15:00:54"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Lasts Longer?",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 15:00:54"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Finally found a car charger that actually grips your phone securely while wireless charging",
+      "status": "published",
+      "url": "/blog/finally-found-a-car-charger-that-actually-grips-your-phone-securely-while-wirele/",
+      "created_at": "2026-02-22 15:00:51"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 15:00:50"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Great Opener Showdown: Electric vs Manual Can Opener",
+      "status": "published",
+      "url": "/blog/the-great-opener-showdown-electric-vs-manual-can-opener/",
+      "created_at": "2026-02-22 15:00:50"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme?",
+      "status": "published",
+      "url": "/blog/electric-vs-manual-can-opener-which-durability-reigns-supreme/",
+      "created_at": "2026-02-22 15:00:49"
     },
     {
       "strategy_id": "seo_content",
@@ -603,7 +531,7 @@
       "title": "How to Prevent Wrist Pain from Push-Ups: Essential Tips for Fitness Enthusiasts",
       "status": "published",
       "url": "/how-to-prevent-wrist-pain-from-push-ups-essential-tips-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 14:59:38"
+      "created_at": "2026-02-22 15:00:48"
     },
     {
       "strategy_id": "seo_content",
@@ -611,7 +539,79 @@
       "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
       "status": "published",
       "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
-      "created_at": "2026-02-22 14:59:38"
+      "created_at": "2026-02-22 15:00:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Carrier for Newborns: Top Picks for Comfort and Convenience",
+      "status": "published",
+      "url": "/the-best-baby-carrier-for-newborns-top-picks-for-comfort-and-convenience/",
+      "created_at": "2026-02-22 15:00:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 15:00:25"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
+      "created_at": "2026-02-22 15:00:25"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
+      "status": "published",
+      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
+      "created_at": "2026-02-22 15:00:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
+      "created_at": "2026-02-22 15:00:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
+      "status": "published",
+      "url": "/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
+      "created_at": "2026-02-22 15:00:23"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 15:00:23"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Jump Ropes for Beginners: Boost Weight Loss and Fitness",
+      "status": "published",
+      "url": "/find-the-best-jump-ropes-for-beginners-boost-weight-loss-and-fitness/",
+      "created_at": "2026-02-22 15:00:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
+      "created_at": "2026-02-22 15:00:22"
     }
   ],
   "crypto": {
@@ -631,23 +631,23 @@
         "id": 23,
         "strategy_id": "crypto_trading",
         "coin": "agld",
-        "quantity": 455.3202334150933,
+        "quantity": 444.1482334150933,
         "avg_buy_price": 0.3434430924274162,
-        "total_invested": 156.3765890088525,
+        "total_invested": 152.5396427802534,
         "exchange": "coinbase",
-        "current_value": 160.6825103721864,
-        "updated_at": "2026-02-22 15:00:03"
+        "current_value": 158.0723562724317,
+        "updated_at": "2026-02-22 15:00:48"
       },
       {
         "id": 59,
         "strategy_id": "crypto_trading",
         "coin": "rave",
-        "quantity": 105.46979828420717,
-        "avg_buy_price": 0.7031192198326787,
-        "total_invested": 74.15784228550174,
+        "quantity": 109.050313295314,
+        "avg_buy_price": 0.70364522287664,
+        "total_invested": 76.73273200344863,
         "exchange": "coinbase",
-        "current_value": 74.68316416504709,
-        "updated_at": "2026-02-22 15:00:17"
+        "current_value": 78.12364444476295,
+        "updated_at": "2026-02-22 15:00:46"
       },
       {
         "id": 17,
@@ -672,6 +672,17 @@
         "updated_at": "2026-02-22 12:52:51"
       },
       {
+        "id": 68,
+        "strategy_id": "crypto_trading",
+        "coin": "lrds",
+        "quantity": 1422.8276867234324,
+        "avg_buy_price": 0.023758407772403085,
+        "total_invested": 33.8041203710403,
+        "exchange": "coinbase",
+        "current_value": 36.282106011447524,
+        "updated_at": "2026-02-22 15:00:45"
+      },
+      {
         "id": 18,
         "strategy_id": "crypto_trading",
         "coin": "ripple",
@@ -683,26 +694,15 @@
         "updated_at": "2026-02-22 11:29:35"
       },
       {
-        "id": 68,
-        "strategy_id": "crypto_trading",
-        "coin": "lrds",
-        "quantity": 1278.005997778777,
-        "avg_buy_price": 0.023572429660438717,
-        "total_invested": 30.125706488259024,
-        "exchange": "coinbase",
-        "current_value": 32.58915294335881,
-        "updated_at": "2026-02-22 15:00:16"
-      },
-      {
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 107.19164626924712,
-        "avg_buy_price": 0.24918960434193002,
-        "total_invested": 26.71104392259381,
+        "quantity": 111.22618189419669,
+        "avg_buy_price": 0.24914137526498745,
+        "total_invested": 27.71104392259381,
         "exchange": "coinbase",
-        "current_value": 26.500990707145966,
-        "updated_at": "2026-02-22 14:59:13"
+        "current_value": 27.56852144429559,
+        "updated_at": "2026-02-22 15:00:39"
       },
       {
         "id": 65,
@@ -730,12 +730,12 @@
         "id": 35,
         "strategy_id": "crypto_trading",
         "coin": "up",
-        "quantity": 228.99664092644232,
-        "avg_buy_price": 0.037242559349994736,
-        "total_invested": 8.528420990652462,
+        "quantity": 255.50777560300648,
+        "avg_buy_price": 0.03729209793386947,
+        "total_invested": 9.528420990652462,
         "exchange": "coinbase",
-        "current_value": 8.637753295745403,
-        "updated_at": "2026-02-22 15:00:10"
+        "current_value": 9.637753295745403,
+        "updated_at": "2026-02-22 15:00:38"
       },
       {
         "id": 19,
@@ -828,13 +828,31 @@
     ],
     "trades": [
       {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.937,
+        "total": 4.4694899999999995,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 15:00:51"
+      },
+      {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 5.585999999999999,
+        "price": 0.3559,
+        "total": 2.092692,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 15:00:48"
+      },
+      {
         "coin": "rave",
         "side": "buy",
-        "quantity": 1.818168138643476,
-        "price": 0.7081,
+        "quantity": 1.7971033765681814,
+        "price": 0.7164,
         "total": 1.2874448589734453,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:17"
+        "executed_at": "2026-02-22 15:00:46"
       },
       {
         "coin": "lrds",
@@ -843,7 +861,16 @@
         "price": 0.0255,
         "total": 1.839206941390636,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:16"
+        "executed_at": "2026-02-22 15:00:45"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.0345356249495685,
+        "price": 0.24786,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 15:00:39"
       },
       {
         "coin": "up",
@@ -852,25 +879,25 @@
         "price": 0.03772,
         "total": 1.0,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:10"
+        "executed_at": "2026-02-22 15:00:38"
       },
       {
         "coin": "rave",
         "side": "buy",
-        "quantity": 1.8235762874977979,
-        "price": 0.706,
+        "quantity": 1.7834116345386415,
+        "price": 0.7219,
         "total": 1.2874448589734453,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:08"
+        "executed_at": "2026-02-22 15:00:37"
       },
       {
         "coin": "lrds",
         "side": "buy",
-        "quantity": 68.88415510826351,
-        "price": 0.0267,
+        "quantity": 72.69592653717929,
+        "price": 0.0253,
         "total": 1.839206941390636,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:07"
+        "executed_at": "2026-02-22 15:00:35"
       },
       {
         "coin": "omni",
@@ -879,43 +906,16 @@
         "price": 0.937,
         "total": 4.4694899999999995,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:05"
+        "executed_at": "2026-02-22 15:00:33"
       },
       {
         "coin": "agld",
         "side": "sell",
         "quantity": 5.585999999999999,
-        "price": 0.3529,
-        "total": 2.075052,
+        "price": 0.3517,
+        "total": 2.067996,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 15:00:03"
-      },
-      {
-        "coin": "up",
-        "side": "buy",
-        "quantity": 26.666666666666668,
-        "price": 0.0375,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:59:37"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 71.28709075157504,
-        "price": 0.0258,
-        "total": 1.839206941390636,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:59:35"
-      },
-      {
-        "coin": "sapien",
-        "side": "sell",
-        "quantity": 30.684999999999995,
-        "price": 0.10359,
-        "total": 3.345957,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:59:32"
+        "executed_at": "2026-02-22 15:00:31"
       }
     ],
     "prices": [
