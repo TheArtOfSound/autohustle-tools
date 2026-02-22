@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T08:35:37.815958+00:00",
+  "updated": "2026-02-22T08:36:37.612367+00:00",
   "revenue": {
     "total": 3.9904830147485217,
     "last_7d": 3.9904830147485217
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 552
+      "total_effort": 562
     },
     {
       "id": "freelance",
@@ -103,10 +103,66 @@
     }
   ],
   "actions_today": {
-    "total": 2036,
-    "successes": 937
+    "total": 2044,
+    "successes": 942
   },
   "recent_actions": [
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "dropshipping",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": "update_index",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:36:11"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 08:35:52"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:35:52"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -260,62 +316,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-02-22 08:33:43"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:33:43"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:33:43"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:32:59"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_and_publish",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:32:59"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:32:53"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:32:53"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "publish_report",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:32:53"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "publish_report",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:32:53"
     }
   ],
   "decisions": [
@@ -441,10 +441,18 @@
     }
   ],
   "assets": {
-    "total": 1498,
+    "total": 1499,
     "published": 1402
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "Async Decision Matrix: Visual Templates for Remote Team Consensus Building",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 08:35:51"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -595,14 +603,6 @@
       "title": "Resistance Bands vs Cable Machine for Home Workouts: Which is Best for Your Fitness Goals?",
       "status": "published",
       "url": "/resistance-bands-vs-cable-machine-for-home-workouts-which-is-best-for-your-fitness-goals/",
-      "created_at": "2026-02-22 08:33:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Baby Bathtubs for Sensitive Skin: Top Picks and Expert Reviews",
-      "status": "published",
-      "url": "/the-best-baby-bathtubs-for-sensitive-skin-top-picks-and-expert-reviews/",
       "created_at": "2026-02-22 08:33:55"
     }
   ],
