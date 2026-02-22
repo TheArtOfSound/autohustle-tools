@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T14:51:54.358431+00:00",
+  "updated": "2026-02-22T14:55:01.283165+00:00",
   "revenue": {
-    "total": 614.664805514754,
-    "last_7d": 614.664805514754
+    "total": 612.9441712757769,
+    "last_7d": 612.9441712757769
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 773.0610683157005,
-      "total_effort": 710
+      "total_revenue": 771.3404340767231,
+      "total_effort": 694
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1692
+      "total_effort": 1682
     },
     {
       "id": "freelance",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 131
+      "total_effort": 130
     },
     {
       "id": "seo_content",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6199
+      "total_effort": 6069
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1015
+      "total_effort": 997
     },
     {
       "id": "api_products",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 208
+      "total_effort": 206
     },
     {
       "id": "data_scraper",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 587
+      "total_effort": 580
     },
     {
       "id": "course_creator",
@@ -107,250 +107,226 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2047
+      "total_effort": 1974
     }
   ],
   "actions_today": {
-    "total": 7013,
-    "successes": 3182
+    "total": 6895,
+    "successes": 3128
   },
   "recent_actions": [
     {
       "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:49"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "organize_store",
+      "action_type": "deep_product_development",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:49"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:27"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:14"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:14"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:14"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:14"
+      "executed_at": "2026-02-22 14:43:54"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 14:51:03"
+      "executed_at": "2026-02-22 14:43:53"
     },
     {
       "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 14:43:50"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "daily_theme_refresh",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:51:03"
+      "executed_at": "2026-02-22 14:43:50"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:59"
+      "executed_at": "2026-02-22 14:43:47"
     },
     {
       "strategy_id": "shopify_store",
-      "action_type": "comprehensive_store_audit",
+      "action_type": "optimize_products",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:59"
+      "executed_at": "2026-02-22 14:43:47"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:44"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:44"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 14:43:41"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "check_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:41"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 14:43:41"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "setup_brand",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:41"
     },
     {
       "strategy_id": "seo_content",
       "action_type": null,
       "outcome": "success",
       "reward": 0.5,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
     },
     {
       "strategy_id": "seo_content",
       "action_type": null,
       "outcome": "success",
       "reward": 0.5,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
     },
     {
       "strategy_id": "seo_content",
       "action_type": "generate_content",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
     },
     {
       "strategy_id": "seo_content",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
     },
     {
       "strategy_id": "seo_content",
       "action_type": "generate_content",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
     },
     {
       "strategy_id": "seo_content",
       "action_type": "research_keywords",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:40"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "deep_product_development",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:39"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-22 14:50:51"
+      "executed_at": "2026-02-22 14:43:38"
     },
     {
-      "strategy_id": "shopify_store",
-      "action_type": "organize_store",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 14:50:51"
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 14:43:37"
     },
     {
-      "strategy_id": "shopify_store",
-      "action_type": "manage_collections",
+      "strategy_id": "data_scraper",
+      "action_type": "publish_report",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:49:59"
+      "executed_at": "2026-02-22 14:43:37"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:35"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:35"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:31"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:31"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:49:58"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:30"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "optimize_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:30"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 14:49:52"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 14:43:27"
     },
     {
       "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
+      "action_type": "research_and_add_products",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-22 14:49:52"
+      "executed_at": "2026-02-22 14:43:27"
     }
   ],
   "decisions": [
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1217 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.485 (mean=0.095, pulls=100) \u2192 928 tokens\n  digital_products: score=0.519 (mean=0.129, pulls=100) \u2192 959 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.618 (mean=0.228, pulls=100) \u2192 1046 tokens\n  shopify_store: score=0.504 (mean=0.114, pulls=100) \u2192 945 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 989 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 980 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 14:50:37"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1217 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.485 (mean=0.095, pulls=100) \u2192 928 tokens\n  digital_products: score=0.519 (mean=0.129, pulls=100) \u2192 958 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.623 (mean=0.233, pulls=100) \u2192 1050 tokens\n  shopify_store: score=0.501 (mean=0.111, pulls=100) \u2192 942 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 980 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 14:48:47"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1217 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.485 (mean=0.095, pulls=100) \u2192 929 tokens\n  digital_products: score=0.516 (mean=0.126, pulls=100) \u2192 956 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.620 (mean=0.230, pulls=100) \u2192 1048 tokens\n  shopify_store: score=0.501 (mean=0.111, pulls=100) \u2192 943 tokens\n  social_growth: score=0.556 (mean=0.166, pulls=100) \u2192 991 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 980 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 14:44:51"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1217 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.485 (mean=0.095, pulls=100) \u2192 929 tokens\n  digital_products: score=0.516 (mean=0.126, pulls=100) \u2192 956 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.619 (mean=0.229, pulls=100) \u2192 1047 tokens\n  shopify_store: score=0.501 (mean=0.111, pulls=100) \u2192 943 tokens\n  social_growth: score=0.556 (mean=0.166, pulls=100) \u2192 991 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 980 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 14:44:45"
-    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 978 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1218 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 978 tokens\n  data_scraper: score=0.485 (mean=0.095, pulls=100) \u2192 929 tokens\n  digital_products: score=0.516 (mean=0.126, pulls=100) \u2192 956 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 978 tokens\n  seo_content: score=0.619 (mean=0.229, pulls=100) \u2192 1048 tokens\n  shopify_store: score=0.498 (mean=0.108, pulls=100) \u2192 940 tokens\n  social_growth: score=0.556 (mean=0.166, pulls=100) \u2192 991 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 980 tokens",
@@ -446,60 +422,108 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1216 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.494 (mean=0.103, pulls=100) \u2192 936 tokens\n  digital_products: score=0.531 (mean=0.140, pulls=100) \u2192 968 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.612 (mean=0.221, pulls=100) \u2192 1040 tokens\n  shopify_store: score=0.495 (mean=0.105, pulls=100) \u2192 937 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 979 tokens",
       "outcome": null,
       "created_at": "2026-02-22 14:28:07"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1216 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.494 (mean=0.103, pulls=100) \u2192 936 tokens\n  digital_products: score=0.531 (mean=0.140, pulls=100) \u2192 968 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.612 (mean=0.221, pulls=100) \u2192 1040 tokens\n  shopify_store: score=0.495 (mean=0.105, pulls=100) \u2192 937 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 979 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 14:28:07"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1216 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  data_scraper: score=0.500 (mean=0.109, pulls=100) \u2192 941 tokens\n  digital_products: score=0.534 (mean=0.143, pulls=100) \u2192 971 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 977 tokens\n  seo_content: score=0.605 (mean=0.214, pulls=100) \u2192 1034 tokens\n  shopify_store: score=0.492 (mean=0.102, pulls=100) \u2192 934 tokens\n  social_growth: score=0.554 (mean=0.164, pulls=100) \u2192 989 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 979 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 14:21:34"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 976 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1215 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 976 tokens\n  data_scraper: score=0.500 (mean=0.109, pulls=100) \u2192 940 tokens\n  digital_products: score=0.534 (mean=0.143, pulls=100) \u2192 970 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 976 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1041 tokens\n  shopify_store: score=0.495 (mean=0.105, pulls=100) \u2192 936 tokens\n  social_growth: score=0.554 (mean=0.164, pulls=100) \u2192 988 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 978 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 14:17:07"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 974 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1213 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 974 tokens\n  data_scraper: score=0.507 (mean=0.117, pulls=100) \u2192 945 tokens\n  digital_products: score=0.534 (mean=0.143, pulls=100) \u2192 969 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 974 tokens\n  seo_content: score=0.614 (mean=0.224, pulls=100) \u2192 1039 tokens\n  shopify_store: score=0.501 (mean=0.111, pulls=100) \u2192 940 tokens\n  social_growth: score=0.557 (mean=0.166, pulls=100) \u2192 989 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 977 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 14:11:29"
     }
   ],
   "assets": {
-    "total": 4577,
-    "published": 4392
+    "total": 4490,
+    "published": 4306
   },
   "recent_assets": [
     {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Why This $5 Phone Accessory Just Became My Most Essential Tech Purchase",
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Automatic Feeders for Multiple Cats | Top Pet Care Products",
       "status": "published",
-      "url": "/blog/why-this-5-phone-accessory-just-became-my-most-essential-tech-purchase/",
-      "created_at": "2026-02-22 14:51:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "PSA: Phone ring holders aren't just for grip - here's what I learned after 6 months",
-      "status": "published",
-      "url": "/blog/psa-phone-ring-holders-arent-just-for-grip-heres-what-i-learned-after-6-months/",
-      "created_at": "2026-02-22 14:51:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 14:51:24"
+      "url": "/the-best-automatic-feeders-for-multiple-cats-top-pet-care-products/",
+      "created_at": "2026-02-22 14:44:28"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "title": "The Best Immersion Blenders for Hot Soup: Top Picks for Soups and More",
       "status": "published",
-      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
-      "created_at": "2026-02-22 14:51:24"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 14:51:19"
+      "url": "/the-best-immersion-blenders-for-hot-soup-top-picks-for-soups-and-more/",
+      "created_at": "2026-02-22 14:44:28"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
       "status": "published",
-      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
-      "created_at": "2026-02-22 14:51:17"
+      "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
+      "created_at": "2026-02-22 14:44:26"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Mandoline Slicer for Beginners in 2024: Top Picks and Buying Guide",
+      "status": "published",
+      "url": "/the-best-mandoline-slicer-for-beginners-in-2024-top-picks-and-buying-guide/",
+      "created_at": "2026-02-22 14:43:40"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top-Rated Flea Shampoos for Puppies Under 12 Weeks: Expert Reviews",
+      "status": "published",
+      "url": "/top-rated-flea-shampoos-for-puppies-under-12-weeks-expert-reviews/",
+      "created_at": "2026-02-22 14:43:36"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "7 Best Vegetable Spiralizers for Zucchini Noodles in 2024 (Tested & Reviewed)",
+      "status": "published",
+      "url": "/7-best-vegetable-spiralizers-for-zucchini-noodles-in-2024-tested-reviewed/",
+      "created_at": "2026-02-22 14:43:35"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing the Perfect Rice Cooker Size for Your Family: A Step-by-Step Guide",
+      "status": "published",
+      "url": "/choosing-the-perfect-rice-cooker-size-for-your-family-a-step-by-step-guide/",
+      "created_at": "2026-02-22 14:43:34"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Dog's Health: Grain Free vs Regular Dog Food Benefits for a Happier Pet",
+      "status": "published",
+      "url": "/unlock-your-dog-s-health-grain-free-vs-regular-dog-food-benefits-for-a-happier-pet/",
+      "created_at": "2026-02-22 14:43:34"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Dog Toys for Aggressive Chewers: A Step-by-Step Guide to Safe Play",
+      "status": "published",
+      "url": "/choosing-dog-toys-for-aggressive-chewers-a-step-by-step-guide-to-safe-play/",
+      "created_at": "2026-02-22 14:43:33"
     },
     {
       "strategy_id": "seo_content",
@@ -507,23 +531,7 @@
       "title": "The Best Food Processor for Making Baby Food: Top Picks for Safe and Healthy Meal Prep",
       "status": "published",
       "url": "/the-best-food-processor-for-making-baby-food-top-picks-for-safe-and-healthy-meal-prep/",
-      "created_at": "2026-02-22 14:50:51"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
-      "status": "published",
-      "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
-      "created_at": "2026-02-22 14:50:46"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
-      "status": "published",
-      "url": "/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
-      "created_at": "2026-02-22 14:50:45"
+      "created_at": "2026-02-22 14:43:32"
     },
     {
       "strategy_id": "seo_content",
@@ -531,7 +539,23 @@
       "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
       "status": "published",
       "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
-      "created_at": "2026-02-22 14:50:44"
+      "created_at": "2026-02-22 14:43:31"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
+      "status": "published",
+      "url": "/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
+      "created_at": "2026-02-22 14:43:31"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
+      "status": "published",
+      "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
+      "created_at": "2026-02-22 14:43:31"
     },
     {
       "strategy_id": "seo_content",
@@ -539,15 +563,7 @@
       "title": "The Best Kitchen Scales for Baking Accuracy: Top Picks and Reviews",
       "status": "published",
       "url": "/the-best-kitchen-scales-for-baking-accuracy-top-picks-and-reviews/",
-      "created_at": "2026-02-22 14:50:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Guide to Choosing the Perfect Stand Mixer for Your Kitchen Needs",
-      "status": "published",
-      "url": "/the-ultimate-guide-to-choosing-the-perfect-stand-mixer-for-your-kitchen-needs/",
-      "created_at": "2026-02-22 14:50:41"
+      "created_at": "2026-02-22 14:43:24"
     },
     {
       "strategy_id": "seo_content",
@@ -555,7 +571,7 @@
       "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
       "status": "published",
       "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
-      "created_at": "2026-02-22 14:50:41"
+      "created_at": "2026-02-22 14:43:21"
     },
     {
       "strategy_id": "seo_content",
@@ -563,7 +579,15 @@
       "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
       "status": "published",
       "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
-      "created_at": "2026-02-22 14:50:40"
+      "created_at": "2026-02-22 14:43:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Guide to Choosing the Perfect Stand Mixer for Your Kitchen Needs",
+      "status": "published",
+      "url": "/the-ultimate-guide-to-choosing-the-perfect-stand-mixer-for-your-kitchen-needs/",
+      "created_at": "2026-02-22 14:43:20"
     },
     {
       "strategy_id": "seo_content",
@@ -571,7 +595,7 @@
       "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
       "status": "published",
       "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
-      "created_at": "2026-02-22 14:50:39"
+      "created_at": "2026-02-22 14:43:19"
     },
     {
       "strategy_id": "seo_content",
@@ -579,39 +603,15 @@
       "title": "The Best Coffee Grinder for Espresso Beans to Elevate Your Home Brew",
       "status": "published",
       "url": "/the-best-coffee-grinder-for-espresso-beans-to-elevate-your-home-brew/",
-      "created_at": "2026-02-22 14:50:39"
+      "created_at": "2026-02-22 14:43:19"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
+      "title": "Simplify Your Workspace: A Step-by-Step Guide on How to Reduce Noise from a Home Office Printer",
       "status": "published",
-      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
-      "created_at": "2026-02-22 14:49:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
-      "status": "published",
-      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
-      "created_at": "2026-02-22 14:49:05"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
-      "status": "published",
-      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
-      "created_at": "2026-02-22 14:49:03"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
-      "status": "published",
-      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
-      "created_at": "2026-02-22 14:49:03"
+      "url": "/simplify-your-workspace-a-step-by-step-guide-on-how-to-reduce-noise-from-a-home-office-printer/",
+      "created_at": "2026-02-22 14:43:18"
     }
   ],
   "crypto": {
@@ -631,12 +631,12 @@
         "id": 23,
         "strategy_id": "crypto_trading",
         "coin": "agld",
-        "quantity": 488.8362334150934,
+        "quantity": 505.5942334150934,
         "avg_buy_price": 0.3434430924274162,
-        "total_invested": 167.88742769464986,
+        "total_invested": 173.64284703754853,
         "exchange": "coinbase",
-        "current_value": 170.60384546186756,
-        "updated_at": "2026-02-22 14:50:56"
+        "current_value": 181.20497325596946,
+        "updated_at": "2026-02-22 14:42:36"
       },
       {
         "id": 17,
@@ -653,12 +653,12 @@
         "id": 59,
         "strategy_id": "crypto_trading",
         "coin": "rave",
-        "quantity": 87.72613293998911,
-        "avg_buy_price": 0.7027693233237491,
-        "total_invested": 61.6512350840454,
+        "quantity": 79.9493349749917,
+        "avg_buy_price": 0.7021148365703379,
+        "total_invested": 56.1336142598735,
         "exchange": "coinbase",
-        "current_value": 62.35573529374426,
-        "updated_at": "2026-02-22 14:51:05"
+        "current_value": 56.50818996032413,
+        "updated_at": "2026-02-22 14:42:51"
       },
       {
         "id": 20,
@@ -683,17 +683,6 @@
         "updated_at": "2026-02-22 11:29:35"
       },
       {
-        "id": 60,
-        "strategy_id": "crypto_trading",
-        "coin": "kite",
-        "quantity": 95.05850260528206,
-        "avg_buy_price": 0.24943632892105194,
-        "total_invested": 23.71104392259381,
-        "exchange": "coinbase",
-        "current_value": 23.505115939208093,
-        "updated_at": "2026-02-22 14:51:12"
-      },
-      {
         "id": 15,
         "strategy_id": "crypto_trading",
         "coin": "snx",
@@ -705,37 +694,48 @@
         "updated_at": "2026-02-22 09:11:06"
       },
       {
-        "id": 65,
+        "id": 60,
         "strategy_id": "crypto_trading",
-        "coin": "fun1",
-        "quantity": 457.1352059780518,
-        "avg_buy_price": 0.04247239907927848,
-        "total_invested": 19.415628901487985,
+        "coin": "kite",
+        "quantity": 74.92988341950718,
+        "avg_buy_price": 0.24971404022927646,
+        "total_invested": 18.71104392259381,
         "exchange": "coinbase",
-        "current_value": 19.49681653496391,
-        "updated_at": "2026-02-22 14:51:09"
-      },
-      {
-        "id": 68,
-        "strategy_id": "crypto_trading",
-        "coin": "lrds",
-        "quantity": 696.2378566536275,
-        "avg_buy_price": 0.022664513563304317,
-        "total_invested": 15.779892345412067,
-        "exchange": "coinbase",
-        "current_value": 15.874223131702708,
-        "updated_at": "2026-02-22 14:51:07"
+        "current_value": 18.720482073529674,
+        "updated_at": "2026-02-22 14:42:54"
       },
       {
         "id": 58,
         "strategy_id": "crypto_trading",
         "coin": "sapien",
-        "quantity": 117.37770031300113,
+        "quantity": 148.06270031300113,
         "avg_buy_price": 0.10296633491853742,
-        "total_invested": 12.08595160239619,
+        "total_invested": 15.24547358937151,
         "exchange": "coinbase",
-        "current_value": 12.193195508514558,
-        "updated_at": "2026-02-22 14:45:23"
+        "current_value": 15.327450736401877,
+        "updated_at": "2026-02-22 14:42:46"
+      },
+      {
+        "id": 65,
+        "strategy_id": "crypto_trading",
+        "coin": "fun1",
+        "quantity": 319.31367135830305,
+        "avg_buy_price": 0.042445079995837215,
+        "total_invested": 13.553294324567648,
+        "exchange": "coinbase",
+        "current_value": 13.673011407562536,
+        "updated_at": "2026-02-22 14:42:53"
+      },
+      {
+        "id": 68,
+        "strategy_id": "crypto_trading",
+        "coin": "lrds",
+        "quantity": 494.2167955072519,
+        "avg_buy_price": 0.02267224167475862,
+        "total_invested": 11.205002627465175,
+        "exchange": "coinbase",
+        "current_value": 11.268142937565344,
+        "updated_at": "2026-02-22 14:42:45"
       },
       {
         "id": 19,
@@ -796,12 +796,12 @@
         "id": 35,
         "strategy_id": "crypto_trading",
         "coin": "up",
-        "quantity": 68.65108285906146,
-        "avg_buy_price": 0.036830023436676615,
-        "total_invested": 2.528420990652462,
+        "quantity": 41.72593477074698,
+        "avg_buy_price": 0.03663,
+        "total_invested": 1.528420990652462,
         "exchange": "coinbase",
-        "current_value": 2.5497012173855427,
-        "updated_at": "2026-02-22 14:51:14"
+        "current_value": 1.528420990652462,
+        "updated_at": "2026-02-22 10:56:54"
       },
       {
         "id": 61,
@@ -828,241 +828,97 @@
     ],
     "trades": [
       {
-        "coin": "up",
-        "side": "buy",
-        "quantity": 26.925148088314486,
-        "price": 0.03714,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:14"
-      },
-      {
         "coin": "kite",
         "side": "buy",
-        "quantity": 4.044162251789542,
-        "price": 0.24727,
+        "quantity": 4.002561639449247,
+        "price": 0.24984,
         "total": 1.0,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:12"
+        "executed_at": "2026-02-22 14:42:54"
       },
       {
         "coin": "fun1",
         "side": "buy",
-        "quantity": 23.446658851113718,
-        "price": 0.04265,
+        "quantity": 23.353573096683796,
+        "price": 0.04282,
         "total": 1.0,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:09"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 56.466879779537074,
-        "price": 0.0228,
-        "total": 1.2874448589734453,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:07"
+        "executed_at": "2026-02-22 14:42:53"
       },
       {
         "coin": "rave",
         "side": "buy",
-        "quantity": 2.5875167999305515,
-        "price": 0.7108,
-        "total": 1.839206941390636,
+        "quantity": 2.609853906891109,
+        "price": 0.7068,
+        "total": 1.844644741390636,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:05"
+        "executed_at": "2026-02-22 14:42:51"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 4.0054474084755265,
+        "price": 0.24966,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 14:42:48"
+      },
+      {
+        "coin": "fun1",
+        "side": "buy",
+        "quantity": 23.386342376052387,
+        "price": 0.04276,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 14:42:47"
+      },
+      {
+        "coin": "sapien",
+        "side": "sell",
+        "quantity": 30.684999999999995,
+        "price": 0.10352,
+        "total": 3.3436959999999996,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 14:42:46"
+      },
+      {
+        "coin": "lrds",
+        "side": "buy",
+        "quantity": 56.633829779537066,
+        "price": 0.0228,
+        "total": 1.2912513189734451,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 14:42:45"
+      },
+      {
+        "coin": "rave",
+        "side": "buy",
+        "quantity": 2.6157752997598354,
+        "price": 0.7052,
+        "total": 1.844644741390636,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 14:42:42"
       },
       {
         "coin": "omni",
         "side": "sell",
         "quantity": 4.531499999999999,
-        "price": 0.937,
-        "total": 4.4694899999999995,
+        "price": 0.941,
+        "total": 4.488569999999999,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:51:01"
+        "executed_at": "2026-02-22 14:42:39"
       },
       {
         "coin": "agld",
         "side": "sell",
         "quantity": 5.585999999999999,
-        "price": 0.349,
-        "total": 2.05212,
+        "price": 0.3584,
+        "total": 2.107392,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:50:56"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 44.642857142857146,
-        "price": 0.0224,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:46:51"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 4.020262121090295,
-        "price": 0.24874,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:46:50"
-      },
-      {
-        "coin": "fun1",
-        "side": "buy",
-        "quantity": 30.250114167609148,
-        "price": 0.04256,
-        "total": 1.2874448589734453,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 14:46:49"
+        "executed_at": "2026-02-22 14:42:36"
       }
     ],
     "prices": [
-      {
-        "coin": "dogecoin",
-        "price_usd": 0.095665,
-        "price_change_24h": -4.892503981094519,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "chainlink",
-        "price_usd": 8.72,
-        "price_change_24h": -2.8076879288534937,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "cardano",
-        "price_usd": 0.271742,
-        "price_change_24h": -4.309974760233426,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "litecoin",
-        "price_usd": 53.22,
-        "price_change_24h": -3.989627356322912,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "polkadot",
-        "price_usd": 1.31,
-        "price_change_24h": -4.82816506249748,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "ripple",
-        "price_usd": 1.4,
-        "price_change_24h": -4.337611509030377,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "chainlink",
-        "price_usd": 8.72,
-        "price_change_24h": -2.8076879288534937,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "shiba-inu",
-        "price_usd": 6.17e-06,
-        "price_change_24h": -5.0755601659724086,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "litecoin",
-        "price_usd": 53.22,
-        "price_change_24h": -3.989627356322912,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "pepe",
-        "price_usd": 4.03e-06,
-        "price_change_24h": -6.5098839740345955,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "ripple",
-        "price_usd": 1.4,
-        "price_change_24h": -4.337611509030377,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "sui",
-        "price_usd": 0.919413,
-        "price_change_24h": -4.649000419479381,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "shiba-inu",
-        "price_usd": 6.17e-06,
-        "price_change_24h": -5.0755601659724086,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "pepe",
-        "price_usd": 4.03e-06,
-        "price_change_24h": -6.5098839740345955,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "sui",
-        "price_usd": 0.919413,
-        "price_change_24h": -4.649000419479381,
-        "recorded_at": "2026-02-22 14:49:05"
-      },
-      {
-        "coin": "polkadot",
-        "price_usd": 1.31,
-        "price_change_24h": -4.82816506249748,
-        "recorded_at": "2026-02-22 14:49:04"
-      },
-      {
-        "coin": "ethereum",
-        "price_usd": 1946.58,
-        "price_change_24h": -2.0850183318134086,
-        "recorded_at": "2026-02-22 14:49:03"
-      },
-      {
-        "coin": "cardano",
-        "price_usd": 0.271742,
-        "price_change_24h": -4.309974760233426,
-        "recorded_at": "2026-02-22 14:49:03"
-      },
-      {
-        "coin": "solana",
-        "price_usd": 83.74,
-        "price_change_24h": -3.0141868206564366,
-        "recorded_at": "2026-02-22 14:49:03"
-      },
-      {
-        "coin": "dogecoin",
-        "price_usd": 0.095665,
-        "price_change_24h": -4.892503981094519,
-        "recorded_at": "2026-02-22 14:49:01"
-      },
-      {
-        "coin": "bitcoin",
-        "price_usd": 67409.0,
-        "price_change_24h": -1.5436411146093407,
-        "recorded_at": "2026-02-22 14:49:00"
-      },
-      {
-        "coin": "solana",
-        "price_usd": 83.74,
-        "price_change_24h": -3.0141868206564366,
-        "recorded_at": "2026-02-22 14:48:56"
-      },
-      {
-        "coin": "ethereum",
-        "price_usd": 1946.58,
-        "price_change_24h": -2.0850183318134086,
-        "recorded_at": "2026-02-22 14:48:55"
-      },
-      {
-        "coin": "bitcoin",
-        "price_usd": 67409.0,
-        "price_change_24h": -1.5436411146093407,
-        "recorded_at": "2026-02-22 14:48:54"
-      },
       {
         "coin": "solana",
         "price_usd": 83.94,
