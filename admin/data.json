@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T08:53:14.826600+00:00",
+  "updated": "2026-02-22T08:53:45.997222+00:00",
   "revenue": {
     "total": 8.548690455863206,
     "last_7d": 8.548690455863206
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 393
+      "total_effort": 396
     },
     {
       "id": "api_products",
@@ -111,10 +111,59 @@
     }
   ],
   "actions_today": {
-    "total": 2272,
-    "successes": 1049
+    "total": 2279,
+    "successes": 1053
   },
   "recent_actions": [
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:27"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:27"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:27"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.15,
+      "executed_at": "2026-02-22 08:53:26"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 08:53:26"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 08:53:16"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 08:53:16"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -275,55 +324,6 @@
       "outcome": "success",
       "reward": 0.35,
       "executed_at": "2026-02-22 08:47:54"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:54"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 08:47:53"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 08:47:53"
     }
   ],
   "decisions": [
@@ -449,10 +449,146 @@
     }
   ],
   "assets": {
-    "total": 1619,
-    "published": 1499
+    "total": 1639,
+    "published": 1517
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Finding the Perfect Fit: How to Choose the Best Wireless Mouse for Your Home Office Needs",
+      "status": "published",
+      "url": "/finding-the-perfect-fit-how-to-choose-the-best-wireless-mouse-for-your-home-office-needs/",
+      "created_at": "2026-02-22 08:53:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
+      "status": "published",
+      "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
+      "created_at": "2026-02-22 08:53:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Boost Productivity in Your Home Office: A Step-by-Step Guide on How to Declutter for Success",
+      "status": "published",
+      "url": "/boost-productivity-in-your-home-office-a-step-by-step-guide-on-how-to-declutter-for-success/",
+      "created_at": "2026-02-22 08:53:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Creative Ways to Set Up a Home Office in Small Spaces Without Sacrificing Productivity",
+      "status": "published",
+      "url": "/5-creative-ways-to-set-up-a-home-office-in-small-spaces-without-sacrificing-productivity/",
+      "created_at": "2026-02-22 08:53:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Solution for Back Pain: Ergonomic Chair vs Standing Desk Comparison",
+      "status": "published",
+      "url": "/discover-the-best-solution-for-back-pain-ergonomic-chair-vs-standing-desk-comparison/",
+      "created_at": "2026-02-22 08:53:18"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
+      "status": "published",
+      "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
+      "created_at": "2026-02-22 08:53:18"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
+      "status": "published",
+      "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
+      "created_at": "2026-02-22 08:53:18"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Pet Carriers for Anxious Cats: Top Picks to Reduce Stress on the Go",
+      "status": "published",
+      "url": "/the-best-pet-carriers-for-anxious-cats-top-picks-to-reduce-stress-on-the-go/",
+      "created_at": "2026-02-22 08:53:17"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Creative Ways to Set Up a Home Office in Small Spaces Without Sacrificing Productivity",
+      "status": "published",
+      "url": "/5-creative-ways-to-set-up-a-home-office-in-small-spaces-without-sacrificing-productivity/",
+      "created_at": "2026-02-22 08:53:17"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
+      "status": "published",
+      "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
+      "created_at": "2026-02-22 08:53:16"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Dumbbells vs Kettlebells: Boost Your Weight Loss",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:53:16"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Finding the Perfect Fit: How to Choose the Best Wireless Mouse for Your Home Office Needs",
+      "status": "published",
+      "url": "/finding-the-perfect-fit-how-to-choose-the-best-wireless-mouse-for-your-home-office-needs/",
+      "created_at": "2026-02-22 08:53:16"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 08:53:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Space-saving baby monitors that actually work in tiny apartments \ud83d\udc76",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 08:53:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/blog/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
+      "created_at": "2026-02-22 08:53:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Unlock the Full Potential of Your Body: The Ultimate Showdown Between Dumbbells and Kettlebells for Weight Loss",
+      "status": "published",
+      "url": "/blog/unlock-the-full-potential-of-your-body-the-ultimate-showdown-between-dumbbells-a/",
+      "created_at": "2026-02-22 08:53:15"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Solution for Back Pain: Ergonomic Chair vs Standing Desk Comparison",
+      "status": "published",
+      "url": "/discover-the-best-solution-for-back-pain-ergonomic-chair-vs-standing-desk-comparison/",
+      "created_at": "2026-02-22 08:53:15"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -467,151 +603,15 @@
       "title": "The Best Budget Gaming Monitors for Home Office Use in 2023",
       "status": "published",
       "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
-      "created_at": "2026-02-22 08:53:12"
+      "created_at": "2026-02-22 08:53:14"
     },
     {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Ultimate Guide to Baby Monitors That Actually Work in Tiny Spaces: 2024's Top Picks for Small Apartment Living",
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
       "status": "published",
-      "url": "/blog/the-ultimate-guide-to-baby-monitors-that-actually-work-in-tiny-spaces-2024s-top/",
-      "created_at": "2026-02-22 08:53:11"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Small apartment parents: Here's what actually matters when choosing a baby monitor",
-      "status": "published",
-      "url": "/blog/small-apartment-parents-heres-what-actually-matters-when-choosing-a-baby-monitor/",
-      "created_at": "2026-02-22 08:53:05"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "asset_type": "product",
-      "title": "Cryptocurrency Market Intelligence Report",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:51:47"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "MagSafe Wireless Car Mount Charger - 15W Fast Charging Dashboard Holder",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 08:51:36"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Vintage Y2K Butterfly Hair Clips - Holographic 8 Piece Set",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 08:51:36"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Boho Macrame Plant Hanger Swing Set - 3 Tier Design",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 08:51:35"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "product",
-      "title": "Claw Hair Clips Set - Tortoiseshell Acetate Hair Accessories",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 08:51:35"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "asset_type": "product",
-      "title": "Cryptocurrency Market Intelligence Report",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:51:35"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "asset_type": "product",
-      "title": "Cryptocurrency Market Intelligence Report",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:47:54"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "From Stools to Seats: Expert Guide to Choosing the Right High Chair or Booster Seat for Your Growing Child",
-      "status": "published",
-      "url": "/blog/from-stools-to-seats-expert-guide-to-choosing-the-right-high-chair-or-booster-se/",
-      "created_at": "2026-02-22 08:47:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
-      "status": "published",
-      "url": "/blog/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-pare/",
-      "created_at": "2026-02-22 08:47:41"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "MAM Anti-Colic Baby Bottle, 3 Oz",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:47:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Protecting the Next Generation: The Ultimate Showdown Between Baby Proofing and Safety Testing",
-      "status": "published",
-      "url": "/blog/protecting-the-next-generation-the-ultimate-showdown-between-baby-proofing-and-s/",
-      "created_at": "2026-02-22 08:47:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 08:47:33"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Halo Bassinets Swivel Sleeper, 2-in-1 Convertible Crib",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:47:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 08:47:32"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "asset_type": "product",
-      "title": "Philips Avent Baby Bottle Set, 3 Pack",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 08:47:31"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
-      "status": "published",
-      "url": "/blog/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little/",
-      "created_at": "2026-02-22 08:47:31"
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 08:53:14"
     }
   ],
   "crypto": {
@@ -809,6 +809,102 @@
       }
     ],
     "prices": [
+      {
+        "coin": "ethereum",
+        "price_usd": 1971.6,
+        "price_change_24h": 0.2614904519956471,
+        "recorded_at": "2026-02-22 08:53:19"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 84.95,
+        "price_change_24h": 0.5515223753363927,
+        "recorded_at": "2026-02-22 08:53:19"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 6.19e-06,
+        "price_change_24h": -5.050488589695399,
+        "recorded_at": "2026-02-22 08:53:19"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.09712,
+        "price_change_24h": -2.967547273851938,
+        "recorded_at": "2026-02-22 08:53:19"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 67935.0,
+        "price_change_24h": -0.03939038888974362,
+        "recorded_at": "2026-02-22 08:53:18"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.57,
+        "price_change_24h": -1.498118324361538,
+        "recorded_at": "2026-02-22 08:53:18"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.42,
+        "price_change_24h": -0.9627622194636969,
+        "recorded_at": "2026-02-22 08:53:18"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.275398,
+        "price_change_24h": -2.665006107390976,
+        "recorded_at": "2026-02-22 08:53:17"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.33,
+        "price_change_24h": -2.929289457486652,
+        "recorded_at": "2026-02-22 08:53:17"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.81,
+        "price_change_24h": -0.9813563315590291,
+        "recorded_at": "2026-02-22 08:53:17"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1971.6,
+        "price_change_24h": 0.2614904519956471,
+        "recorded_at": "2026-02-22 08:53:16"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 84.95,
+        "price_change_24h": 0.5515223753363927,
+        "recorded_at": "2026-02-22 08:53:16"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.09712,
+        "price_change_24h": -2.967547273851938,
+        "recorded_at": "2026-02-22 08:53:16"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 67935.0,
+        "price_change_24h": -0.03939038888974362,
+        "recorded_at": "2026-02-22 08:53:15"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1971.6,
+        "price_change_24h": 0.2614904519956471,
+        "recorded_at": "2026-02-22 08:53:15"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 67935.0,
+        "price_change_24h": -0.03939038888974362,
+        "recorded_at": "2026-02-22 08:53:15"
+      },
       {
         "coin": "bitcoin",
         "price_usd": 67945.0,
