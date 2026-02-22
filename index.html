@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Online Tools - AutoHustle</title>
     <meta name="description" content="Collection of free online tools: JSON formatter, word counter, password generator, unit converter, and more.">
+    <link rel="canonical" href="https://autohustle.tools/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Tools - AutoHustle">
+    <meta property="og:description" content="10+ free online tools: JSON formatter, word counter, password generator, color palette, regex tester, and more. No sign-up, no ads, 100% client-side.">
+    <meta property="og:url" content="https://autohustle.tools/">
+    <meta property="og:site_name" content="AutoHustle Tools">
+    <meta property="og:image" content="https://autohustle.tools/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Tools - AutoHustle">
+    <meta name="twitter:description" content="10+ free online tools: JSON formatter, word counter, password generator, color palette, regex tester, and more. No sign-up, no ads, 100% client-side.">
+    <meta name="twitter:image" content="https://autohustle.tools/og-image.png">
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Free Online Tools - AutoHustle",
+        "description": "Collection of free online tools: JSON formatter, word counter, password generator, unit converter, and more.",
+        "url": "https://autohustle.tools/",
+        "publisher": {
+            "@type": "Organization",
+            "name": "AutoHustle"
+        },
+        "hasPart": [
+            {"@type": "SoftwareApplication", "name": "Word Counter & Text Analyzer", "url": "https://autohustle.tools/word-counter/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "JSON Formatter & Validator", "url": "https://autohustle.tools/json-formatter/", "applicationCategory": "DeveloperApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Secure Password Generator", "url": "https://autohustle.tools/password-generator/", "applicationCategory": "SecurityApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Color Palette Generator", "url": "https://autohustle.tools/color-palette/", "applicationCategory": "DesignApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Markdown Previewer & Editor", "url": "https://autohustle.tools/markdown-preview/", "applicationCategory": "DeveloperApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Universal Unit Converter", "url": "https://autohustle.tools/unit-converter/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Regex Tester & Debugger", "url": "https://autohustle.tools/regex-tester/", "applicationCategory": "DeveloperApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "Lorem Ipsum Generator", "url": "https://autohustle.tools/lorem-ipsum/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "SEO Meta Tag Generator", "url": "https://autohustle.tools/meta-tag-generator/", "applicationCategory": "DeveloperApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}},
+            {"@type": "SoftwareApplication", "name": "QR Code Generator", "url": "https://autohustle.tools/qr-code-generator/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "All", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}
+        ]
+    }
+    </script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root { --primary: #6366f1; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding-bottom: 60px; }
+        nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; align-items: center; justify-content: center; gap: 24px; }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 0.9em; font-weight: 500; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: var(--primary); }
         .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
         header { text-align: center; padding: 40px 20px; }
         header h1 { font-size: 2.5em; margin-bottom: 8px; }
@@ -31,12 +75,24 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="/" class="active">All Tools</a>
+        <a href="/store/">Store</a>
+        <a href="https://theartofsound.github.io/autohustle-content/autohustle-system/">AutoHustle System</a>
+    </nav>
     <header>
         <h1><span>AutoHustle</span> Tools</h1>
         <p>Free online tools — no sign-up, no ads, 100% client-side</p>
     </header>
     <main>
         <div class="container">
+            <div style="background:linear-gradient(135deg,#13151d,#1a1d28);border:2px solid #6366f1;border-radius:12px;padding:28px;margin:0 auto 30px;max-width:1000px;text-align:center;">
+                <p style="color:#6366f1;font-weight:700;font-size:0.85em;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">AUTOMATE YOUR INCOME</p>
+                <h2 style="color:#e4e4e7;margin-bottom:12px;font-size:1.4em;">Want AI To Build Your Income Streams 24/7?</h2>
+                <p style="color:#9ca3af;margin-bottom:20px;">AutoHustle deploys an AI agent that creates products, publishes content, trades crypto, and earns money while you sleep.</p>
+                <a href="https://theartofsound.github.io/autohustle-content/autohustle-system/" style="display:inline-block;background:linear-gradient(135deg,#10b981,#059669);color:white;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:700;">Start Making Money →</a>
+                <p style="color:#666;font-size:0.8em;margin-top:12px;">From $49/mo · 30-day money-back guarantee</p>
+            </div>
             <div class="tools-grid">
                 
                 <a href="/word-counter/" class="tool-card">
@@ -105,5 +161,9 @@
     <footer>
         <p>10 free tools available | All tools run in your browser — your data never leaves your device</p>
     </footer>
+<div style="position:fixed;bottom:0;left:0;right:0;background:#13151d;border-top:2px solid #6366f1;padding:10px 20px;text-align:center;z-index:9999;">
+    <span style="color:#e4e4e7;font-size:0.9em;">Want AI to earn money for you 24/7?</span>
+    <a href="https://theartofsound.github.io/autohustle-content/autohustle-system/" style="color:white;background:#10b981;padding:6px 16px;border-radius:6px;text-decoration:none;font-weight:700;margin-left:12px;font-size:0.85em;">Learn More</a>
+</div>
 </body>
 </html>

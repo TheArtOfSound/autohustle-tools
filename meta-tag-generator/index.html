@@ -29,6 +29,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            padding-bottom: 50px;
         }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; width: 100%; }
         header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 0; }
@@ -146,6 +147,16 @@
     </style>
 </head>
 <body>
+
+<nav style="background:#13151d;border-bottom:1px solid #2d3040;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+    <a href="/" style="color:#6366f1;text-decoration:none;font-weight:700;font-size:1.05em;">AutoHustle Tools</a>
+    <div>
+        <a href="/" style="color:#9ca3af;text-decoration:none;margin:0 12px;font-size:0.9em;">All Tools</a>
+        <a href="/store/" style="color:#9ca3af;text-decoration:none;margin:0 12px;font-size:0.9em;">Store</a>
+        <a href="https://theartofsound.github.io/autohustle-content/autohustle-system/" style="color:#10b981;text-decoration:none;font-weight:600;font-size:0.9em;">Get AutoHustle →</a>
+    </div>
+</nav>
+
     <header>
         <div class="container">
             <h1><span>SEO</span> Meta Tag Generator</h1>
@@ -248,12 +259,12 @@
             if (siteName) meta.push(`<meta property="og:site_name" content="${esc(siteName)}">`);
             meta.push('');
             meta.push(`<!-- Twitter -->`);
-            meta.push(`<meta property="twitter:card" content="summary_large_image">`);
-            if (url) meta.push(`<meta property="twitter:url" content="${esc(url)}">`);
-            if (title) meta.push(`<meta property="twitter:title" content="${esc(title)}">`);
-            if (desc) meta.push(`<meta property="twitter:description" content="${esc(desc)}">`);
-            if (image) meta.push(`<meta property="twitter:image" content="${esc(image)}">`);
-            if (twitter) meta.push(`<meta property="twitter:creator" content="${esc(twitter)}">`);
+            meta.push(`<meta name="twitter:card" content="summary_large_image">`);
+            if (url) meta.push(`<meta name="twitter:url" content="${esc(url)}">`);
+            if (title) meta.push(`<meta name="twitter:title" content="${esc(title)}">`);
+            if (desc) meta.push(`<meta name="twitter:description" content="${esc(desc)}">`);
+            if (image) meta.push(`<meta name="twitter:image" content="${esc(image)}">`);
+            if (twitter) meta.push(`<meta name="twitter:creator" content="${esc(twitter)}">`);
 
             if (url) { meta.push(''); meta.push(`<!-- Canonical -->`); meta.push(`<link rel="canonical" href="${esc(url)}">`); }
 
