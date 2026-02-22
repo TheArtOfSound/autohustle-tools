@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T17:02:30.751160+00:00",
+  "updated": "2026-02-22T17:03:10.315781+00:00",
   "revenue": {
     "total": 10.690832210253804,
     "last_7d": 10.690832210253804
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 805.4492716187652,
-      "total_effort": 1058
+      "total_effort": 1062
     },
     {
       "id": "digital_products",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1440
+      "total_effort": 1444
     },
     {
       "id": "api_products",
@@ -111,10 +111,66 @@
     }
   ],
   "actions_today": {
-    "total": 10066,
-    "successes": 4583
+    "total": 10074,
+    "successes": 4587
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:01:50"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "publish_drafts_as_blog",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:01:48"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:01:37"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:01:37"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:01:34"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:01:34"
+    },
     {
       "strategy_id": "digital_products",
       "action_type": null,
@@ -268,65 +324,15 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 17:00:46"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:00:40"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:00:40"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:00:35"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:00:35"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:00:30"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:00:30"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:00:30"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:00:30"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1206 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.514 (mean=0.123, pulls=100) \u2192 947 tokens\n  digital_products: score=0.544 (mean=0.153, pulls=100) \u2192 973 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  seo_content: score=0.625 (mean=0.235, pulls=100) \u2192 1044 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 957 tokens\n  social_growth: score=0.556 (mean=0.166, pulls=100) \u2192 984 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 17:01:47"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1208 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.514 (mean=0.123, pulls=100) \u2192 948 tokens\n  digital_products: score=0.547 (mean=0.157, pulls=100) \u2192 977 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  seo_content: score=0.618 (mean=0.228, pulls=100) \u2192 1039 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 958 tokens\n  social_growth: score=0.551 (mean=0.161, pulls=100) \u2192 980 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
@@ -440,19 +446,157 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1208 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.508 (mean=0.117, pulls=100) \u2192 943 tokens\n  digital_products: score=0.547 (mean=0.157, pulls=100) \u2192 977 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  seo_content: score=0.626 (mean=0.236, pulls=100) \u2192 1045 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 958 tokens\n  social_growth: score=0.549 (mean=0.159, pulls=100) \u2192 978 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 974 tokens",
       "outcome": null,
       "created_at": "2026-02-22 16:44:09"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1207 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.508 (mean=0.117, pulls=100) \u2192 942 tokens\n  digital_products: score=0.551 (mean=0.161, pulls=100) \u2192 980 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  seo_content: score=0.623 (mean=0.233, pulls=100) \u2192 1042 tokens\n  shopify_store: score=0.525 (mean=0.135, pulls=100) \u2192 957 tokens\n  social_growth: score=0.553 (mean=0.163, pulls=100) \u2192 982 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 16:40:37"
     }
   ],
   "assets": {
-    "total": 6732,
-    "published": 6495
+    "total": 6750,
+    "published": 6513
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Steps to a Productive Home Workspace",
+      "status": "published",
+      "url": "/blog/5-simple-steps-to-a-productive-home-workspace/",
+      "created_at": "2026-02-22 17:01:51"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing the Perfect Stroller for Your Little One: A Guide to Selecting a Baby Stroller with Storage",
+      "status": "published",
+      "url": "/choosing-the-perfect-stroller-for-your-little-one-a-guide-to-selecting-a-baby-stroller-with-storage/",
+      "created_at": "2026-02-22 17:01:50"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Boost Productivity in Your Home Office",
+      "status": "published",
+      "url": "/blog/boost-productivity-in-your-home-office/",
+      "created_at": "2026-02-22 17:01:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Dog's Health: Grain Free vs Regular Dog Food Benefits for a Happier Pet",
+      "status": "published",
+      "url": "/unlock-your-dog-s-health-grain-free-vs-regular-dog-food-benefits-for-a-happier-pet/",
+      "created_at": "2026-02-22 17:01:50"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Dog Toys for Aggressive Chewers: A Step-by-Step Guide to Safe Play",
+      "status": "published",
+      "url": "/choosing-dog-toys-for-aggressive-chewers-a-step-by-step-guide-to-safe-play/",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Choose the Perfect Stroller for Your Baby: Tips and Tricks",
+      "status": "published",
+      "url": "/how-to-choose-the-perfect-stroller-for-your-baby-tips-and-tricks/",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Make Healthy Baby Food with Ease!",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Picks for Best Workout Benches for Small Apartments",
+      "status": "published",
+      "url": "/top-picks-for-best-workout-benches-for-small-apartments/",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
+      "status": "published",
+      "url": "/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
+      "created_at": "2026-02-22 17:01:49"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
+      "status": "published",
+      "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
+      "created_at": "2026-02-22 17:01:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Kitchen Scales for Baking Accuracy: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-kitchen-scales-for-baking-accuracy-top-picks-and-reviews/",
+      "created_at": "2026-02-22 17:01:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
+      "created_at": "2026-02-22 17:01:48"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Essential Tools to Make Healthy Homemade Baby Food",
+      "status": "published",
+      "url": "/blog/5-essential-tools-to-make-healthy-homemade-baby-food/",
+      "created_at": "2026-02-22 17:01:48"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 17:01:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Best Food Processor for Making Baby Food: Top Picks",
+      "status": "published",
+      "url": "/blog/the-best-food-processor-for-making-baby-food-top-picks/",
+      "created_at": "2026-02-22 17:01:44"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Choose a Crib with Storage: A Guide for New Parents",
+      "status": "published",
+      "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
+      "created_at": "2026-02-22 17:01:39"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
+      "created_at": "2026-02-22 17:01:37"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -468,150 +612,6 @@
       "status": "published",
       "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
       "created_at": "2026-02-22 17:01:02"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Picks for Best Workout Benches for Small Apartments",
-      "status": "published",
-      "url": "/top-picks-for-best-workout-benches-for-small-apartments/",
-      "created_at": "2026-02-22 17:01:02"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Purrfectly Clean: The Ultimate Guide to Cat Litter vs Clumping Litter",
-      "status": "published",
-      "url": "/blog/purrfectly-clean-the-ultimate-guide-to-cat-litter-vs-clumping-litter/",
-      "created_at": "2026-02-22 17:01:01"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Picks for Best Workout Benches for Small Apartments",
-      "status": "published",
-      "url": "/top-picks-for-best-workout-benches-for-small-apartments/",
-      "created_at": "2026-02-22 17:01:01"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Perfect Stroller for Your Little One: A Guide to Selecting a Baby Stroller with Storage",
-      "status": "published",
-      "url": "/choosing-the-perfect-stroller-for-your-little-one-a-guide-to-selecting-a-baby-stroller-with-storage/",
-      "created_at": "2026-02-22 17:01:00"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Ultimate Cat Litter Showdown",
-      "status": "published",
-      "url": "/blog/ultimate-cat-litter-showdown/",
-      "created_at": "2026-02-22 17:01:00"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Picks for Best Workout Benches for Small Apartments",
-      "status": "published",
-      "url": "/top-picks-for-best-workout-benches-for-small-apartments/",
-      "created_at": "2026-02-22 17:00:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Stroller for Your Baby: Tips and Tricks",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-stroller-for-your-baby-tips-and-tricks/",
-      "created_at": "2026-02-22 17:00:57"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 17:00:57"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Instant Pot vs Slow Cooker: Which Reigns Supreme?",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 17:00:57"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
-      "created_at": "2026-02-22 17:00:56"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Ultimate Showdown: Instant Pot vs Slow Cooker - Which Kitchen Essential Reigns Supreme?",
-      "status": "published",
-      "url": "/blog/the-ultimate-showdown-instant-pot-vs-slow-cooker-which-kitchen-essential-reigns/",
-      "created_at": "2026-02-22 17:00:56"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 17:00:54"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
-      "status": "published",
-      "url": "/blog/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
-      "created_at": "2026-02-22 17:00:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose a Crib with Storage: A Guide for New Parents",
-      "status": "published",
-      "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
-      "created_at": "2026-02-22 17:00:48"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
-      "created_at": "2026-02-22 17:00:46"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Finally found natural ways to save my leather couch from my cat's claws",
-      "status": "published",
-      "url": "/blog/finally-found-natural-ways-to-save-my-leather-couch-from-my-cats-claws/",
-      "created_at": "2026-02-22 17:00:39"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose a Crib with Storage: A Guide for New Parents",
-      "status": "published",
-      "url": "/how-to-choose-a-crib-with-storage-a-guide-for-new-parents/",
-      "created_at": "2026-02-22 17:00:37"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
-      "created_at": "2026-02-22 17:00:35"
     }
   ],
   "crypto": {
@@ -675,12 +675,12 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 233.68067056256837,
-        "avg_buy_price": 0.249497824843214,
-        "total_invested": 58.302819013264475,
+        "quantity": 238.30687261730003,
+        "avg_buy_price": 0.24957901254498305,
+        "total_invested": 59.4763939505088,
         "exchange": "coinbase",
-        "current_value": 59.354890322892366,
-        "updated_at": "2026-02-22 17:01:32"
+        "current_value": 60.453687445556675,
+        "updated_at": "2026-02-22 17:01:36"
       },
       {
         "id": 20,
@@ -697,12 +697,12 @@
         "id": 70,
         "strategy_id": "crypto_trading",
         "coin": "arpa",
-        "quantity": 4759.344739616391,
-        "avg_buy_price": 0.01082648543711223,
-        "total_invested": 51.52697651365356,
+        "quantity": 4852.802683541625,
+        "avg_buy_price": 0.010824049510976373,
+        "total_invested": 52.52697651365356,
         "exchange": "coinbase",
-        "current_value": 50.92498871389538,
-        "updated_at": "2026-02-22 17:00:35"
+        "current_value": 51.92498871389538,
+        "updated_at": "2026-02-22 17:01:34"
       },
       {
         "id": 65,
@@ -874,6 +874,24 @@
       {
         "coin": "kite",
         "side": "buy",
+        "quantity": 4.626202054731653,
+        "price": 0.25368,
+        "total": 1.1735749372443258,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:01:36"
+      },
+      {
+        "coin": "arpa",
+        "side": "buy",
+        "quantity": 93.45794392523365,
+        "price": 0.0107,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:01:34"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
         "quantity": 4.620373768678448,
         "price": 0.254,
         "total": 1.1735749372443258,
@@ -942,24 +960,6 @@
         "total": 1.6750535391347514,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 17:00:43"
-      },
-      {
-        "coin": "rave",
-        "side": "buy",
-        "quantity": 3.4569974390860434,
-        "price": 0.6922,
-        "total": 2.3929336273353594,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:00:42"
-      },
-      {
-        "coin": "agld",
-        "side": "sell",
-        "quantity": 6.8495,
-        "price": 0.3684,
-        "total": 2.656164,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:00:35"
       }
     ],
     "prices": [
