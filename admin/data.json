@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T12:43:21.342637+00:00",
+  "updated": "2026-02-22T12:43:54.748443+00:00",
   "revenue": {
     "total": 277.9055531348094,
     "last_7d": 277.9055531348094
@@ -107,14 +107,28 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1380
+      "total_effort": 1386
     }
   ],
   "actions_today": {
-    "total": 5284,
+    "total": 5286,
     "successes": 2430
   },
   "recent_actions": [
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:43:52"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "comprehensive_store_audit",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 12:43:52"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 12:40:34"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:40:33"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 12:40:33"
     }
   ],
   "decisions": [
