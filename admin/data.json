@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T18:09:00.727908+00:00",
+  "updated": "2026-02-22T18:10:07.480248+00:00",
   "revenue": {
-    "total": 18.37777158526575,
-    "last_7d": 18.37777158526575
+    "total": 18.414771525734164,
+    "last_7d": 18.414771525734164
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 813.1362109937774,
-      "total_effort": 1296
+      "total_revenue": 813.1732109342457,
+      "total_effort": 1300
     },
     {
       "id": "digital_products",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1673
+      "total_effort": 1677
     },
     {
       "id": "api_products",
@@ -111,10 +111,66 @@
     }
   ],
   "actions_today": {
-    "total": 11958,
-    "successes": 5429
+    "total": 11966,
+    "successes": 5433
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_value_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:09:16"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.4,
+      "executed_at": "2026-02-22 18:09:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "publish_drafts_as_blog",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:09:15"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:09:13"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:09:10"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:09:10"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 18:09:02"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 18:09:02"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -268,62 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 18:08:44"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:41"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "comprehensive_store_audit",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:41"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:08:40"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "manage_collections",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:40"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "optimize_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:39"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:39"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_and_publish",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 18:08:39"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 18:08:38"
     }
   ],
   "decisions": [
@@ -449,10 +449,114 @@
     }
   ],
   "assets": {
-    "total": 8064,
-    "published": 7811
+    "total": 8077,
+    "published": 7825
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Annoying Truth About Squeaky Treadmills: Fix It Like a Pro!",
+      "status": "published",
+      "url": "/blog/the-annoying-truth-about-squeaky-treadmills-fix-it-like-a-pro/",
+      "created_at": "2026-02-22 18:09:17"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Exercise Ball for Pregnancy: Top 7 Prenatal Fitness Balls for Safe Workouts",
+      "status": "published",
+      "url": "/best-exercise-ball-for-pregnancy-top-7-prenatal-fitness-balls-for-safe-workouts/",
+      "created_at": "2026-02-22 18:09:16"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Carrier for Newborns: Top Picks for Comfort and Convenience",
+      "status": "published",
+      "url": "/the-best-baby-carrier-for-newborns-top-picks-for-comfort-and-convenience/",
+      "created_at": "2026-02-22 18:09:16"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Fixed my squeaky treadmill in 10 minutes - here's how",
+      "status": "published",
+      "url": "/blog/fixed-my-squeaky-treadmill-in-10-minutes-heres-how/",
+      "created_at": "2026-02-22 18:09:16"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Baby Monitors for Multiple Rooms: Expert Picks and Reviews",
+      "status": "published",
+      "url": "/the-best-baby-monitors-for-multiple-rooms-expert-picks-and-reviews/",
+      "created_at": "2026-02-22 18:09:13"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
+      "status": "published",
+      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
+      "created_at": "2026-02-22 18:09:13"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Squeaky Treadmill Belt Got You Down? ",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 18:09:13"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Annoying Truth About Squeaky Treadmills: Fix It Like a Pro!",
+      "status": "published",
+      "url": "/blog/the-annoying-truth-about-squeaky-treadmills-fix-it-like-a-pro/",
+      "created_at": "2026-02-22 18:09:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Exercise Ball for Pregnancy: Top 7 Prenatal Fitness Balls for Safe Workouts",
+      "status": "published",
+      "url": "/best-exercise-ball-for-pregnancy-top-7-prenatal-fitness-balls-for-safe-workouts/",
+      "created_at": "2026-02-22 18:09:10"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 18:09:09"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Fixed my squeaky treadmill in 10 minutes - here's how",
+      "status": "published",
+      "url": "/blog/fixed-my-squeaky-treadmill-in-10-minutes-heres-how/",
+      "created_at": "2026-02-22 18:09:08"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Find the Best Baby Monitor for Your Little One: Top Picks with Night Vision",
+      "status": "published",
+      "url": "/find-the-best-baby-monitor-for-your-little-one-top-picks-with-night-vision/",
+      "created_at": "2026-02-22 18:09:06"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Exercise Ball for Pregnancy: Top 7 Prenatal Fitness Balls for Safe Workouts",
+      "status": "published",
+      "url": "/best-exercise-ball-for-pregnancy-top-7-prenatal-fitness-balls-for-safe-workouts/",
+      "created_at": "2026-02-22 18:09:03"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -505,113 +609,9 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Boost Productivity in Your Home Office",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 18:08:21"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Mandoline Slicer for Beginners in 2024: Top Picks and Buying Guide",
-      "status": "published",
-      "url": "/the-best-mandoline-slicer-for-beginners-in-2024-top-picks-and-buying-guide/",
-      "created_at": "2026-02-22 18:08:21"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Unlock Your Dog's Health: Grain Free vs Regular Dog Food Benefits for a Happier Pet",
-      "status": "published",
-      "url": "/unlock-your-dog-s-health-grain-free-vs-regular-dog-food-benefits-for-a-happier-pet/",
-      "created_at": "2026-02-22 18:08:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "7 Best Vegetable Spiralizers for Zucchini Noodles in 2024 (Tested & Reviewed)",
-      "status": "published",
-      "url": "/7-best-vegetable-spiralizers-for-zucchini-noodles-in-2024-tested-reviewed/",
-      "created_at": "2026-02-22 18:08:20"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Steps to a Productive Home Workspace",
-      "status": "published",
-      "url": "/blog/5-simple-steps-to-a-productive-home-workspace/",
-      "created_at": "2026-02-22 18:08:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top-Rated Flea Shampoos for Puppies Under 12 Weeks: Expert Reviews",
-      "status": "published",
-      "url": "/top-rated-flea-shampoos-for-puppies-under-12-weeks-expert-reviews/",
-      "created_at": "2026-02-22 18:08:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
-      "status": "published",
-      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 18:08:19"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Boost Productivity in Your Home Office",
       "status": "published",
       "url": "/blog/boost-productivity-in-your-home-office/",
-      "created_at": "2026-02-22 18:08:19"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
-      "status": "published",
-      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 18:08:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 18:08:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Instant Pot vs Slow Cooker: Which Reigns Supreme?",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-22 18:08:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Ultimate Showdown: Instant Pot vs Slow Cooker - Which Kitchen Essential Reigns Supreme?",
-      "status": "published",
-      "url": "/blog/the-ultimate-showdown-instant-pot-vs-slow-cooker-which-kitchen-essential-reigns/",
-      "created_at": "2026-02-22 18:08:14"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 18:08:13"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
-      "status": "published",
-      "url": "/blog/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
-      "created_at": "2026-02-22 18:08:12"
+      "created_at": "2026-02-22 18:08:21"
     }
   ],
   "crypto": {
@@ -642,12 +642,12 @@
         "id": 59,
         "strategy_id": "crypto_trading",
         "coin": "rave",
-        "quantity": 235.7681004662939,
+        "quantity": 232.4431004662939,
         "avg_buy_price": 0.6970827246711545,
-        "total_invested": 164.34986986358678,
+        "total_invested": 162.0320698040552,
         "exchange": "coinbase",
-        "current_value": 158.57762437362928,
-        "updated_at": "2026-02-22 18:08:49"
+        "current_value": 156.38771799372253,
+        "updated_at": "2026-02-22 18:09:14"
       },
       {
         "id": 60,
@@ -872,6 +872,15 @@
     ],
     "trades": [
       {
+        "coin": "rave",
+        "side": "sell",
+        "quantity": 3.3249999999999997,
+        "price": 0.6728,
+        "total": 2.3548,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 18:09:14"
+      },
+      {
         "coin": "plu",
         "side": "buy",
         "quantity": 6.683151774376795,
@@ -951,15 +960,6 @@
         "total": 1.0,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 18:07:53"
-      },
-      {
-        "coin": "plu",
-        "side": "buy",
-        "quantity": 6.683598449405159,
-        "price": 0.14962,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 18:07:47"
       }
     ],
     "prices": [
