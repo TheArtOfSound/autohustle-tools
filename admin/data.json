@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T17:34:28.595099+00:00",
+  "updated": "2026-02-22T17:34:44.733776+00:00",
   "revenue": {
     "total": 16.47169564036367,
     "last_7d": 16.47169564036367
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 811.230135048875,
-      "total_effort": 1154
+      "total_effort": 1152
     },
     {
       "id": "digital_products",
@@ -111,24 +111,10 @@
     }
   ],
   "actions_today": {
-    "total": 10660,
-    "successes": 4860
+    "total": 10658,
+    "successes": 4859
   },
   "recent_actions": [
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:28:54"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:28:54"
-    },
     {
       "strategy_id": "crypto_trading",
       "action_type": null,
@@ -323,6 +309,20 @@
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
+      "executed_at": "2026-02-22 17:28:02"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": "upgrade_tool",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:28:02"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "list_product",
+      "outcome": null,
+      "reward": 0.0,
       "executed_at": "2026-02-22 17:28:02"
     }
   ],
@@ -449,82 +449,10 @@
     }
   ],
   "assets": {
-    "total": 7256,
-    "published": 7011
+    "total": 7247,
+    "published": 7002
   },
   "recent_assets": [
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
-      "status": "published",
-      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
-      "created_at": "2026-02-22 17:28:57"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
-      "status": "published",
-      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
-      "created_at": "2026-02-22 17:28:57"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
-      "status": "published",
-      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
-      "created_at": "2026-02-22 17:28:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Headsets for Seamless Online Meetings: Expert Picks",
-      "status": "published",
-      "url": "/top-headsets-for-seamless-online-meetings-expert-picks/",
-      "created_at": "2026-02-22 17:28:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
-      "status": "published",
-      "url": "/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-22 17:28:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
-      "status": "published",
-      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
-      "created_at": "2026-02-22 17:28:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
-      "status": "published",
-      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
-      "created_at": "2026-02-22 17:28:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Stuck Garbage Disposal: A Step-by-Step Guide for Kitchen Gadget Lovers",
-      "status": "published",
-      "url": "/how-to-fix-a-stuck-garbage-disposal-a-step-by-step-guide-for-kitchen-gadget-lovers/",
-      "created_at": "2026-02-22 17:28:54"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Maximize Natural Light in Your Home Office: A Step-by-Step Guide",
-      "status": "published",
-      "url": "/maximize-natural-light-in-your-home-office-a-step-by-step-guide/",
-      "created_at": "2026-02-22 17:28:52"
-    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -612,6 +540,78 @@
       "status": "published",
       "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
       "created_at": "2026-02-22 17:28:41"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:41"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:40"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 17:28:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:03"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Between High Chair and Booster Seat: A Comprehensive Comparison for Parents",
+      "status": "published",
+      "url": "/choosing-between-high-chair-and-booster-seat-a-comprehensive-comparison-for-parents/",
+      "created_at": "2026-02-22 17:28:03"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Expert Guide to Baby Proofing vs Safety Testing: Which is Better for Your Little One?",
+      "status": "published",
+      "url": "/expert-guide-to-baby-proofing-vs-safety-testing-which-is-better-for-your-little-one/",
+      "created_at": "2026-02-22 17:28:02"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "AsyncFlow: Asynchronous Communication Framework Templates for Distributed Teams",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 17:26:55"
     }
   ],
   "crypto": {
@@ -752,12 +752,12 @@
         "id": 72,
         "strategy_id": "crypto_trading",
         "coin": "apr",
-        "quantity": 170.13232304251335,
-        "avg_buy_price": 0.10772205251024797,
-        "total_invested": 18.327003036476093,
+        "quantity": 160.829997461118,
+        "avg_buy_price": 0.10773489591495541,
+        "total_invested": 17.327003036476093,
         "exchange": "coinbase",
-        "current_value": 18.289224727070184,
-        "updated_at": "2026-02-22 17:28:54"
+        "current_value": 17.289224727070184,
+        "updated_at": "2026-02-22 17:27:36"
       },
       {
         "id": 69,
@@ -861,15 +861,6 @@
     ],
     "trades": [
       {
-        "coin": "apr",
-        "side": "buy",
-        "quantity": 9.30232558139535,
-        "price": 0.1075,
-        "total": 1.0,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:28:54"
-      },
-      {
         "coin": "bnkr",
         "side": "buy",
         "quantity": 1520.2189115232593,
@@ -949,6 +940,15 @@
         "total": 4.3788599999999995,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 17:28:14"
+      },
+      {
+        "coin": "bnkr",
+        "side": "buy",
+        "quantity": 1839.7513106767653,
+        "price": 0.000658,
+        "total": 1.2105563624253115,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:27:46"
       }
     ],
     "prices": [
