@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T16:23:03.038024+00:00",
+  "updated": "2026-02-22T16:23:11.575542+00:00",
   "revenue": {
-    "total": 3.522823742704985,
-    "last_7d": 3.522823742704985
+    "total": 3.769366628405438,
+    "last_7d": 3.769366628405438
   },
   "strategies": [
     {
@@ -10,7 +10,7 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 798.2812631512165,
+      "total_revenue": 798.527806036917,
       "total_effort": 930
     },
     {
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1304
+      "total_effort": 1307
     },
     {
       "id": "api_products",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 9023,
-    "successes": 4106
+    "total": 9025,
+    "successes": 4107
   },
   "recent_actions": [
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-22 16:18:33"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "create_social_post",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:18:33"
+    },
     {
       "strategy_id": "social_growth",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": "partial",
       "reward": 0.15,
       "executed_at": "2026-02-22 16:17:47"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-22 16:17:46"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:17:46"
     }
   ],
   "decisions": [
@@ -449,10 +449,34 @@
     }
   ],
   "assets": {
-    "total": 5986,
-    "published": 5765
+    "total": 5989,
+    "published": 5767
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Cuisinart vs KitchenAid: The Food Processor Showdown",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-22 16:18:33"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The Ultimate Kitchen Showdown: Cuisinart vs KitchenAid Food Processors \u2014 A Home Cook's Guide to Making the Right Choice",
+      "status": "published",
+      "url": "/blog/the-ultimate-kitchen-showdown-cuisinart-vs-kitchenaid-food-processors-a-home-coo/",
+      "created_at": "2026-02-22 16:18:32"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Cuisinart vs KitchenAid Food Processors: Key differences I learned after testing both",
+      "status": "published",
+      "url": "/blog/cuisinart-vs-kitchenaid-food-processors-key-differences-i-learned-after-testing/",
+      "created_at": "2026-02-22 16:18:29"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -588,30 +612,6 @@
       "status": "published",
       "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
       "created_at": "2026-02-22 16:17:45"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
-      "status": "published",
-      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
-      "created_at": "2026-02-22 16:17:44"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
-      "status": "published",
-      "url": "/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-22 16:17:44"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
-      "status": "published",
-      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
-      "created_at": "2026-02-22 16:17:43"
     }
   ],
   "crypto": {
@@ -653,12 +653,12 @@
         "id": 23,
         "strategy_id": "crypto_trading",
         "coin": "agld",
-        "quantity": 220.70823341509276,
+        "quantity": 215.12223341509275,
         "avg_buy_price": 0.3434430924274162,
-        "total_invested": 75.80071820827143,
+        "total_invested": 73.88224509397189,
         "exchange": "coinbase",
-        "current_value": 81.3530548368032,
-        "updated_at": "2026-02-22 16:17:45"
+        "current_value": 79.20800634343716,
+        "updated_at": "2026-02-22 16:18:32"
       },
       {
         "id": 17,
@@ -850,6 +850,33 @@
     ],
     "trades": [
       {
+        "coin": "sapien",
+        "side": "sell",
+        "quantity": 30.684999999999995,
+        "price": 0.09789,
+        "total": 3.161847,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 16:18:35"
+      },
+      {
+        "coin": "omni",
+        "side": "sell",
+        "quantity": 4.531499999999999,
+        "price": 0.918,
+        "total": 4.3788599999999995,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 16:18:33"
+      },
+      {
+        "coin": "agld",
+        "side": "sell",
+        "quantity": 5.585999999999999,
+        "price": 0.3682,
+        "total": 2.165016,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 16:18:32"
+      },
+      {
         "coin": "up",
         "side": "buy",
         "quantity": 51.22696457633884,
@@ -911,33 +938,6 @@
         "total": 1.467909511390636,
         "exchange": "coinbase",
         "executed_at": "2026-02-22 16:18:01"
-      },
-      {
-        "coin": "omni",
-        "side": "sell",
-        "quantity": 4.531499999999999,
-        "price": 0.918,
-        "total": 4.159916999999999,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 16:18:01"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 59.64492383701772,
-        "price": 0.0246,
-        "total": 1.467265126390636,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 16:17:59"
-      },
-      {
-        "coin": "up",
-        "side": "buy",
-        "quantity": 51.22226593571384,
-        "price": 0.0384,
-        "total": 1.9669350119314115,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 16:17:55"
       }
     ],
     "prices": [
