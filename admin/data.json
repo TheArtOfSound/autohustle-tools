@@ -1,8 +1,8 @@
 {
-  "updated": "2026-02-22T17:12:01.203127+00:00",
+  "updated": "2026-02-22T17:13:15.117790+00:00",
   "revenue": {
-    "total": 11.919699948316524,
-    "last_7d": 11.919699948316524
+    "total": 11.604552013800843,
+    "last_7d": 11.604552013800843
   },
   "strategies": [
     {
@@ -10,8 +10,8 @@
       "name": "Crypto Trading",
       "type": "crypto_trading",
       "status": "active",
-      "total_revenue": 806.6781393568281,
-      "total_effort": 1082
+      "total_revenue": 806.3629914223123,
+      "total_effort": 1078
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 9296
+      "total_effort": 9268
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1452
+      "total_effort": 1451
     },
     {
       "id": "api_products",
@@ -111,101 +111,10 @@
     }
   ],
   "actions_today": {
-    "total": 10201,
-    "successes": 4646
+    "total": 10188,
+    "successes": 4640
   },
   "recent_actions": [
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.4,
-      "executed_at": "2026-02-22 17:07:38"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:07:35"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:07:33"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:07:33"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:07:33"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 17:07:26"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:07:26"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 17:06:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 17:06:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:06:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:06:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-22 17:06:58"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 17:06:58"
-    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -324,6 +233,97 @@
       "outcome": "success",
       "reward": 0.5,
       "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "research_keywords",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "research_keywords",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:24"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:11"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:11"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:06:09"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "daily_theme_refresh",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:09"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:06:06"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "organize_store",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:06"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-22 17:06:05"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "auto_fulfill_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 17:06:05"
     }
   ],
   "decisions": [
@@ -449,153 +449,17 @@
     }
   ],
   "assets": {
-    "total": 6882,
-    "published": 6646
+    "total": 6859,
+    "published": 6623
   },
   "recent_assets": [
     {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Get Fit in No Time: Top Workout Benches for Small Apartments",
-      "status": "published",
-      "url": "/blog/get-fit-in-no-time-top-workout-benches-for-small-apartments/",
-      "created_at": "2026-02-22 17:07:39"
-    },
-    {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
+      "title": "Find the Best Monitor for Video Editing Software: Top Picks for Home Office",
       "status": "published",
-      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 17:07:38"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "10 Essential Kitchen Gadgets for Efficient Meal Prep",
-      "status": "published",
-      "url": "/blog/10-essential-kitchen-gadgets-for-efficient-meal-prep/",
-      "created_at": "2026-02-22 17:07:38"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Between Baby Gear and Strollers: Expert Comparison Guide",
-      "status": "published",
-      "url": "/choosing-between-baby-gear-and-strollers-expert-comparison-guide/",
-      "created_at": "2026-02-22 17:07:38"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Essential Factors to Consider When Choosing the Perfect Stroller for Your Little Adventurer",
-      "status": "published",
-      "url": "/blog/5-essential-factors-to-consider-when-choosing-the-perfect-stroller-for-your-litt/",
-      "created_at": "2026-02-22 17:07:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
-      "status": "published",
-      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
-      "created_at": "2026-02-22 17:07:36"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Choosing the Perfect Stroller for Your Little One",
-      "status": "published",
-      "url": "/blog/choosing-the-perfect-stroller-for-your-little-one/",
-      "created_at": "2026-02-22 17:07:35"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
-      "status": "published",
-      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
-      "created_at": "2026-02-22 17:07:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Choose the Perfect Stroller for Your Baby: Tips and Tricks",
-      "status": "published",
-      "url": "/how-to-choose-the-perfect-stroller-for-your-baby-tips-and-tricks/",
-      "created_at": "2026-02-22 17:07:34"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Food Processor for Making Baby Food: Top Picks for Safe and Healthy Meal Prep",
-      "status": "published",
-      "url": "/the-best-food-processor-for-making-baby-food-top-picks-for-safe-and-healthy-meal-prep/",
-      "created_at": "2026-02-22 17:06:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
-      "status": "published",
-      "url": "/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
-      "created_at": "2026-02-22 17:06:58"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Choosing Dog Toys for Aggressive Chewers: A Step-by-Step Guide to Safe Play",
-      "status": "published",
-      "url": "/choosing-dog-toys-for-aggressive-chewers-a-step-by-step-guide-to-safe-play/",
-      "created_at": "2026-02-22 17:06:58"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
-      "status": "published",
-      "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
-      "created_at": "2026-02-22 17:06:57"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Simplify Your Workspace: A Step-by-Step Guide on How to Reduce Noise from a Home Office Printer",
-      "status": "published",
-      "url": "/simplify-your-workspace-a-step-by-step-guide-on-how-to-reduce-noise-from-a-home-office-printer/",
-      "created_at": "2026-02-22 17:06:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Kitchen Scales for Baking Accuracy: Top Picks and Reviews",
-      "status": "published",
-      "url": "/the-best-kitchen-scales-for-baking-accuracy-top-picks-and-reviews/",
-      "created_at": "2026-02-22 17:06:55"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "How to Fix a Jammed Printer Head: A Step-by-Step Guide for Home Office Users",
-      "status": "published",
-      "url": "/how-to-fix-a-jammed-printer-head-a-step-by-step-guide-for-home-office-users/",
-      "created_at": "2026-02-22 17:06:53"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Best Dog Beds for Senior Dogs with Arthritis: Comfort & Relief",
-      "status": "published",
-      "url": "/the-best-dog-beds-for-senior-dogs-with-arthritis-comfort-relief/",
-      "created_at": "2026-02-22 17:06:53"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Guide to Choosing the Perfect Stand Mixer for Your Kitchen Needs",
-      "status": "published",
-      "url": "/the-ultimate-guide-to-choosing-the-perfect-stand-mixer-for-your-kitchen-needs/",
-      "created_at": "2026-02-22 17:06:51"
+      "url": "/find-the-best-monitor-for-video-editing-software-top-picks-for-home-office/",
+      "created_at": "2026-02-22 17:06:49"
     },
     {
       "strategy_id": "seo_content",
@@ -603,7 +467,7 @@
       "title": "The Purrfect Grooming Companion: Top Brush Picks for Long Haired Cats",
       "status": "published",
       "url": "/the-purrfect-grooming-companion-top-brush-picks-for-long-haired-cats/",
-      "created_at": "2026-02-22 17:06:50"
+      "created_at": "2026-02-22 17:06:48"
     },
     {
       "strategy_id": "seo_content",
@@ -611,7 +475,143 @@
       "title": "The Best Coffee Grinder for Espresso Beans to Elevate Your Home Brew",
       "status": "published",
       "url": "/the-best-coffee-grinder-for-espresso-beans-to-elevate-your-home-brew/",
-      "created_at": "2026-02-22 17:06:50"
+      "created_at": "2026-02-22 17:06:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best for Your Feline Friend: Wet vs Dry Cat Food for Indoor Cats Compared",
+      "status": "published",
+      "url": "/discover-the-best-for-your-feline-friend-wet-vs-dry-cat-food-for-indoor-cats-compared/",
+      "created_at": "2026-02-22 17:06:45"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
+      "status": "published",
+      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
+      "created_at": "2026-02-22 17:06:45"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Get the Best Headset for Seamless Online Gaming and Video Calls from Your Home Office",
+      "status": "published",
+      "url": "/get-the-best-headset-for-seamless-online-gaming-and-video-calls-from-your-home-office/",
+      "created_at": "2026-02-22 17:06:45"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Cryptocurrency Market Intelligence Report",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 17:06:45"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Laptops Stands for Ergonomic Comfort in Home Office",
+      "status": "published",
+      "url": "/discover-the-best-laptops-stands-for-ergonomic-comfort-in-home-office/",
+      "created_at": "2026-02-22 17:06:44"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
+      "status": "published",
+      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
+      "created_at": "2026-02-22 17:06:43"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Choose the Perfect Stroller for Your Baby: Tips and Tricks",
+      "status": "published",
+      "url": "/how-to-choose-the-perfect-stroller-for-your-baby-tips-and-tricks/",
+      "created_at": "2026-02-22 17:06:43"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "5 Simple Ways to Optimize Your Home Office Lighting",
+      "status": "published",
+      "url": "/blog/5-simple-ways-to-optimize-your-home-office-lighting/",
+      "created_at": "2026-02-22 17:06:43"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Choose the Perfect Stroller for Your Baby: Tips and Tricks",
+      "status": "published",
+      "url": "/how-to-choose-the-perfect-stroller-for-your-baby-tips-and-tricks/",
+      "created_at": "2026-02-22 17:06:40"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
+      "status": "published",
+      "url": "/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
+      "created_at": "2026-02-22 17:06:38"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Headsets for Seamless Online Meetings: Expert Picks",
+      "status": "published",
+      "url": "/top-headsets-for-seamless-online-meetings-expert-picks/",
+      "created_at": "2026-02-22 17:06:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
+      "status": "published",
+      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
+      "created_at": "2026-02-22 17:06:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Which Kitchen Essential Reigns Supreme? Instant Pot vs Slow Cooker Comparison",
+      "status": "published",
+      "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
+      "created_at": "2026-02-22 17:06:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing the Right Dog Harness: A Step-by-Step Guide for Pet Owners",
+      "status": "published",
+      "url": "/choosing-the-right-dog-harness-a-step-by-step-guide-for-pet-owners/",
+      "created_at": "2026-02-22 17:06:36"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
+      "status": "published",
+      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
+      "created_at": "2026-02-22 17:06:36"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Remove Pet Odor from Carpet Permanently: 7 Proven Methods That Actually Work",
+      "status": "published",
+      "url": "/how-to-remove-pet-odor-from-carpet-permanently-7-proven-methods-that-actually-work/",
+      "created_at": "2026-02-22 17:06:35"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "How to Fix a Stuck Garbage Disposal: A Step-by-Step Guide for Kitchen Gadget Lovers",
+      "status": "published",
+      "url": "/how-to-fix-a-stuck-garbage-disposal-a-step-by-step-guide-for-kitchen-gadget-lovers/",
+      "created_at": "2026-02-22 17:06:35"
     }
   ],
   "crypto": {
@@ -631,23 +631,23 @@
         "id": 59,
         "strategy_id": "crypto_trading",
         "coin": "rave",
-        "quantity": 360.42606331261345,
-        "avg_buy_price": 0.6972073257811421,
-        "total_invested": 251.29169174401184,
+        "quantity": 355.2820689527376,
+        "avg_buy_price": 0.6973536659186134,
+        "total_invested": 247.75725321934112,
         "exchange": "coinbase",
-        "current_value": 247.6487481020967,
-        "updated_at": "2026-02-22 17:07:31"
+        "current_value": 244.114309577426,
+        "updated_at": "2026-02-22 17:06:35"
       },
       {
         "id": 68,
         "strategy_id": "crypto_trading",
         "coin": "lrds",
-        "quantity": 8460.923385195956,
-        "avg_buy_price": 0.024182528289029944,
-        "total_invested": 204.6065191138162,
+        "quantity": 8334.27689448565,
+        "avg_buy_price": 0.024197458649684457,
+        "total_invested": 201.66832052933714,
         "exchange": "coinbase",
-        "current_value": 196.29342253654616,
-        "updated_at": "2026-02-22 17:07:33"
+        "current_value": 193.3552239520671,
+        "updated_at": "2026-02-22 17:06:37"
       },
       {
         "id": 35,
@@ -664,12 +664,12 @@
         "id": 60,
         "strategy_id": "crypto_trading",
         "coin": "kite",
-        "quantity": 286.78435047410784,
-        "avg_buy_price": 0.25063232681054026,
-        "total_invested": 71.87742905217512,
+        "quantity": 276.3141090191631,
+        "avg_buy_price": 0.25042699359496484,
+        "total_invested": 69.19651160954037,
         "exchange": "coinbase",
-        "current_value": 73.52863961805652,
-        "updated_at": "2026-02-22 17:07:32"
+        "current_value": 70.82483242379188,
+        "updated_at": "2026-02-22 17:06:36"
       },
       {
         "id": 17,
@@ -727,6 +727,17 @@
         "updated_at": "2026-02-22 11:29:35"
       },
       {
+        "id": 23,
+        "strategy_id": "crypto_trading",
+        "coin": "agld",
+        "quantity": 58.07643689205617,
+        "avg_buy_price": 0.3473580648929587,
+        "total_invested": 20.173318734702715,
+        "exchange": "coinbase",
+        "current_value": 21.697356822872184,
+        "updated_at": "2026-02-22 17:06:16"
+      },
+      {
         "id": 15,
         "strategy_id": "crypto_trading",
         "coin": "snx",
@@ -736,17 +747,6 @@
         "exchange": "coinbase",
         "current_value": 20.932424601896244,
         "updated_at": "2026-02-22 09:11:06"
-      },
-      {
-        "id": 23,
-        "strategy_id": "crypto_trading",
-        "coin": "agld",
-        "quantity": 51.22693689205617,
-        "avg_buy_price": 0.3473580648929587,
-        "total_invested": 17.794089669218394,
-        "exchange": "coinbase",
-        "current_value": 19.14350631656139,
-        "updated_at": "2026-02-22 17:07:18"
       },
       {
         "id": 69,
@@ -874,65 +874,38 @@
       {
         "coin": "lrds",
         "side": "buy",
-        "quantity": 75.92915407908411,
+        "quantity": 50.70567104070371,
         "price": 0.0232,
-        "total": 1.7615563746347513,
+        "total": 1.176371568144326,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:33"
+        "executed_at": "2026-02-22 17:06:37"
       },
       {
         "coin": "kite",
         "side": "buy",
-        "quantity": 3.900308124341823,
-        "price": 0.25639,
-        "total": 1.0,
+        "quantity": 6.556378010435204,
+        "price": 0.25632,
+        "total": 1.6805308116347515,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:32"
+        "executed_at": "2026-02-22 17:06:36"
       },
       {
         "coin": "rave",
         "side": "buy",
-        "quantity": 1.6491455280677618,
+        "quantity": 3.494044975018715,
         "price": 0.6871,
-        "total": 1.1331278923353592,
+        "total": 2.400758302335359,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:31"
-      },
-      {
-        "coin": "lrds",
-        "side": "buy",
-        "quantity": 50.71733663122096,
-        "price": 0.0232,
-        "total": 1.176642209844326,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:26"
-      },
-      {
-        "coin": "kite",
-        "side": "buy",
-        "quantity": 6.569933330602897,
-        "price": 0.25585,
-        "total": 1.6809174426347513,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:25"
-      },
-      {
-        "coin": "rave",
-        "side": "buy",
-        "quantity": 3.49484883180812,
-        "price": 0.6871,
-        "total": 2.4013106323353592,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:23"
+        "executed_at": "2026-02-22 17:06:35"
       },
       {
         "coin": "sapien",
         "side": "sell",
         "quantity": 30.684999999999995,
-        "price": 0.10048,
-        "total": 3.2455039999999995,
+        "price": 0.10042,
+        "total": 3.2435659999999995,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:20"
+        "executed_at": "2026-02-22 17:06:35"
       },
       {
         "coin": "omni",
@@ -941,25 +914,52 @@
         "price": 0.933,
         "total": 4.45041,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:19"
-      },
-      {
-        "coin": "agld",
-        "side": "sell",
-        "quantity": 6.8495,
-        "price": 0.3737,
-        "total": 2.694377,
-        "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:07:18"
+        "executed_at": "2026-02-22 17:06:32"
       },
       {
         "coin": "lrds",
         "side": "buy",
-        "quantity": 50.70567104070371,
+        "quantity": 50.62790043725543,
         "price": 0.0232,
-        "total": 1.176371568144326,
+        "total": 1.1745672901443258,
         "exchange": "coinbase",
-        "executed_at": "2026-02-22 17:06:37"
+        "executed_at": "2026-02-22 17:06:32"
+      },
+      {
+        "coin": "kite",
+        "side": "buy",
+        "quantity": 6.554504967323248,
+        "price": 0.256,
+        "total": 1.6779532716347514,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:06:31"
+      },
+      {
+        "coin": "up",
+        "side": "buy",
+        "quantity": 26.001040041601662,
+        "price": 0.03846,
+        "total": 1.0,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:06:28"
+      },
+      {
+        "coin": "rave",
+        "side": "buy",
+        "quantity": 3.4932615889468943,
+        "price": 0.6862,
+        "total": 2.397076102335359,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:06:28"
+      },
+      {
+        "coin": "lrds",
+        "side": "buy",
+        "quantity": 50.55401836397957,
+        "price": 0.0232,
+        "total": 1.172853226044326,
+        "exchange": "coinbase",
+        "executed_at": "2026-02-22 17:06:25"
       }
     ],
     "prices": [
