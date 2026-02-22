@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T06:22:53.242761+00:00",
+  "updated": "2026-02-22T06:23:35.019879+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 112
+      "total_effort": 115
     },
     {
       "id": "stripe_premium",
@@ -103,10 +103,24 @@
     }
   ],
   "actions_today": {
-    "total": 723,
-    "successes": 325
+    "total": 725,
+    "successes": 326
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 06:23:33"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 06:23:33"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -302,20 +316,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 06:20:00"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 06:20:00"
-    },
-    {
-      "strategy_id": "dropshipping",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-22 06:20:00"
     }
   ],
   "decisions": [
@@ -441,10 +441,18 @@
     }
   ],
   "assets": {
-    "total": 472,
+    "total": 473,
     "published": 441
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Market Intelligence Report: Crypto Trends Analysis",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 06:23:33"
+    },
     {
       "strategy_id": "data_scraper",
       "asset_type": "product",
@@ -596,14 +604,6 @@
       "status": "published",
       "url": "/choosing-between-breast-pumps-and-manual-pumps-for-nursing-a-comprehensive-guide/",
       "created_at": "2026-02-22 06:13:22"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Say goodbye to painful calluses and blisters! \ud83d\udcaa",
-      "status": "published",
-      "url": "/blog/say-goodbye-to-painful-calluses-and-blisters/",
-      "created_at": "2026-02-22 06:13:07"
     }
   ],
   "crypto": {
