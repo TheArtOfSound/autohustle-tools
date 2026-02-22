@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T16:46:34.009358+00:00",
+  "updated": "2026-02-22T16:46:34.170274+00:00",
   "revenue": {
     "total": 7.592753913912235,
     "last_7d": 7.592753913912235
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2190
+      "total_effort": 2200
     },
     {
       "id": "freelance",
@@ -111,10 +111,24 @@
     }
   ],
   "actions_today": {
-    "total": 9567,
-    "successes": 4356
+    "total": 9569,
+    "successes": 4357
   },
   "recent_actions": [
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-22 16:43:17"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-22 16:43:17"
+    },
     {
       "strategy_id": "digital_products",
       "action_type": null,
@@ -310,20 +324,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-22 16:42:19"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:42:19"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": "update_index",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-22 16:42:19"
     }
   ],
   "decisions": [
@@ -449,10 +449,18 @@
     }
   ],
   "assets": {
-    "total": 6399,
+    "total": 6400,
     "published": 6168
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "VoiceClone Shield: AI Voice Impersonation Detection Templates for Content Creators",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-22 16:43:17"
+    },
     {
       "strategy_id": "digital_products",
       "asset_type": "product",
@@ -604,14 +612,6 @@
       "status": "published",
       "url": "/top-picks-for-best-baby-monitors-for-small-apartments-expert-reviews/",
       "created_at": "2026-02-22 16:42:54"
-    },
-    {
-      "strategy_id": "digital_products",
-      "asset_type": "product",
-      "title": "RetroSync: Weekly Team Retrospective Templates for Async Remote Teams",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-02-22 16:42:07"
     }
   ],
   "crypto": {
