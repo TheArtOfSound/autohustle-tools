@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-22T10:51:27.034556+00:00",
+  "updated": "2026-02-22T10:51:29.545325+00:00",
   "revenue": {
     "total": 157.65330967331127,
     "last_7d": 157.65330967331127
@@ -329,6 +329,12 @@
   "decisions": [
     {
       "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1208 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 971 tokens\n  data_scraper: score=0.510 (mean=0.120, pulls=100) \u2192 945 tokens\n  digital_products: score=0.546 (mean=0.156, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens\n  seo_content: score=0.611 (mean=0.221, pulls=100) \u2192 1033 tokens\n  shopify_store: score=0.531 (mean=0.141, pulls=100) \u2192 963 tokens\n  social_growth: score=0.554 (mean=0.164, pulls=100) \u2192 983 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
+      "outcome": null,
+      "created_at": "2026-02-22 10:12:23"
+    },
+    {
+      "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 1207 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 970 tokens\n  data_scraper: score=0.510 (mean=0.120, pulls=100) \u2192 944 tokens\n  digital_products: score=0.546 (mean=0.156, pulls=100) \u2192 976 tokens\n  micro_saas: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens\n  seo_content: score=0.616 (mean=0.226, pulls=100) \u2192 1037 tokens\n  shopify_store: score=0.531 (mean=0.141, pulls=100) \u2192 963 tokens\n  social_growth: score=0.554 (mean=0.164, pulls=100) \u2192 982 tokens\n  stripe_premium: score=0.543 (mean=0.153, pulls=100) \u2192 973 tokens",
       "outcome": null,
       "created_at": "2026-02-22 10:10:19"
@@ -440,19 +446,21 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.539 (mean=0.150, pulls=100) \u2192 959 tokens\n  course_creator: score=0.809 (mean=0.161, pulls=36) \u2192 1189 tokens\n  crypto_trading: score=0.539 (mean=0.150, pulls=100) \u2192 959 tokens\n  data_scraper: score=0.506 (mean=0.117, pulls=100) \u2192 931 tokens\n  digital_products: score=0.549 (mean=0.160, pulls=100) \u2192 967 tokens\n  micro_saas: score=0.539 (mean=0.150, pulls=100) \u2192 959 tokens\n  seo_content: score=0.613 (mean=0.224, pulls=100) \u2192 1022 tokens\n  shopify_store: score=0.680 (mean=0.119, pulls=48) \u2192 1079 tokens\n  social_growth: score=0.551 (mean=0.162, pulls=100) \u2192 969 tokens\n  stripe_premium: score=0.545 (mean=0.156, pulls=100) \u2192 964 tokens",
       "outcome": null,
       "created_at": "2026-02-22 09:21:50"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.538 (mean=0.150, pulls=100) \u2192 955 tokens\n  course_creator: score=0.809 (mean=0.161, pulls=36) \u2192 1183 tokens\n  crypto_trading: score=0.538 (mean=0.150, pulls=100) \u2192 955 tokens\n  data_scraper: score=0.506 (mean=0.117, pulls=100) \u2192 927 tokens\n  digital_products: score=0.551 (mean=0.163, pulls=100) \u2192 966 tokens\n  micro_saas: score=0.538 (mean=0.150, pulls=100) \u2192 955 tokens\n  seo_content: score=0.613 (mean=0.225, pulls=100) \u2192 1018 tokens\n  shopify_store: score=0.727 (mean=0.113, pulls=40) \u2192 1114 tokens\n  social_growth: score=0.550 (mean=0.162, pulls=100) \u2192 965 tokens\n  stripe_premium: score=0.544 (mean=0.156, pulls=100) \u2192 960 tokens",
-      "outcome": null,
-      "created_at": "2026-02-22 09:19:42"
     }
   ],
   "assets": {
-    "total": 2370,
-    "published": 2153
+    "total": 2371,
+    "published": 2154
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme?",
+      "status": "published",
+      "url": "/blog/electric-vs-manual-can-opener-which-durability-reigns-supreme/",
+      "created_at": "2026-02-22 10:12:23"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -604,14 +612,6 @@
       "status": "published",
       "url": "/the-best-budget-gaming-monitors-for-home-office-use-in-2023/",
       "created_at": "2026-02-22 10:10:21"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
-      "status": "published",
-      "url": "/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
-      "created_at": "2026-02-22 10:09:53"
     }
   ],
   "crypto": {
