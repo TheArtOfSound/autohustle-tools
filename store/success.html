@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Successful - AutoHustle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .container { max-width: 1100px; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        .success-hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+        .success-icon {
+            width: 80px; height: 80px;
+            background: var(--green-glow);
+            border: 2px solid var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            animation: scaleIn 0.5s ease;
+        }
+        @keyframes scaleIn {
+            0% { transform: scale(0); opacity: 0; }
+            60% { transform: scale(1.15); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .success-hero h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            color: var(--green);
+        }
+        .success-hero p {
+            color: var(--text-muted);
+            font-size: 1.05em;
+        }
+
+        /* License Key Box */
+        .license-section {
+            background: var(--surface);
+            border: 2px solid var(--green);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 20px 0 30px;
+            text-align: center;
+        }
+        .license-section h2 {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .license-key-display {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--green);
+            letter-spacing: 2px;
+            padding: 16px;
+            background: var(--bg);
+            border-radius: 10px;
+            margin: 12px 0 16px;
+            word-break: break-all;
+            user-select: all;
+        }
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: var(--green);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .copy-btn:hover { opacity: 0.85; }
+        .copy-btn.copied { background: var(--primary); }
+        .license-warning {
+            margin-top: 16px;
+            padding: 12px 16px;
+            background: rgba(245,158,11,0.1);
+            border: 1px solid rgba(245,158,11,0.3);
+            border-radius: 8px;
+            font-size: 0.88em;
+            color: var(--orange);
+        }
+
+        /* Product Card */
+        .product-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .product-section h2 {
+            font-size: 1.4em;
+            margin-bottom: 6px;
+        }
+        .product-section h2 .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.55em;
+            font-weight: 600;
+            color: #fff;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .product-section h2 .badge.software { background: var(--green); }
+        .product-section h2 .badge.course { background: var(--primary); }
+        .product-section h2 .badge.api { background: var(--orange); }
+        .product-section h2 .badge.bundle { background: var(--primary); }
+        .product-section .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .access-links {
+            list-style: none;
+            padding: 0;
+        }
+        .access-links li {
+            margin-bottom: 10px;
+        }
+        .access-links a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+        .access-links a:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+        .access-links .link-icon {
+            font-size: 1.3em;
+            flex-shrink: 0;
+        }
+        .access-links .link-label {
+            flex: 1;
+        }
+        .access-links .link-desc {
+            font-size: 0.82em;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        .access-links .arrow {
+            color: var(--primary);
+            font-size: 1.2em;
+        }
+
+        /* Instructions */
+        .instructions {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .instructions h3 {
+            font-size: 1.15em;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+        .instructions ol {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+        .instructions ol li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .instructions ol li strong {
+            color: var(--text);
+        }
+
+        /* Support */
+        .support-box {
+            text-align: center;
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+        .support-box p {
+            color: var(--text-muted);
+            font-size: 0.92em;
+        }
+        .support-box a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .support-box a:hover { text-decoration: underline; }
+
+        /* Error State */
+        .error-state {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .error-state h1 {
+            font-size: 1.8em;
+            margin-bottom: 12px;
+            color: var(--red);
+        }
+        .error-state p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+        .error-state a {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .success-hero h1 { font-size: 1.5em; }
+            .license-key-display { font-size: 1.2em; letter-spacing: 1px; }
+            .license-section { padding: 20px; }
+            .product-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container" style="max-width:1100px;">
+            <a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a>
+        </div>
+    </nav>
+
+    <!-- Error state (shown if no session_id) -->
+    <div id="errorState" class="error-state" style="display:none;">
+        <h1>Invalid Access</h1>
+        <p>This page requires a valid purchase session. If you just completed a purchase and see this message, please check your email for your receipt and try the link again.</p>
+        <a href="/autohustle-tools/store/">Return to Store</a>
+    </div>
+
+    <!-- Success content (shown when valid) -->
+    <div id="successContent" style="display:none;">
+        <div class="success-hero">
+            <div class="success-icon">&#10003;</div>
+            <h1>Purchase Successful!</h1>
+            <p>Thank you for your purchase. Your product is ready to access.</p>
+        </div>
+
+        <div class="container">
+            <!-- License Key -->
+            <div class="license-section">
+                <h2>Your License Key</h2>
+                <div class="license-key-display" id="licenseKey">---</div>
+                <button class="copy-btn" id="copyBtn" onclick="copyLicense()">
+                    <span>&#128203;</span> Copy License Key
+                </button>
+                <div class="license-warning">
+                    Save your license key! You will need it to access your product. We recommend storing it in a safe place. This key is tied to your purchase and cannot be recovered if lost.
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-section" id="productInfo">
+                <h2 id="productTitle">Your Product</h2>
+                <p class="subtitle" id="productSubtitle">Access your purchase below.</p>
+                <ul class="access-links" id="accessLinks">
+                    <!-- Populated by JS -->
+                </ul>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="instructions">
+                <h3>What to do next</h3>
+                <ol id="instructionsList">
+                    <li><strong>Copy your license key</strong> above and save it somewhere safe (password manager, notes app, etc.).</li>
+                    <li><strong>Click the access link</strong> above to open your product page.</li>
+                    <li><strong>Enter your license key</strong> when prompted to unlock your content.</li>
+                    <li><strong>Bookmark the product page</strong> for easy future access. Your key is remembered in your browser.</li>
+                </ol>
+            </div>
+
+            <!-- Support -->
+            <div class="support-box">
+                <p>Need help? Contact us at <a href="mailto:support@autohustle.online">support@autohustle.online</a></p>
+                <p style="margin-top:8px;">Your Stripe receipt has been sent to your email address.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        // Product definitions
+        var products = {
+            'pro': {
+                title: 'AutoHustle Pro',
+                badge: 'software',
+                badgeText: 'SOFTWARE',
+                subtitle: 'AI-powered income automation with 10 revenue strategies running 24/7.',
+                links: [
+                    {
+                        icon: '&#128187;',
+                        label: 'Access AutoHustle Pro',
+                        desc: 'View setup guide, download links, and configuration',
+                        href: '/autohustle-tools/store/products/pro.html'
+                    }
+                ]
+            },
+            'enterprise': {
+                title: 'AutoHustle Enterprise',
+                badge: 'software',
+                badgeText: 'SOFTWARE',
+                subtitle: 'Everything in Pro plus white-label rights, multi-site deployment, and advanced tools.',
+                links: [
+                    {
+                        icon: '&#127959;',
+                        label: 'Access AutoHustle Enterprise',
+                        desc: 'View setup guide, download links, and enterprise features',
+                        href: '/autohustle-tools/store/products/pro.html'
+                    }
+                ]
+            },
+            'python-course': {
+                title: 'Python Automation Course',
+                badge: 'course',
+                badgeText: 'COURSE',
+                subtitle: '5 modules of hands-on Python automation training. From basics to building your first bot.',
+                links: [
+                    {
+                        icon: '&#128218;',
+                        label: 'Start the Python Course',
+                        desc: '5 modules with code examples and exercises',
+                        href: '/autohustle-tools/store/products/python-course.html'
+                    }
+                ]
+            },
+            'chatgpt-course': {
+                title: 'ChatGPT Prompt Engineering',
+                badge: 'course',
+                badgeText: 'COURSE',
+                subtitle: '4 modules covering advanced prompting techniques for business, coding, and creative work.',
+                links: [
+                    {
+                        icon: '&#129302;',
+                        label: 'Start the Prompt Engineering Course',
+                        desc: '4 modules with templates and real-world examples',
+                        href: '/autohustle-tools/store/products/chatgpt-course.html'
+                    }
+                ]
+            },
+            'pod-course': {
+                title: 'Print-on-Demand Course',
+                badge: 'course',
+                badgeText: 'COURSE',
+                subtitle: 'Step-by-step guide to launching a profitable print-on-demand business.',
+                links: [
+                    {
+                        icon: '&#128722;',
+                        label: 'Start the Print-on-Demand Course',
+                        desc: 'Complete guide from niche selection to scaling',
+                        href: '/autohustle-tools/store/products/pod-course.html'
+                    }
+                ]
+            },
+            'course-bundle': {
+                title: 'All 3 Courses Bundle',
+                badge: 'bundle',
+                badgeText: 'BUNDLE',
+                subtitle: 'Complete access to Python Automation, ChatGPT Prompt Engineering, and Print-on-Demand courses.',
+                links: [
+                    {
+                        icon: '&#128218;',
+                        label: 'Python Automation Course',
+                        desc: '5 modules with code examples and exercises',
+                        href: '/autohustle-tools/store/products/python-course.html'
+                    },
+                    {
+                        icon: '&#129302;',
+                        label: 'ChatGPT Prompt Engineering',
+                        desc: '4 modules with templates and real-world examples',
+                        href: '/autohustle-tools/store/products/chatgpt-course.html'
+                    },
+                    {
+                        icon: '&#128722;',
+                        label: 'Print-on-Demand Course',
+                        desc: 'Complete guide from niche selection to scaling',
+                        href: '/autohustle-tools/store/products/pod-course.html'
+                    }
+                ]
+            },
+            'quotes-api': {
+                title: 'Inspirational Quotes API',
+                badge: 'api',
+                badgeText: 'API',
+                subtitle: 'RESTful API delivering curated inspirational quotes. JSON responses, simple integration.',
+                links: [
+                    {
+                        icon: '&#128196;',
+                        label: 'API Documentation & Key',
+                        desc: 'View endpoints, examples, and your API credentials',
+                        href: '/autohustle-tools/store/products/api-docs.html?type=quotes'
+                    }
+                ]
+            },
+            'text-api': {
+                title: 'Text Analysis API',
+                badge: 'api',
+                badgeText: 'API',
+                subtitle: 'Analyze text for readability, sentiment, word count, and more.',
+                links: [
+                    {
+                        icon: '&#128196;',
+                        label: 'API Documentation & Key',
+                        desc: 'View endpoints, examples, and your API credentials',
+                        href: '/autohustle-tools/store/products/api-docs.html?type=text'
+                    }
+                ]
+            }
+        };
+
+        // Parse URL params
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get('session_id');
+        var productId = params.get('product');
+
+        if (!sessionId) {
+            document.getElementById('errorState').style.display = 'block';
+            return;
+        }
+
+        // Generate license key from session_id using SHA-256
+        async function generateLicenseKey(sid) {
+            var encoder = new TextEncoder();
+            var data = encoder.encode(sid + ':autohustle-license-salt-2026');
+            var hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            var hashArray = Array.from(new Uint8Array(hashBuffer));
+            var hex = hashArray.map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+            // Format: AH-XXXX-XXXX-XXXX-XXXX (16 hex chars from the hash)
+            var key = 'AH-' + hex.substring(0,4).toUpperCase() + '-' +
+                      hex.substring(4,8).toUpperCase() + '-' +
+                      hex.substring(8,12).toUpperCase() + '-' +
+                      hex.substring(12,16).toUpperCase();
+            return key;
+        }
+
+        // Render the page
+        async function init() {
+            var licenseKey = await generateLicenseKey(sessionId);
+
+            // Show success content
+            document.getElementById('successContent').style.display = 'block';
+
+            // Display license key
+            document.getElementById('licenseKey').textContent = licenseKey;
+
+            // Store license in localStorage for convenience
+            localStorage.setItem('ah_license_key', licenseKey);
+            if (productId) {
+                var stored = JSON.parse(localStorage.getItem('ah_licensed_products') || '[]');
+                if (stored.indexOf(productId) === -1) {
+                    stored.push(productId);
+                }
+                // For bundle, also store individual course products
+                if (productId === 'course-bundle') {
+                    ['python-course', 'chatgpt-course', 'pod-course'].forEach(function(p) {
+                        if (stored.indexOf(p) === -1) stored.push(p);
+                    });
+                }
+                localStorage.setItem('ah_licensed_products', JSON.stringify(stored));
+            }
+
+            // Populate product info
+            var product = products[productId] || products['pro'];
+            var titleEl = document.getElementById('productTitle');
+            titleEl.innerHTML = product.title + ' <span class="badge ' + product.badge + '">' + product.badgeText + '</span>';
+
+            document.getElementById('productSubtitle').textContent = product.subtitle;
+
+            var linksEl = document.getElementById('accessLinks');
+            linksEl.innerHTML = '';
+            product.links.forEach(function(link) {
+                var li = document.createElement('li');
+                var keyParam = link.href.indexOf('?') > -1 ? '&key=' : '?key=';
+                li.innerHTML = '<a href="' + link.href + keyParam + encodeURIComponent(licenseKey) + '">' +
+                    '<span class="link-icon">' + link.icon + '</span>' +
+                    '<span class="link-label">' + link.label + '<br><span class="link-desc">' + link.desc + '</span></span>' +
+                    '<span class="arrow">&rarr;</span>' +
+                    '</a>';
+                linksEl.appendChild(li);
+            });
+        }
+
+        init();
+
+        // Copy to clipboard
+        window.copyLicense = function() {
+            var key = document.getElementById('licenseKey').textContent;
+            navigator.clipboard.writeText(key).then(function() {
+                var btn = document.getElementById('copyBtn');
+                btn.innerHTML = '<span>&#10003;</span> Copied!';
+                btn.classList.add('copied');
+                setTimeout(function() {
+                    btn.innerHTML = '<span>&#128203;</span> Copy License Key';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        };
+    })();
+    </script>
+
+</body>
+</html>

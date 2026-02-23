@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print-on-Demand Course - AutoHustle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        .license-gate { max-width: 500px; margin: 80px auto; text-align: center; padding: 0 20px; }
+        .lock-icon { font-size: 48px; margin-bottom: 16px; }
+        .license-gate h1 { font-size: 1.6em; margin-bottom: 8px; }
+        .license-gate p { color: var(--text-muted); margin-bottom: 24px; }
+        .key-input-group { display: flex; gap: 10px; margin-bottom: 12px; }
+        .key-input {
+            flex: 1; padding: 14px 16px; background: var(--surface); border: 2px solid var(--border);
+            border-radius: 10px; color: var(--text); font-family: 'Courier New', monospace;
+            font-size: 1em; letter-spacing: 1px; outline: none; transition: border-color 0.2s;
+        }
+        .key-input:focus { border-color: var(--primary); }
+        .key-input::placeholder { color: var(--text-muted); letter-spacing: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .unlock-btn {
+            padding: 14px 28px; background: var(--green); color: #fff; border: none;
+            border-radius: 10px; font-size: 1em; font-weight: 600; cursor: pointer; transition: opacity 0.2s; white-space: nowrap;
+        }
+        .unlock-btn:hover { opacity: 0.85; }
+        .key-error { color: var(--red); font-size: 0.88em; display: none; }
+        .key-hint { color: var(--text-muted); font-size: 0.82em; margin-top: 4px; }
+
+        .course-content { display: none; }
+        .page-header { text-align: center; padding: 50px 20px 10px; }
+        .page-header .badge {
+            display: inline-block; padding: 4px 14px; border-radius: 20px;
+            font-size: 0.78em; font-weight: 700; background: var(--orange); color: #fff; margin-bottom: 12px;
+        }
+        .page-header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .page-header h1 span { color: var(--orange); }
+        .page-header p { color: var(--text-muted); font-size: 1.05em; max-width: 620px; margin: 0 auto; }
+
+        .progress-bar {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+            padding: 20px 24px; margin: 24px 0; display: flex; align-items: center; gap: 16px;
+        }
+        .progress-bar .label { font-size: 0.88em; color: var(--text-muted); white-space: nowrap; }
+        .progress-track { flex: 1; height: 8px; background: var(--surface2); border-radius: 8px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--orange); border-radius: 8px; transition: width 0.4s ease; width: 0%; }
+        .progress-bar .percent { font-weight: 700; color: var(--orange); font-size: 0.95em; }
+
+        .module {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+            margin-bottom: 16px; overflow: hidden;
+        }
+        .module-header {
+            padding: 22px 28px; display: flex; align-items: center; gap: 16px;
+            cursor: pointer; user-select: none; transition: background 0.15s;
+        }
+        .module-header:hover { background: var(--surface2); }
+        .module-num {
+            width: 36px; height: 36px; background: var(--orange); color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9em; flex-shrink: 0;
+        }
+        .module-header .title { flex: 1; }
+        .module-header .title h3 { font-size: 1.1em; margin-bottom: 2px; }
+        .module-header .title span { font-size: 0.85em; color: var(--text-muted); }
+        .module-toggle { font-size: 1.2em; color: var(--text-muted); transition: transform 0.3s; }
+        .module.open .module-toggle { transform: rotate(180deg); }
+        .module-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .module.open .module-body { max-height: 12000px; }
+        .module-inner { padding: 0 28px 28px; border-top: 1px solid var(--border); }
+        .module-inner h4 { font-size: 1.05em; margin: 24px 0 10px; color: var(--orange); }
+        .module-inner p, .module-inner li { color: var(--text-muted); line-height: 1.7; }
+        .module-inner ul, .module-inner ol { padding-left: 20px; margin-bottom: 14px; }
+        .module-inner li { margin-bottom: 6px; }
+
+        code {
+            background: var(--bg); padding: 2px 8px; border-radius: 4px;
+            font-size: 0.9em; color: var(--green); font-family: 'Courier New', monospace;
+        }
+
+        .tip {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--green-glow); border: 1px solid rgba(16,185,129,0.3); color: var(--green);
+        }
+        .note {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--primary-glow); border: 1px solid rgba(99,102,241,0.3); color: var(--primary);
+        }
+        .warning {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); color: var(--orange);
+        }
+        .exercise {
+            padding: 18px 22px; border-radius: 10px; margin: 18px 0;
+            background: var(--surface2); border-left: 4px solid var(--primary);
+        }
+        .exercise strong { color: var(--primary); display: block; margin-bottom: 6px; }
+        .exercise p { color: var(--text-muted); margin: 0; }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 14px 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: var(--text-muted);
+        }
+        .checklist li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border);
+            border-radius: 4px;
+        }
+
+        /* Comparison table */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 0.9em;
+        }
+        .compare-table th, .compare-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .compare-table th {
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .compare-table td { color: var(--text-muted); }
+
+        footer {
+            text-align: center; padding: 30px; color: var(--text-muted);
+            font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .key-input-group { flex-direction: column; }
+            .page-header h1 { font-size: 1.7em; }
+            .module-header { padding: 16px 18px; }
+            .module-inner { padding: 0 18px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav><div class="nav-inner"><a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a></div></nav>
+
+    <div id="licenseGate" class="license-gate">
+        <div class="lock-icon">&#128274;</div>
+        <h1>Print-on-Demand Course</h1>
+        <p>Enter your license key to access the course.</p>
+        <div class="key-input-group">
+            <input type="text" id="keyInput" class="key-input" placeholder="AH-XXXX-XXXX-XXXX-XXXX" maxlength="22" autocomplete="off" spellcheck="false">
+            <button class="unlock-btn" onclick="validateKey()">Unlock</button>
+        </div>
+        <div id="keyError" class="key-error">Invalid license key format. Keys look like: AH-XXXX-XXXX-XXXX-XXXX</div>
+        <div class="key-hint">Format: AH-XXXX-XXXX-XXXX-XXXX (from your purchase confirmation)</div>
+    </div>
+
+    <div id="courseContent" class="course-content">
+        <div class="page-header">
+            <span class="badge">COURSE</span>
+            <h1>Build a Side Income with <span>Print-on-Demand</span></h1>
+            <p>From zero to a profitable POD business. Choose your niche, create designs, set up your store, and start selling.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="progress-bar">
+                <span class="label">Course Progress</span>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+                <span class="percent" id="progressPercent">0%</span>
+            </div>
+
+            <!-- MODULE 1: Niche Selection -->
+            <div class="module open" data-module="1">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">1</div>
+                    <div class="title">
+                        <h3>Finding Your Profitable Niche</h3>
+                        <span>Market research, niche validation, competitor analysis, and audience targeting</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>What is Print-on-Demand?</h4>
+                        <p>Print-on-demand (POD) is a business model where you sell custom-designed products (t-shirts, mugs, phone cases, posters, etc.) without holding any inventory. When a customer places an order, a third-party supplier prints your design on the product and ships it directly to the customer. You keep the difference between your selling price and the supplier's cost.</p>
+                        <p>The beauty of POD is the low barrier to entry: no upfront inventory costs, no warehouse, no shipping logistics. Your job is to create great designs and drive traffic to your listings.</p>
+
+                        <h4>Why Niche Selection Makes or Breaks Your Business</h4>
+                        <p>The biggest mistake new POD sellers make is going too broad. Selling "funny t-shirts" puts you in competition with millions of sellers. Selling "funny t-shirts for retired firefighters who love fishing" puts you in front of a passionate audience that is hard to reach through mass-market products.</p>
+                        <p>A good niche has these characteristics:</p>
+                        <ul>
+                            <li><strong>Passionate audience</strong> &mdash; People who strongly identify with the niche and are willing to spend money on products that reflect their identity.</li>
+                            <li><strong>Specific enough to target</strong> &mdash; You should be able to describe exactly who your customer is and where to find them online.</li>
+                            <li><strong>Large enough to be profitable</strong> &mdash; There need to be enough potential buyers to sustain a business (at least 100K+ people interested).</li>
+                            <li><strong>Not oversaturated</strong> &mdash; If the first 3 pages of Etsy search results are all the same design idea, it is too crowded.</li>
+                        </ul>
+
+                        <h4>Niche Research Process</h4>
+                        <p>Follow these steps to find your niche:</p>
+                        <ol>
+                            <li><strong>Start with your interests</strong> &mdash; List 10-15 hobbies, professions, or communities you know something about. Personal knowledge gives you an edge in understanding what buyers actually want.</li>
+                            <li><strong>Validate demand on Etsy</strong> &mdash; Search for niche-related keywords on Etsy. Look at the number of results and, critically, how many reviews top sellers have. High review counts mean proven demand.</li>
+                            <li><strong>Check Amazon Merch and Redbubble</strong> &mdash; See what designs are selling in your niche on other POD platforms. Look at the "bestseller" badges and review counts.</li>
+                            <li><strong>Use Google Trends</strong> &mdash; Check if interest in your niche is growing, stable, or declining. Avoid niches in clear decline.</li>
+                            <li><strong>Research social media communities</strong> &mdash; Find Facebook groups, subreddits, and hashtags related to your niche. Active communities with 50K+ members are great signs.</li>
+                        </ol>
+
+                        <h4>Evaluating Your Niche Ideas</h4>
+                        <p>Score each niche idea on these criteria (1-5 scale):</p>
+                        <table class="compare-table">
+                            <thead>
+                                <tr><th>Criteria</th><th>What to Look For</th><th>Score</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Passion Level</td><td>Does this community buy identity products?</td><td>1-5</td></tr>
+                                <tr><td>Market Size</td><td>Are there 100K+ potential customers?</td><td>1-5</td></tr>
+                                <tr><td>Competition</td><td>Less competition = higher score</td><td>1-5</td></tr>
+                                <tr><td>Your Knowledge</td><td>How well do you understand this audience?</td><td>1-5</td></tr>
+                                <tr><td>Product Variety</td><td>Can you make 20+ unique design ideas?</td><td>1-5</td></tr>
+                                <tr><td>Evergreen</td><td>Is demand consistent year-round?</td><td>1-5</td></tr>
+                            </tbody>
+                        </table>
+                        <p>Aim for niches scoring 20+ out of 30. Your top 2-3 scoring niches are where you should focus.</p>
+
+                        <div class="exercise">
+                            <strong>Action Step</strong>
+                            <p>List 10 potential niches. Research each one using the Etsy validation method (search, check review counts on top results). Score all 10 with the table above and select your top 2 to move forward with.</p>
+                        </div>
+
+                        <div class="tip">Tip: The most profitable POD niches combine two interests. "Dog lovers" is broad. "Dog lovers who are nurses" is specific and passionate. These micro-niches have less competition and higher conversion rates.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2: Design -->
+            <div class="module" data-module="2">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">2</div>
+                    <div class="title">
+                        <h3>Creating Designs That Sell</h3>
+                        <span>Design tools, typography, trends, AI-assisted design, and design best practices</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>You Do Not Need to Be a Designer</h4>
+                        <p>The majority of best-selling POD products use text-based designs, not complex illustrations. Simple, bold typography with a clever message often outsells elaborate artwork. Your design skill is far less important than your niche knowledge and marketing ability.</p>
+
+                        <h4>Design Tools (Free and Paid)</h4>
+                        <table class="compare-table">
+                            <thead>
+                                <tr><th>Tool</th><th>Cost</th><th>Best For</th><th>Skill Level</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Canva</td><td>Free / $13/mo Pro</td><td>Text designs, templates, quick mockups</td><td>Beginner</td></tr>
+                                <tr><td>Adobe Illustrator</td><td>$23/mo</td><td>Vector graphics, professional designs</td><td>Intermediate</td></tr>
+                                <tr><td>Photopea</td><td>Free</td><td>Photoshop alternative (browser-based)</td><td>Intermediate</td></tr>
+                                <tr><td>Kittl</td><td>Free / $10/mo</td><td>POD-specific design tool with templates</td><td>Beginner</td></tr>
+                                <tr><td>Midjourney / DALL-E</td><td>$10-30/mo</td><td>AI-generated illustrations and graphics</td><td>Beginner</td></tr>
+                            </tbody>
+                        </table>
+
+                        <h4>Design Principles for POD</h4>
+                        <ul>
+                            <li><strong>Readability first</strong> &mdash; If someone cannot read your text from 10 feet away (on a t-shirt), the font is too small or too decorative. Sans-serif fonts work best for most POD products.</li>
+                            <li><strong>Limit your colors</strong> &mdash; 1-3 colors per design. More colors increase printing costs and often look messier. White text on a dark background is a classic combination.</li>
+                            <li><strong>Size your designs correctly</strong> &mdash; T-shirt designs should be at least 4500x5400 pixels at 300 DPI. Posters need even higher resolution. Always work in PNG format with transparent backgrounds.</li>
+                            <li><strong>Leave breathing room</strong> &mdash; Do not cram text to the edges. Whitespace (or rather, "blank-space" on a colored shirt) makes designs look more professional.</li>
+                            <li><strong>Test on mockups before listing</strong> &mdash; A design that looks great on screen might look terrible on a black t-shirt. Always preview your designs on product mockups.</li>
+                        </ul>
+
+                        <h4>Types of Designs That Sell Well</h4>
+                        <ol>
+                            <li><strong>Niche humor</strong> &mdash; Jokes that only people in the niche understand. These sell because they make the buyer feel "seen" and often get compliments from others in the community.</li>
+                            <li><strong>Identity statements</strong> &mdash; "Proud [profession/hobby] Mom/Dad" style designs. People love wearing their identity.</li>
+                            <li><strong>Minimalist icons</strong> &mdash; Simple, clean icons related to the niche with a short text label.</li>
+                            <li><strong>Vintage/retro style</strong> &mdash; Distressed fonts and retro color palettes are consistently popular across many niches.</li>
+                            <li><strong>Seasonal and trending</strong> &mdash; Holiday-themed designs, pop culture references (be careful with trademarks), and current events.</li>
+                        </ol>
+
+                        <h4>Using AI for Design Generation</h4>
+                        <p>AI tools like Midjourney and DALL-E can generate unique illustrations quickly. Here is a practical workflow:</p>
+                        <ol>
+                            <li>Generate the base illustration with AI (use prompts like "minimalist vector illustration of [subject], simple lines, solid color, white background, t-shirt design style")</li>
+                            <li>Download and clean up in Canva or Photopea (remove background, adjust colors)</li>
+                            <li>Add text using a complementary font</li>
+                            <li>Export at the correct resolution for your POD platform</li>
+                        </ol>
+
+                        <div class="warning">Important: Check your POD platform's policies on AI-generated art. Some platforms require disclosure. Also, AI-generated designs cannot be copyrighted in most jurisdictions, which means others can legally copy them. Add unique text or modifications to differentiate.</div>
+
+                        <div class="exercise">
+                            <strong>Action Step</strong>
+                            <p>Create 5 designs for your chosen niche using Canva (free account is fine). Focus on text-based designs with bold, readable fonts. Create product mockups for each and get feedback from someone in your target niche before listing them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3: Platform Setup -->
+            <div class="module" data-module="3">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">3</div>
+                    <div class="title">
+                        <h3>Setting Up Your Store</h3>
+                        <span>Printful, Printify, Etsy, Shopify, product listings, and pricing strategy</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Choosing Your POD Supplier</h4>
+                        <p>Your supplier handles printing, packing, and shipping. The two major players are Printful and Printify, and they work differently:</p>
+
+                        <table class="compare-table">
+                            <thead>
+                                <tr><th>Feature</th><th>Printful</th><th>Printify</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Pricing</td><td>Higher base cost</td><td>Lower base cost (multiple print providers)</td></tr>
+                                <tr><td>Quality</td><td>Consistent, premium</td><td>Varies by print provider</td></tr>
+                                <tr><td>Shipping</td><td>In-house fulfillment, reliable</td><td>Depends on chosen provider</td></tr>
+                                <tr><td>Product Range</td><td>340+ products</td><td>900+ products</td></tr>
+                                <tr><td>Free Plan</td><td>Yes</td><td>Yes (up to 5 stores)</td></tr>
+                                <tr><td>Best For</td><td>Quality-focused brands</td><td>Price-conscious sellers, variety</td></tr>
+                            </tbody>
+                        </table>
+
+                        <p><strong>Recommendation for beginners:</strong> Start with Printify for lower costs while you test designs. Switch to Printful for products where quality and consistency matter most (like premium apparel brands).</p>
+
+                        <h4>Setting Up on Etsy</h4>
+                        <p>Etsy is the best starting marketplace for POD beginners because it has built-in traffic -- people come to Etsy already looking to buy. Here is the step-by-step setup:</p>
+                        <ol>
+                            <li><strong>Create an Etsy seller account</strong> at etsy.com/sell. Choose a shop name that reflects your niche (e.g., "NurseLifeDesigns" rather than "BobsShop42").</li>
+                            <li><strong>Connect your POD supplier</strong> &mdash; Both Printful and Printify have one-click Etsy integration. Go to your supplier's dashboard, find "Stores" or "Integrations", and connect your Etsy shop.</li>
+                            <li><strong>Set up payment and billing</strong> &mdash; Link your bank account for Etsy payouts. Note: Etsy charges a $0.20 listing fee per item and takes a 6.5% transaction fee on sales.</li>
+                            <li><strong>Complete your shop profile</strong> &mdash; Add a shop banner, profile photo, "About" section, and shop policies. Complete profiles build trust and get more sales.</li>
+                        </ol>
+
+                        <h4>Creating Listings That Convert</h4>
+                        <p>Your listing is your salesperson. Every element needs to work together to convince someone to buy:</p>
+                        <ul>
+                            <li><strong>Title (critical for SEO)</strong> &mdash; Front-load your most important keywords. Example: "Funny Nurse Shirt, Registered Nurse Gift, RN Graduation Present, Nurse Life T-Shirt" is much better than "Cool Shirt Design #47".</li>
+                            <li><strong>Photos</strong> &mdash; Use at least 5 photos: product mockup on a model, flat lay, close-up of design detail, lifestyle/context shot, and size chart. Your first photo determines whether people click.</li>
+                            <li><strong>Description</strong> &mdash; Start with benefits (why they want this), then features (material, sizing, care instructions). Include your main keywords naturally throughout.</li>
+                            <li><strong>Tags</strong> &mdash; Etsy gives you 13 tags per listing. Use all 13. Mix broad and specific terms. Research what tags successful competitors use.</li>
+                            <li><strong>Pricing</strong> &mdash; Your price must cover: base product cost + shipping (if free shipping offered) + Etsy fees + your profit margin. Aim for at least a $10 profit per item after all costs.</li>
+                        </ul>
+
+                        <h4>Pricing Formula</h4>
+                        <p>Use this formula to set your prices:</p>
+                        <p><strong>Selling Price = (Base Cost + Shipping) / (1 - Etsy Fee Rate - Desired Margin Rate)</strong></p>
+                        <p>Example: T-shirt base cost $13, shipping $4, Etsy fee 6.5%, desired margin 40%:</p>
+                        <p>Price = ($13 + $4) / (1 - 0.065 - 0.40) = $17 / 0.535 = <strong>$31.78 (round to $31.99)</strong></p>
+
+                        <div class="exercise">
+                            <strong>Action Step</strong>
+                            <p>Set up a free Etsy shop and connect it to Printify (free plan). Create your first 3 listings with optimized titles (use 5+ keywords each), at least 3 mockup photos per listing, and a complete description. Use the pricing formula to set your prices.</p>
+                        </div>
+
+                        <div class="tip">Tip: Offer free shipping by building the shipping cost into your product price. Etsy prioritizes listings with free shipping in search results, and buyers are psychologically drawn to "free shipping" even when the total price is the same.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4: Marketing -->
+            <div class="module" data-module="4">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">4</div>
+                    <div class="title">
+                        <h3>Marketing &amp; Driving Traffic</h3>
+                        <span>Etsy SEO, Pinterest strategy, social media marketing, and paid advertising basics</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Etsy SEO: Getting Found in Search</h4>
+                        <p>Etsy SEO is how your listings appear when people search on Etsy. It is the single most important free traffic source for POD sellers. Etsy's search algorithm considers these factors:</p>
+                        <ul>
+                            <li><strong>Keyword relevance</strong> &mdash; How well your title, tags, and description match the search query. The title is the most important field.</li>
+                            <li><strong>Listing quality score</strong> &mdash; Based on how often people click on and purchase your listing when it appears in search. Higher conversion rates mean better ranking.</li>
+                            <li><strong>Recency</strong> &mdash; Newer listings get a temporary boost. Renew or create new listings regularly.</li>
+                            <li><strong>Shop quality</strong> &mdash; Complete shop profile, good reviews, and fast response times boost all your listings.</li>
+                        </ul>
+
+                        <h4>Keyword Research for Etsy</h4>
+                        <p>Finding the right keywords is crucial. Here is how to do keyword research for free:</p>
+                        <ol>
+                            <li><strong>Etsy search bar autocomplete</strong> &mdash; Type your main keyword and note every suggestion Etsy shows. These are real searches people are making.</li>
+                            <li><strong>Competitor analysis</strong> &mdash; Find the top sellers in your niche. Look at their titles and tags (visible on each listing page). Note which keywords they use repeatedly.</li>
+                            <li><strong>eRank (free tool)</strong> &mdash; eRank.com shows search volume estimates for Etsy keywords. Use it to compare keyword popularity and competition levels.</li>
+                            <li><strong>Long-tail keywords</strong> &mdash; "Funny nurse shirt" has huge competition. "Funny NICU nurse graduation gift" has less competition and higher purchase intent. Always include long-tail variations.</li>
+                        </ol>
+
+                        <h4>Pinterest: Your Secret Traffic Weapon</h4>
+                        <p>Pinterest is a visual search engine, not a social media platform. This distinction matters because Pinterest users are actively looking for products to buy. It is the single best free traffic source for POD after Etsy itself.</p>
+                        <p>Pinterest strategy for POD:</p>
+                        <ol>
+                            <li><strong>Create a business account</strong> and enable Rich Pins (they automatically pull product info from your Etsy listings).</li>
+                            <li><strong>Make pins for every product</strong> &mdash; Create 3-5 different pin designs per product. Use a 2:3 aspect ratio (1000x1500 pixels). Include the product on a lifestyle background with text overlay.</li>
+                            <li><strong>Create niche boards</strong> &mdash; Organize pins into boards that your target audience would follow. "Nurse Gift Ideas" and "Funny Medical Humor" are boards someone in the nurse niche might follow.</li>
+                            <li><strong>Pin consistently</strong> &mdash; Aim for 5-15 pins per day. Use a scheduler like Tailwind (free trial) to automate this. Consistency matters more than volume.</li>
+                            <li><strong>Write SEO-optimized descriptions</strong> &mdash; Pinterest searches work like Google. Include relevant keywords naturally in every pin description.</li>
+                        </ol>
+
+                        <h4>Social Media Marketing</h4>
+                        <p>Instagram and TikTok can drive significant sales if you create content your niche audience wants to share:</p>
+                        <ul>
+                            <li><strong>Instagram Reels</strong> &mdash; Show your designs in context. "POV: You're a nurse and you see this shirt" style videos perform well. Use niche hashtags (not generic ones).</li>
+                            <li><strong>TikTok</strong> &mdash; Behind-the-scenes content works great. Show your design process, unbox sample products, share sales milestones. TikTok's algorithm favors new creators.</li>
+                            <li><strong>Facebook Groups</strong> &mdash; Join groups related to your niche. Do NOT spam your products. Instead, be a genuine, helpful member. When appropriate, mention your designs naturally.</li>
+                        </ul>
+
+                        <div class="exercise">
+                            <strong>Action Step</strong>
+                            <p>Set up a Pinterest business account. Create one board for your niche. Design 5 pins (using Canva's Pinterest template) for your existing Etsy listings. Schedule them using Tailwind or manually pin 1 per day for a week. Track impressions and clicks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5: Scaling -->
+            <div class="module" data-module="5">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">5</div>
+                    <div class="title">
+                        <h3>Scaling Your POD Business</h3>
+                        <span>Analytics, optimization, expanding to Shopify, automation, and long-term growth</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Reading Your Analytics</h4>
+                        <p>Data tells you what is working and what is not. The key metrics to track:</p>
+                        <ul>
+                            <li><strong>Views</strong> &mdash; How many people see your listing in search. Low views means your SEO needs work.</li>
+                            <li><strong>Visits</strong> &mdash; How many people click on your listing. Low visit-to-view ratio means your thumbnail (first photo) is not compelling enough.</li>
+                            <li><strong>Conversion rate</strong> &mdash; What percentage of visitors buy. A healthy POD conversion rate on Etsy is 2-5%. Below 1% means your pricing, photos, or description need improvement.</li>
+                            <li><strong>Revenue per listing</strong> &mdash; Which designs make the most money? Double down on winners and learn from losers.</li>
+                        </ul>
+
+                        <h4>The 80/20 Rule in POD</h4>
+                        <p>In almost every POD business, 20% of your designs generate 80% of your revenue. Once you have 20+ listings, identify your top performers and:</p>
+                        <ol>
+                            <li><strong>Create variations</strong> &mdash; If "Funny Nurse Coffee Shirt" is your best seller, create variations: different colors, different sayings in the same style, the same saying on mugs and totes.</li>
+                            <li><strong>Improve top listings</strong> &mdash; Invest in better photos, A/B test titles, and add more tags to your winners.</li>
+                            <li><strong>Study what makes them work</strong> &mdash; Is it the humor? The design style? The keyword targeting? Apply these lessons to new designs.</li>
+                            <li><strong>Retire underperformers</strong> &mdash; Listings with zero sales after 3 months of being indexed should be reworked or removed. They can hurt your shop's overall quality score.</li>
+                        </ol>
+
+                        <h4>Expanding to Shopify</h4>
+                        <p>Once you are consistently making $500+/month on Etsy, consider opening your own Shopify store:</p>
+                        <ul>
+                            <li><strong>Why Shopify?</strong> &mdash; You own the customer relationship (email list), pay lower transaction fees, have full control over branding, and are not dependent on Etsy's algorithm changes.</li>
+                            <li><strong>When to expand?</strong> &mdash; Only after you have proven designs that sell. Shopify requires you to drive your own traffic, so make sure you have a marketing channel (Pinterest, Instagram, paid ads) that works before investing.</li>
+                            <li><strong>Shopify + Printful/Printify</strong> &mdash; Both suppliers integrate directly with Shopify. The setup process is similar to Etsy: connect your store, sync products, and orders are automatically fulfilled.</li>
+                            <li><strong>Costs</strong> &mdash; Shopify Basic is $39/month. Factor this into your profitability calculations. You need enough sales volume to justify the fixed cost.</li>
+                        </ul>
+
+                        <h4>Automation for Scale</h4>
+                        <p>As your business grows, automate repetitive tasks:</p>
+                        <ul>
+                            <li><strong>Design templates</strong> &mdash; Create Canva or Illustrator templates so you can swap text and produce new designs in minutes instead of hours.</li>
+                            <li><strong>Listing templates</strong> &mdash; Write description templates for each product type. Fill in the niche-specific details for each listing.</li>
+                            <li><strong>Social media scheduling</strong> &mdash; Use Buffer, Later, or Tailwind to batch-create and schedule a month of content in one sitting.</li>
+                            <li><strong>Email marketing</strong> &mdash; If on Shopify, collect emails and set up automated sequences for abandoned carts, new product announcements, and seasonal promotions.</li>
+                        </ul>
+
+                        <h4>Long-Term Growth Strategy</h4>
+                        <ol>
+                            <li><strong>Months 1-3:</strong> Focus on one niche. Create 30-50 designs. Optimize listings based on early data. Learn what sells.</li>
+                            <li><strong>Months 3-6:</strong> Double down on winners. Expand product types (add mugs, posters, phone cases for winning designs). Start Pinterest marketing seriously.</li>
+                            <li><strong>Months 6-12:</strong> Consider adding a second niche. Open a Shopify store if Etsy is generating $500+/month. Test paid advertising with a small budget ($5-10/day).</li>
+                            <li><strong>Year 2+:</strong> Build a brand. Develop an email list. Create seasonal collections. Consider hiring a virtual assistant for listing creation and customer service.</li>
+                        </ol>
+
+                        <div class="exercise">
+                            <strong>Final Project</strong>
+                            <p>Create a complete 30-day launch plan for your POD business. Include: 10 design ideas with descriptions, a keyword list for your niche (at least 30 keywords), a pricing spreadsheet showing your costs and margins, a Pinterest content calendar, and weekly milestones. This plan becomes your execution roadmap.</p>
+                        </div>
+
+                        <div class="tip">Tip: Consistency beats perfection. The sellers who succeed are not necessarily the most talented designers. They are the ones who keep listing new designs, keep testing, keep learning from their data, and keep showing up every day. Aim for progress, not perfection.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        var LICENSE_REGEX = /^AH-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/i;
+        var STORAGE_KEY = 'ah_license_key';
+        var PROGRESS_KEY = 'ah_pod_progress';
+
+        var params = new URLSearchParams(window.location.search);
+        var urlKey = params.get('key');
+        var storedKey = localStorage.getItem(STORAGE_KEY);
+
+        if (urlKey && LICENSE_REGEX.test(urlKey)) {
+            localStorage.setItem(STORAGE_KEY, urlKey);
+            unlock();
+        } else if (storedKey && LICENSE_REGEX.test(storedKey)) {
+            unlock();
+        } else {
+            if (urlKey) document.getElementById('keyInput').value = urlKey;
+            if (storedKey) document.getElementById('keyInput').value = storedKey;
+        }
+
+        document.getElementById('keyInput').addEventListener('input', function(e) {
+            var v = e.target.value.toUpperCase().replace(/[^A-F0-9]/g, '');
+            var parts = [];
+            if (v.length > 0) parts.push(v.substring(0, 4));
+            if (v.length > 4) parts.push(v.substring(4, 8));
+            if (v.length > 8) parts.push(v.substring(8, 12));
+            if (v.length > 12) parts.push(v.substring(12, 16));
+            var formatted = 'AH-' + parts.join('-');
+            if (formatted === 'AH-') formatted = '';
+            e.target.value = formatted;
+        });
+
+        document.getElementById('keyInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') validateKey();
+        });
+
+        window.validateKey = function() {
+            var input = document.getElementById('keyInput');
+            var error = document.getElementById('keyError');
+            var key = input.value.trim().toUpperCase();
+            if (LICENSE_REGEX.test(key)) {
+                localStorage.setItem(STORAGE_KEY, key);
+                unlock();
+            } else {
+                error.style.display = 'block';
+                input.style.borderColor = 'var(--red)';
+                setTimeout(function() { error.style.display = 'none'; input.style.borderColor = 'var(--border)'; }, 3000);
+            }
+        };
+
+        function unlock() {
+            document.getElementById('licenseGate').style.display = 'none';
+            document.getElementById('courseContent').style.display = 'block';
+            updateProgress();
+        }
+
+        window.toggleModule = function(header) {
+            var module = header.parentElement;
+            var wasOpen = module.classList.contains('open');
+            module.classList.toggle('open');
+            if (!wasOpen) {
+                var num = module.getAttribute('data-module');
+                var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+                if (progress.indexOf(num) === -1) {
+                    progress.push(num);
+                    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+                }
+                updateProgress();
+            }
+        };
+
+        function updateProgress() {
+            var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+            var total = 5;
+            var pct = Math.round((progress.length / total) * 100);
+            var fill = document.getElementById('progressFill');
+            var text = document.getElementById('progressPercent');
+            if (fill) fill.style.width = pct + '%';
+            if (text) text.textContent = pct + '%';
+        }
+    })();
+    </script>
+
+</body>
+</html>

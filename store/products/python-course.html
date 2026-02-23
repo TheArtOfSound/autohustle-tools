@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Automation Course - AutoHustle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        /* License Gate */
+        .license-gate {
+            max-width: 500px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .lock-icon { font-size: 48px; margin-bottom: 16px; }
+        .license-gate h1 { font-size: 1.6em; margin-bottom: 8px; }
+        .license-gate p { color: var(--text-muted); margin-bottom: 24px; }
+        .key-input-group { display: flex; gap: 10px; margin-bottom: 12px; }
+        .key-input {
+            flex: 1; padding: 14px 16px; background: var(--surface); border: 2px solid var(--border);
+            border-radius: 10px; color: var(--text); font-family: 'Courier New', monospace;
+            font-size: 1em; letter-spacing: 1px; outline: none; transition: border-color 0.2s;
+        }
+        .key-input:focus { border-color: var(--primary); }
+        .key-input::placeholder { color: var(--text-muted); letter-spacing: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .unlock-btn {
+            padding: 14px 28px; background: var(--green); color: #fff; border: none;
+            border-radius: 10px; font-size: 1em; font-weight: 600; cursor: pointer;
+            transition: opacity 0.2s; white-space: nowrap;
+        }
+        .unlock-btn:hover { opacity: 0.85; }
+        .key-error { color: var(--red); font-size: 0.88em; display: none; }
+        .key-hint { color: var(--text-muted); font-size: 0.82em; margin-top: 4px; }
+
+        /* Course Content */
+        .course-content { display: none; }
+
+        .page-header {
+            text-align: center;
+            padding: 50px 20px 10px;
+        }
+        .page-header .badge {
+            display: inline-block; padding: 4px 14px; border-radius: 20px;
+            font-size: 0.78em; font-weight: 700; background: var(--green);
+            color: #fff; margin-bottom: 12px;
+        }
+        .page-header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .page-header h1 span { color: var(--primary); }
+        .page-header p { color: var(--text-muted); font-size: 1.05em; max-width: 600px; margin: 0 auto; }
+
+        /* Progress Bar */
+        .progress-bar {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .progress-bar .label { font-size: 0.88em; color: var(--text-muted); white-space: nowrap; }
+        .progress-track {
+            flex: 1; height: 8px; background: var(--surface2); border-radius: 8px; overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%; background: var(--green); border-radius: 8px; transition: width 0.4s ease; width: 0%;
+        }
+        .progress-bar .percent { font-weight: 700; color: var(--green); font-size: 0.95em; }
+
+        /* Module */
+        .module {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.15s;
+        }
+        .module-header:hover { background: var(--surface2); }
+        .module-num {
+            width: 36px; height: 36px; background: var(--primary); color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9em; flex-shrink: 0;
+        }
+        .module-header .title { flex: 1; }
+        .module-header .title h3 { font-size: 1.1em; margin-bottom: 2px; }
+        .module-header .title span { font-size: 0.85em; color: var(--text-muted); }
+        .module-toggle {
+            font-size: 1.2em; color: var(--text-muted); transition: transform 0.3s;
+        }
+        .module.open .module-toggle { transform: rotate(180deg); }
+
+        .module-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        .module.open .module-body { max-height: 8000px; }
+        .module-inner {
+            padding: 0 28px 28px;
+            border-top: 1px solid var(--border);
+        }
+        .module-inner h4 {
+            font-size: 1.05em;
+            margin: 24px 0 10px;
+            color: var(--primary);
+        }
+        .module-inner p, .module-inner li {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .module-inner ul, .module-inner ol {
+            padding-left: 20px;
+            margin-bottom: 14px;
+        }
+        .module-inner li { margin-bottom: 6px; }
+
+        code {
+            background: var(--bg); padding: 2px 8px; border-radius: 4px;
+            font-size: 0.9em; color: var(--green); font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+            padding: 18px; overflow-x: auto; margin: 14px 0;
+            font-family: 'Courier New', monospace; font-size: 0.86em; line-height: 1.7; color: var(--text);
+        }
+
+        .tip {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--green-glow); border: 1px solid rgba(16,185,129,0.3); color: var(--green);
+        }
+        .note {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--primary-glow); border: 1px solid rgba(99,102,241,0.3); color: var(--primary);
+        }
+
+        .exercise {
+            padding: 18px 22px; border-radius: 10px; margin: 18px 0;
+            background: var(--surface2); border-left: 4px solid var(--orange);
+        }
+        .exercise strong { color: var(--orange); display: block; margin-bottom: 6px; }
+        .exercise p { color: var(--text-muted); margin: 0; }
+
+        footer {
+            text-align: center; padding: 30px; color: var(--text-muted);
+            font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .key-input-group { flex-direction: column; }
+            .page-header h1 { font-size: 1.7em; }
+            .module-header { padding: 16px 18px; }
+            .module-inner { padding: 0 18px 18px; }
+            pre { font-size: 0.8em; padding: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a>
+        </div>
+    </nav>
+
+    <!-- License Gate -->
+    <div id="licenseGate" class="license-gate">
+        <div class="lock-icon">&#128274;</div>
+        <h1>Python Automation Course</h1>
+        <p>Enter your license key to access the course. You received this key on your purchase confirmation page.</p>
+        <div class="key-input-group">
+            <input type="text" id="keyInput" class="key-input" placeholder="AH-XXXX-XXXX-XXXX-XXXX" maxlength="22" autocomplete="off" spellcheck="false">
+            <button class="unlock-btn" onclick="validateKey()">Unlock</button>
+        </div>
+        <div id="keyError" class="key-error">Invalid license key format. Keys look like: AH-XXXX-XXXX-XXXX-XXXX</div>
+        <div class="key-hint">Format: AH-XXXX-XXXX-XXXX-XXXX (from your purchase confirmation)</div>
+    </div>
+
+    <!-- Course Content -->
+    <div id="courseContent" class="course-content">
+        <div class="page-header">
+            <span class="badge">COURSE</span>
+            <h1><span>Python</span> Automation for Beginners</h1>
+            <p>5 hands-on modules. Go from zero coding experience to building your own automation bots.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="progress-bar">
+                <span class="label">Course Progress</span>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+                <span class="percent" id="progressPercent">0%</span>
+            </div>
+
+            <!-- MODULE 1 -->
+            <div class="module open" data-module="1">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">1</div>
+                    <div class="title">
+                        <h3>Python Basics &amp; Setup</h3>
+                        <span>Installation, variables, data types, functions, and control flow</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Setting Up Your Environment</h4>
+                        <p>Before writing any code, you need Python installed on your machine. Head to <strong>python.org</strong> and download the latest version of Python 3 (3.11 or newer is ideal). During installation on Windows, make sure to check the box that says "Add Python to PATH" -- this is critical for running Python from the command line.</p>
+                        <p>After installation, verify it works by opening a terminal (Command Prompt on Windows, Terminal on Mac) and typing:</p>
+                        <pre>python --version
+# Should output something like: Python 3.12.1</pre>
+                        <p>We also recommend installing an editor. <strong>VS Code</strong> (Visual Studio Code) is free and has excellent Python support. Install the Python extension from the Extensions marketplace for features like syntax highlighting, code completion, and integrated debugging.</p>
+
+                        <h4>Variables and Data Types</h4>
+                        <p>Variables are how you store information in Python. You do not need to declare a type -- Python figures it out automatically. Here are the fundamental data types you will work with every day:</p>
+                        <pre># Strings - text data wrapped in quotes
+name = "AutoHustle"
+greeting = 'Hello, World!'
+
+# Integers - whole numbers
+user_count = 1500
+year = 2026
+
+# Floats - decimal numbers
+price = 29.99
+tax_rate = 0.08
+
+# Booleans - True or False
+is_active = True
+has_paid = False
+
+# Lists - ordered collections
+tools = ["json-formatter", "word-counter", "password-gen"]
+
+# Dictionaries - key-value pairs
+user = {
+    "name": "Alex",
+    "email": "alex@example.com",
+    "plan": "pro"
+}</pre>
+                        <p>You can check a variable's type using the built-in <code>type()</code> function:</p>
+                        <pre>print(type(name))      # &lt;class 'str'&gt;
+print(type(user_count)) # &lt;class 'int'&gt;
+print(type(price))     # &lt;class 'float'&gt;
+print(type(tools))     # &lt;class 'list'&gt;</pre>
+
+                        <h4>Functions</h4>
+                        <p>Functions let you group code into reusable blocks. You define a function with <code>def</code>, give it a name, and optionally accept parameters:</p>
+                        <pre># Basic function
+def greet(name):
+    return f"Hello, {name}! Welcome to the course."
+
+message = greet("Sarah")
+print(message)  # Hello, Sarah! Welcome to the course.
+
+# Function with default parameter
+def calculate_discount(price, discount=0.10):
+    savings = price * discount
+    final = price - savings
+    return final
+
+print(calculate_discount(100))       # 90.0  (10% off)
+print(calculate_discount(100, 0.25)) # 75.0  (25% off)</pre>
+
+                        <h4>Control Flow</h4>
+                        <p>Control flow statements let your code make decisions and repeat actions:</p>
+                        <pre># If/elif/else - making decisions
+temperature = 72
+
+if temperature > 85:
+    print("It's hot outside!")
+elif temperature > 60:
+    print("Nice weather today.")
+else:
+    print("Bring a jacket.")
+
+# For loops - iterating over collections
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(f"I like {fruit}")
+
+# While loops - repeating until a condition is met
+countdown = 5
+while countdown > 0:
+    print(f"Launching in {countdown}...")
+    countdown -= 1
+print("Liftoff!")</pre>
+
+                        <div class="exercise">
+                            <strong>Exercise 1.1</strong>
+                            <p>Create a function called <code>calculate_total</code> that takes a list of prices and a tax rate, then returns the total with tax applied. Test it with the list <code>[29.99, 9.99, 49.99]</code> and a tax rate of <code>0.08</code>.</p>
+                        </div>
+
+                        <div class="tip">Tip: Use f-strings (formatted string literals) like <code>f"Hello {name}"</code> for clean string formatting. They are faster and more readable than concatenation or .format().</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2 -->
+            <div class="module" data-module="2">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">2</div>
+                    <div class="title">
+                        <h3>File &amp; Data Automation</h3>
+                        <span>Reading/writing files, CSV processing, JSON handling, and batch operations</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Reading and Writing Text Files</h4>
+                        <p>Python makes file operations straightforward. The <code>with</code> statement ensures files are properly closed after you are done with them, even if an error occurs:</p>
+                        <pre># Writing to a file
+with open("output.txt", "w") as f:
+    f.write("Line 1: Hello from Python!\n")
+    f.write("Line 2: Automation is powerful.\n")
+
+# Reading a file
+with open("output.txt", "r") as f:
+    content = f.read()
+    print(content)
+
+# Reading line by line (memory efficient for large files)
+with open("output.txt", "r") as f:
+    for line in f:
+        print(line.strip())  # .strip() removes newline chars</pre>
+
+                        <h4>Working with CSV Files</h4>
+                        <p>CSV (Comma-Separated Values) files are one of the most common data formats you will encounter. Python's built-in <code>csv</code> module handles them well:</p>
+                        <pre>import csv
+
+# Writing CSV data
+sales_data = [
+    ["Date", "Product", "Revenue"],
+    ["2026-01-15", "Pro Plan", 149.00],
+    ["2026-01-16", "Course Bundle", 99.00],
+    ["2026-01-16", "API Access", 29.99],
+]
+
+with open("sales.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(sales_data)
+
+# Reading CSV data
+with open("sales.csv", "r") as f:
+    reader = csv.DictReader(f)
+    total_revenue = 0
+    for row in reader:
+        print(f"{row['Date']}: {row['Product']} - ${row['Revenue']}")
+        total_revenue += float(row['Revenue'])
+    print(f"\nTotal Revenue: ${total_revenue:.2f}")</pre>
+
+                        <h4>JSON Processing</h4>
+                        <p>JSON is the standard format for APIs and configuration files. Python's <code>json</code> module converts between JSON strings and Python dictionaries seamlessly:</p>
+                        <pre>import json
+
+# Python dictionary to JSON file
+config = {
+    "app_name": "AutoHustle Bot",
+    "version": "2.1",
+    "strategies": ["seo", "products", "social"],
+    "settings": {
+        "auto_run": True,
+        "interval_minutes": 60,
+        "max_retries": 3
+    }
+}
+
+# Write to JSON file
+with open("config.json", "w") as f:
+    json.dump(config, f, indent=2)
+
+# Read from JSON file
+with open("config.json", "r") as f:
+    loaded = json.load(f)
+    print(loaded["app_name"])        # AutoHustle Bot
+    print(loaded["settings"]["auto_run"])  # True
+
+# Parse a JSON string (common when working with APIs)
+json_string = '{"status": "ok", "count": 42}'
+data = json.loads(json_string)
+print(data["count"])  # 42</pre>
+
+                        <h4>Batch File Operations</h4>
+                        <p>The <code>os</code> and <code>pathlib</code> modules let you work with the filesystem -- listing directories, renaming files, and organizing data automatically:</p>
+                        <pre>from pathlib import Path
+import shutil
+
+# List all .txt files in a folder
+folder = Path("./reports")
+for txt_file in folder.glob("*.txt"):
+    print(txt_file.name)
+
+# Rename files in bulk (e.g., add date prefix)
+from datetime import datetime
+today = datetime.now().strftime("%Y%m%d")
+
+for txt_file in folder.glob("*.txt"):
+    new_name = f"{today}_{txt_file.name}"
+    txt_file.rename(folder / new_name)
+    print(f"Renamed: {txt_file.name} -> {new_name}")
+
+# Create organized folder structure
+categories = ["invoices", "reports", "backups"]
+for cat in categories:
+    Path(f"./organized/{cat}").mkdir(parents=True, exist_ok=True)</pre>
+
+                        <div class="exercise">
+                            <strong>Exercise 2.1</strong>
+                            <p>Write a script that reads a CSV file called <code>contacts.csv</code> with columns "Name", "Email", and "Company". Convert it to a JSON file called <code>contacts.json</code> where each contact is an object in an array. Handle the case where the CSV file might not exist by printing a friendly error message.</p>
+                        </div>
+
+                        <div class="tip">Tip: Always use the <code>with</code> statement when working with files. It handles closing the file automatically, even if your code throws an error.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3 -->
+            <div class="module" data-module="3">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">3</div>
+                    <div class="title">
+                        <h3>Web Scraping &amp; APIs</h3>
+                        <span>HTTP requests, BeautifulSoup, REST API consumption, and data extraction</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Making HTTP Requests</h4>
+                        <p>The <code>requests</code> library is the standard way to interact with websites and APIs in Python. Install it with <code>pip install requests</code>:</p>
+                        <pre>import requests
+
+# Simple GET request
+response = requests.get("https://api.github.com/users/octocat")
+print(response.status_code)  # 200 = success
+
+# Parse JSON response
+data = response.json()
+print(data["name"])       # The Octocat
+print(data["public_repos"])  # Number of public repos
+
+# GET with parameters
+params = {"q": "python automation", "sort": "stars"}
+response = requests.get("https://api.github.com/search/repositories", params=params)
+results = response.json()
+for repo in results["items"][:5]:
+    print(f"{repo['name']} - {repo['stargazers_count']} stars")</pre>
+
+                        <h4>Web Scraping with BeautifulSoup</h4>
+                        <p>When websites do not have APIs, web scraping lets you extract data from HTML pages. Install with <code>pip install beautifulsoup4</code>:</p>
+                        <pre>import requests
+from bs4 import BeautifulSoup
+
+# Fetch a webpage
+url = "https://news.ycombinator.com/"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
+
+# Extract all story titles
+stories = soup.select(".titleline > a")
+for i, story in enumerate(stories[:10], 1):
+    print(f"{i}. {story.text}")
+    print(f"   Link: {story.get('href')}\n")
+
+# Extract specific data using CSS selectors
+# Find all elements with a specific class
+items = soup.select(".score")
+for item in items[:5]:
+    print(item.text)  # e.g., "142 points"</pre>
+
+                        <h4>Working with REST APIs</h4>
+                        <p>REST APIs are the backbone of modern software. They use standard HTTP methods -- GET to read, POST to create, PUT to update, DELETE to remove:</p>
+                        <pre>import requests
+import json
+
+BASE_URL = "https://jsonplaceholder.typicode.com"
+
+# GET - Retrieve data
+response = requests.get(f"{BASE_URL}/posts/1")
+post = response.json()
+print(f"Title: {post['title']}")
+
+# POST - Create new data
+new_post = {
+    "title": "Automation with Python",
+    "body": "Learn to automate your workflow...",
+    "userId": 1
+}
+response = requests.post(f"{BASE_URL}/posts", json=new_post)
+print(f"Created post ID: {response.json()['id']}")
+
+# Headers and Authentication
+headers = {
+    "Authorization": "Bearer your_api_key_here",
+    "Content-Type": "application/json"
+}
+response = requests.get(f"{BASE_URL}/posts", headers=headers)
+
+# Error handling for API calls
+try:
+    response = requests.get(f"{BASE_URL}/posts/1", timeout=10)
+    response.raise_for_status()  # Raises exception for 4xx/5xx
+    data = response.json()
+except requests.exceptions.Timeout:
+    print("Request timed out. Try again later.")
+except requests.exceptions.HTTPError as e:
+    print(f"HTTP Error: {e}")
+except requests.exceptions.RequestException as e:
+    print(f"Request failed: {e}")</pre>
+
+                        <h4>Building a Practical Scraper</h4>
+                        <p>Here is a more complete example that scrapes product data and saves it to a CSV file, with proper error handling and rate limiting:</p>
+                        <pre>import requests
+from bs4 import BeautifulSoup
+import csv
+import time
+
+def scrape_products(url):
+    """Scrape product data from a page."""
+    try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to fetch {url}: {e}")
+        return []
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    products = []
+
+    for card in soup.select(".product-card"):
+        name = card.select_one(".product-name")
+        price = card.select_one(".product-price")
+        if name and price:
+            products.append({
+                "name": name.text.strip(),
+                "price": price.text.strip()
+            })
+
+    return products
+
+# Scrape multiple pages with delay
+all_products = []
+for page in range(1, 6):
+    url = f"https://example.com/products?page={page}"
+    products = scrape_products(url)
+    all_products.extend(products)
+    print(f"Page {page}: found {len(products)} products")
+    time.sleep(2)  # Be polite: wait 2 seconds between requests
+
+# Save results
+with open("products.csv", "w", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=["name", "price"])
+    writer.writeheader()
+    writer.writerows(all_products)
+
+print(f"Saved {len(all_products)} products to products.csv")</pre>
+
+                        <div class="exercise">
+                            <strong>Exercise 3.1</strong>
+                            <p>Using the GitHub API (<code>https://api.github.com/search/repositories</code>), write a script that searches for Python repositories with more than 1000 stars, sorts by stars, and saves the top 20 results (name, stars, description, URL) to a JSON file.</p>
+                        </div>
+
+                        <div class="note">Note: Always check a website's <code>robots.txt</code> and Terms of Service before scraping. Be respectful with your request rate, and always add delays between requests to avoid overwhelming servers.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4 -->
+            <div class="module" data-module="4">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">4</div>
+                    <div class="title">
+                        <h3>Task Scheduling &amp; Email Automation</h3>
+                        <span>Scheduling scripts, sending emails, automated reports, and notifications</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Scheduling Tasks with Schedule</h4>
+                        <p>The <code>schedule</code> library makes it easy to run Python functions at regular intervals. Install with <code>pip install schedule</code>:</p>
+                        <pre>import schedule
+import time
+
+def morning_report():
+    print("Generating morning report...")
+    # Your report logic here
+
+def check_prices():
+    print("Checking product prices...")
+    # Your price-checking logic here
+
+def weekly_backup():
+    print("Running weekly backup...")
+    # Your backup logic here
+
+# Schedule tasks
+schedule.every().day.at("08:00").do(morning_report)
+schedule.every(30).minutes.do(check_prices)
+schedule.every().monday.at("03:00").do(weekly_backup)
+
+print("Scheduler running. Press Ctrl+C to stop.")
+while True:
+    schedule.run_pending()
+    time.sleep(60)  # Check every 60 seconds</pre>
+
+                        <h4>Sending Emails with Python</h4>
+                        <p>Python's <code>smtplib</code> and <code>email</code> modules handle email sending. Here is how to send a professional HTML email:</p>
+                        <pre>import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+def send_email(to_email, subject, html_body):
+    # SMTP configuration (using Gmail as example)
+    smtp_server = "smtp.gmail.com"
+    smtp_port = 587
+    sender_email = "your_bot@gmail.com"
+    sender_password = "your_app_password"  # Use App Passwords, not your real password
+
+    # Build the message
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = subject
+    msg["From"] = sender_email
+    msg["To"] = to_email
+
+    html_part = MIMEText(html_body, "html")
+    msg.attach(html_part)
+
+    # Send it
+    try:
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()  # Encrypt the connection
+            server.login(sender_email, sender_password)
+            server.send_message(msg)
+            print(f"Email sent to {to_email}")
+    except Exception as e:
+        print(f"Failed to send email: {e}")
+
+# Usage
+send_email(
+    "boss@company.com",
+    "Daily Sales Report - Jan 15",
+    "&lt;h2&gt;Sales Report&lt;/h2&gt;&lt;p&gt;Total revenue today: &lt;strong&gt;$1,247.50&lt;/strong&gt;&lt;/p&gt;"
+)</pre>
+
+                        <div class="note">Note: For Gmail, you need to create an App Password in your Google Account settings. Never put your actual password in code. Use environment variables or a config file for credentials.</div>
+
+                        <h4>Building an Automated Report System</h4>
+                        <p>Combining file processing, data analysis, and email delivery into a complete reporting pipeline:</p>
+                        <pre>import csv
+import json
+from datetime import datetime, timedelta
+
+def generate_report():
+    """Read sales data and generate a summary."""
+    with open("sales.csv", "r") as f:
+        reader = csv.DictReader(f)
+        rows = list(reader)
+
+    total_revenue = sum(float(r["Revenue"]) for r in rows)
+    total_orders = len(rows)
+    avg_order = total_revenue / total_orders if total_orders > 0 else 0
+
+    # Find best seller
+    from collections import Counter
+    products = Counter(r["Product"] for r in rows)
+    best_seller = products.most_common(1)[0] if products else ("N/A", 0)
+
+    report = {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "total_revenue": round(total_revenue, 2),
+        "total_orders": total_orders,
+        "average_order_value": round(avg_order, 2),
+        "best_seller": best_seller[0],
+        "best_seller_count": best_seller[1]
+    }
+
+    # Save as JSON
+    with open("daily_report.json", "w") as f:
+        json.dump(report, f, indent=2)
+
+    # Build HTML for email
+    html = f"""
+    &lt;h2&gt;Daily Report - {report['date']}&lt;/h2&gt;
+    &lt;table&gt;
+        &lt;tr&gt;&lt;td&gt;Total Revenue&lt;/td&gt;&lt;td&gt;&lt;strong&gt;${report['total_revenue']}&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Total Orders&lt;/td&gt;&lt;td&gt;{report['total_orders']}&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Avg Order Value&lt;/td&gt;&lt;td&gt;${report['average_order_value']}&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Best Seller&lt;/td&gt;&lt;td&gt;{report['best_seller']} ({report['best_seller_count']} sales)&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+    """
+    return html
+
+# Generate and email the report
+html = generate_report()
+# send_email("you@example.com", "Daily Report", html)</pre>
+
+                        <h4>Windows Task Scheduler / Cron</h4>
+                        <p>For running scripts even when you are not at your computer, use your operating system's task scheduler:</p>
+                        <pre># macOS/Linux: Edit crontab
+# Run daily at 8:00 AM
+# crontab -e
+# 0 8 * * * /usr/bin/python3 /path/to/daily_report.py
+
+# Windows: Use Task Scheduler
+# Or use this command to create a scheduled task:
+# schtasks /create /tn "DailyReport" /tr "python C:\scripts\daily_report.py" /sc daily /st 08:00</pre>
+
+                        <div class="exercise">
+                            <strong>Exercise 4.1</strong>
+                            <p>Build a "price monitor" script that checks a product URL every hour, extracts the price, compares it to a target price, and sends you an email if the price drops below your target. Use <code>schedule</code> for timing and <code>smtplib</code> for notifications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 5 -->
+            <div class="module" data-module="5">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">5</div>
+                    <div class="title">
+                        <h3>Building Your First Bot</h3>
+                        <span>Putting it all together: a complete automation project from start to deployment</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Project: Content Aggregation Bot</h4>
+                        <p>In this final module, you will combine everything you have learned to build a real-world automation bot. This bot will aggregate content from multiple sources, summarize it, and deliver a daily digest via email. This is the same pattern used by popular newsletter services.</p>
+
+                        <h4>Step 1: Define the Project Structure</h4>
+                        <pre>content-bot/
+    config.json       # API keys and settings
+    sources.json      # List of content sources
+    bot.py            # Main bot logic
+    scraper.py        # Web scraping functions
+    emailer.py        # Email sending functions
+    requirements.txt  # Dependencies
+    README.md         # Documentation</pre>
+
+                        <h4>Step 2: The Configuration</h4>
+                        <pre># config.json
+{
+    "email": {
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "sender": "your_bot@gmail.com",
+        "recipients": ["you@example.com"]
+    },
+    "settings": {
+        "max_articles_per_source": 5,
+        "send_time": "08:00",
+        "summary_length": 150
+    }
+}</pre>
+
+                        <h4>Step 3: The Scraper Module</h4>
+                        <pre># scraper.py
+import requests
+from bs4 import BeautifulSoup
+import json
+
+def load_sources():
+    with open("sources.json", "r") as f:
+        return json.load(f)
+
+def scrape_rss(url):
+    """Parse an RSS feed and return articles."""
+    try:
+        response = requests.get(url, timeout=15)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "xml")
+
+        articles = []
+        for item in soup.find_all("item")[:5]:
+            articles.append({
+                "title": item.title.text if item.title else "Untitled",
+                "link": item.link.text if item.link else "",
+                "summary": item.description.text[:200] if item.description else ""
+            })
+        return articles
+    except Exception as e:
+        print(f"Error scraping {url}: {e}")
+        return []
+
+def gather_all_content():
+    """Scrape all configured sources."""
+    sources = load_sources()
+    all_content = {}
+    for source in sources:
+        print(f"Scraping: {source['name']}...")
+        articles = scrape_rss(source["rss_url"])
+        all_content[source["name"]] = articles
+    return all_content</pre>
+
+                        <h4>Step 4: The Email Module</h4>
+                        <pre># emailer.py
+import smtplib
+import json
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from datetime import datetime
+
+def load_config():
+    with open("config.json", "r") as f:
+        return json.load(f)
+
+def build_digest_html(content):
+    """Build an HTML email from aggregated content."""
+    date = datetime.now().strftime("%B %d, %Y")
+    html = f"&lt;h1&gt;Daily Digest - {date}&lt;/h1&gt;"
+
+    for source_name, articles in content.items():
+        html += f"&lt;h2&gt;{source_name}&lt;/h2&gt;"
+        if not articles:
+            html += "&lt;p&gt;&lt;em&gt;No articles today.&lt;/em&gt;&lt;/p&gt;"
+            continue
+        for a in articles:
+            html += f"""
+            &lt;div style='margin-bottom:12px'&gt;
+                &lt;a href='{a["link"]}'&gt;&lt;strong&gt;{a["title"]}&lt;/strong&gt;&lt;/a&gt;
+                &lt;p&gt;{a["summary"]}&lt;/p&gt;
+            &lt;/div&gt;"""
+
+    return html
+
+def send_digest(content):
+    """Send the digest email."""
+    config = load_config()["email"]
+    html = build_digest_html(content)
+
+    msg = MIMEMultipart("alternative")
+    msg["Subject"] = f"Your Daily Digest - {datetime.now().strftime('%b %d')}"
+    msg["From"] = config["sender"]
+    msg["To"] = ", ".join(config["recipients"])
+    msg.attach(MIMEText(html, "html"))
+
+    with smtplib.SMTP(config["smtp_server"], config["smtp_port"]) as server:
+        server.starttls()
+        server.login(config["sender"], config.get("password", ""))
+        server.send_message(msg)
+    print("Digest sent successfully!")</pre>
+
+                        <h4>Step 5: The Main Bot</h4>
+                        <pre># bot.py
+import schedule
+import time
+import json
+from scraper import gather_all_content
+from emailer import send_digest
+
+def run_daily_digest():
+    """Main bot function: scrape, build, send."""
+    print("Starting daily digest generation...")
+    content = gather_all_content()
+
+    # Count total articles
+    total = sum(len(articles) for articles in content.values())
+    print(f"Collected {total} articles from {len(content)} sources.")
+
+    # Send the digest
+    send_digest(content)
+    print("Daily digest complete!")
+
+def main():
+    config = json.load(open("config.json"))
+    send_time = config["settings"]["send_time"]
+
+    print(f"Content Bot started. Digest scheduled for {send_time} daily.")
+    schedule.every().day.at(send_time).do(run_daily_digest)
+
+    # Also run once immediately on start
+    run_daily_digest()
+
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
+
+if __name__ == "__main__":
+    main()</pre>
+
+                        <h4>Step 6: Deployment</h4>
+                        <p>To keep your bot running 24/7, you have several options depending on your setup:</p>
+                        <ul>
+                            <li><strong>Local machine</strong> &mdash; Use Task Scheduler (Windows) or cron (Mac/Linux) to run <code>bot.py</code> at startup.</li>
+                            <li><strong>Cloud server</strong> &mdash; Deploy to a cheap VPS ($5/month on DigitalOcean or similar). Use <code>systemd</code> to keep it running.</li>
+                            <li><strong>PythonAnywhere</strong> &mdash; Free tier supports scheduled tasks, perfect for beginners. Upload your files and set up a scheduled task to run <code>bot.py</code>.</li>
+                            <li><strong>GitHub Actions</strong> &mdash; Free for public repos. Create a workflow file to run your script on a schedule.</li>
+                        </ul>
+
+                        <div class="exercise">
+                            <strong>Final Project</strong>
+                            <p>Extend the content bot to track which articles have already been sent (using a local JSON file) so you never send duplicates. Add error handling so that if one source fails, the bot continues with the others. Finally, add a "top stories" section that highlights articles with the most engagement (you can approximate this by checking which articles appear on multiple sources).</p>
+                        </div>
+
+                        <div class="tip">Tip: Start simple and add features gradually. A working bot that does one thing well is more valuable than a complex bot that never gets finished. Ship first, improve later.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        var LICENSE_REGEX = /^AH-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/i;
+        var STORAGE_KEY = 'ah_license_key';
+        var PROGRESS_KEY = 'ah_python_progress';
+
+        var params = new URLSearchParams(window.location.search);
+        var urlKey = params.get('key');
+        var storedKey = localStorage.getItem(STORAGE_KEY);
+
+        if (urlKey && LICENSE_REGEX.test(urlKey)) {
+            localStorage.setItem(STORAGE_KEY, urlKey);
+            unlock();
+        } else if (storedKey && LICENSE_REGEX.test(storedKey)) {
+            unlock();
+        } else {
+            if (urlKey) document.getElementById('keyInput').value = urlKey;
+            if (storedKey) document.getElementById('keyInput').value = storedKey;
+        }
+
+        document.getElementById('keyInput').addEventListener('input', function(e) {
+            var v = e.target.value.toUpperCase().replace(/[^A-F0-9]/g, '');
+            var parts = [];
+            if (v.length > 0) parts.push(v.substring(0, 4));
+            if (v.length > 4) parts.push(v.substring(4, 8));
+            if (v.length > 8) parts.push(v.substring(8, 12));
+            if (v.length > 12) parts.push(v.substring(12, 16));
+            var formatted = 'AH-' + parts.join('-');
+            if (formatted === 'AH-') formatted = '';
+            e.target.value = formatted;
+        });
+
+        document.getElementById('keyInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') validateKey();
+        });
+
+        window.validateKey = function() {
+            var input = document.getElementById('keyInput');
+            var error = document.getElementById('keyError');
+            var key = input.value.trim().toUpperCase();
+            if (LICENSE_REGEX.test(key)) {
+                localStorage.setItem(STORAGE_KEY, key);
+                unlock();
+            } else {
+                error.style.display = 'block';
+                input.style.borderColor = 'var(--red)';
+                setTimeout(function() { error.style.display = 'none'; input.style.borderColor = 'var(--border)'; }, 3000);
+            }
+        };
+
+        function unlock() {
+            document.getElementById('licenseGate').style.display = 'none';
+            document.getElementById('courseContent').style.display = 'block';
+            updateProgress();
+        }
+
+        // Module toggle
+        window.toggleModule = function(header) {
+            var module = header.parentElement;
+            var wasOpen = module.classList.contains('open');
+            module.classList.toggle('open');
+            // Track progress
+            if (!wasOpen) {
+                var num = module.getAttribute('data-module');
+                var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+                if (progress.indexOf(num) === -1) {
+                    progress.push(num);
+                    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+                }
+                updateProgress();
+            }
+        };
+
+        function updateProgress() {
+            var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+            var total = 5;
+            var pct = Math.round((progress.length / total) * 100);
+            var fill = document.getElementById('progressFill');
+            var text = document.getElementById('progressPercent');
+            if (fill) fill.style.width = pct + '%';
+            if (text) text.textContent = pct + '%';
+        }
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation - AutoHustle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        .license-gate { max-width: 500px; margin: 80px auto; text-align: center; padding: 0 20px; }
+        .lock-icon { font-size: 48px; margin-bottom: 16px; }
+        .license-gate h1 { font-size: 1.6em; margin-bottom: 8px; }
+        .license-gate p { color: var(--text-muted); margin-bottom: 24px; }
+        .key-input-group { display: flex; gap: 10px; margin-bottom: 12px; }
+        .key-input {
+            flex: 1; padding: 14px 16px; background: var(--surface); border: 2px solid var(--border);
+            border-radius: 10px; color: var(--text); font-family: 'Courier New', monospace;
+            font-size: 1em; letter-spacing: 1px; outline: none; transition: border-color 0.2s;
+        }
+        .key-input:focus { border-color: var(--primary); }
+        .key-input::placeholder { color: var(--text-muted); letter-spacing: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .unlock-btn {
+            padding: 14px 28px; background: var(--green); color: #fff; border: none;
+            border-radius: 10px; font-size: 1em; font-weight: 600; cursor: pointer; transition: opacity 0.2s; white-space: nowrap;
+        }
+        .unlock-btn:hover { opacity: 0.85; }
+        .key-error { color: var(--red); font-size: 0.88em; display: none; }
+        .key-hint { color: var(--text-muted); font-size: 0.82em; margin-top: 4px; }
+
+        .api-content { display: none; }
+        .page-header { text-align: center; padding: 50px 20px 10px; }
+        .page-header .badge {
+            display: inline-block; padding: 4px 14px; border-radius: 20px;
+            font-size: 0.78em; font-weight: 700; background: var(--orange); color: #fff; margin-bottom: 12px;
+        }
+        .page-header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .page-header h1 span { color: var(--orange); }
+        .page-header p { color: var(--text-muted); font-size: 1.05em; max-width: 620px; margin: 0 auto; }
+
+        /* API Key Box */
+        .api-key-section {
+            background: var(--surface);
+            border: 2px solid var(--orange);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .api-key-section h2 {
+            font-size: 1em; color: var(--text-muted); text-transform: uppercase;
+            letter-spacing: 1px; margin-bottom: 4px;
+        }
+        .api-key-display {
+            font-family: 'Courier New', monospace; font-size: 1.1em; font-weight: 700;
+            color: var(--orange); background: var(--bg); border-radius: 8px;
+            padding: 14px; margin: 10px 0; word-break: break-all; user-select: all;
+        }
+        .copy-key-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 20px; background: var(--orange); color: #fff; border: none;
+            border-radius: 8px; font-size: 0.9em; font-weight: 600; cursor: pointer;
+        }
+        .copy-key-btn:hover { opacity: 0.85; }
+
+        /* Notice */
+        .notice {
+            padding: 18px 22px; border-radius: 12px; margin: 24px 0;
+            background: var(--primary-glow); border: 1px solid rgba(99,102,241,0.3);
+        }
+        .notice h3 { color: var(--primary); margin-bottom: 8px; font-size: 1.05em; }
+        .notice p { color: var(--text-muted); margin: 0; font-size: 0.92em; }
+
+        /* Tabs */
+        .api-tabs {
+            display: flex; gap: 4px; margin: 24px 0 0; border-bottom: 2px solid var(--border);
+        }
+        .api-tab {
+            padding: 12px 24px; background: none; border: none; color: var(--text-muted);
+            font-size: 0.95em; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
+            margin-bottom: -2px; transition: color 0.2s, border-color 0.2s;
+        }
+        .api-tab:hover { color: var(--text); }
+        .api-tab.active { color: var(--orange); border-bottom-color: var(--orange); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Sections */
+        .section {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+            padding: 28px; margin: 20px 0;
+        }
+        .section h2 {
+            font-size: 1.3em; margin-bottom: 14px; color: var(--text);
+        }
+        .section h3 {
+            font-size: 1.05em; margin: 20px 0 10px; color: var(--orange);
+        }
+        .section p, .section li { color: var(--text-muted); line-height: 1.7; }
+        .section ul, .section ol { padding-left: 20px; margin-bottom: 14px; }
+        .section li { margin-bottom: 6px; }
+
+        /* Endpoint blocks */
+        .endpoint {
+            background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
+            margin: 20px 0; overflow: hidden;
+        }
+        .endpoint-header {
+            display: flex; align-items: center; gap: 12px; padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+        }
+        .method {
+            padding: 4px 12px; border-radius: 6px; font-size: 0.78em; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .method.get { background: var(--green-glow); color: var(--green); }
+        .method.post { background: var(--primary-glow); color: var(--primary); }
+        .method.put { background: rgba(245,158,11,0.15); color: var(--orange); }
+        .method.delete { background: rgba(239,68,68,0.15); color: var(--red); }
+        .endpoint-path {
+            font-family: 'Courier New', monospace; font-size: 0.92em; color: var(--text);
+        }
+        .endpoint-body { padding: 18px; }
+        .endpoint-body p { color: var(--text-muted); margin-bottom: 12px; font-size: 0.92em; }
+
+        /* Param table */
+        .param-table {
+            width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.88em;
+        }
+        .param-table th, .param-table td {
+            padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border);
+        }
+        .param-table th {
+            background: var(--surface2); color: var(--text); font-size: 0.82em;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .param-table td { color: var(--text-muted); }
+        .param-table code { color: var(--green); background: var(--bg); padding: 1px 6px; border-radius: 3px; font-size: 0.95em; }
+        .required { color: var(--red); font-size: 0.8em; font-weight: 600; }
+        .optional { color: var(--text-muted); font-size: 0.8em; }
+
+        code {
+            background: var(--bg); padding: 2px 8px; border-radius: 4px;
+            font-size: 0.9em; color: var(--green); font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: var(--surface2); border: 1px solid var(--border); border-radius: 8px;
+            padding: 16px; overflow-x: auto; margin: 12px 0;
+            font-family: 'Courier New', monospace; font-size: 0.84em; line-height: 1.7; color: var(--text);
+        }
+        .pre-label {
+            font-size: 0.72em; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 4px;
+        }
+
+        .status-codes {
+            display: grid; grid-template-columns: auto 1fr; gap: 6px 16px;
+            margin: 12px 0; font-size: 0.9em;
+        }
+        .status-code {
+            font-family: 'Courier New', monospace; font-weight: 700; padding: 2px 8px;
+            border-radius: 4px; text-align: center;
+        }
+        .status-code.s2xx { background: var(--green-glow); color: var(--green); }
+        .status-code.s4xx { background: rgba(245,158,11,0.15); color: var(--orange); }
+        .status-code.s5xx { background: rgba(239,68,68,0.15); color: var(--red); }
+
+        .rate-limits {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 14px 0;
+        }
+        .rate-card {
+            background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+            padding: 14px 18px; text-align: center;
+        }
+        .rate-card .num { font-size: 1.5em; font-weight: 700; color: var(--orange); }
+        .rate-card .label { font-size: 0.82em; color: var(--text-muted); }
+
+        footer {
+            text-align: center; padding: 30px; color: var(--text-muted);
+            font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .key-input-group { flex-direction: column; }
+            .page-header h1 { font-size: 1.7em; }
+            .section { padding: 20px; }
+            .endpoint-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+            .rate-limits { grid-template-columns: 1fr; }
+            .api-tabs { overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav><div class="nav-inner"><a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a></div></nav>
+
+    <div id="licenseGate" class="license-gate">
+        <div class="lock-icon">&#128274;</div>
+        <h1>API Documentation</h1>
+        <p>Enter your license key to access the API documentation and your credentials.</p>
+        <div class="key-input-group">
+            <input type="text" id="keyInput" class="key-input" placeholder="AH-XXXX-XXXX-XXXX-XXXX" maxlength="22" autocomplete="off" spellcheck="false">
+            <button class="unlock-btn" onclick="validateKey()">Unlock</button>
+        </div>
+        <div id="keyError" class="key-error">Invalid license key format. Keys look like: AH-XXXX-XXXX-XXXX-XXXX</div>
+        <div class="key-hint">Format: AH-XXXX-XXXX-XXXX-XXXX (from your purchase confirmation)</div>
+    </div>
+
+    <div id="apiContent" class="api-content">
+        <div class="page-header">
+            <span class="badge">API</span>
+            <h1><span>AutoHustle</span> API Documentation</h1>
+            <p>Complete reference for the Inspirational Quotes API and Text Analysis API.</p>
+        </div>
+
+        <div class="container">
+
+            <!-- API Key Display -->
+            <div class="api-key-section">
+                <h2>Your API Key</h2>
+                <div class="api-key-display" id="apiKeyDisplay">---</div>
+                <button class="copy-key-btn" id="copyApiBtn" onclick="copyApiKey()">
+                    <span>&#128203;</span> Copy API Key
+                </button>
+            </div>
+
+            <!-- Access Notice -->
+            <div class="notice">
+                <h3>API Access Information</h3>
+                <p>Your API access credentials and connection details will be emailed to you within 24 hours of purchase at the email address associated with your Stripe payment. The API key shown above is your authentication token. Once you receive the email with the base URL and any additional setup instructions, you can begin making requests using the documentation below.</p>
+            </div>
+
+            <!-- Base Info -->
+            <div class="section">
+                <h2>Getting Started</h2>
+                <h3>Base URL</h3>
+                <pre>https://api.autohustle.online/v1</pre>
+
+                <h3>Authentication</h3>
+                <p>All requests require an API key sent as a Bearer token in the Authorization header:</p>
+                <pre>Authorization: Bearer YOUR_API_KEY</pre>
+
+                <h3>Response Format</h3>
+                <p>All responses are returned in JSON format. Successful responses include a <code>status</code> field set to <code>"ok"</code>. Error responses include a <code>status</code> of <code>"error"</code> and a human-readable <code>message</code> field.</p>
+
+                <h3>Rate Limits</h3>
+                <div class="rate-limits">
+                    <div class="rate-card">
+                        <div class="num">1,000</div>
+                        <div class="label">Requests per day</div>
+                    </div>
+                    <div class="rate-card">
+                        <div class="num">60</div>
+                        <div class="label">Requests per minute</div>
+                    </div>
+                </div>
+                <p>Rate limit headers are included in every response: <code>X-RateLimit-Remaining</code> and <code>X-RateLimit-Reset</code>.</p>
+
+                <h3>Status Codes</h3>
+                <div class="status-codes">
+                    <span class="status-code s2xx">200</span><span style="color:var(--text-muted)">Success</span>
+                    <span class="status-code s4xx">400</span><span style="color:var(--text-muted)">Bad Request &mdash; invalid parameters</span>
+                    <span class="status-code s4xx">401</span><span style="color:var(--text-muted)">Unauthorized &mdash; invalid or missing API key</span>
+                    <span class="status-code s4xx">429</span><span style="color:var(--text-muted)">Rate Limited &mdash; too many requests</span>
+                    <span class="status-code s5xx">500</span><span style="color:var(--text-muted)">Server Error &mdash; try again later</span>
+                </div>
+            </div>
+
+            <!-- API Tabs -->
+            <div class="api-tabs">
+                <button class="api-tab active" onclick="switchTab('quotes')">Quotes API</button>
+                <button class="api-tab" onclick="switchTab('text')">Text Analysis API</button>
+            </div>
+
+            <!-- ==================== QUOTES API ==================== -->
+            <div id="tab-quotes" class="tab-content active">
+
+                <div class="section">
+                    <h2>Inspirational Quotes API</h2>
+                    <p>Access a curated collection of over 10,000 inspirational quotes from thought leaders, authors, entrepreneurs, and philosophers. Perfect for apps, websites, bots, and digital signage.</p>
+                </div>
+
+                <!-- GET /quotes/random -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-path">/quotes/random</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns a single random quote. Optionally filter by category or author.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>category</code></td><td>string <span class="optional">optional</span></td><td>Filter by category: motivation, success, wisdom, life, business, creativity, leadership, perseverance</td></tr>
+                                <tr><td><code>language</code></td><td>string <span class="optional">optional</span></td><td>Response language (default: en). Supported: en, es, fr, de, pt</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example Request</div>
+                        <pre>curl -H "Authorization: Bearer YOUR_API_KEY" \
+  "https://api.autohustle.online/v1/quotes/random?category=motivation"</pre>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": {
+    "id": "q_8f3a2b1c",
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "motivation",
+    "tags": ["work", "passion", "success"],
+    "source": "Stanford Commencement Speech, 2005"
+  }
+}</pre>
+                    </div>
+                </div>
+
+                <!-- GET /quotes -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-path">/quotes</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns a paginated list of quotes. Supports filtering, searching, and sorting.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>category</code></td><td>string <span class="optional">optional</span></td><td>Filter by category</td></tr>
+                                <tr><td><code>author</code></td><td>string <span class="optional">optional</span></td><td>Filter by author name (partial match)</td></tr>
+                                <tr><td><code>search</code></td><td>string <span class="optional">optional</span></td><td>Full-text search across quote text</td></tr>
+                                <tr><td><code>tags</code></td><td>string <span class="optional">optional</span></td><td>Comma-separated tag filter (e.g., "work,passion")</td></tr>
+                                <tr><td><code>page</code></td><td>integer <span class="optional">optional</span></td><td>Page number (default: 1)</td></tr>
+                                <tr><td><code>limit</code></td><td>integer <span class="optional">optional</span></td><td>Results per page (default: 20, max: 100)</td></tr>
+                                <tr><td><code>sort</code></td><td>string <span class="optional">optional</span></td><td>Sort by: "random", "author", "newest" (default: random)</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example Request</div>
+                        <pre>curl -H "Authorization: Bearer YOUR_API_KEY" \
+  "https://api.autohustle.online/v1/quotes?category=business&amp;limit=3"</pre>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": [
+    {
+      "id": "q_1a2b3c4d",
+      "text": "Your most unhappy customers are your greatest source of learning.",
+      "author": "Bill Gates",
+      "category": "business",
+      "tags": ["customers", "learning", "feedback"]
+    },
+    {
+      "id": "q_5e6f7a8b",
+      "text": "Price is what you pay. Value is what you get.",
+      "author": "Warren Buffett",
+      "category": "business",
+      "tags": ["value", "investing", "wisdom"]
+    },
+    {
+      "id": "q_9c0d1e2f",
+      "text": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "category": "business",
+      "tags": ["action", "entrepreneurship", "motivation"]
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "limit": 3,
+    "total": 1847,
+    "pages": 616
+  }
+}</pre>
+                    </div>
+                </div>
+
+                <!-- GET /quotes/categories -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-path">/quotes/categories</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns a list of all available categories with quote counts.</p>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": [
+    { "name": "motivation", "count": 2341 },
+    { "name": "success", "count": 1856 },
+    { "name": "wisdom", "count": 1623 },
+    { "name": "life", "count": 1489 },
+    { "name": "business", "count": 1847 },
+    { "name": "creativity", "count": 892 },
+    { "name": "leadership", "count": 756 },
+    { "name": "perseverance", "count": 634 }
+  ]
+}</pre>
+                    </div>
+                </div>
+
+                <!-- GET /quotes/qod -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-path">/quotes/qod</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns the "Quote of the Day" -- a curated quote that changes every 24 hours at midnight UTC. Great for daily email digests, dashboards, and notification features.</p>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": {
+    "id": "q_d4e5f6a7",
+    "text": "In the middle of every difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "category": "perseverance",
+    "date": "2026-02-23"
+  }
+}</pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ==================== TEXT ANALYSIS API ==================== -->
+            <div id="tab-text" class="tab-content">
+
+                <div class="section">
+                    <h2>Text Analysis API</h2>
+                    <p>Analyze any text for readability, sentiment, keyword density, word count, and more. Ideal for content tools, writing assistants, SEO analysis, and editorial workflows.</p>
+                </div>
+
+                <!-- POST /analyze -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <span class="endpoint-path">/text/analyze</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Performs a comprehensive analysis of the provided text. Returns statistics, readability scores, sentiment, and keyword extraction.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Body Field</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>text</code></td><td>string <span class="required">required</span></td><td>The text to analyze (max 50,000 characters)</td></tr>
+                                <tr><td><code>include</code></td><td>array <span class="optional">optional</span></td><td>Specific analyses to include: "stats", "readability", "sentiment", "keywords", "entities". Default: all.</td></tr>
+                                <tr><td><code>language</code></td><td>string <span class="optional">optional</span></td><td>Text language for accurate analysis (default: auto-detect)</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example Request</div>
+                        <pre>curl -X POST "https://api.autohustle.online/v1/text/analyze" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Artificial intelligence is transforming the way businesses operate. Companies that adopt AI early gain a significant competitive advantage. From automating customer service to predicting market trends, AI tools are becoming essential for modern enterprises.",
+    "include": ["stats", "readability", "sentiment", "keywords"]
+  }'</pre>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": {
+    "stats": {
+      "characters": 271,
+      "characters_no_spaces": 230,
+      "words": 41,
+      "sentences": 3,
+      "paragraphs": 1,
+      "avg_word_length": 5.6,
+      "avg_sentence_length": 13.7,
+      "reading_time_seconds": 12,
+      "speaking_time_seconds": 20
+    },
+    "readability": {
+      "flesch_reading_ease": 42.3,
+      "flesch_kincaid_grade": 12.1,
+      "gunning_fog_index": 14.2,
+      "coleman_liau_index": 13.8,
+      "smog_index": 12.5,
+      "automated_readability_index": 13.1,
+      "dale_chall_score": 8.7,
+      "difficulty_level": "college",
+      "summary": "This text is suitable for a college-level audience. Consider simplifying for broader readability."
+    },
+    "sentiment": {
+      "overall": "positive",
+      "score": 0.72,
+      "confidence": 0.89,
+      "breakdown": {
+        "positive": 0.72,
+        "neutral": 0.23,
+        "negative": 0.05
+      }
+    },
+    "keywords": [
+      { "word": "AI", "count": 2, "density": 4.88, "relevance": 0.95 },
+      { "word": "businesses", "count": 1, "density": 2.44, "relevance": 0.82 },
+      { "word": "competitive advantage", "count": 1, "density": 2.44, "relevance": 0.78 },
+      { "word": "automating", "count": 1, "density": 2.44, "relevance": 0.71 },
+      { "word": "enterprises", "count": 1, "density": 2.44, "relevance": 0.68 }
+    ]
+  }
+}</pre>
+                    </div>
+                </div>
+
+                <!-- POST /text/readability -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <span class="endpoint-path">/text/readability</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns only readability scores and grade-level analysis. Faster than the full analyze endpoint when you only need readability data.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Body Field</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>text</code></td><td>string <span class="required">required</span></td><td>The text to analyze (max 50,000 characters)</td></tr>
+                                <tr><td><code>target_grade</code></td><td>integer <span class="optional">optional</span></td><td>Target reading grade level (1-16). Returns suggestions if text exceeds target.</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example Request</div>
+                        <pre>curl -X POST "https://api.autohustle.online/v1/text/readability" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": "Your text here...",
+    "target_grade": 8
+  }'</pre>
+                    </div>
+                </div>
+
+                <!-- POST /text/sentiment -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <span class="endpoint-path">/text/sentiment</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Returns sentiment analysis only. Supports both overall sentiment and sentence-level granularity.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Body Field</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>text</code></td><td>string <span class="required">required</span></td><td>The text to analyze (max 50,000 characters)</td></tr>
+                                <tr><td><code>granularity</code></td><td>string <span class="optional">optional</span></td><td>"document" (default) or "sentence" for per-sentence scores</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example (sentence-level granularity)</div>
+                        <pre>{
+  "status": "ok",
+  "data": {
+    "overall": {
+      "sentiment": "mixed",
+      "score": 0.15,
+      "confidence": 0.76
+    },
+    "sentences": [
+      {
+        "text": "The product quality is excellent.",
+        "sentiment": "positive",
+        "score": 0.92
+      },
+      {
+        "text": "However, the shipping was slow and packaging was damaged.",
+        "sentiment": "negative",
+        "score": -0.68
+      },
+      {
+        "text": "Customer support resolved the issue quickly.",
+        "sentiment": "positive",
+        "score": 0.74
+      }
+    ]
+  }
+}</pre>
+                    </div>
+                </div>
+
+                <!-- POST /text/summarize -->
+                <div class="endpoint">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <span class="endpoint-path">/text/summarize</span>
+                    </div>
+                    <div class="endpoint-body">
+                        <p>Generates a concise summary of the provided text using extractive summarization.</p>
+
+                        <table class="param-table">
+                            <thead><tr><th>Body Field</th><th>Type</th><th>Description</th></tr></thead>
+                            <tbody>
+                                <tr><td><code>text</code></td><td>string <span class="required">required</span></td><td>The text to summarize (min 100 characters, max 50,000)</td></tr>
+                                <tr><td><code>max_sentences</code></td><td>integer <span class="optional">optional</span></td><td>Maximum sentences in summary (default: 3, max: 10)</td></tr>
+                                <tr><td><code>style</code></td><td>string <span class="optional">optional</span></td><td>"extractive" (default) or "bullet_points"</td></tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pre-label">Example Response</div>
+                        <pre>{
+  "status": "ok",
+  "data": {
+    "summary": "AI is transforming business operations by automating routine tasks. Companies adopting AI early gain competitive advantages in customer service and market analysis.",
+    "compression_ratio": 0.35,
+    "original_length": 271,
+    "summary_length": 156
+  }
+}</pre>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SDK / Integration -->
+            <div class="section">
+                <h2>Quick Integration Examples</h2>
+
+                <h3>JavaScript / Node.js</h3>
+                <pre>const API_KEY = 'your_api_key_here';
+const BASE = 'https://api.autohustle.online/v1';
+
+// Get a random quote
+async function getRandomQuote(category = '') {
+  const url = category
+    ? `${BASE}/quotes/random?category=${category}`
+    : `${BASE}/quotes/random`;
+
+  const res = await fetch(url, {
+    headers: { 'Authorization': `Bearer ${API_KEY}` }
+  });
+  const json = await res.json();
+  return json.data;
+}
+
+// Analyze text
+async function analyzeText(text) {
+  const res = await fetch(`${BASE}/text/analyze`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${API_KEY}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ text })
+  });
+  const json = await res.json();
+  return json.data;
+}</pre>
+
+                <h3>Python</h3>
+                <pre>import requests
+
+API_KEY = 'your_api_key_here'
+BASE = 'https://api.autohustle.online/v1'
+HEADERS = {'Authorization': f'Bearer {API_KEY}'}
+
+# Get a random quote
+def get_random_quote(category=None):
+    params = {'category': category} if category else {}
+    r = requests.get(f'{BASE}/quotes/random', headers=HEADERS, params=params)
+    return r.json()['data']
+
+# Analyze text
+def analyze_text(text):
+    r = requests.post(
+        f'{BASE}/text/analyze',
+        headers={**HEADERS, 'Content-Type': 'application/json'},
+        json={'text': text}
+    )
+    return r.json()['data']
+
+# Example usage
+quote = get_random_quote('motivation')
+print(f'"{quote["text"]}" - {quote["author"]}')
+
+analysis = analyze_text('Your text to analyze here.')
+print(f'Readability: Grade {analysis["readability"]["flesch_kincaid_grade"]}')
+print(f'Sentiment: {analysis["sentiment"]["overall"]}')</pre>
+
+                <h3>cURL</h3>
+                <pre># Random quote
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  "https://api.autohustle.online/v1/quotes/random"
+
+# Analyze text
+curl -X POST "https://api.autohustle.online/v1/text/analyze" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Your text to analyze here."}'</pre>
+            </div>
+
+            <!-- Support -->
+            <div class="section" style="text-align:center;">
+                <h2>Need Help?</h2>
+                <p>Contact our API support team at <a href="mailto:api@autohustle.online" style="color:var(--primary)">api@autohustle.online</a></p>
+                <p style="margin-top:8px;">Expect a response within 24 hours on business days. Include your API key (first 8 characters only) when contacting support.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        var LICENSE_REGEX = /^AH-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/i;
+        var STORAGE_KEY = 'ah_license_key';
+
+        var params = new URLSearchParams(window.location.search);
+        var urlKey = params.get('key');
+        var apiType = params.get('type') || 'quotes';
+        var storedKey = localStorage.getItem(STORAGE_KEY);
+
+        if (urlKey && LICENSE_REGEX.test(urlKey)) {
+            localStorage.setItem(STORAGE_KEY, urlKey);
+            unlock(urlKey);
+        } else if (storedKey && LICENSE_REGEX.test(storedKey)) {
+            unlock(storedKey);
+        } else {
+            if (urlKey) document.getElementById('keyInput').value = urlKey;
+            if (storedKey) document.getElementById('keyInput').value = storedKey;
+        }
+
+        // Auto-select the correct tab based on URL param
+        if (apiType === 'text') {
+            switchTab('text');
+        }
+
+        document.getElementById('keyInput').addEventListener('input', function(e) {
+            var v = e.target.value.toUpperCase().replace(/[^A-F0-9]/g, '');
+            var parts = [];
+            if (v.length > 0) parts.push(v.substring(0, 4));
+            if (v.length > 4) parts.push(v.substring(4, 8));
+            if (v.length > 8) parts.push(v.substring(8, 12));
+            if (v.length > 12) parts.push(v.substring(12, 16));
+            var formatted = 'AH-' + parts.join('-');
+            if (formatted === 'AH-') formatted = '';
+            e.target.value = formatted;
+        });
+
+        document.getElementById('keyInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') validateKey();
+        });
+
+        window.validateKey = function() {
+            var input = document.getElementById('keyInput');
+            var error = document.getElementById('keyError');
+            var key = input.value.trim().toUpperCase();
+            if (LICENSE_REGEX.test(key)) {
+                localStorage.setItem(STORAGE_KEY, key);
+                unlock(key);
+            } else {
+                error.style.display = 'block';
+                input.style.borderColor = 'var(--red)';
+                setTimeout(function() { error.style.display = 'none'; input.style.borderColor = 'var(--border)'; }, 3000);
+            }
+        };
+
+        function unlock(key) {
+            document.getElementById('licenseGate').style.display = 'none';
+            document.getElementById('apiContent').style.display = 'block';
+
+            // Generate API key from license key (deterministic)
+            var apiKey = 'ahk_' + key.replace(/[^A-F0-9]/gi, '').toLowerCase() + '_live';
+            document.getElementById('apiKeyDisplay').textContent = apiKey;
+        }
+
+        // Tab switching
+        window.switchTab = function(tab) {
+            document.querySelectorAll('.api-tab').forEach(function(t) { t.classList.remove('active'); });
+            document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+
+            var tabEl = document.getElementById('tab-' + tab);
+            if (tabEl) tabEl.classList.add('active');
+
+            // Find the matching button
+            document.querySelectorAll('.api-tab').forEach(function(btn) {
+                if ((tab === 'quotes' && btn.textContent.indexOf('Quotes') > -1) ||
+                    (tab === 'text' && btn.textContent.indexOf('Text') > -1)) {
+                    btn.classList.add('active');
+                }
+            });
+        };
+
+        // Copy API key
+        window.copyApiKey = function() {
+            var key = document.getElementById('apiKeyDisplay').textContent;
+            navigator.clipboard.writeText(key).then(function() {
+                var btn = document.getElementById('copyApiBtn');
+                btn.innerHTML = '<span>&#10003;</span> Copied!';
+                setTimeout(function() {
+                    btn.innerHTML = '<span>&#128203;</span> Copy API Key';
+                }, 2000);
+            });
+        };
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompt Engineering - AutoHustle</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        .license-gate { max-width: 500px; margin: 80px auto; text-align: center; padding: 0 20px; }
+        .lock-icon { font-size: 48px; margin-bottom: 16px; }
+        .license-gate h1 { font-size: 1.6em; margin-bottom: 8px; }
+        .license-gate p { color: var(--text-muted); margin-bottom: 24px; }
+        .key-input-group { display: flex; gap: 10px; margin-bottom: 12px; }
+        .key-input {
+            flex: 1; padding: 14px 16px; background: var(--surface); border: 2px solid var(--border);
+            border-radius: 10px; color: var(--text); font-family: 'Courier New', monospace;
+            font-size: 1em; letter-spacing: 1px; outline: none; transition: border-color 0.2s;
+        }
+        .key-input:focus { border-color: var(--primary); }
+        .key-input::placeholder { color: var(--text-muted); letter-spacing: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .unlock-btn {
+            padding: 14px 28px; background: var(--green); color: #fff; border: none;
+            border-radius: 10px; font-size: 1em; font-weight: 600; cursor: pointer; transition: opacity 0.2s; white-space: nowrap;
+        }
+        .unlock-btn:hover { opacity: 0.85; }
+        .key-error { color: var(--red); font-size: 0.88em; display: none; }
+        .key-hint { color: var(--text-muted); font-size: 0.82em; margin-top: 4px; }
+
+        .course-content { display: none; }
+        .page-header { text-align: center; padding: 50px 20px 10px; }
+        .page-header .badge {
+            display: inline-block; padding: 4px 14px; border-radius: 20px;
+            font-size: 0.78em; font-weight: 700; background: var(--primary); color: #fff; margin-bottom: 12px;
+        }
+        .page-header h1 { font-size: 2.2em; margin-bottom: 8px; }
+        .page-header h1 span { color: var(--primary); }
+        .page-header p { color: var(--text-muted); font-size: 1.05em; max-width: 600px; margin: 0 auto; }
+
+        .progress-bar {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+            padding: 20px 24px; margin: 24px 0; display: flex; align-items: center; gap: 16px;
+        }
+        .progress-bar .label { font-size: 0.88em; color: var(--text-muted); white-space: nowrap; }
+        .progress-track { flex: 1; height: 8px; background: var(--surface2); border-radius: 8px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--primary); border-radius: 8px; transition: width 0.4s ease; width: 0%; }
+        .progress-bar .percent { font-weight: 700; color: var(--primary); font-size: 0.95em; }
+
+        .module {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+            margin-bottom: 16px; overflow: hidden;
+        }
+        .module-header {
+            padding: 22px 28px; display: flex; align-items: center; gap: 16px;
+            cursor: pointer; user-select: none; transition: background 0.15s;
+        }
+        .module-header:hover { background: var(--surface2); }
+        .module-num {
+            width: 36px; height: 36px; background: var(--primary); color: #fff;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9em; flex-shrink: 0;
+        }
+        .module-header .title { flex: 1; }
+        .module-header .title h3 { font-size: 1.1em; margin-bottom: 2px; }
+        .module-header .title span { font-size: 0.85em; color: var(--text-muted); }
+        .module-toggle { font-size: 1.2em; color: var(--text-muted); transition: transform 0.3s; }
+        .module.open .module-toggle { transform: rotate(180deg); }
+        .module-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .module.open .module-body { max-height: 12000px; }
+        .module-inner { padding: 0 28px 28px; border-top: 1px solid var(--border); }
+        .module-inner h4 { font-size: 1.05em; margin: 24px 0 10px; color: var(--primary); }
+        .module-inner p, .module-inner li { color: var(--text-muted); line-height: 1.7; }
+        .module-inner ul, .module-inner ol { padding-left: 20px; margin-bottom: 14px; }
+        .module-inner li { margin-bottom: 6px; }
+
+        code {
+            background: var(--bg); padding: 2px 8px; border-radius: 4px;
+            font-size: 0.9em; color: var(--green); font-family: 'Courier New', monospace;
+        }
+
+        /* Prompt examples */
+        .prompt-example {
+            background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+            margin: 16px 0; overflow: hidden;
+        }
+        .prompt-label {
+            padding: 8px 18px; background: var(--surface2); font-size: 0.78em;
+            font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted);
+        }
+        .prompt-label.good { background: rgba(16,185,129,0.15); color: var(--green); }
+        .prompt-label.bad { background: rgba(239,68,68,0.15); color: var(--red); }
+        .prompt-label.system { background: var(--primary-glow); color: var(--primary); }
+        .prompt-text {
+            padding: 16px 18px; font-family: 'Courier New', monospace; font-size: 0.88em;
+            line-height: 1.7; color: var(--text); white-space: pre-wrap;
+        }
+
+        .vs-block {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;
+        }
+        @media (max-width: 700px) {
+            .vs-block { grid-template-columns: 1fr; }
+        }
+
+        .tip {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--green-glow); border: 1px solid rgba(16,185,129,0.3); color: var(--green);
+        }
+        .note {
+            padding: 14px 18px; border-radius: 8px; font-size: 0.9em; margin: 16px 0;
+            background: var(--primary-glow); border: 1px solid rgba(99,102,241,0.3); color: var(--primary);
+        }
+        .exercise {
+            padding: 18px 22px; border-radius: 10px; margin: 18px 0;
+            background: var(--surface2); border-left: 4px solid var(--orange);
+        }
+        .exercise strong { color: var(--orange); display: block; margin-bottom: 6px; }
+        .exercise p { color: var(--text-muted); margin: 0; }
+
+        footer {
+            text-align: center; padding: 30px; color: var(--text-muted);
+            font-size: 0.85em; border-top: 1px solid var(--border); margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .key-input-group { flex-direction: column; }
+            .page-header h1 { font-size: 1.7em; }
+            .module-header { padding: 16px 18px; }
+            .module-inner { padding: 0 18px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav><div class="nav-inner"><a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a></div></nav>
+
+    <div id="licenseGate" class="license-gate">
+        <div class="lock-icon">&#128274;</div>
+        <h1>ChatGPT Prompt Engineering</h1>
+        <p>Enter your license key to access the course.</p>
+        <div class="key-input-group">
+            <input type="text" id="keyInput" class="key-input" placeholder="AH-XXXX-XXXX-XXXX-XXXX" maxlength="22" autocomplete="off" spellcheck="false">
+            <button class="unlock-btn" onclick="validateKey()">Unlock</button>
+        </div>
+        <div id="keyError" class="key-error">Invalid license key format. Keys look like: AH-XXXX-XXXX-XXXX-XXXX</div>
+        <div class="key-hint">Format: AH-XXXX-XXXX-XXXX-XXXX (from your purchase confirmation)</div>
+    </div>
+
+    <div id="courseContent" class="course-content">
+        <div class="page-header">
+            <span class="badge">COURSE</span>
+            <h1><span>ChatGPT</span> Prompt Engineering Masterclass</h1>
+            <p>4 modules that teach you to get dramatically better results from AI. Real techniques, real examples.</p>
+        </div>
+
+        <div class="container">
+
+            <div class="progress-bar">
+                <span class="label">Course Progress</span>
+                <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+                <span class="percent" id="progressPercent">0%</span>
+            </div>
+
+            <!-- MODULE 1 -->
+            <div class="module open" data-module="1">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">1</div>
+                    <div class="title">
+                        <h3>Prompt Fundamentals</h3>
+                        <span>Role-based prompting, context setting, output formatting, and temperature control</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Why Prompt Engineering Matters</h4>
+                        <p>The difference between a mediocre AI response and an exceptional one is almost always the prompt. The same model can produce wildly different outputs depending on how you frame your request. Prompt engineering is the skill of communicating clearly with AI models to get exactly the output you need.</p>
+                        <p>Think of it this way: you would not walk up to a specialist consultant and say "help me with my business." You would explain your situation, what you have tried, what you need, and what success looks like. The same principle applies to AI.</p>
+
+                        <h4>The Anatomy of a Great Prompt</h4>
+                        <p>Every effective prompt has some combination of these elements:</p>
+                        <ul>
+                            <li><strong>Role</strong> &mdash; Who should the AI pretend to be?</li>
+                            <li><strong>Context</strong> &mdash; What background information does it need?</li>
+                            <li><strong>Task</strong> &mdash; What specific thing should it do?</li>
+                            <li><strong>Format</strong> &mdash; How should the output be structured?</li>
+                            <li><strong>Constraints</strong> &mdash; What should it avoid or include?</li>
+                            <li><strong>Examples</strong> &mdash; What does a good output look like?</li>
+                        </ul>
+
+                        <h4>Role-Based Prompting</h4>
+                        <p>Assigning a role to the AI dramatically changes its perspective and output quality. Compare these two approaches:</p>
+
+                        <div class="vs-block">
+                            <div class="prompt-example">
+                                <div class="prompt-label bad">Weak Prompt</div>
+                                <div class="prompt-text">Write me some marketing copy for a SaaS product.</div>
+                            </div>
+                            <div class="prompt-example">
+                                <div class="prompt-label good">Strong Prompt</div>
+                                <div class="prompt-text">You are a senior copywriter at a top SaaS marketing agency with 15 years of experience writing high-converting landing pages. Write compelling hero section copy for a project management tool aimed at remote teams of 10-50 people. The tone should be confident but not aggressive. Include a headline, subheadline, and 3 bullet points.</div>
+                            </div>
+                        </div>
+
+                        <p>The strong prompt works better because it sets a clear role (experienced copywriter), provides context (SaaS, remote teams, team size), defines the task specifically (hero section copy), specifies format (headline, subheadline, bullets), and adds constraints (tone).</p>
+
+                        <h4>Context Setting</h4>
+                        <p>AI models do not know your specific situation. The more relevant context you provide, the more tailored and useful the response will be:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Context-Rich Prompt</div>
+                            <div class="prompt-text">I run a small e-commerce store selling handmade candles. My average order value is $35, I have about 200 orders per month, and most of my traffic comes from Instagram. My email list has 3,000 subscribers but my open rate has dropped from 35% to 18% over the last 3 months.
+
+Given this context, suggest 5 specific strategies to improve my email open rates, with a concrete action step for each one.</div>
+                        </div>
+
+                        <h4>Output Format Control</h4>
+                        <p>Always tell the AI exactly how you want the output formatted. This eliminates back-and-forth and gives you immediately usable results:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Format-Controlled Prompt</div>
+                            <div class="prompt-text">Analyze the pros and cons of using Next.js vs Remix for a new web application.
+
+Format your response as a comparison table with these columns:
+| Criteria | Next.js | Remix | Winner |
+
+Cover these criteria: Learning curve, Performance, Data loading, Deployment options, Community size, TypeScript support.
+
+After the table, write a 2-sentence recommendation for a team of 3 developers building a content-heavy marketing site.</div>
+                        </div>
+
+                        <h4>Temperature and Its Effects</h4>
+                        <p>Temperature controls how creative or deterministic the AI's responses are. It ranges from 0 to 2:</p>
+                        <ul>
+                            <li><strong>Temperature 0-0.3</strong> &mdash; Deterministic, factual, consistent. Best for: code generation, data extraction, factual Q&A, structured outputs.</li>
+                            <li><strong>Temperature 0.4-0.7</strong> &mdash; Balanced. Best for: business writing, emails, analysis, most general tasks.</li>
+                            <li><strong>Temperature 0.8-1.2</strong> &mdash; Creative, varied, surprising. Best for: brainstorming, creative writing, marketing ideas, naming.</li>
+                            <li><strong>Temperature 1.3-2.0</strong> &mdash; Very random, often incoherent. Rarely useful in practice.</li>
+                        </ul>
+
+                        <div class="tip">Tip: When using the API, start with temperature 0.7 for most tasks and adjust from there. For anything involving code or data, drop to 0-0.2.</div>
+
+                        <div class="exercise">
+                            <strong>Exercise 1.1</strong>
+                            <p>Rewrite this weak prompt using role, context, task, format, and constraints: "Write a blog post about productivity." Your rewritten prompt should be at least 4 sentences long and should specify the target audience, tone, length, and key points to cover.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 2 -->
+            <div class="module" data-module="2">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">2</div>
+                    <div class="title">
+                        <h3>Business Prompts</h3>
+                        <span>Email drafts, marketing copy, social media, competitive analysis, and strategy</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Professional Email Drafting</h4>
+                        <p>One of the highest-ROI uses of AI is drafting professional emails. A well-prompted model can save you 15-30 minutes per email while maintaining your voice and tone.</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Email Draft Prompt</div>
+                            <div class="prompt-text">Write a professional email from me (Alex, VP of Marketing at CloudSync) to a potential enterprise client (Sarah Chen, CTO at RetailNow, a mid-size retail chain with 200+ stores).
+
+Context: We had a demo call last week. She was interested but concerned about integration with their existing Oracle POS system. Our engineering team confirmed we support Oracle POS via our REST API.
+
+Goal: Follow up on the demo, address the Oracle integration concern, and propose a pilot program with 5 stores.
+
+Tone: Professional, warm, confident. Not pushy.
+Length: Under 200 words.
+Include: A specific next step with a suggested meeting time.</div>
+                        </div>
+
+                        <h4>Marketing Copy Generation</h4>
+                        <p>AI excels at generating marketing copy variations. The key is providing brand voice guidelines and specific conversion goals:</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Ad Copy Prompt</div>
+                            <div class="prompt-text">You are a direct-response copywriter. Generate 5 variations of a Facebook ad for an online Python programming course.
+
+Target audience: Working professionals aged 25-40 who want to automate repetitive tasks at work but have zero coding experience.
+
+Key selling points:
+- No prior coding experience needed
+- Complete in under 4 weeks (30 min/day)
+- Immediately applicable to real work tasks
+- Certificate of completion
+
+Each variation should have:
+- Hook (first line, must stop scrolling) - max 10 words
+- Body (2-3 sentences building desire)
+- CTA (clear call to action)
+
+Avoid: Hype words like "revolutionary" or "game-changing". Keep it grounded and credible.
+Brand voice: Friendly expert, like a smart coworker giving advice.</div>
+                        </div>
+
+                        <h4>Social Media Content</h4>
+                        <p>Generating platform-specific content requires understanding each platform's culture and constraints:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Social Media Batch Prompt</div>
+                            <div class="prompt-text">Create a week of social media content for a productivity SaaS tool called "FocusFlow" (a Pomodoro timer with task management).
+
+For each day (Mon-Fri), provide:
+1. LinkedIn post (professional tone, 100-150 words, include a hook question)
+2. Twitter/X post (casual tone, under 280 characters, include 2 relevant hashtags)
+
+Content themes:
+- Monday: Productivity tip
+- Tuesday: Product feature highlight
+- Wednesday: User success story (make it realistic)
+- Thursday: Industry insight/stat
+- Friday: Weekend planning tip
+
+Brand voice: Knowledgeable but approachable. Never condescending.</div>
+                        </div>
+
+                        <h4>Competitive Analysis</h4>
+                        <p>AI can help you structure competitive analysis frameworks even without real-time web access:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Analysis Framework Prompt</div>
+                            <div class="prompt-text">You are a business strategy consultant. I am building a meal planning app for busy families.
+
+My known competitors are: Mealime, Plan to Eat, and Paprika.
+
+Create a competitive analysis framework for me with:
+1. A comparison matrix template (what criteria should I evaluate?)
+2. A list of 10 specific questions I should research for each competitor
+3. A SWOT analysis template tailored to this market
+4. 3 potential differentiation strategies that could work for a new entrant
+
+Format with clear headers and bullet points.</div>
+                        </div>
+
+                        <div class="exercise">
+                            <strong>Exercise 2.1</strong>
+                            <p>You are launching a new online store selling premium coffee beans. Write a prompt that generates a complete email welcome sequence (3 emails) for new subscribers. Your prompt should specify the brand voice, goals for each email, and exactly what information to include. Then use the prompt with ChatGPT and evaluate the output.</p>
+                        </div>
+
+                        <div class="tip">Tip: For marketing copy, always generate multiple variations and A/B test them. AI is great at volume; your human judgment is needed to pick the winner.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 3 -->
+            <div class="module" data-module="3">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">3</div>
+                    <div class="title">
+                        <h3>Code &amp; Technical Prompts</h3>
+                        <span>Debugging assistance, code generation, documentation, and code review</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Effective Code Generation</h4>
+                        <p>AI-assisted coding is transformational, but the quality depends entirely on how you ask. Generic requests like "write a login system" produce generic code. Specific, constrained prompts produce production-ready code.</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Code Generation Prompt</div>
+                            <div class="prompt-text">Write a Python function called `retry_with_backoff` that:
+- Takes a callable function and optional max_retries (default 3) and base_delay (default 1.0) parameters
+- Retries the function on any exception using exponential backoff
+- Adds random jitter of 0-0.5 seconds to the delay
+- Logs each retry attempt with the retry number, delay, and exception message
+- Returns the function's return value on success
+- Raises the last exception if all retries are exhausted
+- Uses the `logging` module (not print statements)
+- Includes type hints
+- Includes a docstring with usage example
+
+Do not use any external libraries beyond the Python standard library.</div>
+                        </div>
+
+                        <h4>Debugging with AI</h4>
+                        <p>AI is exceptionally good at debugging when you provide the right context. Always include: the code, the error, what you expected, and what actually happened:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Debugging Prompt</div>
+                            <div class="prompt-text">I have a JavaScript function that should debounce API calls, but it is firing on every keystroke instead of waiting.
+
+Here is my code:
+```javascript
+function debounce(func, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(func(...args), delay);
+    };
+}
+```
+
+I am using it like this:
+```javascript
+const search = debounce((query) => fetchResults(query), 300);
+input.addEventListener('input', (e) => search(e.target.value));
+```
+
+Expected behavior: fetchResults should only be called 300ms after the user stops typing.
+Actual behavior: fetchResults is called immediately on every keystroke.
+
+Find the bug, explain why it happens, and provide the corrected code.</div>
+                        </div>
+
+                        <p>The bug in this example is that <code>func(...args)</code> is called immediately and its return value is passed to setTimeout, instead of wrapping it in an arrow function. Providing the expected vs actual behavior helps the AI zero in on the issue immediately.</p>
+
+                        <h4>Code Review Prompts</h4>
+                        <p>Use AI as a code review assistant to catch issues you might miss:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Code Review Prompt</div>
+                            <div class="prompt-text">Review this Python code for a REST API endpoint that handles user registration. Evaluate it on these criteria:
+
+1. Security (SQL injection, XSS, password handling, input validation)
+2. Error handling (are edge cases covered? are errors informative?)
+3. Performance (any N+1 queries, unnecessary operations?)
+4. Code quality (naming, structure, DRY principle)
+5. Missing features that production code should have
+
+For each issue found, explain:
+- What the issue is
+- Why it matters
+- How to fix it (with code)
+
+Rate the overall code quality from 1-10.
+
+```python
+[paste your code here]
+```</div>
+                        </div>
+
+                        <h4>Documentation Generation</h4>
+                        <p>Writing documentation is tedious. AI handles it well when given clear structure requirements:</p>
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Documentation Prompt</div>
+                            <div class="prompt-text">Generate API documentation for the following Python class. Use Google-style docstrings. For each public method, document:
+- Purpose (1 sentence)
+- Parameters (name, type, description, default if any)
+- Returns (type and description)
+- Raises (exceptions and when)
+- A usage example
+
+Also generate a "Quick Start" section showing the 3 most common usage patterns.
+
+```python
+[paste your class here]
+```</div>
+                        </div>
+
+                        <div class="exercise">
+                            <strong>Exercise 3.1</strong>
+                            <p>Take a piece of code from one of your own projects (or find an open-source function you find complex). Write a debugging/improvement prompt that asks the AI to find potential issues. Test whether including more context (the surrounding code, the use case, known constraints) improves the quality of the review.</p>
+                        </div>
+
+                        <div class="note">Note: Never paste proprietary or sensitive code into public AI tools. Use self-hosted solutions or ensure your organization's policies allow it. API usage with data retention disabled is usually the safest option.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODULE 4 -->
+            <div class="module" data-module="4">
+                <div class="module-header" onclick="toggleModule(this)">
+                    <div class="module-num">4</div>
+                    <div class="title">
+                        <h3>Advanced Techniques</h3>
+                        <span>Chain-of-thought, few-shot learning, system prompts, structured output, and agents</span>
+                    </div>
+                    <div class="module-toggle">&#9660;</div>
+                </div>
+                <div class="module-body">
+                    <div class="module-inner">
+                        <h4>Chain-of-Thought Prompting</h4>
+                        <p>Chain-of-thought (CoT) prompting asks the model to show its reasoning step by step before giving a final answer. This dramatically improves accuracy on complex tasks like math, logic, and multi-step analysis.</p>
+
+                        <div class="vs-block">
+                            <div class="prompt-example">
+                                <div class="prompt-label bad">Without CoT</div>
+                                <div class="prompt-text">A store buys shirts for $8 each and sells them for $12 each. If they sell 150 shirts and had $200 in operating costs, what is their profit?</div>
+                            </div>
+                            <div class="prompt-example">
+                                <div class="prompt-label good">With CoT</div>
+                                <div class="prompt-text">A store buys shirts for $8 each and sells them for $12 each. If they sell 150 shirts and had $200 in operating costs, what is their profit?
+
+Think through this step by step:
+1. Calculate the total cost of purchasing the shirts
+2. Calculate the total revenue from selling them
+3. Calculate gross profit (revenue minus cost of goods)
+4. Subtract operating costs for net profit
+Show your work for each step.</div>
+                            </div>
+                        </div>
+
+                        <p>The CoT version ensures the AI does not skip steps or make arithmetic errors. For complex business calculations, financial modeling, or logical reasoning, always request step-by-step thinking.</p>
+
+                        <h4>Few-Shot Learning</h4>
+                        <p>Few-shot prompting provides examples of the exact input-output pattern you want. This is the single most powerful technique for getting consistent, formatted results:</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Few-Shot Prompt</div>
+                            <div class="prompt-text">Convert customer feedback into structured JSON with sentiment, category, urgency, and a one-line summary. Follow this exact format:
+
+Input: "Your checkout process is broken on mobile. I've tried 3 times and it keeps crashing. I need to place this order by tomorrow."
+Output: {"sentiment": "negative", "category": "bug", "urgency": "high", "summary": "Mobile checkout crashes repeatedly, time-sensitive order"}
+
+Input: "Love the new dashboard design! The charts are really clean. Would be nice to have dark mode though."
+Output: {"sentiment": "positive", "category": "feature_request", "urgency": "low", "summary": "Praise for dashboard redesign, requests dark mode option"}
+
+Input: "We've been using your platform for 6 months and the API goes down at least once a week. This is affecting our production systems. We need this resolved or we'll have to switch providers."
+Output: {"sentiment": "negative", "category": "reliability", "urgency": "critical", "summary": "Recurring weekly API outages impacting production, churn risk"}
+
+Now process this feedback:
+Input: "The onboarding wizard was confusing. I didn't understand step 3 and there was no help button. Took me an hour to figure it out."
+Output:</div>
+                        </div>
+
+                        <p>By providing 3 examples, you have effectively "programmed" the AI to follow your exact schema, tone, and judgment criteria. This is far more reliable than describing what you want in words.</p>
+
+                        <h4>System Prompts (API Usage)</h4>
+                        <p>When using the API directly, system prompts set persistent behavior for the entire conversation. They are more powerful than regular prompts because the model treats them as foundational instructions:</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label system">System Prompt Example</div>
+                            <div class="prompt-text">You are a senior technical writer at a developer tools company. Your writing style is:
+- Clear and concise (no filler words)
+- Uses active voice
+- Explains complex concepts with simple analogies
+- Always includes code examples for technical concepts
+- Avoids jargon unless it is defined first
+
+When asked to write documentation:
+1. Start with a one-sentence summary
+2. Follow with a "Quick Start" code example
+3. Then provide detailed explanation
+4. End with "Common Pitfalls" section
+
+Never use phrases like "simply", "just", or "easy" as they are dismissive to beginners.
+Always use American English spelling conventions.</div>
+                        </div>
+
+                        <h4>Structured Output with JSON Mode</h4>
+                        <p>For programmatic use, request JSON output explicitly. Modern models support a JSON mode that guarantees valid JSON:</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label good">Structured Output Prompt</div>
+                            <div class="prompt-text">Analyze this product description and extract structured data.
+
+Product: "Premium Wireless Noise-Cancelling Headphones - 40hr Battery, Bluetooth 5.3, Memory Foam Ear Cushions. Perfect for travel and office use. Available in Midnight Black and Arctic White. $299.99"
+
+Return a JSON object with exactly these fields:
+{
+  "product_name": "string",
+  "category": "string (one of: electronics, clothing, home, food, other)",
+  "price": number,
+  "currency": "string (ISO code)",
+  "features": ["array of feature strings"],
+  "target_audience": ["array of audience segments"],
+  "colors": ["array of color options"],
+  "sentiment_keywords": ["array of positive descriptors used"]
+}
+
+Return ONLY the JSON object, no other text.</div>
+                        </div>
+
+                        <h4>Building AI Agents</h4>
+                        <p>AI agents combine prompting with tool use. You define a system prompt that tells the AI what tools it has access to and when to use them. This is the frontier of prompt engineering:</p>
+
+                        <div class="prompt-example">
+                            <div class="prompt-label system">Agent System Prompt</div>
+                            <div class="prompt-text">You are a customer support agent for CloudSync, a file synchronization service.
+
+You have access to these tools:
+- lookup_account(email): Returns account details, plan, and status
+- check_sync_status(account_id): Returns current sync status and any errors
+- create_ticket(account_id, category, description): Creates a support ticket
+- apply_credit(account_id, amount, reason): Issues an account credit
+
+Workflow:
+1. Greet the customer and ask for their account email
+2. Look up their account to understand their context
+3. Listen to their issue and ask clarifying questions if needed
+4. Use the appropriate tool to help resolve the issue
+5. If you cannot resolve it, create a support ticket and explain next steps
+6. Always confirm the customer's issue is resolved before ending
+
+Rules:
+- Never share another customer's data
+- You can only apply credits up to $50 without manager approval
+- For billing disputes over $100, always create a ticket for the billing team
+- Be empathetic but efficient</div>
+                        </div>
+
+                        <p>Agent prompts are more like writing a job description than a single question. You define the role, tools, workflow, and guardrails, and the AI operates within those boundaries.</p>
+
+                        <div class="exercise">
+                            <strong>Exercise 4.1</strong>
+                            <p>Design a few-shot prompt that converts plain English meeting notes into structured action items. Include at least 3 example input-output pairs, where each output has: assignee, task, deadline, and priority level. Test it with messy, realistic meeting notes.</p>
+                        </div>
+
+                        <div class="exercise">
+                            <strong>Final Project</strong>
+                            <p>Create a complete "prompt library" of at least 10 production-ready prompts for your specific work or business. Each prompt should use at least 2 advanced techniques from this course (role, CoT, few-shot, structured output, etc). Document which technique you used and why it improves the output for that particular use case.</p>
+                        </div>
+
+                        <div class="tip">Tip: The best prompt engineers iterate constantly. Keep a swipe file of prompts that work well. When you find a pattern that produces great results, save it as a template and refine it over time.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        var LICENSE_REGEX = /^AH-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/i;
+        var STORAGE_KEY = 'ah_license_key';
+        var PROGRESS_KEY = 'ah_chatgpt_progress';
+
+        var params = new URLSearchParams(window.location.search);
+        var urlKey = params.get('key');
+        var storedKey = localStorage.getItem(STORAGE_KEY);
+
+        if (urlKey && LICENSE_REGEX.test(urlKey)) {
+            localStorage.setItem(STORAGE_KEY, urlKey);
+            unlock();
+        } else if (storedKey && LICENSE_REGEX.test(storedKey)) {
+            unlock();
+        } else {
+            if (urlKey) document.getElementById('keyInput').value = urlKey;
+            if (storedKey) document.getElementById('keyInput').value = storedKey;
+        }
+
+        document.getElementById('keyInput').addEventListener('input', function(e) {
+            var v = e.target.value.toUpperCase().replace(/[^A-F0-9]/g, '');
+            var parts = [];
+            if (v.length > 0) parts.push(v.substring(0, 4));
+            if (v.length > 4) parts.push(v.substring(4, 8));
+            if (v.length > 8) parts.push(v.substring(8, 12));
+            if (v.length > 12) parts.push(v.substring(12, 16));
+            var formatted = 'AH-' + parts.join('-');
+            if (formatted === 'AH-') formatted = '';
+            e.target.value = formatted;
+        });
+
+        document.getElementById('keyInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') validateKey();
+        });
+
+        window.validateKey = function() {
+            var input = document.getElementById('keyInput');
+            var error = document.getElementById('keyError');
+            var key = input.value.trim().toUpperCase();
+            if (LICENSE_REGEX.test(key)) {
+                localStorage.setItem(STORAGE_KEY, key);
+                unlock();
+            } else {
+                error.style.display = 'block';
+                input.style.borderColor = 'var(--red)';
+                setTimeout(function() { error.style.display = 'none'; input.style.borderColor = 'var(--border)'; }, 3000);
+            }
+        };
+
+        function unlock() {
+            document.getElementById('licenseGate').style.display = 'none';
+            document.getElementById('courseContent').style.display = 'block';
+            updateProgress();
+        }
+
+        window.toggleModule = function(header) {
+            var module = header.parentElement;
+            var wasOpen = module.classList.contains('open');
+            module.classList.toggle('open');
+            if (!wasOpen) {
+                var num = module.getAttribute('data-module');
+                var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+                if (progress.indexOf(num) === -1) {
+                    progress.push(num);
+                    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+                }
+                updateProgress();
+            }
+        };
+
+        function updateProgress() {
+            var progress = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '[]');
+            var total = 4;
+            var pct = Math.round((progress.length / total) * 100);
+            var fill = document.getElementById('progressFill');
+            var text = document.getElementById('progressPercent');
+            if (fill) fill.style.width = pct + '%';
+            if (text) text.textContent = pct + '%';
+        }
+    })();
+    </script>
+
+</body>
+</html>

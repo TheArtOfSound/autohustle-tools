@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoHustle Pro - Product Access</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #6366f1;
+            --primary-glow: rgba(99,102,241,0.15);
+            --green: #10b981;
+            --green-glow: rgba(16,185,129,0.15);
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface2: #252833;
+            --text: #e4e4e7;
+            --text-muted: #9ca3af;
+            --border: #2d3040;
+            --orange: #f59e0b;
+            --red: #ef4444;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+        nav { padding: 15px 20px; border-bottom: 1px solid var(--border); }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        nav a:hover { text-decoration: underline; }
+
+        /* License Gate */
+        .license-gate {
+            max-width: 500px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .lock-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .license-gate h1 {
+            font-size: 1.6em;
+            margin-bottom: 8px;
+        }
+        .license-gate p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        .key-input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .key-input {
+            flex: 1;
+            padding: 14px 16px;
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            letter-spacing: 1px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .key-input:focus { border-color: var(--primary); }
+        .key-input::placeholder { color: var(--text-muted); letter-spacing: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .unlock-btn {
+            padding: 14px 28px;
+            background: var(--green);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+        .unlock-btn:hover { opacity: 0.85; }
+        .key-error {
+            color: var(--red);
+            font-size: 0.88em;
+            display: none;
+        }
+        .key-hint {
+            color: var(--text-muted);
+            font-size: 0.82em;
+            margin-top: 4px;
+        }
+
+        /* Content Area */
+        .product-content { display: none; }
+
+        .page-header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+        .page-header .badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            background: var(--green);
+            color: #fff;
+            margin-bottom: 12px;
+        }
+        .page-header h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+        }
+        .page-header h1 span { color: var(--green); }
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 1.05em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .section h2 {
+            font-size: 1.35em;
+            margin-bottom: 16px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section h2 .num {
+            width: 32px;
+            height: 32px;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75em;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .section h3 {
+            font-size: 1.1em;
+            margin: 20px 0 10px;
+            color: var(--text);
+        }
+        .section p, .section li {
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .section ul, .section ol {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        .section li { margin-bottom: 8px; }
+
+        code {
+            background: var(--bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--green);
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 14px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.88em;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .download-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 22px;
+            background: var(--bg);
+            border: 1px solid var(--green);
+            border-radius: 10px;
+            margin: 16px 0;
+        }
+        .download-box .icon { font-size: 1.8em; }
+        .download-box .info { flex: 1; }
+        .download-box .info strong { display: block; color: var(--text); }
+        .download-box .info span { font-size: 0.85em; color: var(--text-muted); }
+
+        .alert {
+            padding: 14px 18px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            margin: 16px 0;
+        }
+        .alert.info {
+            background: var(--primary-glow);
+            border: 1px solid rgba(99,102,241,0.3);
+            color: var(--primary);
+        }
+        .alert.warning {
+            background: rgba(245,158,11,0.1);
+            border: 1px solid rgba(245,158,11,0.3);
+            color: var(--orange);
+        }
+        .alert.success {
+            background: var(--green-glow);
+            border: 1px solid rgba(16,185,129,0.3);
+            color: var(--green);
+        }
+
+        .config-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+        }
+        .config-table th, .config-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .config-table th {
+            background: var(--bg);
+            color: var(--text);
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .config-table td {
+            color: var(--text-muted);
+            font-size: 0.92em;
+        }
+        .config-table td code {
+            color: var(--green);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 0.85em;
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .key-input-group { flex-direction: column; }
+            .page-header h1 { font-size: 1.7em; }
+            .section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="/autohustle-tools/">&larr; AutoHustle.online</a> &nbsp;|&nbsp; <a href="/autohustle-tools/store/">Store</a>
+        </div>
+    </nav>
+
+    <!-- License Gate -->
+    <div id="licenseGate" class="license-gate">
+        <div class="lock-icon">&#128274;</div>
+        <h1>AutoHustle Pro</h1>
+        <p>Enter your license key to access your product. You received this key on your purchase confirmation page.</p>
+        <div class="key-input-group">
+            <input type="text" id="keyInput" class="key-input" placeholder="AH-XXXX-XXXX-XXXX-XXXX" maxlength="22" autocomplete="off" spellcheck="false">
+            <button class="unlock-btn" onclick="validateKey()">Unlock</button>
+        </div>
+        <div id="keyError" class="key-error">Invalid license key format. Keys look like: AH-XXXX-XXXX-XXXX-XXXX</div>
+        <div class="key-hint">Format: AH-XXXX-XXXX-XXXX-XXXX (from your purchase confirmation)</div>
+    </div>
+
+    <!-- Gated Product Content -->
+    <div id="productContent" class="product-content">
+        <div class="page-header">
+            <span class="badge">LICENSED</span>
+            <h1>AutoHustle <span>Pro</span></h1>
+            <p>Your AI-powered income automation system. Follow the guide below to get up and running.</p>
+        </div>
+
+        <div class="container">
+
+            <!-- Welcome -->
+            <div class="section">
+                <h2><span class="num">1</span> Welcome &amp; Overview</h2>
+                <p>Welcome to AutoHustle Pro. You now have access to a complete AI-powered income automation system with 10 built-in revenue strategies. This guide will walk you through everything you need to get set up and running.</p>
+
+                <div class="alert success">Your license key: <strong id="displayKey">---</strong> &mdash; keep this safe for future access.</div>
+
+                <h3>What You Get</h3>
+                <ul>
+                    <li><strong>10 Revenue Strategies</strong> &mdash; Preconfigured income streams covering content creation, e-commerce, digital products, trading, and more.</li>
+                    <li><strong>SEO Content Engine</strong> &mdash; Automated content generation and publishing pipeline for organic traffic growth.</li>
+                    <li><strong>Digital Product Creator</strong> &mdash; Templates and automation for creating and selling digital products.</li>
+                    <li><strong>Crypto Trading Bot</strong> &mdash; Algorithmic trading with configurable strategies and risk parameters.</li>
+                    <li><strong>Shopify Store Automation</strong> &mdash; Product listing, pricing, and order management automation.</li>
+                    <li><strong>Marketing AI Engine</strong> &mdash; Ad copy, email sequences, and social media content generation.</li>
+                    <li><strong>Course Creator</strong> &mdash; Tools for building and distributing online courses.</li>
+                    <li><strong>Live Dashboard</strong> &mdash; Real-time analytics across all your revenue streams.</li>
+                    <li><strong>24/7 Autopilot Mode</strong> &mdash; Set-and-forget scheduling with intelligent error recovery.</li>
+                </ul>
+            </div>
+
+            <!-- Download & Install -->
+            <div class="section">
+                <h2><span class="num">2</span> Download &amp; Installation</h2>
+                <p>AutoHustle Pro is delivered as a Python-based automation framework. You will need Python 3.9 or later and Git installed on your system.</p>
+
+                <h3>System Requirements</h3>
+                <ul>
+                    <li>Python 3.9+ (3.11 recommended)</li>
+                    <li>Git</li>
+                    <li>4 GB RAM minimum (8 GB recommended)</li>
+                    <li>Windows 10/11, macOS 12+, or Ubuntu 20.04+</li>
+                    <li>Stable internet connection</li>
+                </ul>
+
+                <h3>Step 1: Clone the Repository</h3>
+                <p>Open your terminal and run:</p>
+                <pre>git clone https://github.com/autohustle/autohustle-pro.git
+cd autohustle-pro</pre>
+
+                <div class="alert info">The repository is private. You will receive a GitHub invitation at the email associated with your Stripe purchase within 1 hour. Check your email (and spam folder) for the invite.</div>
+
+                <h3>Step 2: Install Dependencies</h3>
+                <pre># Create a virtual environment (recommended)
+python -m venv venv
+
+# Activate it
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt</pre>
+
+                <h3>Step 3: Verify Installation</h3>
+                <pre>python autohustle.py --version
+# Expected output: AutoHustle Pro v3.2.1</pre>
+            </div>
+
+            <!-- Configuration -->
+            <div class="section">
+                <h2><span class="num">3</span> Configuration</h2>
+                <p>Before running AutoHustle Pro, you need to configure your settings. The main configuration file is <code>config.yaml</code> in the project root.</p>
+
+                <h3>Initial Setup</h3>
+                <pre># Copy the example configuration
+cp config.example.yaml config.yaml
+
+# Open it in your preferred editor
+# Then fill in your API keys and preferences</pre>
+
+                <h3>Key Configuration Options</h3>
+                <table class="config-table">
+                    <thead>
+                        <tr><th>Setting</th><th>Description</th><th>Default</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>license_key</code></td><td>Your AutoHustle license key</td><td>Required</td></tr>
+                        <tr><td><code>openai_api_key</code></td><td>OpenAI API key for content generation</td><td>Required</td></tr>
+                        <tr><td><code>strategies.enabled</code></td><td>List of strategies to activate</td><td>All enabled</td></tr>
+                        <tr><td><code>schedule.interval</code></td><td>How often the bot runs (in minutes)</td><td>60</td></tr>
+                        <tr><td><code>dashboard.port</code></td><td>Local port for the web dashboard</td><td>8080</td></tr>
+                        <tr><td><code>notifications.email</code></td><td>Email for daily reports</td><td>Optional</td></tr>
+                        <tr><td><code>risk.max_daily_spend</code></td><td>Maximum daily budget across strategies</td><td>$50</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert warning">Never share your <code>config.yaml</code> file. It contains sensitive API keys. The file is already in <code>.gitignore</code> by default.</div>
+
+                <h3>API Keys You Will Need</h3>
+                <p>Depending on which strategies you enable, you may need some of these keys:</p>
+                <ul>
+                    <li><strong>OpenAI</strong> &mdash; For all AI content generation (required for most strategies)</li>
+                    <li><strong>Shopify</strong> &mdash; Only if using the e-commerce strategy</li>
+                    <li><strong>Stripe</strong> &mdash; For digital product payment processing</li>
+                    <li><strong>Google Search Console</strong> &mdash; For SEO monitoring (optional but recommended)</li>
+                    <li><strong>Exchange API</strong> &mdash; For the crypto trading bot (Binance, Coinbase, or Kraken)</li>
+                </ul>
+            </div>
+
+            <!-- Running the System -->
+            <div class="section">
+                <h2><span class="num">4</span> Running AutoHustle Pro</h2>
+
+                <h3>Start the Dashboard</h3>
+                <pre># Launch the local dashboard
+python autohustle.py dashboard
+
+# Open http://localhost:8080 in your browser</pre>
+
+                <h3>Run Individual Strategies</h3>
+                <pre># Run a specific strategy
+python autohustle.py run --strategy seo-content
+python autohustle.py run --strategy digital-products
+python autohustle.py run --strategy crypto-bot
+
+# Run all enabled strategies
+python autohustle.py run --all</pre>
+
+                <h3>Enable Autopilot Mode</h3>
+                <pre># Start autopilot (runs on your configured schedule)
+python autohustle.py autopilot --start
+
+# Check autopilot status
+python autohustle.py autopilot --status
+
+# Stop autopilot
+python autohustle.py autopilot --stop</pre>
+
+                <h3>View Logs and Reports</h3>
+                <pre># View recent activity
+python autohustle.py logs --tail 50
+
+# Generate a daily report
+python autohustle.py report --today
+
+# Export earnings summary
+python autohustle.py report --earnings --format csv</pre>
+            </div>
+
+            <!-- Strategy Overview -->
+            <div class="section">
+                <h2><span class="num">5</span> Strategy Quick Reference</h2>
+                <p>Each strategy can be enabled or disabled independently. Here is a brief overview of each one:</p>
+
+                <h3>SEO Content Engine</h3>
+                <p>Generates and publishes SEO-optimized articles to your configured blog or website. Uses AI to research keywords, write content, add images, and schedule posts. Revenue comes from ad networks and affiliate links embedded in the content.</p>
+
+                <h3>Digital Product Creator</h3>
+                <p>Automates the creation of digital products such as ebooks, templates, and worksheets. Generates product listings, creates assets, and publishes to marketplaces like Gumroad, Etsy, or your own Shopify store.</p>
+
+                <h3>Crypto Trading Bot</h3>
+                <p>Algorithmic trading on major exchanges. Supports dollar-cost averaging, grid trading, and momentum strategies. Includes stop-loss controls and configurable risk parameters. Always start with paper trading to test your configuration.</p>
+
+                <h3>Shopify Automation</h3>
+                <p>Manages product listings, pricing optimization, and order fulfillment for Shopify stores. Includes automated product research, description generation, and competitor price monitoring.</p>
+
+                <h3>Marketing AI Engine</h3>
+                <p>Creates ad copy, email marketing sequences, social media posts, and promotional materials. Integrates with Mailchimp, SendGrid, and social media scheduling tools.</p>
+            </div>
+
+            <!-- Support -->
+            <div class="section">
+                <h2><span class="num">6</span> Support &amp; Updates</h2>
+                <p>Your AutoHustle Pro license includes free updates and community support.</p>
+
+                <h3>Getting Help</h3>
+                <ul>
+                    <li><strong>Email Support</strong> &mdash; <a href="mailto:support@autohustle.online" style="color:var(--primary)">support@autohustle.online</a> (response within 24 hours on business days)</li>
+                    <li><strong>Documentation</strong> &mdash; Full docs are included in the repository under the <code>/docs</code> folder</li>
+                    <li><strong>Community</strong> &mdash; Join our Discord community (invite link in the repo README)</li>
+                    <li><strong>Updates</strong> &mdash; Run <code>git pull</code> in your project directory to get the latest version</li>
+                </ul>
+
+                <h3>Updating AutoHustle Pro</h3>
+                <pre># Pull the latest changes
+git pull origin main
+
+# Update dependencies
+pip install -r requirements.txt --upgrade
+
+# Check the changelog
+cat CHANGELOG.md</pre>
+
+                <div class="alert info">Major updates are announced via email. Minor patches are pushed directly to the repository.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoHustle.online &mdash; <a href="/autohustle-tools/">Free Tools</a> | <a href="/autohustle-tools/store/">Store</a></p>
+    </footer>
+
+    <script>
+    (function() {
+        var LICENSE_REGEX = /^AH-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/i;
+        var STORAGE_KEY = 'ah_license_key';
+
+        // Check for key in URL param
+        var params = new URLSearchParams(window.location.search);
+        var urlKey = params.get('key');
+
+        // Check localStorage
+        var storedKey = localStorage.getItem(STORAGE_KEY);
+
+        // Auto-unlock if we have a valid key
+        if (urlKey && LICENSE_REGEX.test(urlKey)) {
+            localStorage.setItem(STORAGE_KEY, urlKey);
+            unlock(urlKey);
+        } else if (storedKey && LICENSE_REGEX.test(storedKey)) {
+            unlock(storedKey);
+        } else {
+            // Pre-fill input if we have a partial key
+            if (urlKey) document.getElementById('keyInput').value = urlKey;
+            if (storedKey) document.getElementById('keyInput').value = storedKey;
+        }
+
+        // Format key input
+        document.getElementById('keyInput').addEventListener('input', function(e) {
+            var v = e.target.value.toUpperCase().replace(/[^A-F0-9]/g, '');
+            var parts = [];
+            if (v.length > 0) parts.push(v.substring(0, 4));
+            if (v.length > 4) parts.push(v.substring(4, 8));
+            if (v.length > 8) parts.push(v.substring(8, 12));
+            if (v.length > 12) parts.push(v.substring(12, 16));
+            var formatted = 'AH-' + parts.join('-');
+            if (formatted === 'AH-') formatted = '';
+            e.target.value = formatted;
+        });
+
+        document.getElementById('keyInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') validateKey();
+        });
+
+        window.validateKey = function() {
+            var input = document.getElementById('keyInput');
+            var error = document.getElementById('keyError');
+            var key = input.value.trim().toUpperCase();
+
+            if (LICENSE_REGEX.test(key)) {
+                localStorage.setItem(STORAGE_KEY, key);
+                unlock(key);
+            } else {
+                error.style.display = 'block';
+                input.style.borderColor = 'var(--red)';
+                setTimeout(function() {
+                    error.style.display = 'none';
+                    input.style.borderColor = 'var(--border)';
+                }, 3000);
+            }
+        };
+
+        function unlock(key) {
+            document.getElementById('licenseGate').style.display = 'none';
+            document.getElementById('productContent').style.display = 'block';
+            document.getElementById('displayKey').textContent = key;
+        }
+    })();
+    </script>
+
+</body>
+</html>
