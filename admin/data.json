@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-23T09:00:42.706123+00:00",
+  "updated": "2026-02-23T09:04:28.572087+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 3440
+      "total_effort": 3450
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1543
+      "total_effort": 1549
     },
     {
       "id": "stripe_premium",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 7882
+      "total_effort": 7917
     },
     {
       "id": "marketing_engine",
@@ -115,12 +115,12 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 75
+      "total_effort": 102
     }
   ],
   "actions_today": {
-    "total": 1124,
-    "successes": 474
+    "total": 1174,
+    "successes": 485
   },
   "recent_actions": [
     {
@@ -128,210 +128,210 @@
       "action_type": null,
       "outcome": "success",
       "reward": 0.35,
-      "executed_at": "2026-02-23 09:00:41"
+      "executed_at": "2026-02-23 09:04:26"
     },
     {
       "strategy_id": "digital_products",
       "action_type": "create_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 09:00:41"
+      "executed_at": "2026-02-23 09:04:26"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "success",
       "reward": 0.35,
-      "executed_at": "2026-02-23 08:58:17"
+      "executed_at": "2026-02-23 09:04:01"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": "scrape_market_data",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:58:17"
+      "executed_at": "2026-02-23 09:04:01"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:57:16"
+      "executed_at": "2026-02-23 09:03:53"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": "scrape_and_publish",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:57:16"
+      "executed_at": "2026-02-23 09:03:53"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-23 08:57:08"
+      "executed_at": "2026-02-23 09:03:48"
     },
     {
-      "strategy_id": "shopify_store",
-      "action_type": "add_product_images",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:57:08"
+      "executed_at": "2026-02-23 09:03:48"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:55:58"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "research_and_add_products",
-      "outcome": null,
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:55:58"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:55:02"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:55:02"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "check_conversions",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-23 08:55:01"
-    },
-    {
-      "strategy_id": "stripe_premium",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:55:00"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "micro_saas",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": "update_index",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "social_growth",
+      "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-23 08:54:59"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": "analyze_performance",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:59"
+      "executed_at": "2026-02-23 09:02:58"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-23 08:54:48"
+      "executed_at": "2026-02-23 09:02:57"
     },
     {
       "strategy_id": "shopify_store",
-      "action_type": "daily_theme_refresh",
+      "action_type": "organize_store",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:48"
+      "executed_at": "2026-02-23 09:02:57"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:47"
+      "executed_at": "2026-02-23 09:02:57"
     },
     {
-      "strategy_id": "shopify_store",
-      "action_type": "comprehensive_store_audit",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_welcome_new",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-23 08:54:47"
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:57"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:53"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_new_arrival",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 09:02:53"
     }
   ],
   "decisions": [
@@ -457,10 +457,26 @@
     }
   ],
   "assets": {
-    "total": 11836,
+    "total": 11838,
     "published": 11602
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "How to Start a Print-on-Demand Business in 30 Days",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-23 09:04:26"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "**Market Intelligence Report: Cryptocurrencies**",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-23 09:04:01"
+    },
     {
       "strategy_id": "digital_products",
       "asset_type": "product",
@@ -604,22 +620,6 @@
       "status": "published",
       "url": "/which-kitchen-essential-reigns-supreme-instant-pot-vs-slow-cooker-comparison/",
       "created_at": "2026-02-23 08:53:07"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "5 Best Pet Products to Stop Your Cat from Scratching Leather Furniture Naturally",
-      "status": "published",
-      "url": "/5-best-pet-products-to-stop-your-cat-from-scratching-leather-furniture-naturally/",
-      "created_at": "2026-02-23 08:53:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Ninja Blender vs Vitamix Performance: Ultimate Kitchen Gadget Showdown",
-      "status": "published",
-      "url": "/ninja-blender-vs-vitamix-performance-ultimate-kitchen-gadget-showdown/",
-      "created_at": "2026-02-23 08:53:03"
     }
   ],
   "crypto": {
