@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-23T22:23:05.571129+00:00",
+  "updated": "2026-02-23T22:23:08.288920+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 3879
+      "total_effort": 3882
     },
     {
       "id": "strategy_reviewer",
@@ -127,10 +127,24 @@
     }
   ],
   "actions_today": {
-    "total": 10763,
-    "successes": 3161
+    "total": 10765,
+    "successes": 3162
   },
   "recent_actions": [
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-23 22:23:06"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_seo_optimize",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-23 22:23:06"
+    },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
@@ -326,20 +340,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-23 22:22:13"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-23 22:22:12"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "discover_communities",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-23 22:22:12"
     }
   ],
   "decisions": [
