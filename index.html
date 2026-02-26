@@ -3,112 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Online Tools - AutoHustle</title>
-    <meta name="description" content="Collection of free online tools: JSON formatter, word counter, password generator, unit converter, and more.">
+    <title>Free Online Tools — AutoHustle</title>
+    <meta name="description" content="10 free browser-based tools: JSON formatter, word counter, password generator, unit converter, and more. No sign-up, no ads.">
+    <meta property="og:title" content="Free Online Tools — AutoHustle">
+    <meta property="og:description" content="10 free tools that run 100% in your browser. No data leaves your device.">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://theartofsound.github.io/autohustle-tools/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Online Tools","url":"https://theartofsound.github.io/autohustle-tools/","description":"10 free browser-based tools"}</script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --primary: #6366f1; --bg: #0f1117; --surface: #1a1d27; --surface2: #252833; --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 40px 20px; }
-        header h1 { font-size: 2.5em; margin-bottom: 8px; }
-        header h1 span { color: var(--primary); }
-        header p { color: var(--text-muted); font-size: 1.1em; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px 0; }
-        .tool-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            text-decoration: none;
-            color: var(--text);
-            transition: transform 0.2s, border-color 0.2s;
+        :root {
+            --primary: #6366f1; --primary-dark: #4f46e5;
+            --bg: #0f1117; --surface: #1a1d27; --surface2: #252833;
+            --text: #e4e4e7; --text-muted: #9ca3af; --border: #2d3040;
+            --accent: #10b981;
         }
-        .tool-card:hover { transform: translateY(-4px); border-color: var(--primary); }
-        .tool-card h3 { color: var(--primary); margin-bottom: 8px; }
-        .tool-card p { color: var(--text-muted); font-size: 0.95em; margin-bottom: 12px; line-height: 1.5; }
-        footer { text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.85em; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+        /* ── Nav ── */
+        nav {
+            background: var(--surface); border-bottom: 1px solid var(--border);
+            padding: 0 24px; display: flex; align-items: center; gap: 0; position: sticky; top: 0; z-index: 100;
+        }
+        .nav-brand { font-weight: 800; font-size: 1.1em; color: var(--primary); padding: 14px 20px 14px 0; text-decoration: none; border-right: 1px solid var(--border); margin-right: 4px; }
+        nav a { color: var(--text-muted); text-decoration: none; padding: 14px 14px; font-size: 0.9em; transition: color 0.15s; }
+        nav a:hover, nav a.active { color: var(--text); }
+        nav a.active { color: var(--primary); font-weight: 600; }
+        .nav-cta { margin-left: auto; background: var(--accent); color: #fff !important; padding: 8px 16px !important; border-radius: 6px; font-weight: 700 !important; font-size: 0.85em !important; }
+        .nav-cta:hover { background: #059669; }
+
+        /* ── Hero ── */
+        .hero { text-align: center; padding: 48px 20px 32px; background: linear-gradient(180deg, #13151d 0%, var(--bg) 100%); }
+        .hero h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; }
+        .hero h1 span { color: var(--primary); }
+        .hero p { color: var(--text-muted); font-size: 1.05em; max-width: 520px; margin: 0 auto 20px; line-height: 1.6; }
+        .hero-badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 4px 14px; font-size: 0.82em; color: var(--text-muted); }
+        .badge.green { border-color: #10b98166; color: var(--accent); background: #10b98115; }
+
+        /* ── Container ── */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px 60px; }
+
+        /* ── Search ── */
+        .search-wrap { margin: 28px 0 20px; position: relative; }
+        .search-wrap input {
+            width: 100%; padding: 12px 44px 12px 16px; font-size: 0.95em;
+            background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+            color: var(--text); outline: none; transition: border-color 0.2s;
+        }
+        .search-wrap input:focus { border-color: var(--primary); }
+        .search-wrap::after { content: '🔍'; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font-size: 1em; pointer-events: none; }
+        .no-results { display: none; text-align: center; color: var(--text-muted); padding: 40px; }
+
+        /* ── Stats bar ── */
+        .stats-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; }
+        .stat-chip { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 0.83em; color: var(--text-muted); }
+        .stat-chip strong { color: var(--text); }
+
+        /* ── Tools Grid ── */
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+        .tool-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+            padding: 18px; text-decoration: none; color: var(--text);
+            transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+            display: flex; flex-direction: column; gap: 8px;
+        }
+        .tool-card:hover { transform: translateY(-3px); border-color: var(--primary); box-shadow: 0 4px 20px rgba(99,102,241,0.15); }
+        .tool-name { color: var(--primary); font-weight: 700; font-size: 0.97em; line-height: 1.3; }
+        .tool-desc { color: var(--text-muted); font-size: 0.85em; line-height: 1.5; flex: 1; }
+        .tool-features { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+        .feat-tag { background: var(--surface2); border-radius: 4px; padding: 2px 7px; font-size: 0.75em; color: #a5b4fc; }
+        .tool-cta { font-size: 0.82em; color: var(--accent); font-weight: 600; margin-top: 4px; }
+
+        /* ── CTA block ── */
+        .cta-block {
+            background: linear-gradient(135deg, #13151d, #1a1d28); border: 2px solid var(--primary);
+            border-radius: 12px; padding: 32px; margin: 40px 0; text-align: center;
+        }
+        .cta-block h3 { font-size: 1.4em; margin-bottom: 10px; }
+        .cta-block p { color: var(--text-muted); margin-bottom: 20px; max-width: 480px; display: inline-block; line-height: 1.6; }
+        .cta-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { background: linear-gradient(135deg, var(--accent), #059669); color: #fff; padding: 11px 26px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.95em; }
+        .btn-secondary { background: var(--surface); color: var(--primary); padding: 11px 26px; border-radius: 8px; text-decoration: none; font-weight: 700; border: 1px solid var(--primary); font-size: 0.95em; }
+
+        /* ── Footer ── */
+        footer { border-top: 1px solid var(--border); padding: 28px 24px; text-align: center; color: var(--text-muted); font-size: 0.85em; }
+        footer .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
+        footer a { color: var(--primary); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <header>
-        <h1><span>AutoHustle</span> Tools</h1>
-        <p>Free online tools — no sign-up, no ads, 100% client-side</p>
-    </header>
-    <main>
-        <div class="container">
-            <div class="tools-grid">
-                
+
+<nav>
+    <a href="https://theartofsound.github.io/autohustle-tools/" class="nav-brand">AutoHustle</a>
+    <a href="https://theartofsound.github.io/autohustle-content/" >Home</a>
+    <a href="https://theartofsound.github.io/autohustle-content/blog/">Blog</a>
+    <a href="https://theartofsound.github.io/autohustle-content/products/">Products</a>
+    <a href="https://theartofsound.github.io/autohustle-tools/store/">Store</a>
+    <a href="https://theartofsound.github.io/autohustle-tools/" class="active">Free Tools</a>
+    <a href="https://theartofsound.github.io/autohustle-content/getting-started/" class="nav-cta">Get Started →</a>
+</nav>
+
+<div class="hero">
+    <h1><span>Free</span> Online Tools</h1>
+    <p>Browser-based utilities that run entirely on your device. No accounts, no tracking, no data leaving your browser.</p>
+    <div class="hero-badges">
+        <span class="badge green">✓ 100% Free</span>
+        <span class="badge green">✓ No Sign-up</span>
+        <span class="badge green">✓ No Ads</span>
+        <span class="badge">🔒 Private — data stays local</span>
+        <span class="badge">10 tools available</span>
+    </div>
+</div>
+
+<div class="container">
+    <div class="search-wrap">
+        <input type="text" id="tool-search" placeholder="Search tools by name or feature..." autocomplete="off">
+    </div>
+    <div class="stats-bar">
+        <span class="stat-chip"><strong>10</strong> total tools</span>
+        <span class="stat-chip">Updated regularly</span>
+        <span class="stat-chip">Open source friendly</span>
+    </div>
+    <div class="no-results" id="no-results">No tools match your search. Try a different term.</div>
+    <div class="tools-grid" id="tools-grid">
+        
                 <a href="https://theartofsound.github.io/autohustle-tools/word-counter/" class="tool-card">
-                    <h3>Word Counter & Text Analyzer</h3>
-                    <p>Count words, characters, sentences, paragraphs, and estimate reading time from any text.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Word count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Character count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Sentence count</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Paragraph count</span></div>
+                    <div class="tool-name">Word Counter & Text Analyzer</div>
+                    <div class="tool-desc">Count words, characters, sentences, paragraphs, and estimate reading time from any text.</div>
+                    <div class="tool-features"><span class="feat-tag">Word count</span><span class="feat-tag">Character count</span><span class="feat-tag">Sentence count</span><span class="feat-tag">Paragraph count</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/json-formatter/" class="tool-card">
-                    <h3>JSON Formatter & Validator</h3>
-                    <p>Format, validate, minify, and beautify JSON data with syntax highlighting and error detection.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Format/beautify</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Minify</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Validate</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Syntax highlighting</span></div>
+                    <div class="tool-name">JSON Formatter & Validator</div>
+                    <div class="tool-desc">Format, validate, minify, and beautify JSON data with syntax highlighting and error detection.</div>
+                    <div class="tool-features"><span class="feat-tag">Format/beautify</span><span class="feat-tag">Minify</span><span class="feat-tag">Validate</span><span class="feat-tag">Syntax highlighting</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/password-generator/" class="tool-card">
-                    <h3>Secure Password Generator</h3>
-                    <p>Generate strong, secure passwords with customizable length, character types, and strength meter.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Custom length</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Character types</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Strength meter</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Bulk generate</span></div>
+                    <div class="tool-name">Secure Password Generator</div>
+                    <div class="tool-desc">Generate strong, secure passwords with customizable length, character types, and strength meter.</div>
+                    <div class="tool-features"><span class="feat-tag">Custom length</span><span class="feat-tag">Character types</span><span class="feat-tag">Strength meter</span><span class="feat-tag">Bulk generate</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/color-palette/" class="tool-card">
-                    <h3>Color Palette Generator</h3>
-                    <p>Generate beautiful color palettes, convert between HEX/RGB/HSL, and explore color harmonies.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Random palettes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Color harmonies</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HEX/RGB/HSL conversion</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy colors</span></div>
+                    <div class="tool-name">Color Palette Generator</div>
+                    <div class="tool-desc">Generate beautiful color palettes, convert between HEX/RGB/HSL, and explore color harmonies.</div>
+                    <div class="tool-features"><span class="feat-tag">Random palettes</span><span class="feat-tag">Color harmonies</span><span class="feat-tag">HEX/RGB/HSL conversion</span><span class="feat-tag">Copy colors</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/markdown-preview/" class="tool-card">
-                    <h3>Markdown Previewer & Editor</h3>
-                    <p>Write Markdown and see live preview side by side. Export to HTML. Supports full GFM syntax.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Live preview</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">GFM support</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HTML export</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy output</span></div>
+                    <div class="tool-name">Markdown Previewer & Editor</div>
+                    <div class="tool-desc">Write Markdown and see live preview side by side. Export to HTML. Supports full GFM syntax.</div>
+                    <div class="tool-features"><span class="feat-tag">Live preview</span><span class="feat-tag">GFM support</span><span class="feat-tag">HTML export</span><span class="feat-tag">Copy output</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/unit-converter/" class="tool-card">
-                    <h3>Universal Unit Converter</h3>
-                    <p>Convert between units of length, weight, temperature, speed, data, time, and more.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Length</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Weight</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Temperature</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Speed</span></div>
+                    <div class="tool-name">Universal Unit Converter</div>
+                    <div class="tool-desc">Convert between units of length, weight, temperature, speed, data, time, and more.</div>
+                    <div class="tool-features"><span class="feat-tag">Length</span><span class="feat-tag">Weight</span><span class="feat-tag">Temperature</span><span class="feat-tag">Speed</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/regex-tester/" class="tool-card">
-                    <h3>Regex Tester & Debugger</h3>
-                    <p>Test regular expressions in real-time with match highlighting, group extraction, and common pattern library.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Live matching</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Group extraction</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Flags support</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Common patterns</span></div>
+                    <div class="tool-name">Regex Tester & Debugger</div>
+                    <div class="tool-desc">Test regular expressions in real-time with match highlighting, group extraction, and common pattern library.</div>
+                    <div class="tool-features"><span class="feat-tag">Live matching</span><span class="feat-tag">Group extraction</span><span class="feat-tag">Flags support</span><span class="feat-tag">Common patterns</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/lorem-ipsum/" class="tool-card">
-                    <h3>Lorem Ipsum Generator</h3>
-                    <p>Generate placeholder text in paragraphs, sentences, or words. Includes plain and HTML output.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Paragraphs/sentences/words</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">HTML output</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy to clipboard</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Custom count</span></div>
+                    <div class="tool-name">Lorem Ipsum Generator</div>
+                    <div class="tool-desc">Generate placeholder text in paragraphs, sentences, or words. Includes plain and HTML output.</div>
+                    <div class="tool-features"><span class="feat-tag">Paragraphs/sentences/words</span><span class="feat-tag">HTML output</span><span class="feat-tag">Copy to clipboard</span><span class="feat-tag">Custom count</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/meta-tag-generator/" class="tool-card">
-                    <h3>SEO Meta Tag Generator</h3>
-                    <p>Generate SEO-optimized meta tags, Open Graph tags, and Twitter Cards for any webpage.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Title/description tags</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Open Graph</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Twitter Cards</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Copy HTML</span></div>
+                    <div class="tool-name">SEO Meta Tag Generator</div>
+                    <div class="tool-desc">Generate SEO-optimized meta tags, Open Graph tags, and Twitter Cards for any webpage.</div>
+                    <div class="tool-features"><span class="feat-tag">Title/description tags</span><span class="feat-tag">Open Graph</span><span class="feat-tag">Twitter Cards</span><span class="feat-tag">Copy HTML</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
                 <a href="https://theartofsound.github.io/autohustle-tools/qr-code-generator/" class="tool-card">
-                    <h3>QR Code Generator</h3>
-                    <p>Generate QR codes for URLs, text, Wi-Fi, email, and more. Download as PNG.</p>
-                    <div><span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">URL QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Text QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">WiFi QR codes</span> <span style="display:inline-block;background:var(--surface2);padding:2px 8px;border-radius:4px;font-size:0.8em;margin:2px;">Download PNG</span></div>
+                    <div class="tool-name">QR Code Generator</div>
+                    <div class="tool-desc">Generate QR codes for URLs, text, Wi-Fi, email, and more. Download as PNG.</div>
+                    <div class="tool-features"><span class="feat-tag">URL QR codes</span><span class="feat-tag">Text QR codes</span><span class="feat-tag">WiFi QR codes</span><span class="feat-tag">Download PNG</span></div>
+                    <div class="tool-cta">Open Tool →</div>
                 </a>
                 
-            </div>
+    </div>
+
+    <div class="cta-block">
+        <h3>Want AI To Build Your Income Streams?</h3>
+        <p>AutoHustle deploys an AI agent that creates digital products, publishes content, and earns money 24/7 — automatically.</p>
+        <div class="cta-btns">
+            <a href="https://theartofsound.github.io/autohustle-content/getting-started/" class="btn-primary">Start Making Money →</a>
+            <a href="https://theartofsound.github.io/autohustle-content/products/" class="btn-secondary">Browse Products</a>
         </div>
-    </main>
-    <footer>
-        <p>10 free tools available &mdash; All tools run in your browser, your data never leaves your device</p>
-        <p style="margin-top:8px;font-size:0.8em;">
-            <a href="https://theartofsound.github.io/autohustle-content/blog/" style="color:#6366f1;">Blog</a> &middot;
-            <a href="https://theartofsound.github.io/autohustle-tools/store/" style="color:#6366f1;">Store</a> &middot;
-            <a href="https://autohustle.online" style="color:#6366f1;">AutoHustle.online</a>
-        </p>
-    </footer>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-links">
+        <a href="https://theartofsound.github.io/autohustle-content/">Home</a>
+        <a href="https://theartofsound.github.io/autohustle-content/blog/">Blog</a>
+        <a href="https://theartofsound.github.io/autohustle-content/products/">Products</a>
+        <a href="https://theartofsound.github.io/autohustle-tools/store/">Store</a>
+        <a href="https://theartofsound.github.io/autohustle-tools/">Free Tools</a>
+        <a href="https://autohustle.online">AutoHustle.online</a>
+    </div>
+    <p>10 free tools — all run in your browser, your data never leaves your device</p>
+</footer>
+
+<script>
+(function(){
+    var input = document.getElementById('tool-search');
+    var grid = document.getElementById('tools-grid');
+    var noRes = document.getElementById('no-results');
+    if(!input) return;
+    input.addEventListener('input', function(){
+        var q = this.value.trim().toLowerCase();
+        var any = false;
+        grid.querySelectorAll('.tool-card').forEach(function(card){
+            var match = !q || card.textContent.toLowerCase().includes(q);
+            card.style.display = match ? '' : 'none';
+            if(match) any = true;
+        });
+        noRes.style.display = (q && !any) ? 'block' : 'none';
+    });
+})();
+</script>
 </body>
 </html>
