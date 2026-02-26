@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T17:35:04.987250+00:00",
+  "updated": "2026-02-26T17:37:55.239996+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 8805
+      "total_effort": 8817
     },
     {
       "id": "stripe_premium",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 21310
+      "total_effort": 21335
     },
     {
       "id": "strategy_reviewer",
@@ -135,219 +135,219 @@
     }
   ],
   "actions_today": {
-    "total": 12304,
-    "successes": 3713
+    "total": 12334,
+    "successes": 3715
   },
   "recent_actions": [
     {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "create_social_post",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
-      "outcome": "success",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "marketing_engine",
+      "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
+      "executed_at": "2026-02-26 17:37:51"
     },
     {
-      "strategy_id": "solana_sniper",
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:37:51"
+    },
+    {
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-26 17:35:03"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:37:19"
     },
     {
-      "strategy_id": "solana_sniper",
-      "action_type": "start_bot",
+      "strategy_id": "data_scraper",
+      "action_type": "discover_emails",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
+      "executed_at": "2026-02-26 17:37:19"
     },
     {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_new_arrival",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "social_growth",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "failure",
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
+      "executed_at": "2026-02-26 17:36:44"
     },
     {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
+      "executed_at": "2026-02-26 17:36:44"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-26 17:35:03"
+      "executed_at": "2026-02-26 17:36:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:35:03"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:34"
     },
     {
       "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "solana_sniper",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_new_arrival",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-26 17:34:55"
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_welcome_new",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:36:28"
     }
   ],
   "decisions": [
