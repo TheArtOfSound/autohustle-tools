@@ -1,548 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin — AutoHustle Command Center</title>
-    <meta name="robots" content="noindex, nofollow">
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --bg: #0a0b10; --surface: #12131a; --surface2: #1a1c25;
-            --border: #252838; --text: #e0e2eb; --muted: #8b8fa3;
-            --green: #00e68a; --green-dim: rgba(0,230,138,0.12);
-            --red: #ff4d6a; --red-dim: rgba(255,77,106,0.12);
-            --blue: #5b8cff; --blue-dim: rgba(91,140,255,0.12);
-            --yellow: #ffc75b; --yellow-dim: rgba(255,199,91,0.12);
-            --purple: #b77dff; --purple-dim: rgba(183,125,255,0.12);
-            --cyan: #22d3ee; --cyan-dim: rgba(34,211,238,0.12);
-        }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'SF Pro', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.5; }
-        .topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(16px); }
-        .topbar h1 { font-size: 1.2em; font-weight: 700; }
-        .topbar h1 span { color: var(--green); }
-        .topbar .status { display: flex; align-items: center; gap: 8px; font-size: 0.85em; color: var(--muted); }
-        .topbar .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
-        @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoHustle Admin</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+    --green: #3fb950; --red: #f85149; --gold: #d29922;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; }
 
-        /* Metric Cards */
-        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
-        .metric { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
-        .metric .label { font-size: 0.72em; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin-bottom: 4px; }
-        .metric .value { font-size: 1.7em; font-weight: 700; }
-        .metric .sub { font-size: 0.78em; color: var(--muted); margin-top: 2px; }
-        .metric.revenue .value { color: var(--green); }
-        .metric.actions .value { color: var(--blue); }
-        .metric.assets .value { color: var(--purple); }
-        .metric.crypto .value { color: var(--cyan); }
-        .metric.strategies .value { color: var(--yellow); }
+  /* ── Login overlay ── */
+  #login-screen {
+    position: fixed; inset: 0; background: var(--bg);
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; z-index: 1000; padding: 24px;
+  }
+  #login-screen h1 { font-size: 1.6rem; margin-bottom: 8px; color: var(--accent); }
+  #login-screen p { color: var(--muted); margin-bottom: 24px; text-align: center; }
+  #token-input {
+    width: 100%; max-width: 320px; padding: 12px 16px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); color: var(--text); font-size: 1rem;
+    outline: none; margin-bottom: 12px;
+  }
+  #token-input:focus { border-color: var(--accent); }
+  #login-btn {
+    width: 100%; max-width: 320px; padding: 12px;
+    background: var(--accent); border: none; border-radius: var(--radius);
+    color: #fff; font-size: 1rem; font-weight: 600; cursor: pointer;
+  }
+  #login-err { color: var(--red); margin-top: 10px; font-size: .9rem; }
 
-        /* Sections */
-        .section { margin-bottom: 28px; }
-        .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-        .section-header h2 { font-size: 1.1em; font-weight: 600; }
-        .section-header .badge { background: var(--green-dim); color: var(--green); font-size: 0.7em; padding: 3px 10px; border-radius: 8px; font-weight: 600; }
+  /* ── Main app ── */
+  #app { display: none; padding: 16px; max-width: 600px; margin: 0 auto; padding-bottom: 40px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 0 20px;
+  }
+  header h1 { font-size: 1.3rem; }
+  .updated { font-size: .75rem; color: var(--muted); text-align: right; }
 
-        /* Tables */
-        table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; font-size: 0.85em; }
-        th { background: var(--surface2); color: var(--muted); text-align: left; padding: 10px 14px; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.8px; font-weight: 600; }
-        td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
-        tr:hover td { background: rgba(255,255,255,0.02); }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px; margin-bottom: 12px;
+  }
+  .card h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 12px; }
 
-        /* Badges */
-        .badge-success { background: var(--green-dim); color: var(--green); padding: 2px 8px; border-radius: 6px; font-size: 0.8em; font-weight: 500; }
-        .badge-fail { background: var(--red-dim); color: var(--red); padding: 2px 8px; border-radius: 6px; font-size: 0.8em; font-weight: 500; }
-        .badge-partial { background: var(--yellow-dim); color: var(--yellow); padding: 2px 8px; border-radius: 6px; font-size: 0.8em; font-weight: 500; }
-        .badge-info { background: var(--blue-dim); color: var(--blue); padding: 2px 8px; border-radius: 6px; font-size: 0.8em; font-weight: 500; }
-        .badge-purple { background: var(--purple-dim); color: var(--purple); padding: 2px 8px; border-radius: 6px; font-size: 0.8em; font-weight: 500; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: .85rem; font-weight: 600; margin-bottom: 12px; }
+  .badge.green { background: rgba(63,185,80,.15); color: var(--green); border: 1px solid rgba(63,185,80,.3); }
+  .badge.red { background: rgba(248,81,73,.15); color: var(--red); border: 1px solid rgba(248,81,73,.3); }
 
-        /* Thoughts / Decision Cards */
-        .thought-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 8px; }
-        .thought-card .type { font-size: 0.72em; text-transform: uppercase; letter-spacing: 1px; color: var(--cyan); font-weight: 600; margin-bottom: 4px; }
-        .thought-card .reasoning { color: var(--text); font-size: 0.9em; line-height: 1.6; }
-        .thought-card .time { font-size: 0.75em; color: var(--muted); margin-top: 6px; }
+  .btn-primary {
+    display: block; width: 100%; padding: 14px;
+    background: var(--accent); color: #fff; text-align: center;
+    border-radius: var(--radius); font-weight: 700; font-size: 1rem;
+    text-decoration: none; margin-top: 8px;
+  }
+  .tunnel-offline { background: rgba(248,81,73,.1); border: 1px solid rgba(248,81,73,.3); color: var(--red); border-radius: var(--radius); padding: 12px; text-align: center; font-size: .9rem; margin-top: 8px; }
 
-        /* Needs cards */
-        .needs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; }
-        .need-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--yellow); border-radius: 8px; padding: 12px 16px; }
-        .need-card .need-type { font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; color: var(--yellow); margin-bottom: 4px; }
-        .need-card .need-name { font-size: 0.9em; font-weight: 500; }
-        .need-card .need-cat { font-size: 0.78em; color: var(--muted); }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat .val { font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: .75rem; color: var(--muted); margin-top: 4px; }
 
-        /* Two-column layout */
-        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+  table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+  th { text-align: left; color: var(--muted); font-weight: 600; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  td { padding: 6px 4px; border-bottom: 1px solid rgba(48,54,61,.5); }
+  td:nth-child(2), td:nth-child(3) { text-align: right; }
 
-        /* Tabs */
-        .tabs { display: flex; gap: 4px; margin-bottom: 16px; border-bottom: 1px solid var(--border); padding-bottom: 0; }
-        .tab { padding: 8px 16px; cursor: pointer; color: var(--muted); font-size: 0.85em; font-weight: 500; border-bottom: 2px solid transparent; transition: all 0.2s; }
-        .tab:hover { color: var(--text); }
-        .tab.active { color: var(--green); border-bottom-color: var(--green); }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
+  ul.decisions { list-style: none; font-size: .82rem; }
+  ul.decisions li { padding: 6px 0; border-bottom: 1px solid rgba(48,54,61,.5); }
+  ul.decisions li:last-child { border: none; }
+  .dt { color: var(--muted); font-size: .75rem; margin-right: 6px; }
 
-        /* Loading */
-        .loading { text-align: center; padding: 60px; color: var(--muted); }
-        .loading .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--green); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-
-        .empty { text-align: center; padding: 32px; color: var(--muted); font-size: 0.9em; }
-
-        /* Crypto table special */
-        .pnl-pos { color: var(--green); }
-        .pnl-neg { color: var(--red); }
-        .price-change-pos { color: var(--green); }
-        .price-change-neg { color: var(--red); }
-
-        /* Footer */
-        footer { border-top: 1px solid var(--border); text-align: center; padding: 20px; color: var(--muted); font-size: 0.8em; margin-top: 40px; }
-        footer a { color: var(--green); text-decoration: none; }
-
-        /* Scrollable containers */
-        .scroll-y { max-height: 500px; overflow-y: auto; }
-        .scroll-y::-webkit-scrollbar { width: 6px; }
-        .scroll-y::-webkit-scrollbar-track { background: var(--surface); }
-        .scroll-y::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-    </style>
+  .kill-section { display: flex; gap: 10px; margin-top: 8px; }
+  .btn-danger {
+    flex: 1; padding: 10px; background: rgba(248,81,73,.15);
+    color: var(--red); border: 1px solid rgba(248,81,73,.3);
+    border-radius: var(--radius); font-weight: 700; cursor: pointer; font-size: .9rem;
+  }
+  .btn-resume {
+    flex: 1; padding: 10px; background: rgba(63,185,80,.15);
+    color: var(--green); border: 1px solid rgba(63,185,80,.3);
+    border-radius: var(--radius); font-weight: 700; cursor: pointer; font-size: .9rem;
+  }
+  .btn-small {
+    padding: 6px 14px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--muted); font-size: .8rem; cursor: pointer;
+  }
+</style>
 </head>
 <body>
-    <div class="topbar">
-        <h1><span>AutoHustle</span> Command Center</h1>
-        <div class="status">
-            <div class="dot" id="statusDot"></div>
-            <span id="statusText">Connecting...</span>
-            <span id="lastUpdate" style="margin-left: 12px;"></span>
-        </div>
+
+<!-- ── Login screen ── -->
+<div id="login-screen">
+  <h1>🤖 AutoHustle</h1>
+  <p>Admin access — enter your token to continue</p>
+  <input id="token-input" type="password" placeholder="Admin token" autocomplete="current-password">
+  <button id="login-btn" onclick="doLogin()">Unlock →</button>
+  <div id="login-err"></div>
+</div>
+
+<!-- ── Main app ── -->
+<div id="app">
+  <header>
+    <h1>🤖 AutoHustle</h1>
+    <div class="updated">Last updated<br><span id="ts">2026-02-26 09:39:08 UTC</span></div>
+  </header>
+
+  <!-- Status + live link -->
+  <div class="card">
+    <h2>System Status</h2>
+    <span class="badge green">✅ System Running</span>
+    <div class="tunnel-offline">⚡ Tunnel offline — start main.py with --dashboard</div>
+  </div>
+
+  <!-- Stats grid -->
+  <div class="card">
+    <h2>Today</h2>
+    <div class="stats-grid">
+      <div class="stat"><div class="val">$0.00</div><div class="lbl">Revenue Today</div></div>
+      <div class="stat"><div class="val">0</div><div class="lbl">Total Assets</div></div>
+      <div class="stat"><div class="val">0</div><div class="lbl">Monetized</div></div>
+      <div class="stat"><div class="val" id="llm-val">unknown</div><div class="lbl">LLM / 0 calls</div></div>
     </div>
+  </div>
 
-    <div class="container" id="app">
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Loading system data...</p>
-        </div>
-    </div>
+  <!-- Strategies -->
+  <div class="card">
+    <h2>Strategies</h2>
+    <table>
+      <thead><tr><th>Strategy</th><th>Runs</th><th>Revenue</th></tr></thead>
+      <tbody><tr><td colspan='3' style='color:var(--muted);text-align:center;padding:12px'>No data yet</td></tr></tbody>
+    </table>
+  </div>
 
-    <footer>
-        <p>&copy; 2026 <a href="https://autohustle.online">AutoHustle.online</a> &mdash; Autonomous Money-Making Agent System</p>
-    </footer>
+  <!-- Recent activity -->
+  <div class="card">
+    <h2>Recent Activity</h2>
+    <ul class="decisions">
+      <li style="color:var(--muted)">No recent decisions</li>
+    </ul>
+  </div>
 
-    <script>
-    const LOCAL_API = 'http://localhost:8888/api/admin';
-    const STATIC_DATA = './data.json';
-    let currentData = null;
+  <!-- Kill switch controls (only if tunnel is live) -->
+  
 
-    function fmt$(v) { return '$' + (v || 0).toFixed(2); }
-    function fmtN(v) { return (v || 0).toLocaleString(); }
-    function fmtPct(v) { return (v || 0).toFixed(1) + '%'; }
-    function timeAgo(dateStr) {
-        if (!dateStr) return '—';
-        const d = new Date(dateStr);
-        const now = new Date();
-        const s = Math.floor((now - d) / 1000);
-        if (s < 60) return s + 's ago';
-        if (s < 3600) return Math.floor(s/60) + 'm ago';
-        if (s < 86400) return Math.floor(s/3600) + 'h ago';
-        return Math.floor(s/86400) + 'd ago';
+  <div style="text-align:center;margin-top:16px;">
+    <button class="btn-small" onclick="location.reload()">↻ Refresh Page</button>
+    <button class="btn-small" onclick="doLogout()" style="margin-left:8px">Logout</button>
+  </div>
+</div>
+
+<script>
+// Layer 1: SHA-256 hash only — plaintext password never in HTML
+const TOKEN_HASH = "b4c828abe6600443330aab5f1373f1fc884cfed2d22694c210aaf261b2afb48e";
+const TUNNEL_URL = "";
+const SESSION_KEY = 'ah_session';
+const LOCKOUT_KEY = 'ah_lockout';
+const FAILS_KEY = 'ah_fails';
+const SESSION_DURATION = 86400000; // 24 hours
+const LOCKOUT_DURATION = 1800000;  // 30 minutes
+const MAX_FAILS = 5;
+
+// Layer 1: Hash function using Web Crypto API
+async function hashInput(str) {
+  var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+}
+
+// Layer 3: Rate limiting helpers
+function isLocked() {
+  var lockout = localStorage.getItem(LOCKOUT_KEY);
+  if (!lockout) return false;
+  if (Date.now() - parseInt(lockout, 10) < LOCKOUT_DURATION) return true;
+  localStorage.removeItem(LOCKOUT_KEY);
+  localStorage.removeItem(FAILS_KEY);
+  return false;
+}
+
+function recordFail() {
+  var fails = parseInt(localStorage.getItem(FAILS_KEY) || '0', 10) + 1;
+  localStorage.setItem(FAILS_KEY, fails);
+  if (fails >= MAX_FAILS) { localStorage.setItem(LOCKOUT_KEY, Date.now().toString()); return true; }
+  return false;
+}
+
+function clearFails() {
+  localStorage.removeItem(FAILS_KEY);
+  localStorage.removeItem(LOCKOUT_KEY);
+}
+
+// Layer 2: Session helpers
+function getSession() {
+  try {
+    var raw = sessionStorage.getItem(SESSION_KEY);
+    if (!raw) return null;
+    var s = JSON.parse(raw);
+    if (Date.now() > s.exp) { sessionStorage.removeItem(SESSION_KEY); return null; }
+    return s;
+  } catch(e) { return null; }
+}
+
+function showApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+}
+
+// Layer 1+2+3: Login with hash comparison, session creation, rate limiting
+async function doLogin() {
+  var errEl = document.getElementById('login-err');
+  if (isLocked()) {
+    var rem = Math.ceil((LOCKOUT_DURATION - (Date.now() - parseInt(localStorage.getItem(LOCKOUT_KEY)||'0', 10))) / 60000);
+    errEl.textContent = 'Too many attempts. Locked for ' + rem + ' min.';
+    return;
+  }
+  var v = document.getElementById('token-input').value.trim();
+  if (!v) { errEl.textContent = 'Enter your password'; return; }
+  var hash = await hashInput(v);
+  if (hash === TOKEN_HASH) {
+    clearFails();
+    // Layer 2: store session with expiry in sessionStorage (not localStorage)
+    var session = { hash: hash, exp: Date.now() + SESSION_DURATION };
+    sessionStorage.setItem(SESSION_KEY, JSON.stringify(session));
+    showApp();
+  } else {
+    var locked = recordFail();
+    var fails = parseInt(localStorage.getItem(FAILS_KEY) || '0', 10);
+    if (locked) {
+      errEl.textContent = 'Too many failed attempts. Locked for 30 minutes.';
+    } else {
+      errEl.textContent = 'Invalid password (' + (MAX_FAILS - fails) + ' attempt' + (MAX_FAILS - fails !== 1 ? 's' : '') + ' remaining)';
     }
-    function shortDate(dateStr) {
-        if (!dateStr) return '—';
-        const d = new Date(dateStr);
-        return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
-               d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-    }
-    function outcomeBadge(outcome) {
-        if (outcome === 'success') return '<span class="badge-success">Success</span>';
-        if (outcome === 'failure') return '<span class="badge-fail">Failed</span>';
-        if (outcome === 'partial') return '<span class="badge-partial">Partial</span>';
-        return '<span class="badge-info">' + (outcome || '—') + '</span>';
-    }
-    function esc(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  }
+}
 
-    async function fetchData() {
-        // Try local API first, fall back to static JSON
-        try {
-            const r = await fetch(LOCAL_API, { signal: AbortSignal.timeout(3000) });
-            if (r.ok) {
-                currentData = await r.json();
-                document.getElementById('statusDot').style.background = 'var(--green)';
-                document.getElementById('statusText').textContent = 'Live';
-                render(currentData);
-                return;
-            }
-        } catch(e) {}
+function doLogout() {
+  sessionStorage.removeItem(SESSION_KEY);
+  location.reload();
+}
 
-        // Fallback to static data.json
-        try {
-            const r = await fetch(STATIC_DATA + '?t=' + Date.now());
-            if (r.ok) {
-                currentData = await r.json();
-                document.getElementById('statusDot').style.background = 'var(--yellow)';
-                document.getElementById('statusText').textContent = 'Cached';
-                render(currentData);
-                return;
-            }
-        } catch(e) {}
+// Auto-unlock if valid unexpired session exists
+(function() {
+  if (isLocked()) {
+    var rem = Math.ceil((LOCKOUT_DURATION - (Date.now() - parseInt(localStorage.getItem(LOCKOUT_KEY)||'0', 10))) / 60000);
+    document.getElementById('login-err').textContent = 'Locked — try again in ' + rem + ' min.';
+    return;
+  }
+  var session = getSession();
+  if (session && session.hash === TOKEN_HASH) { showApp(); }
+})();
 
-        // No data available
-        document.getElementById('statusDot').style.background = 'var(--red)';
-        document.getElementById('statusText').textContent = 'Offline';
-        document.getElementById('loading').innerHTML = '<p style="color:var(--muted)">No data available yet. The system exports data after each cycle.</p>';
-    }
+document.getElementById('token-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') doLogin();
+});
 
-    function render(data) {
-        const d = data;
-        const rev = d.revenue || {};
-        const strats = d.strategies || [];
-        const actions = d.actions || d.recent_actions || [];
-        const recentActions = d.actions?.recent || d.recent_actions || [];
-        const decisions = d.decisions || [];
-        const assets = d.assets || {};
-        const recentAssets = d.assets?.recent || d.recent_assets || [];
-        const crypto = d.crypto || {};
-        const shopify = d.shopify || {};
-        const needs = d.needs || [];
-        const actionsToday = d.actions?.today_total || d.actions_today?.total || 0;
-        const successesToday = d.actions?.today_successes || d.actions_today?.successes || 0;
+// Layer 4+6: Kill switch sends auth token header — server validates it
+function killSwitch(activate) {
+  if (!TUNNEL_URL) { alert('Tunnel offline — cannot control system remotely'); return; }
+  var session = getSession();
+  if (!session) { alert('Session expired — please log in again'); location.reload(); return; }
+  var url = TUNNEL_URL.replace(/\/$/, '') + (activate ? '/api/kill' : '/api/resume');
+  fetch(url, {
+    method: 'POST',
+    headers: { 'X-Admin-Token': session.hash, 'Content-Type': 'application/json' }
+  })
+    .then(function(r) { return r.json(); })
+    .then(function(d) { alert(d.message || (activate ? 'Kill switch activated' : 'System resumed')); location.reload(); })
+    .catch(function(e) { alert('Error: ' + e.message + '\nIs the dashboard running?'); });
+}
 
-        // Calculate crypto totals — prefer live Coinbase balances
-        let cryptoValue = 0, cryptoInvested = 0;
-        const liveBalances = crypto.live_balances || [];
-        if (liveBalances.length > 0) {
-            liveBalances.forEach(b => { cryptoValue += (b.value || 0); });
-        } else {
-            (crypto.portfolio || []).forEach(p => {
-                cryptoValue += (p.current_value || 0);
-                cryptoInvested += (p.total_invested || 0);
-            });
-        }
-        const cryptoPnl = cryptoValue - cryptoInvested;
-
-        document.getElementById('lastUpdate').textContent = 'Updated: ' + timeAgo(d.updated || d.timestamp);
-
-        let html = '';
-
-        // ── Metrics ──
-        html += '<div class="metrics">';
-        html += `<div class="metric revenue"><div class="label">Total Revenue</div><div class="value">${fmt$(rev.total)}</div><div class="sub">7d: ${fmt$(rev.last_7d)}</div></div>`;
-        html += `<div class="metric actions"><div class="label">Actions Today</div><div class="value">${fmtN(actionsToday)}</div><div class="sub">${fmtN(successesToday)} succeeded</div></div>`;
-        html += `<div class="metric assets"><div class="label">Assets Created</div><div class="value">${fmtN(assets.total || 0)}</div><div class="sub">${fmtN(assets.published || 0)} published</div></div>`;
-        html += `<div class="metric strategies"><div class="label">Active Strategies</div><div class="value">${strats.filter(s => s.status === 'active').length}</div><div class="sub">${strats.length} total</div></div>`;
-        html += `<div class="metric crypto"><div class="label">Crypto Portfolio</div><div class="value">${fmt$(cryptoValue)}</div><div class="sub ${cryptoPnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">P&L: ${fmt$(cryptoPnl)}</div></div>`;
-        if (shopify.connected) {
-            html += `<div class="metric" style="border-color:var(--purple)"><div class="label">Shopify Store</div><div class="value" style="color:var(--purple)">${fmtN(shopify.product_count || 0)} products</div><div class="sub">${fmtN(shopify.total_orders || 0)} orders &bull; ${fmt$(shopify.total_revenue || 0)}</div></div>`;
-        }
-        const successRate = actionsToday > 0 ? (successesToday / actionsToday * 100) : 0;
-        html += `<div class="metric"><div class="label">Success Rate</div><div class="value" style="color:${successRate >= 70 ? 'var(--green)' : successRate >= 40 ? 'var(--yellow)' : 'var(--red)'}">${fmtPct(successRate)}</div><div class="sub">today's actions</div></div>`;
-        html += '</div>';
-
-        // ── Tabs ──
-        html += '<div class="tabs">';
-        html += '<div class="tab active" data-tab="actions">Live Actions</div>';
-        html += '<div class="tab" data-tab="strategies">Strategies</div>';
-        html += '<div class="tab" data-tab="thoughts">System Thoughts</div>';
-        html += '<div class="tab" data-tab="assets">Assets & Content</div>';
-        html += '<div class="tab" data-tab="crypto">Crypto</div>';
-        html += '<div class="tab" data-tab="shopify">Shopify Store</div>';
-        html += '<div class="tab" data-tab="needs">Needs & Goals</div>';
-        html += '</div>';
-
-        // ── Tab: Live Actions ──
-        html += '<div class="tab-content active" id="tab-actions">';
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>Recent Actions</h2><span class="badge">' + recentActions.length + ' actions</span></div>';
-        if (recentActions.length === 0) {
-            html += '<div class="empty">No actions recorded yet.</div>';
-        } else {
-            html += '<div class="scroll-y"><table><thead><tr><th>Time</th><th>Strategy</th><th>Action</th><th>Result</th><th>Reward</th></tr></thead><tbody>';
-            recentActions.forEach(a => {
-                html += `<tr>
-                    <td>${timeAgo(a.executed_at)}</td>
-                    <td><span class="badge-info">${esc(a.strategy_id)}</span></td>
-                    <td>${esc(a.action_type)}</td>
-                    <td>${outcomeBadge(a.outcome)}</td>
-                    <td>${a.reward ? a.reward.toFixed(2) : '—'}</td>
-                </tr>`;
-            });
-            html += '</tbody></table></div>';
-        }
-        html += '</div></div>';
-
-        // ── Tab: Strategies ──
-        html += '<div class="tab-content" id="tab-strategies">';
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>Strategy Performance</h2></div>';
-        if (strats.length === 0) {
-            html += '<div class="empty">No strategies loaded.</div>';
-        } else {
-            html += '<table><thead><tr><th>Strategy</th><th>Status</th><th>Revenue</th><th>Assets</th><th>Actions</th><th>Avg Reward</th><th>Success %</th></tr></thead><tbody>';
-            strats.forEach(s => {
-                const statusClass = s.status === 'active' ? 'badge-success' : 'badge-partial';
-                html += `<tr>
-                    <td><strong>${esc(s.name || s.id)}</strong><br><span style="color:var(--muted);font-size:0.8em">${esc(s.type || '')}</span></td>
-                    <td><span class="${statusClass}">${esc(s.status)}</span></td>
-                    <td style="color:var(--green)">${fmt$(s.total_revenue)}</td>
-                    <td>${fmtN(s.assets_count || 0)}</td>
-                    <td>${fmtN(s.total_actions || 0)}</td>
-                    <td>${(s.avg_reward || 0).toFixed(3)}</td>
-                    <td>${fmtPct(s.success_rate || 0)}</td>
-                </tr>`;
-            });
-            html += '</tbody></table>';
-        }
-        html += '</div></div>';
-
-        // ── Tab: System Thoughts ──
-        html += '<div class="tab-content" id="tab-thoughts">';
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>System Reasoning & Decisions</h2><span class="badge">AI Thoughts</span></div>';
-        if (decisions.length === 0) {
-            html += '<div class="empty">No decisions logged yet.</div>';
-        } else {
-            html += '<div class="scroll-y">';
-            decisions.forEach(d => {
-                html += `<div class="thought-card">
-                    <div class="type">${esc(d.decision_type)} ${d.outcome ? '→ ' + esc(d.outcome) : ''}</div>
-                    <div class="reasoning">${esc(d.reasoning)}</div>
-                    <div class="time">${shortDate(d.created_at)}</div>
-                </div>`;
-            });
-            html += '</div>';
-        }
-        html += '</div></div>';
-
-        // ── Tab: Assets ──
-        html += '<div class="tab-content" id="tab-assets">';
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>Created Assets</h2><span class="badge">' + fmtN(assets.total || 0) + ' total</span></div>';
-        if (recentAssets.length === 0) {
-            html += '<div class="empty">No assets created yet.</div>';
-        } else {
-            html += '<div class="scroll-y"><table><thead><tr><th>Time</th><th>Strategy</th><th>Type</th><th>Title</th><th>Status</th></tr></thead><tbody>';
-            recentAssets.forEach(a => {
-                const statusCls = a.status === 'published' ? 'badge-success' : a.status === 'draft' ? 'badge-partial' : 'badge-info';
-                const titleHtml = a.url ? `<a href="${esc(a.url)}" target="_blank" style="color:var(--blue);text-decoration:none">${esc(a.title)}</a>` : esc(a.title);
-                html += `<tr>
-                    <td>${timeAgo(a.created_at)}</td>
-                    <td><span class="badge-info">${esc(a.strategy_id)}</span></td>
-                    <td>${esc(a.asset_type)}</td>
-                    <td>${titleHtml}</td>
-                    <td><span class="${statusCls}">${esc(a.status)}</span></td>
-                </tr>`;
-            });
-            html += '</tbody></table></div>';
-        }
-        html += '</div></div>';
-
-        // ── Tab: Crypto ──
-        html += '<div class="tab-content" id="tab-crypto">';
-        html += '<div class="two-col">';
-
-        // Portfolio — show LIVE Coinbase balances if available, else DB
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>Live Portfolio (Coinbase)</h2><span class="badge">' + (liveBalances.length > 0 ? 'LIVE' : 'CACHED') + '</span></div>';
-        const portfolioData = liveBalances.length > 0 ? liveBalances : (crypto.portfolio || []);
-        if (portfolioData.length === 0) {
-            html += '<div class="empty">No crypto positions. Connect exchange keys in Settings.</div>';
-        } else {
-            html += '<table><thead><tr><th>Coin</th><th>Qty</th><th>Price</th><th>Value</th><th>24h Change</th></tr></thead><tbody>';
-            portfolioData.forEach(p => {
-                if (liveBalances.length > 0) {
-                    const chg = p.change_24h || 0;
-                    const val = p.value || 0;
-                    if (val < 0.01) return; // skip dust
-                    html += `<tr>
-                        <td><strong>${esc(p.coin)}</strong><br><span style="color:var(--muted);font-size:0.78em">${esc(p.exchange || 'coinbase')}</span></td>
-                        <td>${p.quantity < 1 ? p.quantity.toFixed(8) : p.quantity.toFixed(2)}</td>
-                        <td>${fmt$(p.price)}</td>
-                        <td>${fmt$(val)}</td>
-                        <td class="${chg >= 0 ? 'pnl-pos' : 'pnl-neg'}">${chg >= 0 ? '+' : ''}${chg.toFixed(1)}%</td>
-                    </tr>`;
-                } else {
-                    const pnl = (p.current_value || 0) - (p.total_invested || 0);
-                    html += `<tr>
-                        <td><strong>${esc(p.coin)}</strong><br><span style="color:var(--muted);font-size:0.78em">${esc(p.exchange || '')}</span></td>
-                        <td>${(p.quantity || 0).toFixed(6)}</td>
-                        <td>${fmt$(p.avg_buy_price)}</td>
-                        <td>${fmt$(p.current_value)}</td>
-                        <td class="${pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${fmt$(pnl)}</td>
-                    </tr>`;
-                }
-            });
-            html += '</tbody></table>';
-        }
-        html += '</div>';
-
-        // Recent Prices
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>Market Prices</h2></div>';
-        const latestPrices = {};
-        (crypto.prices || crypto.recent_prices || []).forEach(p => {
-            if (!latestPrices[p.coin]) latestPrices[p.coin] = p;
-        });
-        const priceList = Object.values(latestPrices);
-        if (priceList.length === 0) {
-            html += '<div class="empty">No price data yet.</div>';
-        } else {
-            html += '<table><thead><tr><th>Coin</th><th>Price</th><th>24h Change</th><th>Updated</th></tr></thead><tbody>';
-            priceList.forEach(p => {
-                const chg = p.price_change_24h || 0;
-                html += `<tr>
-                    <td><strong>${esc(p.coin)}</strong></td>
-                    <td>${fmt$(p.price_usd)}</td>
-                    <td class="${chg >= 0 ? 'price-change-pos' : 'price-change-neg'}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
-                    <td>${timeAgo(p.recorded_at)}</td>
-                </tr>`;
-            });
-            html += '</tbody></table>';
-        }
-        html += '</div>';
-
-        // Trades
-        html += '</div>'; // close two-col
-        html += '<div class="section" style="margin-top:16px">';
-        html += '<div class="section-header"><h2>Recent Trades</h2></div>';
-        if ((crypto.trades || crypto.recent_trades || []).length === 0) {
-            html += '<div class="empty">No trades executed yet.</div>';
-        } else {
-            html += '<table><thead><tr><th>Time</th><th>Coin</th><th>Side</th><th>Qty</th><th>Price</th><th>Total</th><th>Exchange</th></tr></thead><tbody>';
-            (crypto.trades || crypto.recent_trades || []).forEach(t => {
-                const sideCls = t.side === 'buy' ? 'badge-success' : 'badge-fail';
-                html += `<tr>
-                    <td>${timeAgo(t.executed_at)}</td>
-                    <td><strong>${esc(t.coin)}</strong></td>
-                    <td><span class="${sideCls}">${esc(t.side?.toUpperCase())}</span></td>
-                    <td>${(t.quantity || 0).toFixed(6)}</td>
-                    <td>${fmt$(t.price)}</td>
-                    <td>${fmt$(t.total)}</td>
-                    <td>${esc(t.exchange || '')}</td>
-                </tr>`;
-            });
-            html += '</tbody></table>';
-        }
-        html += '</div>';
-        html += '</div>'; // close tab-crypto
-
-        // ── Tab: Shopify Store ──
-        html += '<div class="tab-content" id="tab-shopify">';
-        html += '<div class="section">';
-        if (shopify.connected) {
-            html += `<div class="section-header"><h2>Shopify — ${esc(shopify.store_name || 'Store')}</h2><span class="badge" style="background:var(--purple-dim);color:var(--purple)">LIVE</span></div>`;
-            html += '<div class="metrics" style="margin-bottom:16px">';
-            html += `<div class="metric" style="border-color:var(--purple)"><div class="label">Products</div><div class="value" style="color:var(--purple)">${fmtN(shopify.product_count || 0)}</div></div>`;
-            html += `<div class="metric" style="border-color:var(--green)"><div class="label">Total Orders</div><div class="value" style="color:var(--green)">${fmtN(shopify.total_orders || 0)}</div></div>`;
-            html += `<div class="metric" style="border-color:var(--yellow)"><div class="label">Open Orders</div><div class="value" style="color:var(--yellow)">${fmtN(shopify.open_orders || 0)}</div></div>`;
-            html += `<div class="metric" style="border-color:var(--green)"><div class="label">Store Revenue</div><div class="value" style="color:var(--green)">${fmt$(shopify.total_revenue || 0)}</div></div>`;
-            html += `<div class="metric"><div class="label">Plan</div><div class="value" style="font-size:0.9em">${esc(shopify.plan || '?')}</div></div>`;
-            html += `<div class="metric"><div class="label">Domain</div><div class="value" style="font-size:0.8em;word-break:break-all">${esc(shopify.domain || '?')}</div></div>`;
-            html += '</div>';
-
-            // Show recent Shopify assets
-            const shopifyAssets = recentAssets.filter(a => a.strategy_id === 'shopify_store');
-            if (shopifyAssets.length > 0) {
-                html += '<div class="section-header"><h2>Recent Products Added by AI</h2></div>';
-                html += '<table><thead><tr><th>Time</th><th>Product</th><th>Status</th><th>Price</th></tr></thead><tbody>';
-                shopifyAssets.forEach(a => {
-                    const meta = typeof a.metadata === 'string' ? JSON.parse(a.metadata || '{}') : (a.metadata || {});
-                    html += `<tr>
-                        <td>${timeAgo(a.created_at)}</td>
-                        <td>${a.url ? `<a href="${esc(a.url)}" target="_blank" style="color:var(--purple)">${esc(a.title)}</a>` : esc(a.title)}</td>
-                        <td><span class="badge" style="background:${a.status === 'published' ? 'var(--green-dim);color:var(--green)' : 'var(--yellow-dim);color:var(--yellow)'}">${esc(a.status)}</span></td>
-                        <td>${meta.selling_price ? '$' + meta.selling_price : (meta.product_payload?.variants?.[0]?.price ? '$' + meta.product_payload.variants[0].price : '—')}</td>
-                    </tr>`;
-                });
-                html += '</tbody></table>';
-            }
-        } else {
-            html += '<div class="section-header"><h2>Shopify Store</h2></div>';
-            html += '<div class="thought-card" style="border-left:3px solid var(--purple);margin-bottom:16px">';
-            html += '<div class="type" style="color:var(--purple)">Not Connected</div>';
-            html += '<div class="reasoning">';
-            html += '<p>Connect your Shopify store in <a href="/settings" style="color:var(--purple)">Settings</a> to enable autonomous store management.</p>';
-            html += '<p style="margin-top:8px;color:var(--muted)">The AI will automatically add products, write descriptions, set pricing, manage SEO metadata, create collections, and promote your store.</p>';
-            html += '</div></div>';
-        }
-        html += '</div></div>'; // close tab-shopify
-
-        // ── Tab: Needs & Goals ──
-        html += '<div class="tab-content" id="tab-needs">';
-        html += '<div class="section">';
-        html += '<div class="section-header"><h2>System Needs & Goals</h2></div>';
-
-        // Goals
-        html += '<div class="thought-card" style="border-left:3px solid var(--green);margin-bottom:16px">';
-        html += '<div class="type" style="color:var(--green)">Current Goals</div>';
-        html += '<div class="reasoning">';
-        html += '<ul style="padding-left:18px;margin-top:6px;line-height:2">';
-        html += '<li>Generate first revenue from any strategy</li>';
-        html += '<li>Grow published content library for SEO traffic</li>';
-        html += '<li>Set up exchange keys for live crypto trading</li>';
-        html += '<li>Optimize strategy allocation based on performance data</li>';
-        html += '<li>Build recurring revenue via Stripe premium tool subscriptions</li>';
-        html += '</ul></div></div>';
-
-        // Future Plans
-        html += '<div class="thought-card" style="border-left:3px solid var(--cyan);margin-bottom:16px">';
-        html += '<div class="type" style="color:var(--cyan)">Future Plans</div>';
-        html += '<div class="reasoning">';
-        html += '<ul style="padding-left:18px;margin-top:6px;line-height:2">';
-        html += '<li>Scale SEO content to 100+ pages across multiple niches</li>';
-        html += '<li>Deploy serverless APIs on Cloudflare Workers for recurring revenue</li>';
-        html += '<li>A/B test all content titles and pricing with Bayesian optimization</li>';
-        html += '<li>Automate market analysis reports for crypto trading insights</li>';
-        html += '<li>Build data products from web scraping and sell on Gumroad</li>';
-        html += '</ul></div></div>';
-
-        // Needs
-        if (needs.length > 0) {
-            html += '<div class="section-header" style="margin-top:20px"><h2>Missing Integrations</h2><span class="badge" style="background:var(--yellow-dim);color:var(--yellow)">' + needs.length + ' needed</span></div>';
-            html += '<div class="needs-grid">';
-            needs.forEach(n => {
-                html += `<div class="need-card">
-                    <div class="need-type">${esc(n.type)}</div>
-                    <div class="need-name">${esc(n.name)}</div>
-                    <div class="need-cat">${esc(n.category)}</div>
-                </div>`;
-            });
-            html += '</div>';
-        } else {
-            // Build needs from integrations data
-            const integrations = d.integrations || [];
-            const missing = integrations.filter(i => !i.connected);
-            if (missing.length > 0) {
-                html += '<div class="section-header" style="margin-top:20px"><h2>Missing Integrations</h2><span class="badge" style="background:var(--yellow-dim);color:var(--yellow)">' + missing.length + ' needed</span></div>';
-                html += '<div class="needs-grid">';
-                missing.forEach(n => {
-                    html += `<div class="need-card">
-                        <div class="need-type">Integration</div>
-                        <div class="need-name">${esc(n.name)}</div>
-                        <div class="need-cat">${esc(n.category)}</div>
-                    </div>`;
-                });
-                html += '</div>';
-            }
-        }
-
-        html += '</div></div>';
-
-        document.getElementById('app').innerHTML = html;
-
-        // Wire up tabs
-        document.querySelectorAll('.tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                tab.classList.add('active');
-                document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-            });
-        });
-    }
-
-    // Initial load
-    fetchData();
-
-    // Auto-refresh every 60 seconds
-    setInterval(fetchData, 60000);
-    </script>
+// Auto-refresh every 5 minutes
+setTimeout(function() { location.reload(); }, 300000);
+</script>
 </body>
 </html>
