@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T17:21:03.935939+00:00",
+  "updated": "2026-02-26T17:23:23.555065+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 8776
+      "total_effort": 8791
     },
     {
       "id": "stripe_premium",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 21224
+      "total_effort": 21227
     },
     {
       "id": "strategy_reviewer",
@@ -135,10 +135,80 @@
     }
   ],
   "actions_today": {
-    "total": 11990,
-    "successes": 3612
+    "total": 12000,
+    "successes": 3614
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:23:20"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:23:20"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:22:06"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_emails",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:22:06"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-26 17:21:41"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_market_data",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:21:41"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:21:07"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_seo_optimize",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:21:07"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:21:06"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:21:06"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -278,76 +348,6 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:21:00"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-26 17:20:49"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": "scrape_market_data",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:20:49"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-26 17:20:18"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_seo_optimize",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:20:18"
     }
   ],
   "decisions": [
@@ -473,10 +473,18 @@
     }
   ],
   "assets": {
-    "total": 17380,
-    "published": 16965
+    "total": 17381,
+    "published": 16966
   },
   "recent_assets": [
+    {
+      "strategy_id": "data_scraper",
+      "asset_type": "product",
+      "title": "Crypto Market Analysis: Bitcoin Dominance and Fluctuations \u2014 February 26, 2026",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/reports/crypto-market-analysis-bitcoin-dominance-and-fluctuations-february-26-2026/",
+      "created_at": "2026-02-26 17:21:39"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -625,14 +633,6 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Digital Legacy Planning",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-26 17:18:51"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Revolutionizing Digital Legacy: How Perfect Audit Scores Can Transform Online Estate Planning",
       "status": "draft",
       "url": "",
       "created_at": "2026-02-26 17:18:51"
