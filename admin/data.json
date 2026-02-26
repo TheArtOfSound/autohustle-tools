@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T17:51:30.373973+00:00",
+  "updated": "2026-02-26T17:55:46.866305+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 834.7794485393817,
-      "total_effort": 5234
+      "total_effort": 5238
     },
     {
       "id": "digital_products",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 25545
+      "total_effort": 25585
     },
     {
       "id": "social_growth",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 8829
+      "total_effort": 8833
     },
     {
       "id": "stripe_premium",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 31761
+      "total_effort": 31772
     },
     {
       "id": "marketing_engine",
@@ -135,10 +135,150 @@
     }
   ],
   "actions_today": {
-    "total": 12517,
-    "successes": 3775
+    "total": 12537,
+    "successes": 3784
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:55:44"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:55:44"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-26 17:53:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:37"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:53:37"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "setup_brand",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:37"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:53:32"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "research_and_add_products",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:32"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "check_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:31"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:53:30"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:53:27"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:27"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-26 17:53:20"
+    },
+    {
+      "strategy_id": "crypto_trading",
+      "action_type": "fetch_and_analyze",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-26 17:53:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-26 17:53:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:12"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.5,
+      "executed_at": "2026-02-26 17:53:11"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": "generate_content",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 17:53:11"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -208,149 +348,15 @@
       "outcome": "partial",
       "reward": 0.0,
       "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-26 17:50:08"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:50:08"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_welcome_new",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 17:48:51"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.45,
-      "executed_at": "2026-02-26 17:47:38"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 779 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 920 tokens\n  crypto_trading: score=0.548 (mean=0.150, pulls=100) \u2192 779 tokens\n  data_scraper: score=0.405 (mean=0.007, pulls=100) \u2192 706 tokens\n  digital_products: score=0.457 (mean=0.058, pulls=100) \u2192 732 tokens\n  marketing_engine: score=0.419 (mean=0.021, pulls=100) \u2192 713 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 779 tokens\n  seo_content: score=0.622 (mean=0.224, pulls=100) \u2192 817 tokens\n  shopify_store: score=0.551 (mean=0.153, pulls=100) \u2192 781 tokens\n  social_growth: score=0.457 (mean=0.059, pulls=100) \u2192 733 tokens\n  solana_sniper: score=0.458 (mean=0.060, pulls=100) \u2192 733 tokens\n  strategy_reviewer: score=0.473 (mean=0.075, pulls=100) \u2192 741 tokens\n  stripe_premium: score=0.551 (mean=0.153, pulls=100) \u2192 781 tokens",
+      "outcome": null,
+      "created_at": "2026-02-26 17:52:53"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 780 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 921 tokens\n  crypto_trading: score=0.548 (mean=0.150, pulls=100) \u2192 780 tokens\n  data_scraper: score=0.405 (mean=0.007, pulls=100) \u2192 707 tokens\n  digital_products: score=0.460 (mean=0.061, pulls=100) \u2192 735 tokens\n  marketing_engine: score=0.413 (mean=0.015, pulls=100) \u2192 711 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 780 tokens\n  seo_content: score=0.616 (mean=0.218, pulls=100) \u2192 815 tokens\n  shopify_store: score=0.548 (mean=0.150, pulls=100) \u2192 780 tokens\n  social_growth: score=0.451 (mean=0.052, pulls=100) \u2192 730 tokens\n  solana_sniper: score=0.458 (mean=0.060, pulls=100) \u2192 734 tokens\n  strategy_reviewer: score=0.470 (mean=0.072, pulls=100) \u2192 740 tokens\n  stripe_premium: score=0.551 (mean=0.153, pulls=100) \u2192 781 tokens",
@@ -464,178 +470,172 @@
       "reasoning": "Round 56, C=1.133\n  content_optimizer: score=0.452 (mean=0.150, pulls=100) \u2192 372 tokens\n  course_creator: score=0.665 (mean=0.161, pulls=36) \u2192 436 tokens\n  crypto_trading: score=0.452 (mean=0.150, pulls=100) \u2192 372 tokens\n  data_scraper: score=0.302 (mean=0.000, pulls=100) \u2192 327 tokens\n  digital_products: score=0.383 (mean=0.081, pulls=100) \u2192 351 tokens\n  marketing_engine: score=0.314 (mean=0.012, pulls=100) \u2192 331 tokens\n  micro_saas: score=0.452 (mean=0.150, pulls=100) \u2192 372 tokens\n  seo_content: score=0.524 (mean=0.222, pulls=100) \u2192 394 tokens\n  shopify_store: score=0.452 (mean=0.150, pulls=100) \u2192 372 tokens\n  social_growth: score=0.380 (mean=0.077, pulls=100) \u2192 350 tokens\n  solana_sniper: score=0.362 (mean=0.060, pulls=100) \u2192 345 tokens\n  strategy_reviewer: score=0.377 (mean=0.075, pulls=100) \u2192 350 tokens\n  stripe_premium: score=0.455 (mean=0.153, pulls=100) \u2192 373 tokens",
       "outcome": null,
       "created_at": "2026-02-26 14:27:51"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 55, C=1.139\n  content_optimizer: score=0.454 (mean=0.150, pulls=100) \u2192 379 tokens\n  course_creator: score=0.667 (mean=0.161, pulls=36) \u2192 444 tokens\n  crypto_trading: score=0.454 (mean=0.150, pulls=100) \u2192 379 tokens\n  data_scraper: score=0.304 (mean=0.000, pulls=100) \u2192 334 tokens\n  digital_products: score=0.385 (mean=0.081, pulls=100) \u2192 358 tokens\n  marketing_engine: score=0.316 (mean=0.012, pulls=100) \u2192 337 tokens\n  micro_saas: score=0.454 (mean=0.150, pulls=100) \u2192 379 tokens\n  seo_content: score=0.526 (mean=0.222, pulls=100) \u2192 401 tokens\n  shopify_store: score=0.454 (mean=0.150, pulls=100) \u2192 379 tokens\n  social_growth: score=0.381 (mean=0.077, pulls=100) \u2192 357 tokens\n  solana_sniper: score=0.364 (mean=0.060, pulls=100) \u2192 352 tokens\n  strategy_reviewer: score=0.373 (mean=0.069, pulls=100) \u2192 355 tokens\n  stripe_premium: score=0.457 (mean=0.153, pulls=100) \u2192 380 tokens",
-      "outcome": null,
-      "created_at": "2026-02-26 14:22:52"
     }
   ],
   "assets": {
-    "total": 17516,
-    "published": 17108
+    "total": 17536,
+    "published": 17128
   },
   "recent_assets": [
     {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "5 Surprising Ways to Improve Your Home Office Ergonomics",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-26 17:47:38"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Optimizing Home Office Ergonomics for People with Disabilities",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-26 17:47:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Ergonomic Excellence: The Best Office Chairs for Long-Working Programmers",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-26 17:47:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Find Your Perfect Yoga Mat Match!",
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Medicine Ball vs Slam Ball Difference: Complete Guide to Choosing the Right Training Tool",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/find-your-perfect-yoga-mat-match/",
-      "created_at": "2026-02-26 17:46:38"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Sustainable Wellness: How Eco-Friendly Yoga Mats Are Revolutionizing the Practice for Environmentally Conscious Yogis",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/sustainable-wellness-how-eco-friendly-yoga-mats-are-revolutionizing-the-practice/",
-      "created_at": "2026-02-26 17:46:37"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Ultimate Guide to Choosing the Perfect Yoga Mat Thickness for Your Practice",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/the-ultimate-guide-to-choosing-the-perfect-yoga-mat-thickness-for-your-practice/",
-      "created_at": "2026-02-26 17:46:36"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Uncovering Hidden Gems",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/uncovering-hidden-gems/",
-      "created_at": "2026-02-26 17:46:20"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Secret Life of Product Trends: How We Predict What You'll Love Next",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/the-secret-life-of-product-trends-how-we-predict-what-youll-love-next/",
-      "created_at": "2026-02-26 17:46:19"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The Psychology of Product Curation",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-02-26 17:46:18"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "other",
-      "title": "Audit 2026-02-26T17:45 - Score:100 Fixes:0",
-      "status": "published",
-      "url": null,
-      "created_at": "2026-02-26 17:45:48"
+      "url": "https://theartofsound.github.io/autohustle-content/medicine-ball-vs-slam-ball-difference-complete-guide-to-choosing-the-right-training-tool/",
+      "created_at": "2026-02-26 17:53:37"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Top Picks for Best Workout Benches for Small Apartments",
+      "title": "Get Fit on Your Own Terms: Best Ankle Weights for Walking Seniors Over 60",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/top-picks-for-best-workout-benches-for-small-apartments/",
-      "created_at": "2026-02-26 17:44:18"
+      "url": "https://theartofsound.github.io/autohustle-content/get-fit-on-your-own-terms-best-ankle-weights-for-walking-seniors-over-60/",
+      "created_at": "2026-02-26 17:53:33"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "The Best Foam Roller for Runners Suffering from Knee Pain: Top Picks and Reviews",
+      "title": "Get Fit in Style: Top Workout Gloves for Calluses and Blister Relief",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/the-best-foam-roller-for-runners-suffering-from-knee-pain-top-picks-and-reviews/",
-      "created_at": "2026-02-26 17:44:16"
+      "url": "https://theartofsound.github.io/autohustle-content/get-fit-in-style-top-workout-gloves-for-calluses-and-blister-relief/",
+      "created_at": "2026-02-26 17:53:32"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Resistance Bands vs Cable Machine for Home Workouts: Which is Best for Your Fitness Goals?",
+      "title": "Best Exercise Ball for Pregnancy: Top 7 Prenatal Fitness Balls for Safe Workouts",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/resistance-bands-vs-cable-machine-for-home-workouts-which-is-best-for-your-fitness-goals/",
-      "created_at": "2026-02-26 17:44:15"
+      "url": "https://theartofsound.github.io/autohustle-content/best-exercise-ball-for-pregnancy-top-7-prenatal-fitness-balls-for-safe-workouts/",
+      "created_at": "2026-02-26 17:53:31"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Unleash Your Fitness Potential: Dumbbells vs Kettlebells for Weight Loss",
+      "title": "How to Fix a Squeaky Treadmill Belt: A Step-by-Step Guide for Fitness Enthusiasts",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/unleash-your-fitness-potential-dumbbells-vs-kettlebells-for-weight-loss/",
-      "created_at": "2026-02-26 17:44:14"
+      "url": "https://theartofsound.github.io/autohustle-content/how-to-fix-a-squeaky-treadmill-belt-a-step-by-step-guide-for-fitness-enthusiasts/",
+      "created_at": "2026-02-26 17:53:28"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "How to Choose the Perfect Pull Up Bar for Your Doorway: A Fitness Guide",
+      "title": "How to Fix a Jammed Printer Head: A Step-by-Step Guide for Home Office Users",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/how-to-choose-the-perfect-pull-up-bar-for-your-doorway-a-fitness-guide/",
-      "created_at": "2026-02-26 17:44:14"
+      "url": "https://theartofsound.github.io/autohustle-content/how-to-fix-a-jammed-printer-head-a-step-by-step-guide-for-home-office-users/",
+      "created_at": "2026-02-26 17:53:12"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "The Best Food Processor for Making Baby Food: Top Picks for Safe and Healthy Meal Prep",
+      "title": "Find the Best Monitor for Video Editing Software: Top Picks for Home Office",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/the-best-food-processor-for-making-baby-food-top-picks-for-safe-and-healthy-meal-prep/",
-      "created_at": "2026-02-26 17:43:53"
+      "url": "https://theartofsound.github.io/autohustle-content/find-the-best-monitor-for-video-editing-software-top-picks-for-home-office/",
+      "created_at": "2026-02-26 17:53:11"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "The Best Keyboards for Small Hands for Programming: Top Picks for Home Office",
+      "title": "How to Choose the Perfect Cat Scratching Post Height for a Happy Feline",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/the-best-keyboards-for-small-hands-for-programming-top-picks-for-home-office/",
-      "created_at": "2026-02-26 17:43:53"
+      "url": "https://theartofsound.github.io/autohustle-content/how-to-choose-the-perfect-cat-scratching-post-height-for-a-happy-feline/",
+      "created_at": "2026-02-26 17:53:11"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Cuisinart vs KitchenAid Food Processors: Which is Right for You?",
+      "title": "Electric vs Manual Can Opener: Which Durability Reigns Supreme in Kitchen Gadgets?",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/cuisinart-vs-kitchenaid-food-processors-which-is-right-for-you/",
-      "created_at": "2026-02-26 17:43:52"
+      "url": "https://theartofsound.github.io/autohustle-content/electric-vs-manual-can-opener-which-durability-reigns-supreme-in-kitchen-gadgets/",
+      "created_at": "2026-02-26 17:53:11"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "Maximize Natural Light in Your Home Office: A Step-by-Step Guide",
+      "title": "The Best Automatic Feeders for Multiple Cats | Top Pet Care Products",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/maximize-natural-light-in-your-home-office-a-step-by-step-guide/",
-      "created_at": "2026-02-26 17:43:52"
+      "url": "https://theartofsound.github.io/autohustle-content/the-best-automatic-feeders-for-multiple-cats-top-pet-care-products/",
+      "created_at": "2026-02-26 17:53:10"
     },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
-      "title": "The Ultimate Cat Litter vs Clumping Litter Comparison: Which is Best for Your Feline Friend?",
+      "title": "The Best Immersion Blenders for Hot Soup: Top Picks for Soups and More",
       "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/the-ultimate-cat-litter-vs-clumping-litter-comparison-which-is-best-for-your-feline-friend/",
-      "created_at": "2026-02-26 17:43:52"
+      "url": "https://theartofsound.github.io/autohustle-content/the-best-immersion-blenders-for-hot-soup-top-picks-for-soups-and-more/",
+      "created_at": "2026-02-26 17:53:10"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "The Best Mandoline Slicer for Beginners in 2024: Top Picks and Buying Guide",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/the-best-mandoline-slicer-for-beginners-in-2024-top-picks-and-buying-guide/",
+      "created_at": "2026-02-26 17:53:07"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Get the Best Headset for Seamless Online Gaming and Video Calls from Your Home Office",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/get-the-best-headset-for-seamless-online-gaming-and-video-calls-from-your-home-office/",
+      "created_at": "2026-02-26 17:53:06"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top-Rated Flea Shampoos for Puppies Under 12 Weeks: Expert Reviews",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/top-rated-flea-shampoos-for-puppies-under-12-weeks-expert-reviews/",
+      "created_at": "2026-02-26 17:53:06"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Dog's Health: Grain Free vs Regular Dog Food Benefits for a Happier Pet",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/unlock-your-dog-s-health-grain-free-vs-regular-dog-food-benefits-for-a-happier-pet/",
+      "created_at": "2026-02-26 17:53:05"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "7 Best Vegetable Spiralizers for Zucchini Noodles in 2024 (Tested & Reviewed)",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/7-best-vegetable-spiralizers-for-zucchini-noodles-in-2024-tested-reviewed/",
+      "created_at": "2026-02-26 17:53:05"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing the Perfect Rice Cooker Size for Your Family: A Step-by-Step Guide",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/choosing-the-perfect-rice-cooker-size-for-your-family-a-step-by-step-guide/",
+      "created_at": "2026-02-26 17:53:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Laptops Stands for Ergonomic Comfort in Home Office",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/discover-the-best-laptops-stands-for-ergonomic-comfort-in-home-office/",
+      "created_at": "2026-02-26 17:53:04"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Headsets for Seamless Online Meetings: Expert Picks",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/top-headsets-for-seamless-online-meetings-expert-picks/",
+      "created_at": "2026-02-26 17:53:03"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Choosing Dog Toys for Aggressive Chewers: A Step-by-Step Guide to Safe Play",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/choosing-dog-toys-for-aggressive-chewers-a-step-by-step-guide-to-safe-play/",
+      "created_at": "2026-02-26 17:53:03"
     }
   ],
   "crypto": {
@@ -987,6 +987,150 @@
       }
     ],
     "prices": [
+      {
+        "coin": "bitcoin",
+        "price_usd": 66709.0,
+        "price_change_24h": -2.9155339447941384,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1987.26,
+        "price_change_24h": -4.111395722372615,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 84.97,
+        "price_change_24h": -4.126655613014798,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.095855,
+        "price_change_24h": -6.889481090978422,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.283689,
+        "price_change_24h": -4.157632288153811,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.53,
+        "price_change_24h": -3.1714783207817434,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.88,
+        "price_change_24h": -6.290282497684677,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.68,
+        "price_change_24h": -6.280848503527695,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.39,
+        "price_change_24h": -5.412674265980024,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.94e-06,
+        "price_change_24h": -7.341815411389042,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.8e-06,
+        "price_change_24h": -12.312567942398617,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.912522,
+        "price_change_24h": -6.646874311560601,
+        "recorded_at": "2026-02-26 17:53:10"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 66709.0,
+        "price_change_24h": -2.9155339447941384,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1987.26,
+        "price_change_24h": -4.111395722372615,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 84.97,
+        "price_change_24h": -4.126655613014798,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.095855,
+        "price_change_24h": -6.889481090978422,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.283689,
+        "price_change_24h": -4.157632288153811,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.53,
+        "price_change_24h": -3.1714783207817434,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.88,
+        "price_change_24h": -6.290282497684677,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.68,
+        "price_change_24h": -6.280848503527695,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.39,
+        "price_change_24h": -5.412674265980024,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.94e-06,
+        "price_change_24h": -7.341815411389042,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.8e-06,
+        "price_change_24h": -12.312567942398617,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.912522,
+        "price_change_24h": -6.646874311560601,
+        "recorded_at": "2026-02-26 17:53:03"
+      },
       {
         "coin": "bitcoin",
         "price_usd": 66801.0,
