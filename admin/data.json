@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-26T15:07:14.668071+00:00",
+  "updated": "2026-02-26T15:07:29.486765+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 8757
+      "total_effort": 8766
     },
     {
       "id": "stripe_premium",
@@ -135,10 +135,38 @@
     }
   ],
   "actions_today": {
-    "total": 11647,
+    "total": 11651,
     "successes": 3503
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 15:07:28"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 15:07:28"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-26 15:07:23"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_emails",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-26 15:07:23"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -304,34 +332,6 @@
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 15:06:12"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 15:06:12"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-26 15:06:12"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-26 15:06:12"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
       "reward": 0.0,
       "executed_at": "2026-02-26 15:06:12"
     },
