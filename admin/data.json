@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-27T16:19:28.290141+00:00",
+  "updated": "2026-02-27T16:29:48.931343+00:00",
   "revenue": {
     "total": 144.4362091308694,
     "last_7d": 144.4362091308694
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 834.7794485393817,
-      "total_effort": 5792
+      "total_effort": 5800
     },
     {
       "id": "digital_products",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1206
+      "total_effort": 1208
     },
     {
       "id": "seo_content",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 4050
+      "total_effort": 4051
     },
     {
       "id": "api_products",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2372
+      "total_effort": 2376
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 9384
+      "total_effort": 9391
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 8084
+      "total_effort": 8091
     },
     {
       "id": "course_creator",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 35247
+      "total_effort": 35272
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 24380
+      "total_effort": 24407
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2505
+      "total_effort": 2515
     },
     {
       "id": "solana_sniper",
@@ -131,226 +131,238 @@
       "type": "solana_sniper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 539
+      "total_effort": 541
     }
   ],
   "actions_today": {
-    "total": 6382,
-    "successes": 2330
+    "total": 6462,
+    "successes": 2356
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:29:46"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:29:46"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:39"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:39"
+    },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 16:19:24"
+      "executed_at": "2026-02-27 16:28:39"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:24"
+      "executed_at": "2026-02-27 16:28:39"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:33"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:33"
     },
     {
       "strategy_id": "strategy_reviewer",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "strategy_reviewer",
       "action_type": "review_strategy",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_welcome_new",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:19:16"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-27 16:18:51"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": "review_strategy",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:51"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
+      "executed_at": "2026-02-27 16:28:32"
     },
     {
       "strategy_id": "marketing_engine",
-      "action_type": "marketing_new_arrival",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 16:18:29"
+      "executed_at": "2026-02-27 16:28:32"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 16:28:32"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 19, C=1.364\n  content_optimizer: score=0.514 (mean=0.150, pulls=100) \u2192 653 tokens\n  course_creator: score=0.768 (mean=0.161, pulls=36) \u2192 766 tokens\n  crypto_trading: score=0.508 (mean=0.144, pulls=100) \u2192 650 tokens\n  data_scraper: score=0.364 (mean=0.000, pulls=100) \u2192 586 tokens\n  digital_products: score=0.409 (mean=0.045, pulls=100) \u2192 607 tokens\n  marketing_engine: score=0.376 (mean=0.012, pulls=100) \u2192 592 tokens\n  micro_saas: score=0.514 (mean=0.150, pulls=100) \u2192 653 tokens\n  seo_content: score=0.565 (mean=0.201, pulls=100) \u2192 676 tokens\n  shopify_store: score=0.514 (mean=0.150, pulls=100) \u2192 653 tokens\n  social_growth: score=0.486 (mean=0.122, pulls=100) \u2192 641 tokens\n  solana_sniper: score=0.701 (mean=0.337, pulls=100) \u2192 736 tokens\n  strategy_reviewer: score=0.502 (mean=0.138, pulls=100) \u2192 648 tokens\n  stripe_premium: score=0.514 (mean=0.150, pulls=100) \u2192 653 tokens",
+      "outcome": null,
+      "created_at": "2026-02-27 16:27:55"
+    },
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 18, C=1.371\n  content_optimizer: score=0.516 (mean=0.150, pulls=100) \u2192 655 tokens\n  course_creator: score=0.771 (mean=0.161, pulls=36) \u2192 767 tokens\n  crypto_trading: score=0.510 (mean=0.144, pulls=100) \u2192 652 tokens\n  data_scraper: score=0.366 (mean=0.000, pulls=100) \u2192 588 tokens\n  digital_products: score=0.411 (mean=0.045, pulls=100) \u2192 608 tokens\n  marketing_engine: score=0.378 (mean=0.012, pulls=100) \u2192 594 tokens\n  micro_saas: score=0.516 (mean=0.150, pulls=100) \u2192 655 tokens\n  seo_content: score=0.567 (mean=0.201, pulls=100) \u2192 677 tokens\n  shopify_store: score=0.516 (mean=0.150, pulls=100) \u2192 655 tokens\n  social_growth: score=0.488 (mean=0.122, pulls=100) \u2192 642 tokens\n  solana_sniper: score=0.705 (mean=0.340, pulls=100) \u2192 739 tokens\n  strategy_reviewer: score=0.504 (mean=0.138, pulls=100) \u2192 649 tokens\n  stripe_premium: score=0.516 (mean=0.150, pulls=100) \u2192 655 tokens",
+      "outcome": null,
+      "created_at": "2026-02-27 16:22:57"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 17, C=1.377\n  content_optimizer: score=0.518 (mean=0.150, pulls=100) \u2192 659 tokens\n  course_creator: score=0.774 (mean=0.161, pulls=36) \u2192 773 tokens\n  crypto_trading: score=0.512 (mean=0.144, pulls=100) \u2192 656 tokens\n  data_scraper: score=0.368 (mean=0.000, pulls=100) \u2192 592 tokens\n  digital_products: score=0.413 (mean=0.045, pulls=100) \u2192 612 tokens\n  marketing_engine: score=0.380 (mean=0.012, pulls=100) \u2192 597 tokens\n  micro_saas: score=0.518 (mean=0.150, pulls=100) \u2192 659 tokens\n  seo_content: score=0.569 (mean=0.201, pulls=100) \u2192 682 tokens\n  shopify_store: score=0.518 (mean=0.150, pulls=100) \u2192 659 tokens\n  social_growth: score=0.490 (mean=0.122, pulls=100) \u2192 646 tokens\n  solana_sniper: score=0.716 (mean=0.349, pulls=100) \u2192 747 tokens\n  strategy_reviewer: score=0.506 (mean=0.138, pulls=100) \u2192 653 tokens\n  stripe_premium: score=0.518 (mean=0.150, pulls=100) \u2192 659 tokens",
@@ -458,25 +470,29 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 889 tokens\n  crypto_trading: score=0.542 (mean=0.144, pulls=100) \u2192 756 tokens\n  data_scraper: score=0.398 (mean=0.000, pulls=100) \u2192 688 tokens\n  digital_products: score=0.434 (mean=0.035, pulls=100) \u2192 704 tokens\n  marketing_engine: score=0.419 (mean=0.021, pulls=100) \u2192 698 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  seo_content: score=0.603 (mean=0.204, pulls=100) \u2192 784 tokens\n  shopify_store: score=0.545 (mean=0.147, pulls=100) \u2192 757 tokens\n  social_growth: score=0.542 (mean=0.144, pulls=100) \u2192 756 tokens\n  solana_sniper: score=0.934 (mean=0.536, pulls=100) \u2192 941 tokens\n  strategy_reviewer: score=0.518 (mean=0.120, pulls=100) \u2192 744 tokens\n  stripe_premium: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens",
       "outcome": null,
       "created_at": "2026-02-27 14:39:42"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 890 tokens\n  crypto_trading: score=0.545 (mean=0.147, pulls=100) \u2192 758 tokens\n  data_scraper: score=0.398 (mean=0.000, pulls=100) \u2192 688 tokens\n  digital_products: score=0.437 (mean=0.038, pulls=100) \u2192 706 tokens\n  marketing_engine: score=0.416 (mean=0.018, pulls=100) \u2192 697 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  seo_content: score=0.603 (mean=0.204, pulls=100) \u2192 785 tokens\n  shopify_store: score=0.545 (mean=0.147, pulls=100) \u2192 758 tokens\n  social_growth: score=0.536 (mean=0.138, pulls=100) \u2192 753 tokens\n  solana_sniper: score=0.922 (mean=0.524, pulls=100) \u2192 936 tokens\n  strategy_reviewer: score=0.518 (mean=0.120, pulls=100) \u2192 745 tokens\n  stripe_premium: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens",
-      "outcome": null,
-      "created_at": "2026-02-27 14:36:29"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 890 tokens\n  crypto_trading: score=0.542 (mean=0.144, pulls=100) \u2192 756 tokens\n  data_scraper: score=0.398 (mean=0.000, pulls=100) \u2192 688 tokens\n  digital_products: score=0.437 (mean=0.038, pulls=100) \u2192 706 tokens\n  marketing_engine: score=0.416 (mean=0.018, pulls=100) \u2192 697 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens\n  seo_content: score=0.604 (mean=0.206, pulls=100) \u2192 786 tokens\n  shopify_store: score=0.545 (mean=0.147, pulls=100) \u2192 758 tokens\n  social_growth: score=0.536 (mean=0.138, pulls=100) \u2192 754 tokens\n  solana_sniper: score=0.922 (mean=0.524, pulls=100) \u2192 937 tokens\n  strategy_reviewer: score=0.515 (mean=0.117, pulls=100) \u2192 744 tokens\n  stripe_premium: score=0.548 (mean=0.150, pulls=100) \u2192 759 tokens",
-      "outcome": null,
-      "created_at": "2026-02-27 14:33:32"
     }
   ],
   "assets": {
-    "total": 19388,
-    "published": 18978
+    "total": 19390,
+    "published": 18980
   },
   "recent_assets": [
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "post",
+      "title": "Summer Vibes and Steals: Seasonal Deals on Power Tools, Accessories, and More",
+      "status": "published",
+      "url": "",
+      "created_at": "2026-02-27 16:28:29"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "post",
+      "title": "Unlock Your Beauty Routine: Top Picks Under $50",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/unlock-your-beauty-routine-top-picks-under-50/",
+      "created_at": "2026-02-27 16:23:30"
+    },
     {
       "strategy_id": "shopify_store",
       "asset_type": "post",
@@ -620,22 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/getting-started-with-fitness-essential-gear-for-beginners/",
       "created_at": "2026-02-27 15:28:28"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "10 Creative Kitchen Gadget Ideas to Upgrade Your Cooking Space",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/10-creative-kitchen-gadget-ideas-to-upgrade-your-cooking-space/",
-      "created_at": "2026-02-27 15:28:27"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Getting Started with Fitness: Essential Equipment for Beginners",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/getting-started-with-fitness-essential-equipment-for-beginners/",
-      "created_at": "2026-02-27 15:28:26"
     }
   ],
   "crypto": {
@@ -987,6 +987,294 @@
       }
     ],
     "prices": [
+      {
+        "coin": "bitcoin",
+        "price_usd": 66019.0,
+        "price_change_24h": -1.9220643952762275,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 66019.0,
+        "price_change_24h": -1.9220643952762275,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1942.59,
+        "price_change_24h": -4.354984809934258,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1942.59,
+        "price_change_24h": -4.354984809934258,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 82.25,
+        "price_change_24h": -4.739224642037653,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 82.25,
+        "price_change_24h": -4.739224642037653,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.094175,
+        "price_change_24h": -4.142349393659125,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.094175,
+        "price_change_24h": -4.142349393659125,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.27948,
+        "price_change_24h": -3.659373504012554,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.27948,
+        "price_change_24h": -3.659373504012554,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.58,
+        "price_change_24h": 0.1539705992477462,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.58,
+        "price_change_24h": 0.1539705992477462,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.78,
+        "price_change_24h": -3.4334017652433992,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.78,
+        "price_change_24h": -3.4334017652433992,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.53,
+        "price_change_24h": -1.857955130815887,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.53,
+        "price_change_24h": -1.857955130815887,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.36,
+        "price_change_24h": -4.324300610770244,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.36,
+        "price_change_24h": -4.324300610770244,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.82e-06,
+        "price_change_24h": -3.486339415487355,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.82e-06,
+        "price_change_24h": -3.486339415487355,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.7e-06,
+        "price_change_24h": -4.535313217450409,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.7e-06,
+        "price_change_24h": -4.535313217450409,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.913452,
+        "price_change_24h": -2.45796840161086,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.913452,
+        "price_change_24h": -2.45796840161086,
+        "recorded_at": "2026-02-27 16:28:05"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 65890.0,
+        "price_change_24h": -2.113590592339491,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 65890.0,
+        "price_change_24h": -2.113590592339491,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1938.83,
+        "price_change_24h": -4.540168260252688,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 1938.83,
+        "price_change_24h": -4.540168260252688,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 82.22,
+        "price_change_24h": -4.768227339786979,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 82.22,
+        "price_change_24h": -4.768227339786979,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.093776,
+        "price_change_24h": -4.548513479207203,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.093776,
+        "price_change_24h": -4.548513479207203,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.278716,
+        "price_change_24h": -3.6604624175058267,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.278716,
+        "price_change_24h": -3.6604624175058267,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.57,
+        "price_change_24h": 0.4106365143120226,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.57,
+        "price_change_24h": 0.4106365143120226,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.76,
+        "price_change_24h": -3.6646492987529635,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 8.76,
+        "price_change_24h": -3.6646492987529635,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.47,
+        "price_change_24h": -1.9658110087125868,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.47,
+        "price_change_24h": -1.9658110087125868,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.35,
+        "price_change_24h": -4.4970866092092106,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.35,
+        "price_change_24h": -4.4970866092092106,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.8e-06,
+        "price_change_24h": -3.603052025527912,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.8e-06,
+        "price_change_24h": -3.603052025527912,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.68e-06,
+        "price_change_24h": -4.952361836514389,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.68e-06,
+        "price_change_24h": -4.952361836514389,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.910804,
+        "price_change_24h": -2.6583761961060217,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.910804,
+        "price_change_24h": -2.6583761961060217,
+        "recorded_at": "2026-02-27 16:23:07"
+      },
       {
         "coin": "bitcoin",
         "price_usd": 65927.0,
