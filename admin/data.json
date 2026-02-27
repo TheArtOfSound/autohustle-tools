@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-27T18:41:22.938994+00:00",
+  "updated": "2026-02-27T18:42:59.925157+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6638
+      "total_effort": 6648
     },
     {
       "id": "freelance",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 29284
+      "total_effort": 29294
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 4135
+      "total_effort": 4136
     },
     {
       "id": "api_products",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 9512
+      "total_effort": 9519
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 8251
+      "total_effort": 8258
     },
     {
       "id": "course_creator",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 35803
+      "total_effort": 35815
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 25015
+      "total_effort": 25042
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2725
+      "total_effort": 2735
     },
     {
       "id": "solana_sniper",
@@ -135,219 +135,219 @@
     }
   ],
   "actions_today": {
-    "total": 8341,
-    "successes": 2985
+    "total": 8393,
+    "successes": 2995
   },
   "recent_actions": [
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-27 18:41:21"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:42:57"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:21"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-02-27 18:41:20"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:20"
+      "executed_at": "2026-02-27 18:42:57"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 18:41:19"
+      "executed_at": "2026-02-27 18:41:42"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:19"
+      "executed_at": "2026-02-27 18:41:42"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:40"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:40"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": "send_promo_email",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:10"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:10"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": "review_strategy",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_welcome_new",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
-      "strategy_id": "marketing_engine",
+      "strategy_id": "digital_products",
       "action_type": null,
-      "outcome": "partial",
+      "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_new_arrival",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 18:41:09"
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_welcome_new",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 18:41:34"
     }
   ],
   "decisions": [
@@ -473,10 +473,18 @@
     }
   ],
   "assets": {
-    "total": 19839,
-    "published": 19417
+    "total": 19840,
+    "published": 19418
   },
   "recent_assets": [
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Baby Products on Sale: Affordable and Essential Items",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/discover-the-best-baby-products-on-sale-affordable-and-essential-items/",
+      "created_at": "2026-02-27 18:41:22"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -628,14 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/discover-the-best-kitchen-gadgets-for-gifts-this-season/",
       "created_at": "2026-02-27 18:40:57"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Unleash Your Potential: Best Fitness Accessories for Men to Enhance Workouts",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/unleash-your-potential-best-fitness-accessories-for-men-to-enhance-workouts/",
-      "created_at": "2026-02-27 18:40:56"
     }
   ],
   "crypto": {
