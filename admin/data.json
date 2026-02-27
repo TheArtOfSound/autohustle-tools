@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-27T00:14:09.203297+00:00",
+  "updated": "2026-02-27T00:22:52.954673+00:00",
   "revenue": {
     "total": 40.021009130869395,
     "last_7d": 40.021009130869395
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 834.7794485393817,
-      "total_effort": 5398
+      "total_effort": 5402
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6020
+      "total_effort": 6030
     },
     {
       "id": "freelance",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1120
+      "total_effort": 1121
     },
     {
       "id": "seo_content",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 26590
+      "total_effort": 26616
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 3845
+      "total_effort": 3846
     },
     {
       "id": "api_products",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2188
+      "total_effort": 2190
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 9028
+      "total_effort": 9035
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 7499
+      "total_effort": 7506
     },
     {
       "id": "course_creator",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 32988
+      "total_effort": 33025
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 22406
+      "total_effort": 22433
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 1705
+      "total_effort": 1715
     },
     {
       "id": "solana_sniper",
@@ -131,226 +131,232 @@
       "type": "solana_sniper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 355
+      "total_effort": 358
     }
   ],
   "actions_today": {
-    "total": 110,
-    "successes": 36
+    "total": 197,
+    "successes": 69
   },
   "recent_actions": [
     {
-      "strategy_id": "digital_products",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-27 00:13:39"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:22:50"
     },
     {
-      "strategy_id": "digital_products",
-      "action_type": "list_product",
+      "strategy_id": "data_scraper",
+      "action_type": "discover_communities",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:13:39"
+      "executed_at": "2026-02-27 00:22:50"
     },
     {
-      "strategy_id": "digital_products",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "failure",
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:13:22"
+      "executed_at": "2026-02-27 00:21:41"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:41"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:34"
+      "executed_at": "2026-02-27 00:21:35"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:34"
+      "executed_at": "2026-02-27 00:21:35"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-02-27 00:21:35"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": "create_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:35"
     },
     {
       "strategy_id": "solana_sniper",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
     },
     {
       "strategy_id": "solana_sniper",
       "action_type": "start_bot",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
-      "outcome": "success",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-27 00:21:26"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:26"
+    },
+    {
+      "strategy_id": "solana_sniper",
+      "action_type": "sync_metrics",
+      "outcome": "success",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:26"
     },
     {
       "strategy_id": "solana_sniper",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
     },
     {
       "strategy_id": "solana_sniper",
       "action_type": "sync_metrics",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:22"
+      "executed_at": "2026-02-27 00:21:26"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-27 00:21:25"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": "review_strategy",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:25"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-27 00:21:25"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": "review_strategy",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:21"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:21"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:25"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:21"
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-27 00:11:21"
+      "executed_at": "2026-02-27 00:21:25"
     },
     {
       "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
+      "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:21"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:20"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:20"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:20"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-27 00:11:20"
+      "executed_at": "2026-02-27 00:21:25"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 6, C=1.456\n  content_optimizer: score=0.538 (mean=0.150, pulls=100) \u2192 765 tokens\n  course_creator: score=0.808 (mean=0.161, pulls=36) \u2192 902 tokens\n  crypto_trading: score=0.538 (mean=0.150, pulls=100) \u2192 765 tokens\n  data_scraper: score=0.388 (mean=0.000, pulls=100) \u2192 689 tokens\n  digital_products: score=0.443 (mean=0.055, pulls=100) \u2192 717 tokens\n  marketing_engine: score=0.457 (mean=0.069, pulls=100) \u2192 724 tokens\n  micro_saas: score=0.538 (mean=0.150, pulls=100) \u2192 765 tokens\n  seo_content: score=0.585 (mean=0.197, pulls=100) \u2192 789 tokens\n  shopify_store: score=0.538 (mean=0.150, pulls=100) \u2192 765 tokens\n  social_growth: score=0.503 (mean=0.115, pulls=100) \u2192 747 tokens\n  solana_sniper: score=0.448 (mean=0.060, pulls=100) \u2192 720 tokens\n  strategy_reviewer: score=0.493 (mean=0.105, pulls=100) \u2192 742 tokens\n  stripe_premium: score=0.541 (mean=0.153, pulls=100) \u2192 767 tokens",
+      "outcome": null,
+      "created_at": "2026-02-27 00:19:11"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 5, C=1.463\n  content_optimizer: score=0.540 (mean=0.150, pulls=100) \u2192 772 tokens\n  course_creator: score=0.812 (mean=0.161, pulls=36) \u2192 910 tokens\n  crypto_trading: score=0.540 (mean=0.150, pulls=100) \u2192 772 tokens\n  data_scraper: score=0.390 (mean=0.000, pulls=100) \u2192 695 tokens\n  digital_products: score=0.446 (mean=0.056, pulls=100) \u2192 724 tokens\n  marketing_engine: score=0.462 (mean=0.072, pulls=100) \u2192 732 tokens\n  micro_saas: score=0.540 (mean=0.150, pulls=100) \u2192 772 tokens\n  seo_content: score=0.594 (mean=0.204, pulls=100) \u2192 799 tokens\n  shopify_store: score=0.540 (mean=0.150, pulls=100) \u2192 772 tokens\n  social_growth: score=0.505 (mean=0.115, pulls=100) \u2192 754 tokens\n  solana_sniper: score=0.450 (mean=0.060, pulls=100) \u2192 726 tokens\n  strategy_reviewer: score=0.498 (mean=0.108, pulls=100) \u2192 750 tokens\n  stripe_premium: score=0.540 (mean=0.150, pulls=100) \u2192 772 tokens",
@@ -464,19 +470,117 @@
       "reasoning": "Round 1, C=1.492\n  content_optimizer: score=0.548 (mean=0.150, pulls=100) \u2192 776 tokens\n  course_creator: score=0.825 (mean=0.161, pulls=36) \u2192 916 tokens\n  crypto_trading: score=0.548 (mean=0.150, pulls=100) \u2192 776 tokens\n  data_scraper: score=0.405 (mean=0.007, pulls=100) \u2192 704 tokens\n  digital_products: score=0.437 (mean=0.039, pulls=100) \u2192 720 tokens\n  marketing_engine: score=0.464 (mean=0.066, pulls=100) \u2192 734 tokens\n  micro_saas: score=0.548 (mean=0.150, pulls=100) \u2192 776 tokens\n  seo_content: score=0.601 (mean=0.203, pulls=100) \u2192 803 tokens\n  shopify_store: score=0.548 (mean=0.150, pulls=100) \u2192 776 tokens\n  social_growth: score=0.518 (mean=0.119, pulls=100) \u2192 761 tokens\n  solana_sniper: score=0.458 (mean=0.060, pulls=100) \u2192 731 tokens\n  strategy_reviewer: score=0.482 (mean=0.084, pulls=100) \u2192 743 tokens\n  stripe_premium: score=0.551 (mean=0.153, pulls=100) \u2192 778 tokens",
       "outcome": null,
       "created_at": "2026-02-26 22:29:59"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 2, C=1.485\n  content_optimizer: score=0.546 (mean=0.150, pulls=100) \u2192 765 tokens\n  course_creator: score=0.822 (mean=0.161, pulls=36) \u2192 902 tokens\n  crypto_trading: score=0.546 (mean=0.150, pulls=100) \u2192 765 tokens\n  data_scraper: score=0.403 (mean=0.007, pulls=100) \u2192 693 tokens\n  digital_products: score=0.435 (mean=0.039, pulls=100) \u2192 709 tokens\n  marketing_engine: score=0.462 (mean=0.066, pulls=100) \u2192 723 tokens\n  micro_saas: score=0.546 (mean=0.150, pulls=100) \u2192 765 tokens\n  seo_content: score=0.603 (mean=0.206, pulls=100) \u2192 793 tokens\n  shopify_store: score=0.546 (mean=0.150, pulls=100) \u2192 765 tokens\n  social_growth: score=0.516 (mean=0.119, pulls=100) \u2192 749 tokens\n  solana_sniper: score=0.456 (mean=0.060, pulls=100) \u2192 720 tokens\n  strategy_reviewer: score=0.480 (mean=0.084, pulls=100) \u2192 732 tokens\n  stripe_premium: score=0.549 (mean=0.153, pulls=100) \u2192 766 tokens",
-      "outcome": null,
-      "created_at": "2026-02-26 22:22:47"
     }
   ],
   "assets": {
-    "total": 18189,
-    "published": 17786
+    "total": 18202,
+    "published": 17798
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "50 Professional Checklist Tips: Health Edition",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-02-27 00:21:35"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "other",
+      "title": "Audit 2026-02-27T00:21 - Score:100 Fixes:0",
+      "status": "published",
+      "url": null,
+      "created_at": "2026-02-27 00:21:21"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "post",
+      "title": "How We Curate the Best Products for You: A Behind-the-Scenes Look at Trend",
+      "status": "published",
+      "url": "",
+      "created_at": "2026-02-27 00:21:19"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Unlock Your Fitness Potential: Best Fitness Accessories 2024",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/unlock-your-fitness-potential-best-fitness-accessories-2024/",
+      "created_at": "2026-02-27 00:20:43"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Fitness Accessories 2025: Top Picks for Your Workout Gear",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/best-fitness-accessories-2025-top-picks-for-your-workout-gear/",
+      "created_at": "2026-02-27 00:20:39"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Essential Kitchen Gadgets for Men: Upgrade Your Cooking Game",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/essential-kitchen-gadgets-for-men-upgrade-your-cooking-game/",
+      "created_at": "2026-02-27 00:19:48"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover Top Kitchen Gadgets Near Me for a Smart Cooking Experience",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/discover-top-kitchen-gadgets-near-me-for-a-smart-cooking-experience/",
+      "created_at": "2026-02-27 00:19:45"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Essential Kitchen Gadgets for Every Home Cook: What You Need to Know",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/essential-kitchen-gadgets-for-every-home-cook-what-you-need-to-know/",
+      "created_at": "2026-02-27 00:19:37"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Home Office Computer Reviews for Productive Workspace",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/top-home-office-computer-reviews-for-productive-workspace/",
+      "created_at": "2026-02-27 00:19:29"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Top Picks for 2024: Best Home Office Equipment for Productivity",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/top-picks-for-2024-best-home-office-equipment-for-productivity/",
+      "created_at": "2026-02-27 00:19:27"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Boost Productivity with These Home Office Equipment Ideas",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/boost-productivity-with-these-home-office-equipment-ideas/",
+      "created_at": "2026-02-27 00:19:23"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Discover the Best Home Office Furniture Brands for a Productive Workspace",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/discover-the-best-home-office-furniture-brands-for-a-productive-workspace/",
+      "created_at": "2026-02-27 00:19:20"
+    },
+    {
+      "strategy_id": "seo_content",
+      "asset_type": "page",
+      "title": "Best Home Office Supplies for a Productive Workspace",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/best-home-office-supplies-for-a-productive-workspace/",
+      "created_at": "2026-02-27 00:19:18"
+    },
     {
       "strategy_id": "shopify_store",
       "asset_type": "other",
@@ -532,110 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/boost-productivity-with-the-best-home-office-equipment-for-remote-workers/",
       "created_at": "2026-02-27 00:05:38"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Boost Productivity with the Right Home Office Furniture",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/boost-productivity-with-the-right-home-office-furniture/",
-      "created_at": "2026-02-27 00:05:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Optimize Your Home Office: Essential Equipment for Productivity",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/optimize-your-home-office-essential-equipment-for-productivity/",
-      "created_at": "2026-02-27 00:04:36"
-    },
-    {
-      "strategy_id": "digital_products",
-      "asset_type": "product",
-      "title": "50 Professional Checklist Tips: Design Edition",
-      "status": "monetized",
-      "url": "https://buy.stripe.com/bJedR998Z04K5sGdnS6c22h",
-      "created_at": "2026-02-27 00:00:06"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Get Fit with Ease: A Step-by-Step Guide on How to Fit Accessories",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/get-fit-with-ease-a-step-by-step-guide-on-how-to-fit-accessories/",
-      "created_at": "2026-02-26 23:56:59"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Fitness Accessories for a Stronger You: What They Are and How to Choose",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/fitness-accessories-for-a-stronger-you-what-they-are-and-how-to-choose/",
-      "created_at": "2026-02-26 23:56:56"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Elevate Your Fitness Routine with Essential Accessories for Gym Workout",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/elevate-your-fitness-routine-with-essential-accessories-for-gym-workout/",
-      "created_at": "2026-02-26 23:56:52"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Best Gym Accessories in 2023: Top Fitness Gear for Your Workouts",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/best-gym-accessories-in-2023-top-fitness-gear-for-your-workouts/",
-      "created_at": "2026-02-26 23:56:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Fitness Accessories Brands to Elevate Your Workout in 2023",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/top-fitness-accessories-brands-to-elevate-your-workout-in-2023/",
-      "created_at": "2026-02-26 23:56:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Kitchen Gadgets for Moms: The Ultimate Guide to Saving Time and Effort",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/kitchen-gadgets-for-moms-the-ultimate-guide-to-saving-time-and-effort/",
-      "created_at": "2026-02-26 23:54:42"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Kitchen Gadgets Gifts for Home Cooks and Foodies",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/kitchen-gadgets-gifts-for-home-cooks-and-foodies/",
-      "created_at": "2026-02-26 23:54:38"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "other",
-      "title": "Audit 2026-02-26T23:47 - Score:100 Fixes:0",
-      "status": "published",
-      "url": null,
-      "created_at": "2026-02-26 23:47:49"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "asset_type": "post",
-      "title": "Summer Vibes and Steals: Seasonal Deals on Power Tools, Accessories, and More",
-      "status": "published",
-      "url": "",
-      "created_at": "2026-02-26 23:47:47"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Find the Best Fitness Accessories Near Me: A Guide to Getting Fit",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/find-the-best-fitness-accessories-near-me-a-guide-to-getting-fit/",
-      "created_at": "2026-02-26 23:47:23"
     }
   ],
   "crypto": {
@@ -987,6 +987,150 @@
       }
     ],
     "prices": [
+      {
+        "coin": "bitcoin",
+        "price_usd": 67344.0,
+        "price_change_24h": -1.3213663359175392,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 67344.0,
+        "price_change_24h": -1.3213663359175392,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 2024.61,
+        "price_change_24h": -2.0257340220082543,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 2024.61,
+        "price_change_24h": -2.0257340220082543,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 85.87,
+        "price_change_24h": -3.316438165033389,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 85.87,
+        "price_change_24h": -3.316438165033389,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.096674,
+        "price_change_24h": -4.3460100266353905,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.096674,
+        "price_change_24h": -4.3460100266353905,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.286353,
+        "price_change_24h": -4.498759394340993,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.286353,
+        "price_change_24h": -4.498759394340993,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.6,
+        "price_change_24h": -1.0354700929512806,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.6,
+        "price_change_24h": -1.0354700929512806,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 9.07,
+        "price_change_24h": -2.2455185615855093,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 9.07,
+        "price_change_24h": -2.2455185615855093,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 55.6,
+        "price_change_24h": -2.1208272916348214,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 55.6,
+        "price_change_24h": -2.1208272916348214,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.4,
+        "price_change_24h": -2.950874176513647,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.4,
+        "price_change_24h": -2.950874176513647,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.97e-06,
+        "price_change_24h": -4.1373335037556895,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 5.97e-06,
+        "price_change_24h": -4.1373335037556895,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.83e-06,
+        "price_change_24h": -7.520022489274469,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.83e-06,
+        "price_change_24h": -7.520022489274469,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.935734,
+        "price_change_24h": -3.8086009132694465,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.935734,
+        "price_change_24h": -3.8086009132694465,
+        "recorded_at": "2026-02-27 00:19:21"
+      },
       {
         "coin": "bitcoin",
         "price_usd": 67455.0,
