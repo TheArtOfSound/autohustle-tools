@@ -345,14 +345,28 @@
                 </ul>
             </div>
 
-            <!-- Next Steps -->
-            <div class="instructions">
+            <!-- Software Setup Steps (shown for pro/enterprise) -->
+            <div class="instructions" id="softwareSteps" style="display:none;">
+                <h3>Setup Guide</h3>
+                <ol>
+                    <li><strong>Download</strong> &mdash; Click the download link above and choose your platform (Windows or Mac).</li>
+                    <li><strong>Unzip</strong> &mdash; Extract the downloaded .zip file to a folder on your computer.</li>
+                    <li><strong>Run Setup</strong> &mdash; <span id="setupCmd">Double-click <code>setup.bat</code> (Windows) or run <code>./setup.sh</code> (Mac/Linux)</span>. This installs Python dependencies automatically.</li>
+                    <li><strong>Activate License</strong> &mdash; Run <code>python activate.py</code> and paste your license key from above.</li>
+                    <li><strong>Start AutoHustle</strong> &mdash; <span id="startCmd">Double-click <code>start.bat</code> (Windows) or run <code>./start.sh</code> (Mac/Linux)</span>.</li>
+                    <li><strong>Open Dashboard</strong> &mdash; Go to <code>http://localhost:8888</code> in your browser.</li>
+                    <li><strong>Configure API Keys</strong> &mdash; In Settings, add your free <a href="https://console.groq.com" target="_blank" style="color:var(--primary);">Groq API key</a> and <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--primary);">GitHub token</a>.</li>
+                </ol>
+            </div>
+
+            <!-- Course/API Steps (shown for non-software) -->
+            <div class="instructions" id="courseSteps">
                 <h3>What to do next</h3>
-                <ol id="instructionsList">
-                    <li><strong>Copy your license key</strong> above and save it somewhere safe (password manager, notes app, etc.).</li>
+                <ol>
+                    <li><strong>Copy your license key</strong> above and save it somewhere safe.</li>
                     <li><strong>Click the access link</strong> above to open your product page.</li>
                     <li><strong>Enter your license key</strong> when prompted to unlock your content.</li>
-                    <li><strong>Bookmark the product page</strong> for easy future access. Your key is remembered in your browser.</li>
+                    <li><strong>Bookmark the page</strong> for easy future access.</li>
                 </ol>
             </div>
 
@@ -377,12 +391,19 @@
                 title: 'AutoHustle Pro',
                 badge: 'software',
                 badgeText: 'SOFTWARE',
+                isSoftware: true,
                 subtitle: 'AI-powered income automation with 10 revenue strategies running 24/7.',
                 links: [
                     {
-                        icon: '&#128187;',
-                        label: 'Access AutoHustle Pro',
-                        desc: 'View setup guide, download links, and configuration',
+                        icon: '&#128229;',
+                        label: 'Download AutoHustle Pro',
+                        desc: 'Choose your platform (Windows or Mac) and download',
+                        href: 'DOWNLOAD_LINK'
+                    },
+                    {
+                        icon: '&#128218;',
+                        label: 'View Product Page',
+                        desc: 'Features, setup guide, and documentation',
                         href: '/autohustle-tools/store/products/pro.html'
                     }
                 ]
@@ -391,12 +412,19 @@
                 title: 'AutoHustle Enterprise',
                 badge: 'software',
                 badgeText: 'SOFTWARE',
+                isSoftware: true,
                 subtitle: 'Everything in Pro plus white-label rights, multi-site deployment, and advanced tools.',
                 links: [
                     {
-                        icon: '&#127959;',
-                        label: 'Access AutoHustle Enterprise',
-                        desc: 'View setup guide, download links, and enterprise features',
+                        icon: '&#128229;',
+                        label: 'Download AutoHustle Enterprise',
+                        desc: 'Choose your platform (Windows or Mac) and download',
+                        href: 'DOWNLOAD_LINK'
+                    },
+                    {
+                        icon: '&#128218;',
+                        label: 'View Product Page',
+                        desc: 'Features, setup guide, and enterprise documentation',
                         href: '/autohustle-tools/store/products/pro.html'
                     }
                 ]
@@ -557,18 +585,37 @@
 
             document.getElementById('productSubtitle').textContent = product.subtitle;
 
+            // Build the download URL (points to dashboard download page)
+            var downloadBase = 'https://autohustle.online/download/';
+
             var linksEl = document.getElementById('accessLinks');
             linksEl.innerHTML = '';
             product.links.forEach(function(link) {
                 var li = document.createElement('li');
-                var keyParam = link.href.indexOf('?') > -1 ? '&key=' : '?key=';
-                li.innerHTML = '<a href="' + link.href + keyParam + encodeURIComponent(licenseKey) + '">' +
+                var href = link.href;
+                // Replace DOWNLOAD_LINK placeholder with actual download page URL
+                if (href === 'DOWNLOAD_LINK') {
+                    href = downloadBase + encodeURIComponent(licenseKey);
+                } else {
+                    var keyParam = href.indexOf('?') > -1 ? '&key=' : '?key=';
+                    href = href + keyParam + encodeURIComponent(licenseKey);
+                }
+                li.innerHTML = '<a href="' + href + '">' +
                     '<span class="link-icon">' + link.icon + '</span>' +
                     '<span class="link-label">' + link.label + '<br><span class="link-desc">' + link.desc + '</span></span>' +
                     '<span class="arrow">&rarr;</span>' +
                     '</a>';
                 linksEl.appendChild(li);
             });
+
+            // Show correct instructions based on product type
+            if (product.isSoftware) {
+                document.getElementById('softwareSteps').style.display = 'block';
+                document.getElementById('courseSteps').style.display = 'none';
+            } else {
+                document.getElementById('softwareSteps').style.display = 'none';
+                document.getElementById('courseSteps').style.display = 'block';
+            }
         }
 
         init();
