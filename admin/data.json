@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-28T08:03:27.002753+00:00",
+  "updated": "2026-02-28T08:08:00.661081+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 4273
+      "total_effort": 4277
     },
     {
       "id": "api_products",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 9900
+      "total_effort": 9903
     },
     {
       "id": "stripe_premium",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 29254
+      "total_effort": 29281
     },
     {
       "id": "strategy_reviewer",
@@ -135,8 +135,8 @@
     }
   ],
   "actions_today": {
-    "total": 5492,
-    "successes": 1645
+    "total": 5526,
+    "successes": 1648
   },
   "recent_actions": [
     {
@@ -144,210 +144,210 @@
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:03:22"
+      "executed_at": "2026-02-28 08:07:55"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:03:22"
+      "executed_at": "2026-02-28 08:07:55"
     },
     {
-      "strategy_id": "strategy_reviewer",
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-02-28 08:04:55"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_seo_optimize",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:55"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:54"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:54"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:45"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:45"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:45"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:45"
+    },
+    {
+      "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:52"
+      "executed_at": "2026-02-28 08:04:45"
     },
     {
-      "strategy_id": "strategy_reviewer",
-      "action_type": "identify_opportunities",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:52"
+      "executed_at": "2026-02-28 08:04:45"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_welcome_new",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:04:44"
     },
     {
       "strategy_id": "social_growth",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-02-28 08:02:28"
+      "executed_at": "2026-02-28 08:04:43"
     },
     {
       "strategy_id": "social_growth",
-      "action_type": "publish_drafts_as_blog",
+      "action_type": "send_promo_email",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:28"
+      "executed_at": "2026-02-28 08:04:43"
     },
     {
-      "strategy_id": "social_growth",
-      "action_type": "create_value_content",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:22"
-    },
-    {
-      "strategy_id": "social_growth",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.45,
-      "executed_at": "2026-02-28 08:02:21"
-    },
-    {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
-      "outcome": "success",
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:03"
+      "executed_at": "2026-02-28 08:03:47"
     },
     {
-      "strategy_id": "solana_sniper",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:02:03"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:03:47"
     },
     {
-      "strategy_id": "solana_sniper",
-      "action_type": "sync_metrics",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:02:03"
+      "executed_at": "2026-02-28 08:03:47"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 08:03:47"
+    },
+    {
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "auto_fulfill_orders",
-      "outcome": null,
+      "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:59"
+      "executed_at": "2026-02-28 08:03:47"
     },
     {
-      "strategy_id": "strategy_reviewer",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": "review_strategy",
-      "outcome": null,
+      "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.35,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": "create_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "setup_webhooks",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": "review_strategy",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:59"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:57"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "optimize_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:57"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:50"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "cross_promote_products",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:50"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:44"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "check_conversions",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:44"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:44"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-02-28 08:01:44"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 08:01:44"
+      "executed_at": "2026-02-28 08:03:47"
     }
   ],
   "decisions": [
@@ -473,10 +473,34 @@
     }
   ],
   "assets": {
-    "total": 20358,
-    "published": 19917
+    "total": 20361,
+    "published": 19918
   },
   "recent_assets": [
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Smart Shopping for New Parents: How to Spot Truly Worthwhile Baby Deals",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/smart-shopping-for-new-parents-how-to-spot-truly-worthwhile-baby-deals/",
+      "created_at": "2026-02-28 08:03:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Raising a Mini-Eco Warrior: Innovative Baby Products for Sustainable Parenting",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-28 08:03:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "New Parent Hacks",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-02-28 08:03:46"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -612,30 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/unlock-your-fitness-potential-at-our-fitness-accessories-shop/",
       "created_at": "2026-02-28 08:01:28"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Pet Care Products Wholesale: A Comprehensive Guide for Retailers",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/top-pet-care-products-wholesale-a-comprehensive-guide-for-retailers/",
-      "created_at": "2026-02-28 08:00:38"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Top Picks: Discover the Best Pet Care Brands for Your Furry Friend",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/top-picks-discover-the-best-pet-care-brands-for-your-furry-friend/",
-      "created_at": "2026-02-28 08:00:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "asset_type": "page",
-      "title": "Keep Your Pet Smiling: Best Dog Dental Care Products for a Healthy Smile",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/keep-your-pet-smiling-best-dog-dental-care-products-for-a-healthy-smile/",
-      "created_at": "2026-02-28 08:00:30"
     }
   ],
   "crypto": {
