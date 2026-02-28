@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-28T19:42:39.249943+00:00",
+  "updated": "2026-02-28T19:45:44.957343+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 10281
+      "total_effort": 10286
     },
     {
       "id": "stripe_premium",
@@ -135,10 +135,31 @@
     }
   ],
   "actions_today": {
-    "total": 14231,
+    "total": 14234,
     "successes": 4469
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 19:45:39"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 19:42:39"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "discover_emails",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-02-28 19:42:39"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -325,27 +346,6 @@
       "strategy_id": "marketing_engine",
       "action_type": "marketing_new_arrival",
       "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 19:41:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 19:41:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-28 19:41:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
       "reward": 0.0,
       "executed_at": "2026-02-28 19:41:28"
     }
