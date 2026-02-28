@@ -1,5 +1,5 @@
 {
-  "updated": "2026-02-28T07:44:45.306272+00:00",
+  "updated": "2026-02-28T07:47:34.112645+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -135,10 +135,24 @@
     }
   ],
   "actions_today": {
-    "total": 5265,
+    "total": 5267,
     "successes": 1558
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 07:47:29"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-02-28 07:47:29"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -332,20 +346,6 @@
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-02-28 07:44:06"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_new_arrival",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-02-28 07:44:06"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": "marketing_promote_product",
-      "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-02-28 07:44:06"
     }
