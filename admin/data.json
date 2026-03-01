@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-01T01:51:22.335935+00:00",
+  "updated": "2026-03-01T01:56:08.178587+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 7600
+      "total_effort": 7612
     },
     {
       "id": "freelance",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 4483
+      "total_effort": 4491
     },
     {
       "id": "api_products",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 10352
+      "total_effort": 10355
     },
     {
       "id": "stripe_premium",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 41939
+      "total_effort": 41947
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 33925
+      "total_effort": 33952
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 6575
+      "total_effort": 6590
     },
     {
       "id": "solana_sniper",
@@ -131,12 +131,12 @@
       "type": "solana_sniper",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 958
+      "total_effort": 959
     }
   ],
   "actions_today": {
-    "total": 1346,
-    "successes": 407
+    "total": 1401,
+    "successes": 420
   },
   "recent_actions": [
     {
@@ -144,210 +144,210 @@
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:18"
+      "executed_at": "2026-03-01 01:56:03"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:18"
+      "executed_at": "2026-03-01 01:56:03"
     },
     {
-      "strategy_id": "content_optimizer",
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:53:09"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": "scrape_and_publish",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:53:09"
+    },
+    {
+      "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-03-01 01:51:14"
+      "executed_at": "2026-03-01 01:53:03"
     },
     {
-      "strategy_id": "content_optimizer",
-      "action_type": "analyze_performance",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_seo_optimize",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:14"
+      "executed_at": "2026-03-01 01:53:03"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:56"
+    },
+    {
+      "strategy_id": "digital_products",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-03-01 01:51:12"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "shopify_store",
-      "action_type": "cross_promote_products",
+      "strategy_id": "digital_products",
+      "action_type": "list_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:12"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "micro_saas",
-      "action_type": "update_index",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:10"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:09"
-    },
-    {
-      "strategy_id": "micro_saas",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:51:04"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:51:03"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-03-01 01:51:01"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:01"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-03-01 01:51:00"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "generate_content",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:51:00"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:50:41"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:50:41"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:50:41"
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "check_conversions",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_welcome_new",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:50:41"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:50:41"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "stripe_premium",
-      "action_type": "upgrade_tool",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:50:41"
+      "executed_at": "2026-03-01 01:52:55"
     },
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:50:39"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
-      "outcome": null,
+      "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:50:39"
+      "executed_at": "2026-03-01 01:52:49"
     },
     {
-      "strategy_id": "seo_content",
+      "strategy_id": "marketing_engine",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:49:37"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-01 01:52:49"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_new_arrival",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:49:37"
+      "executed_at": "2026-03-01 01:52:49"
     },
     {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:49:15"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": "research_keywords",
+      "strategy_id": "marketing_engine",
+      "action_type": "marketing_promote_product",
       "outcome": null,
       "reward": 0.0,
-      "executed_at": "2026-03-01 01:49:15"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:49:09"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-01 01:49:09"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-01 01:49:09"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": "fetch_and_analyze",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-01 01:49:09"
+      "executed_at": "2026-03-01 01:52:49"
     }
   ],
   "decisions": [
@@ -473,10 +473,90 @@
     }
   ],
   "assets": {
-    "total": 21340,
-    "published": 20876
+    "total": 21350,
+    "published": 20884
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "25 AI Prompt Pack Tips: Marketing Edition",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-03-01 01:52:49"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Revolutionizing the Art of Morning Pages: Essential Tools for Journaling and Self-Discovery",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Upgrade Your Gym Bag: 2023's Most Underrated Fitness Gear",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:46"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "The psychology behind why certain gym accessories actually sabotage your workouts (and which ones boost performance)",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/the-psychology-behind-why-certain-gym-accessories-actually-sabotage-your-workout/",
+      "created_at": "2026-03-01 01:52:45"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Rethinking Kitchen Workflow: How Adaptive Kitchen Gadgets Can Enhance Culinary Experience for Seniors",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Ergonomic Home Office Hacks",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:23"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Silent Home Office Upgrades That Actually Reduce Distractions",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/silent-home-office-upgrades-that-actually-reduce-distractions/",
+      "created_at": "2026-03-01 01:52:22"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Tech on the Go",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:22"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "Revolutionizing Rural Connectivity: Top 5 Innovative Tech Solutions for Remote Communities",
+      "status": "draft",
+      "url": "",
+      "created_at": "2026-03-01 01:52:20"
+    },
+    {
+      "strategy_id": "social_growth",
+      "asset_type": "post",
+      "title": "These 2024 Tech Accessories Are Quietly Changing How We Work From Home",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/these-2024-tech-accessories-are-quietly-changing-how-we-work-from-home/",
+      "created_at": "2026-03-01 01:52:17"
+    },
     {
       "strategy_id": "seo_content",
       "asset_type": "page",
@@ -556,86 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/best-fitness-accessories-for-women-in-2023-top-picks-for-your-workout/",
       "created_at": "2026-03-01 01:50:44"
-    },
-    {
-      "strategy_id": "digital_products",
-      "asset_type": "product",
-      "title": "20 Swipe File Collection Tips: Design Edition",
-      "status": "draft",
-      "url": null,
-      "created_at": "2026-03-01 01:47:08"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Sustainable Home Makeover on a Budget",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/sustainable-home-makeover-on-a-budget/",
-      "created_at": "2026-03-01 01:46:57"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Revolutionizing Multigenerational Living: Designing Homes for Aging Parents and Young Families",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:57"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Transform Your Space Without Breaking the Bank",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:57"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Beyond the Ergonomic Chair: Unlocking Deep Focus with Ambient Soundscapes for Your Home Office",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Accessible Home Offices",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:50"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Accessible Home Offices for People with Disabilities",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/accessible-home-offices-for-people-with-disabilities/",
-      "created_at": "2026-03-01 01:46:49"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Pet Tech Boom",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:46"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Paws and Tech: The Future of Pet Care in 2026",
-      "status": "draft",
-      "url": "",
-      "created_at": "2026-03-01 01:46:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Pet Parents with Disabilities: How 2026's Top Pet Trends Can Improve Your Life",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/pet-parents-with-disabilities-how-2026s-top-pet-trends-can-improve-your-life/",
-      "created_at": "2026-03-01 01:46:42"
     }
   ],
   "crypto": {
