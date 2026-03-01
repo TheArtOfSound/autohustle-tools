@@ -3,16 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Products & Courses - AutoHustle Store</title>
-    <meta name="description" content="Premium digital products, courses, templates, and guides. Instant download. Practical resources to boost your skills and income.">
-    <meta property="og:title" content="AutoHustle Store - Digital Products & Courses">
-    <meta property="og:description" content="Premium digital products, courses, templates, and guides. Instant download.">
+    <meta http-equiv="refresh" content="8;url=https://hustle.autohustle.online/">
+    <title>AutoHustle — Now Available as a Full SaaS Platform</title>
+    <meta name="description" content="AutoHustle is now a full SaaS platform. Let AI build your revenue streams 24/7 for $99/month.">
+    <meta property="og:title" content="AutoHustle — AI Revenue Platform">
+    <meta property="og:description" content="Let AI build your revenue streams 24/7. Full access for $99/month.">
     <meta property="og:type" content="website">
-    <meta name="theme-color" content="#0a0a14">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2322c55e'/%3E%3Cstop offset='100%25' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='20' width='100' height='100' fill='%230a0a14'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='62' font-weight='700' font-family='system-ui' fill='url(%23g)'%3EA%3C/text%3E%3C/svg%3E">
-    <link rel="canonical" href="https://theartofsound.github.io/autohustle-tools/store/">
+    <meta name="theme-color" content="#06060b">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a14'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='20' fill='%2300ff88'%3EA%3C/text%3E%3C/svg%3E">
+    <link rel="canonical" href="https://hustle.autohustle.online/">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg:#06060b; --card:#10101b; --border:#1a1a2e; --accent:#00ff88; --accent2:#38bdf8; --text:#eaeaf0; --muted:#9595b0; }
+        body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:40px 24px; }
+        body::before { content:''; position:fixed; top:0; left:0; right:0; height:500px; background:radial-gradient(ellipse 80% 50% at 50% -20%,#00ff8808,transparent); pointer-events:none; z-index:0; }
+        .container { position:relative; z-index:1; max-width:600px; }
+        .logo { font-size:2.5em; font-weight:800; background:linear-gradient(135deg,#00ff88,#38bdf8); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:8px; }
+        .badge { display:inline-block; background:linear-gradient(135deg,#00ff88,#00cc6a); color:#000; font-weight:700; font-size:.75em; padding:4px 14px; border-radius:20px; margin-bottom:24px; letter-spacing:.5px; }
+        h1 { font-size:1.8em; font-weight:700; line-height:1.3; margin-bottom:12px; }
+        h1 span { background:linear-gradient(135deg,#00ff88,#38bdf8); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        p { color:var(--muted); font-size:1.05em; line-height:1.6; margin-bottom:32px; max-width:500px; margin-left:auto; margin-right:auto; }
+        .btn { display:inline-block; background:linear-gradient(135deg,#00ff88,#00cc6a); color:#000; font-weight:700; padding:14px 40px; border:none; border-radius:12px; font-size:1em; cursor:pointer; text-decoration:none; transition:all .2s; margin-bottom:16px; }
+        .btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px -8px #00ff8844; }
+        .price { font-size:2em; font-weight:800; margin-bottom:4px; }
+        .price span { color:var(--muted); font-size:.45em; font-weight:400; }
+        .features { display:grid; grid-template-columns:1fr 1fr; gap:12px; text-align:left; margin:28px 0; }
+        .feat { display:flex; align-items:center; gap:8px; font-size:.85em; color:var(--muted); }
+        .feat::before { content:''; display:block; width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; }
+        .countdown { color:var(--muted); font-size:.85em; margin-top:20px; }
+        .countdown span { color:var(--accent); font-weight:600; }
+        .legacy { margin-top:32px; padding-top:24px; border-top:1px solid var(--border); }
+        .legacy a { color:var(--muted); font-size:.8em; text-decoration:none; }
+        .legacy a:hover { color:var(--accent); text-decoration:underline; }
+        @media(max-width:500px) { .features{grid-template-columns:1fr;} h1{font-size:1.4em;} }
+    </style>
+    <script>
+        // Redirect after 8 seconds
+        let countdown = 8;
+        function tick() {
+            countdown--;
+            const el = document.getElementById('timer');
+            if (el) el.textContent = countdown;
+            if (countdown <= 0) window.location.href = 'https://hustle.autohustle.online/';
+            else setTimeout(tick, 1000);
+        }
+        window.addEventListener('load', () => setTimeout(tick, 1000));
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">AutoHustle</div>
+        <div class="badge">NEW PLATFORM</div>
+        <h1>We've upgraded to a <span>full SaaS platform</span></h1>
+        <p>AutoHustle is now available as a complete AI-powered revenue generation platform. Get access to everything — 15+ LLM providers, auto content creation, e-commerce, crypto trading, and more.</p>
+
+        <div class="price">$99<span>/month</span></div>
+        <p style="margin-bottom:20px;font-size:.9em;">Full access to the entire platform</p>
+
+        <a href="https://hustle.autohustle.online/" class="btn">Go to AutoHustle Platform</a>
+
+        <div class="features">
+            <div class="feat">15+ AI/LLM Providers</div>
+            <div class="feat">Auto Content Creation</div>
+            <div class="feat">E-Commerce Automation</div>
+            <div class="feat">Crypto Trading</div>
+            <div class="feat">Multi-Channel Marketing</div>
+            <div class="feat">Self-Healing System</div>
+            <div class="feat">Onboarding Wizard</div>
+            <div class="feat">24/7 Autonomous Operation</div>
+        </div>
+
+        <a href="https://hustle.autohustle.online/register" class="btn" style="background:none;border:2px solid var(--accent);color:var(--accent);padding:12px 36px;">Sign Up Now</a>
+
+        <div class="countdown">Redirecting in <span id="timer">8</span> seconds...</div>
+    </div>
+</body>
+</html>
         :root {
             --primary: #6366f1;
             --primary-glow: rgba(99,102,241,0.15);
