@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-03T21:02:09.137885+00:00",
+  "updated": "2026-03-03T21:07:09.890559+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 2213
+      "total_effort": 2214
     },
     {
       "id": "seo_content",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 54444
+      "total_effort": 54445
     },
     {
       "id": "marketing_engine",
@@ -135,8 +135,8 @@
     }
   ],
   "actions_today": {
-    "total": 13878,
-    "successes": 3490
+    "total": 13882,
+    "successes": 3492
   },
   "recent_actions": [
     {
@@ -144,6 +144,34 @@
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
+      "executed_at": "2026-03-03 21:07:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-03-03 21:07:07"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": "update_index",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-03 21:07:07"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": "check_orders",
+      "outcome": null,
+      "reward": 0.0,
+      "executed_at": "2026-03-03 21:07:07"
+    },
+    {
+      "strategy_id": "micro_saas",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
       "executed_at": "2026-03-03 21:02:06"
     },
     {
@@ -320,37 +348,15 @@
       "outcome": null,
       "reward": 0.0,
       "executed_at": "2026-03-03 20:37:06"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-03 20:37:06"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": "check_orders",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-03 20:37:06"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-03-03 20:32:22"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": "send_promo_email",
-      "outcome": null,
-      "reward": 0.0,
-      "executed_at": "2026-03-03 20:32:22"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 133, C=0.770\n  data_scraper: score=0.208 (mean=0.003, pulls=100) \u2192 1 tokens\n  crypto_trading: score=0.354 (mean=0.150, pulls=100) \u2192 1 tokens\n  social_growth: score=0.243 (mean=0.039, pulls=100) \u2192 1 tokens\n  digital_products: score=0.220 (mean=0.016, pulls=100) \u2192 1 tokens\n  micro_saas: score=0.354 (mean=0.150, pulls=100) \u2192 1 tokens\n  strategy_reviewer: score=0.306 (mean=0.102, pulls=100) \u2192 1 tokens\n  shopify_store: score=0.342 (mean=0.138, pulls=100) \u2192 1 tokens\n  content_optimizer: score=0.354 (mean=0.150, pulls=100) \u2192 1 tokens\n  course_creator: score=0.502 (mean=0.161, pulls=36) \u2192 1 tokens\n  seo_content: score=0.427 (mean=0.223, pulls=100) \u2192 1 tokens\n  marketing_engine: score=0.213 (mean=0.009, pulls=100) \u2192 1 tokens\n  stripe_premium: score=0.357 (mean=0.153, pulls=100) \u2192 1 tokens",
+      "outcome": null,
+      "created_at": "2026-03-03 21:07:01"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 132, C=0.774\n  data_scraper: score=0.209 (mean=0.003, pulls=100) \u2192 1 tokens\n  crypto_trading: score=0.355 (mean=0.150, pulls=100) \u2192 1 tokens\n  social_growth: score=0.247 (mean=0.042, pulls=100) \u2192 1 tokens\n  digital_products: score=0.221 (mean=0.016, pulls=100) \u2192 1 tokens\n  micro_saas: score=0.355 (mean=0.150, pulls=100) \u2192 1 tokens\n  strategy_reviewer: score=0.307 (mean=0.102, pulls=100) \u2192 1 tokens\n  shopify_store: score=0.343 (mean=0.138, pulls=100) \u2192 1 tokens\n  content_optimizer: score=0.355 (mean=0.150, pulls=100) \u2192 1 tokens\n  course_creator: score=0.503 (mean=0.161, pulls=36) \u2192 1 tokens\n  seo_content: score=0.428 (mean=0.223, pulls=100) \u2192 1 tokens\n  marketing_engine: score=0.214 (mean=0.009, pulls=100) \u2192 1 tokens\n  stripe_premium: score=0.358 (mean=0.153, pulls=100) \u2192 1 tokens",
@@ -464,12 +470,6 @@
       "reasoning": "Round 114, C=0.847\n  data_scraper: score=0.228 (mean=0.003, pulls=100) \u2192 41 tokens\n  crypto_trading: score=0.375 (mean=0.150, pulls=100) \u2192 49 tokens\n  social_growth: score=0.276 (mean=0.051, pulls=100) \u2192 43 tokens\n  digital_products: score=0.251 (mean=0.026, pulls=100) \u2192 42 tokens\n  micro_saas: score=0.375 (mean=0.150, pulls=100) \u2192 49 tokens\n  strategy_reviewer: score=0.327 (mean=0.102, pulls=100) \u2192 46 tokens\n  shopify_store: score=0.369 (mean=0.144, pulls=100) \u2192 49 tokens\n  content_optimizer: score=0.375 (mean=0.150, pulls=100) \u2192 49 tokens\n  course_creator: score=0.536 (mean=0.161, pulls=36) \u2192 58 tokens\n  seo_content: score=0.447 (mean=0.223, pulls=100) \u2192 53 tokens\n  marketing_engine: score=0.237 (mean=0.012, pulls=100) \u2192 41 tokens\n  stripe_premium: score=0.378 (mean=0.153, pulls=100) \u2192 49 tokens",
       "outcome": null,
       "created_at": "2026-03-03 19:32:01"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 113, C=0.851\n  data_scraper: score=0.229 (mean=0.003, pulls=100) \u2192 45 tokens\n  crypto_trading: score=0.376 (mean=0.150, pulls=100) \u2192 54 tokens\n  social_growth: score=0.277 (mean=0.051, pulls=100) \u2192 48 tokens\n  digital_products: score=0.252 (mean=0.026, pulls=100) \u2192 46 tokens\n  micro_saas: score=0.376 (mean=0.150, pulls=100) \u2192 54 tokens\n  strategy_reviewer: score=0.325 (mean=0.099, pulls=100) \u2192 51 tokens\n  shopify_store: score=0.370 (mean=0.144, pulls=100) \u2192 54 tokens\n  content_optimizer: score=0.376 (mean=0.150, pulls=100) \u2192 54 tokens\n  course_creator: score=0.537 (mean=0.161, pulls=36) \u2192 64 tokens\n  seo_content: score=0.448 (mean=0.223, pulls=100) \u2192 59 tokens\n  marketing_engine: score=0.238 (mean=0.012, pulls=100) \u2192 45 tokens\n  stripe_premium: score=0.379 (mean=0.153, pulls=100) \u2192 54 tokens",
-      "outcome": null,
-      "created_at": "2026-03-03 19:27:01"
     }
   ],
   "assets": {
