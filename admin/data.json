@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-04T23:21:58.931163+00:00",
+  "updated": "2026-03-04T23:24:51.928513+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -135,10 +135,24 @@
     }
   ],
   "actions_today": {
-    "total": 7908,
+    "total": 7910,
     "successes": 6899
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-04 23:24:47"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-04 23:24:47"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -334,20 +348,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-03-04 23:21:23"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-04 23:21:23"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-04 23:20:43"
     }
   ],
   "decisions": [
