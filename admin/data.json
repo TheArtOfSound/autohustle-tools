@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-05T02:15:44.412199+00:00",
+  "updated": "2026-03-05T02:16:24.065626+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 12646
+      "total_effort": 12655
     },
     {
       "id": "stripe_premium",
@@ -135,10 +135,24 @@
     }
   ],
   "actions_today": {
-    "total": 1155,
+    "total": 1157,
     "successes": 888
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-05 02:16:18"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-05 02:16:12"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -334,20 +348,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-03-05 02:14:40"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-03-05 02:14:31"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-05 02:14:25"
     }
   ],
   "decisions": [
