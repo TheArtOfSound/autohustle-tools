@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-05T12:57:49.802876+00:00",
+  "updated": "2026-03-05T13:03:47.879344+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 12949
+      "total_effort": 12952
     },
     {
       "id": "stripe_premium",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 55572
+      "total_effort": 55575
     },
     {
       "id": "strategy_reviewer",
@@ -135,10 +135,38 @@
     }
   ],
   "actions_today": {
-    "total": 6366,
+    "total": 6368,
     "successes": 5149
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-05 13:03:41"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-03-05 13:00:41"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-03-05 12:57:48"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-03-05 12:57:47"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -320,34 +348,6 @@
       "outcome": "success",
       "reward": 0.3,
       "executed_at": "2026-03-05 12:56:10"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-05 12:56:08"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-05 12:56:08"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-03-05 12:56:07"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-03-05 12:56:07"
     }
   ],
   "decisions": [
