@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T16:59:32.862631+00:00",
+  "updated": "2026-04-01T17:01:17.477097+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 32996
+      "total_effort": 33010
     },
     {
       "id": "freelance",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 14885
+      "total_effort": 14897
     },
     {
       "id": "stripe_premium",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 65081
+      "total_effort": 65084
     },
     {
       "id": "strategy_reviewer",
@@ -135,10 +135,59 @@
     }
   ],
   "actions_today": {
-    "total": 4617,
-    "successes": 2930
+    "total": 4623,
+    "successes": 2933
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:01:15"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:01:10"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:00:08"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.35,
+      "executed_at": "2026-04-01 17:00:02"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 16:59:42"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 16:59:34"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 16:59:32"
+    },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
@@ -299,55 +348,6 @@
       "outcome": "partial",
       "reward": 0.0,
       "executed_at": "2026-04-01 16:58:47"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.45,
-      "executed_at": "2026-04-01 16:58:43"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:36"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:25"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:25"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:25"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:58:20"
     }
   ],
   "decisions": [
@@ -473,10 +473,18 @@
     }
   ],
   "assets": {
-    "total": 101495,
+    "total": 101496,
     "published": 98136
   },
   "recent_assets": [
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "20 Swipe File Collection Tips: Health Edition",
+      "status": "draft",
+      "url": null,
+      "created_at": "2026-04-01 17:00:02"
+    },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
@@ -628,14 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/blog/struggling-to-find-pet-care-products-that-actually-work-this-guide-cuts-through/",
       "created_at": "2026-04-01 16:54:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "The One Cable You're Forgetting That Fixes 80% of Home Office Chaos",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/the-one-cable-youre-forgetting-that-fixes-80-of-home-office-chaos/",
-      "created_at": "2026-04-01 16:54:10"
     }
   ],
   "crypto": {
