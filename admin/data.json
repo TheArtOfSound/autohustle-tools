@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T13:01:42.187751+00:00",
+  "updated": "2026-04-01T13:03:23.826061+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 32590
+      "total_effort": 32600
     },
     {
       "id": "freelance",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 147818
+      "total_effort": 147864
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 24132
+      "total_effort": 24140
     },
     {
       "id": "api_products",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 14656
+      "total_effort": 14671
     },
     {
       "id": "stripe_premium",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 108212
+      "total_effort": 108220
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 63840
+      "total_effort": 63867
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 34910
+      "total_effort": 34925
     },
     {
       "id": "solana_sniper",
@@ -135,222 +135,234 @@
     }
   ],
   "actions_today": {
-    "total": 2686,
-    "successes": 1598
+    "total": 2719,
+    "successes": 1608
   },
   "recent_actions": [
     {
-      "strategy_id": "shopify_store",
+      "strategy_id": "data_scraper",
       "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:40"
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:03:22"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:01:40"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:30"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:30"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:30"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:29"
-    },
-    {
-      "strategy_id": "crypto_trading",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:29"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:01:13"
-    },
-    {
-      "strategy_id": "micro_saas",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:09"
-    },
-    {
-      "strategy_id": "stripe_premium",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:09"
-    },
-    {
-      "strategy_id": "content_optimizer",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:01:09"
+      "executed_at": "2026-04-01 13:03:16"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "failure",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:38"
+      "executed_at": "2026-04-01 13:02:09"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:25"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "strategy_reviewer",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
-    },
-    {
-      "strategy_id": "seo_content",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:17"
+      "executed_at": "2026-04-01 13:02:01"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 13:00:16"
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "strategy_reviewer",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:55"
     },
     {
       "strategy_id": "social_growth",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 13:00:13"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 13:00:13"
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "digital_products",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 13:01:52"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 13:01:43"
+    },
+    {
+      "strategy_id": "social_growth",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 13:01:43"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "pivot",
+      "reasoning": "Strategy digital_products failing consistently",
+      "outcome": null,
+      "created_at": "2026-04-01 13:03:22"
+    },
+    {
+      "decision_type": "pivot",
+      "reasoning": "Strategy strategy_reviewer failing consistently",
+      "outcome": null,
+      "created_at": "2026-04-01 13:03:22"
+    },
     {
       "decision_type": "pivot",
       "reasoning": "Strategy digital_products failing consistently",
@@ -458,23 +470,11 @@
       "reasoning": "Strategy digital_products failing consistently",
       "outcome": null,
       "created_at": "2026-04-01 12:28:20"
-    },
-    {
-      "decision_type": "pivot",
-      "reasoning": "Strategy strategy_reviewer failing consistently",
-      "outcome": null,
-      "created_at": "2026-04-01 12:28:20"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 3, C=1.478\n  data_scraper: score=0.392 (mean=0.000, pulls=100) \u2192 7266 tokens\n  crypto_trading: score=0.692 (mean=0.300, pulls=100) \u2192 9014 tokens\n  social_growth: score=0.542 (mean=0.150, pulls=100) \u2192 8140 tokens\n  digital_products: score=0.434 (mean=0.043, pulls=100) \u2192 7514 tokens\n  micro_saas: score=0.692 (mean=0.300, pulls=100) \u2192 9014 tokens\n  strategy_reviewer: score=0.392 (mean=0.000, pulls=100) \u2192 7266 tokens\n  shopify_store: score=0.635 (mean=0.243, pulls=100) \u2192 8682 tokens\n  content_optimizer: score=0.692 (mean=0.300, pulls=100) \u2192 9014 tokens\n  course_creator: score=0.814 (mean=0.161, pulls=36) \u2192 9727 tokens\n  seo_content: score=0.392 (mean=0.000, pulls=100) \u2192 7266 tokens\n  marketing_engine: score=0.476 (mean=0.084, pulls=100) \u2192 7756 tokens\n  stripe_premium: score=0.692 (mean=0.300, pulls=100) \u2192 9014 tokens",
-      "outcome": null,
-      "created_at": "2026-04-01 12:26:05"
     }
   ],
   "assets": {
     "total": 101046,
-    "published": 97641
+    "published": 97646
   },
   "recent_assets": [
     {
