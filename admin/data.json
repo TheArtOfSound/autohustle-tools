@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T17:01:17.477097+00:00",
+  "updated": "2026-04-01T17:05:53.029834+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -11,7 +11,7 @@
       "type": "crypto_trading",
       "status": "active",
       "total_revenue": 834.7794485393817,
-      "total_effort": 22358
+      "total_effort": 22362
     },
     {
       "id": "digital_products",
@@ -19,7 +19,7 @@
       "type": "digital_products",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 33010
+      "total_effort": 33022
     },
     {
       "id": "freelance",
@@ -35,7 +35,7 @@
       "type": "micro_saas",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 4601
+      "total_effort": 4602
     },
     {
       "id": "seo_content",
@@ -43,7 +43,7 @@
       "type": "seo_content",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 148800
+      "total_effort": 148815
     },
     {
       "id": "social_growth",
@@ -51,7 +51,7 @@
       "type": "social_growth",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 24502
+      "total_effort": 24504
     },
     {
       "id": "api_products",
@@ -67,7 +67,7 @@
       "type": "content_optimizer",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 8882
+      "total_effort": 8884
     },
     {
       "id": "data_scraper",
@@ -75,7 +75,7 @@
       "type": "data_scraper",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 14897
+      "total_effort": 14904
     },
     {
       "id": "stripe_premium",
@@ -83,7 +83,7 @@
       "type": "stripe_premium",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 31370
+      "total_effort": 31377
     },
     {
       "id": "course_creator",
@@ -107,7 +107,7 @@
       "type": "shopify_store",
       "status": "active",
       "total_revenue": 0.0,
-      "total_effort": 109379
+      "total_effort": 109398
     },
     {
       "id": "marketing_engine",
@@ -115,7 +115,7 @@
       "type": "marketing",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 65084
+      "total_effort": 65111
     },
     {
       "id": "strategy_reviewer",
@@ -123,7 +123,7 @@
       "type": "strategy_reviewer",
       "status": "paused",
       "total_revenue": 0.0,
-      "total_effort": 35370
+      "total_effort": 35380
     },
     {
       "id": "solana_sniper",
@@ -135,8 +135,8 @@
     }
   ],
   "actions_today": {
-    "total": 4623,
-    "successes": 2933
+    "total": 4661,
+    "successes": 2961
   },
   "recent_actions": [
     {
@@ -144,213 +144,219 @@
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 17:01:15"
+      "executed_at": "2026-04-01 17:05:51"
     },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 17:01:10"
+      "executed_at": "2026-04-01 17:04:44"
     },
     {
-      "strategy_id": "data_scraper",
+      "strategy_id": "digital_products",
       "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 17:00:08"
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:41"
     },
     {
       "strategy_id": "digital_products",
       "action_type": null,
       "outcome": "success",
       "reward": 0.35,
-      "executed_at": "2026-04-01 17:00:02"
+      "executed_at": "2026-04-01 17:04:38"
     },
     {
       "strategy_id": "marketing_engine",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:42"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:34"
-    },
-    {
-      "strategy_id": "digital_products",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:32"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:28"
-    },
-    {
-      "strategy_id": "marketing_engine",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:26"
+      "executed_at": "2026-04-01 17:04:32"
     },
     {
       "strategy_id": "strategy_reviewer",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:26"
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:30"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "partial",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "marketing_engine",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:28"
     },
     {
       "strategy_id": "strategy_reviewer",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:26"
+      "executed_at": "2026-04-01 17:04:14"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:26"
+      "executed_at": "2026-04-01 17:04:12"
     },
     {
       "strategy_id": "shopify_store",
       "action_type": null,
       "outcome": "success",
       "reward": 0.3,
-      "executed_at": "2026-04-01 16:59:25"
-    },
-    {
-      "strategy_id": "data_scraper",
-      "action_type": null,
-      "outcome": "partial",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 16:59:09"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:57"
-    },
-    {
-      "strategy_id": "shopify_store",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 16:58:48"
+      "executed_at": "2026-04-01 17:04:12"
     },
     {
       "strategy_id": "social_growth",
       "action_type": null,
       "outcome": "success",
-      "reward": 0.5,
-      "executed_at": "2026-04-01 16:58:47"
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:11"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:02"
     },
     {
       "strategy_id": "social_growth",
       "action_type": null,
       "outcome": "partial",
       "reward": 0.0,
-      "executed_at": "2026-04-01 16:58:47"
+      "executed_at": "2026-04-01 17:04:02"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:01"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:01"
+    },
+    {
+      "strategy_id": "stripe_premium",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:04:01"
+    },
+    {
+      "strategy_id": "seo_content",
+      "action_type": null,
+      "outcome": "success",
+      "reward": 0.3,
+      "executed_at": "2026-04-01 17:03:54"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "allocate",
+      "reasoning": "Round 3, C=1.478\n  data_scraper: score=0.395 (mean=0.003, pulls=100) \u2192 7053 tokens\n  crypto_trading: score=0.692 (mean=0.300, pulls=100) \u2192 8603 tokens\n  social_growth: score=0.685 (mean=0.293, pulls=100) \u2192 8567 tokens\n  digital_products: score=0.482 (mean=0.090, pulls=100) \u2192 7508 tokens\n  micro_saas: score=0.692 (mean=0.300, pulls=100) \u2192 8603 tokens\n  strategy_reviewer: score=0.575 (mean=0.183, pulls=100) \u2192 7992 tokens\n  shopify_store: score=0.674 (mean=0.282, pulls=100) \u2192 8509 tokens\n  content_optimizer: score=0.692 (mean=0.300, pulls=100) \u2192 8603 tokens\n  course_creator: score=0.814 (mean=0.161, pulls=36) \u2192 9243 tokens\n  seo_content: score=0.710 (mean=0.318, pulls=100) \u2192 8698 tokens\n  marketing_engine: score=0.527 (mean=0.135, pulls=100) \u2192 7741 tokens\n  stripe_premium: score=0.692 (mean=0.300, pulls=100) \u2192 8603 tokens",
+      "outcome": null,
+      "created_at": "2026-04-01 17:02:08"
+    },
     {
       "decision_type": "allocate",
       "reasoning": "Round 2, C=1.485\n  data_scraper: score=0.397 (mean=0.003, pulls=100) \u2192 7077 tokens\n  crypto_trading: score=0.694 (mean=0.300, pulls=100) \u2192 8630 tokens\n  social_growth: score=0.687 (mean=0.293, pulls=100) \u2192 8593 tokens\n  digital_products: score=0.469 (mean=0.075, pulls=100) \u2192 7451 tokens\n  micro_saas: score=0.694 (mean=0.300, pulls=100) \u2192 8630 tokens\n  strategy_reviewer: score=0.565 (mean=0.171, pulls=100) \u2192 7954 tokens\n  shopify_store: score=0.676 (mean=0.282, pulls=100) \u2192 8536 tokens\n  content_optimizer: score=0.694 (mean=0.300, pulls=100) \u2192 8630 tokens\n  course_creator: score=0.818 (mean=0.161, pulls=36) \u2192 9278 tokens\n  seo_content: score=0.710 (mean=0.316, pulls=100) \u2192 8714 tokens\n  marketing_engine: score=0.535 (mean=0.141, pulls=100) \u2192 7797 tokens\n  stripe_premium: score=0.694 (mean=0.300, pulls=100) \u2192 8630 tokens",
@@ -464,25 +470,43 @@
       "reasoning": "Round 2, C=1.485\n  data_scraper: score=0.397 (mean=0.003, pulls=100) \u2192 7139 tokens\n  crypto_trading: score=0.694 (mean=0.300, pulls=100) \u2192 8739 tokens\n  social_growth: score=0.674 (mean=0.281, pulls=100) \u2192 8634 tokens\n  digital_products: score=0.449 (mean=0.056, pulls=100) \u2192 7420 tokens\n  micro_saas: score=0.694 (mean=0.300, pulls=100) \u2192 8739 tokens\n  strategy_reviewer: score=0.475 (mean=0.081, pulls=100) \u2192 7558 tokens\n  shopify_store: score=0.670 (mean=0.276, pulls=100) \u2192 8610 tokens\n  content_optimizer: score=0.694 (mean=0.300, pulls=100) \u2192 8739 tokens\n  course_creator: score=0.818 (mean=0.161, pulls=36) \u2192 9406 tokens\n  seo_content: score=0.617 (mean=0.223, pulls=100) \u2192 8324 tokens\n  marketing_engine: score=0.535 (mean=0.141, pulls=100) \u2192 7881 tokens\n  stripe_premium: score=0.694 (mean=0.300, pulls=100) \u2192 8739 tokens",
       "outcome": null,
       "created_at": "2026-04-01 15:31:04"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 1, C=1.492\n  data_scraper: score=0.399 (mean=0.003, pulls=100) \u2192 7150 tokens\n  crypto_trading: score=0.696 (mean=0.300, pulls=100) \u2192 8746 tokens\n  social_growth: score=0.670 (mean=0.274, pulls=100) \u2192 8606 tokens\n  digital_products: score=0.451 (mean=0.056, pulls=100) \u2192 7430 tokens\n  micro_saas: score=0.696 (mean=0.300, pulls=100) \u2192 8746 tokens\n  strategy_reviewer: score=0.477 (mean=0.081, pulls=100) \u2192 7567 tokens\n  shopify_store: score=0.678 (mean=0.282, pulls=100) \u2192 8649 tokens\n  content_optimizer: score=0.696 (mean=0.300, pulls=100) \u2192 8746 tokens\n  course_creator: score=0.821 (mean=0.161, pulls=36) \u2192 9419 tokens\n  seo_content: score=0.613 (mean=0.217, pulls=100) \u2192 8299 tokens\n  marketing_engine: score=0.537 (mean=0.141, pulls=100) \u2192 7890 tokens\n  stripe_premium: score=0.696 (mean=0.300, pulls=100) \u2192 8746 tokens",
-      "outcome": null,
-      "created_at": "2026-04-01 15:26:14"
     }
   ],
   "assets": {
-    "total": 101496,
-    "published": 98136
+    "total": 101499,
+    "published": 98143
   },
   "recent_assets": [
     {
       "strategy_id": "digital_products",
       "asset_type": "product",
-      "title": "20 Swipe File Collection Tips: Health Edition",
+      "title": "50 Professional Checklist Tips: Design Edition",
       "status": "draft",
       "url": null,
+      "created_at": "2026-04-01 17:04:38"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "post",
+      "title": "Pet Lovers' Must-Haves: The 2026 Pet Products Shopping List You Can't Miss",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/pet-lovers-must-haves-the-2026-pet-products-shopping-list-you-cant-miss/",
+      "created_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "shopify_store",
+      "asset_type": "post",
+      "title": "Season's Must-Haves: The Hottest Trending Products You Need Right Now",
+      "status": "published",
+      "url": "",
+      "created_at": "2026-04-01 17:04:28"
+    },
+    {
+      "strategy_id": "digital_products",
+      "asset_type": "product",
+      "title": "20 Swipe File Collection Tips: Health Edition",
+      "status": "monetized",
+      "url": "https://buy.stripe.com/aFa3cv98Z2cS1cqfw06cl3L",
       "created_at": "2026-04-01 17:00:02"
     },
     {
@@ -497,16 +521,16 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Your Dog's Dental Health Might Be in Danger\u2014Here's How to Fix It Before It's Too Late",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/your-dogs-dental-health-might-be-in-dangerheres-how-to-fix-it-before-its-too-lat/",
       "created_at": "2026-04-01 16:58:47"
     },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Fido's Fresh Breath Hacks: 3 Must-Try Dental Products",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/fidos-fresh-breath-hacks-3-must-try-dental-products/",
       "created_at": "2026-04-01 16:58:47"
     },
     {
@@ -521,16 +545,16 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "The Quiet Revolution: How Smart Kitchen Gadgets Are Redefining Home Cooking for Busy Parents",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/the-quiet-revolution-how-smart-kitchen-gadgets-are-redefining-home-cooking-for-b/",
       "created_at": "2026-04-01 16:58:43"
     },
     {
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Kitchen Hack: The $5 Tool That Saves 20 Minutes Daily",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/kitchen-hack-the-5-tool-that-saves-20-minutes-daily/",
       "created_at": "2026-04-01 16:58:43"
     },
     {
@@ -545,8 +569,8 @@
       "strategy_id": "social_growth",
       "asset_type": "post",
       "title": "Silent Killers in Your Home: 5 Non-Toxic Wellness Products Actually Harming Your Health (And What to Use Instead)",
-      "status": "draft",
-      "url": "",
+      "status": "published",
+      "url": "https://theartofsound.github.io/autohustle-content/blog/silent-killers-in-your-home-5-non-toxic-wellness-products-actually-harming-your/",
       "created_at": "2026-04-01 16:58:36"
     },
     {
@@ -612,30 +636,6 @@
       "status": "published",
       "url": "https://theartofsound.github.io/autohustle-content/blog/top-wellness-products-taking-over-2024-whats-hot-and-worth-your-money/",
       "created_at": "2026-04-01 16:54:24"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Pet Care Products That Actually Work: A Vet's Honest Picks",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/pet-care-products-that-actually-work-a-vets-honest-picks/",
-      "created_at": "2026-04-01 16:54:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Pet Care on a Budget? How to Spot Overpriced Products That Waste Your Money",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/pet-care-on-a-budget-how-to-spot-overpriced-products-that-waste-your-money/",
-      "created_at": "2026-04-01 16:54:18"
-    },
-    {
-      "strategy_id": "social_growth",
-      "asset_type": "post",
-      "title": "Struggling to find pet care products that actually work? This guide cuts through the noise.",
-      "status": "published",
-      "url": "https://theartofsound.github.io/autohustle-content/blog/struggling-to-find-pet-care-products-that-actually-work-this-guide-cuts-through/",
-      "created_at": "2026-04-01 16:54:18"
     }
   ],
   "crypto": {
@@ -987,6 +987,150 @@
       }
     ],
     "prices": [
+      {
+        "coin": "bitcoin",
+        "price_usd": 68824.0,
+        "price_change_24h": 1.5866429967262354,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "bitcoin",
+        "price_usd": 68824.0,
+        "price_change_24h": 1.5866429967262354,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 2146.09,
+        "price_change_24h": 2.4508561049105433,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "ethereum",
+        "price_usd": 2146.09,
+        "price_change_24h": 2.4508561049105433,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 85.22,
+        "price_change_24h": 3.4570552373837993,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "solana",
+        "price_usd": 85.22,
+        "price_change_24h": 3.4570552373837993,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.093413,
+        "price_change_24h": 2.0194968200289742,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "dogecoin",
+        "price_usd": 0.093413,
+        "price_change_24h": 2.0194968200289742,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.249948,
+        "price_change_24h": 4.503828554982098,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "cardano",
+        "price_usd": 0.249948,
+        "price_change_24h": 4.503828554982098,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.28,
+        "price_change_24h": 0.9021197589071162,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "polkadot",
+        "price_usd": 1.28,
+        "price_change_24h": 0.9021197589071162,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 9.05,
+        "price_change_24h": 2.9509579307023204,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "chainlink",
+        "price_usd": 9.05,
+        "price_change_24h": 2.9509579307023204,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.31,
+        "price_change_24h": 1.0111844719933603,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "litecoin",
+        "price_usd": 54.31,
+        "price_change_24h": 1.0111844719933603,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.36,
+        "price_change_24h": 2.041554083206624,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "ripple",
+        "price_usd": 1.36,
+        "price_change_24h": 2.041554083206624,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 6.09e-06,
+        "price_change_24h": 2.6395840148715384,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "shiba-inu",
+        "price_usd": 6.09e-06,
+        "price_change_24h": 2.6395840148715384,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.48e-06,
+        "price_change_24h": 2.7822942196382057,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "pepe",
+        "price_usd": 3.48e-06,
+        "price_change_24h": 2.7822942196382057,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.9057,
+        "price_change_24h": 3.479235223727126,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
+      {
+        "coin": "sui",
+        "price_usd": 0.9057,
+        "price_change_24h": 3.479235223727126,
+        "recorded_at": "2026-04-01 17:02:16"
+      },
       {
         "coin": "bitcoin",
         "price_usd": 68822.0,
