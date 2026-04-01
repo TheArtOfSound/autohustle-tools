@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T14:05:20.492531+00:00",
+  "updated": "2026-04-01T14:07:06.104892+00:00",
   "revenue": {
     "total": 0,
     "last_7d": 0
@@ -135,10 +135,24 @@
     }
   ],
   "actions_today": {
-    "total": 3193,
+    "total": 3195,
     "successes": 1849
   },
   "recent_actions": [
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 14:07:04"
+    },
+    {
+      "strategy_id": "data_scraper",
+      "action_type": null,
+      "outcome": "failure",
+      "reward": 0.0,
+      "executed_at": "2026-04-01 14:07:04"
+    },
     {
       "strategy_id": "data_scraper",
       "action_type": null,
@@ -334,23 +348,21 @@
       "outcome": "failure",
       "reward": 0.0,
       "executed_at": "2026-04-01 14:03:47"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "success",
-      "reward": 0.3,
-      "executed_at": "2026-04-01 14:03:39"
-    },
-    {
-      "strategy_id": "social_growth",
-      "action_type": null,
-      "outcome": "failure",
-      "reward": 0.0,
-      "executed_at": "2026-04-01 14:03:39"
     }
   ],
   "decisions": [
+    {
+      "decision_type": "pivot",
+      "reasoning": "Strategy digital_products failing consistently",
+      "outcome": null,
+      "created_at": "2026-04-01 14:07:04"
+    },
+    {
+      "decision_type": "pivot",
+      "reasoning": "Strategy strategy_reviewer failing consistently",
+      "outcome": null,
+      "created_at": "2026-04-01 14:07:04"
+    },
     {
       "decision_type": "pivot",
       "reasoning": "Strategy digital_products failing consistently",
@@ -458,18 +470,6 @@
       "reasoning": "Strategy strategy_reviewer failing consistently",
       "outcome": null,
       "created_at": "2026-04-01 13:36:01"
-    },
-    {
-      "decision_type": "allocate",
-      "reasoning": "Round 8, C=1.441\n  data_scraper: score=0.382 (mean=0.000, pulls=100) \u2192 7199 tokens\n  crypto_trading: score=0.682 (mean=0.300, pulls=100) \u2192 8961 tokens\n  social_growth: score=0.536 (mean=0.154, pulls=100) \u2192 8103 tokens\n  digital_products: score=0.395 (mean=0.013, pulls=100) \u2192 7275 tokens\n  micro_saas: score=0.682 (mean=0.300, pulls=100) \u2192 8961 tokens\n  strategy_reviewer: score=0.388 (mean=0.006, pulls=100) \u2192 7234 tokens\n  shopify_store: score=0.613 (mean=0.231, pulls=100) \u2192 8556 tokens\n  content_optimizer: score=0.682 (mean=0.300, pulls=100) \u2192 8961 tokens\n  course_creator: score=0.798 (mean=0.161, pulls=36) \u2192 9642 tokens\n  seo_content: score=0.386 (mean=0.004, pulls=100) \u2192 7222 tokens\n  marketing_engine: score=0.520 (mean=0.138, pulls=100) \u2192 8009 tokens\n  stripe_premium: score=0.682 (mean=0.300, pulls=100) \u2192 8961 tokens",
-      "outcome": null,
-      "created_at": "2026-04-01 13:31:06"
-    },
-    {
-      "decision_type": "pivot",
-      "reasoning": "Strategy digital_products failing consistently",
-      "outcome": null,
-      "created_at": "2026-04-01 13:28:02"
     }
   ],
   "assets": {
